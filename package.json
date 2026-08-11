@@ -1,0 +1,25 @@
+{
+  "name": "sv-twello-zondag-2-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "build": "vite build --config vite.config.ts",
+    "extract:excel": "node scripts/extract-excel.mjs",
+    "update": "pnpm run extract:excel && pnpm run test",
+    "test": "pnpm run build && node --test tests/dashboard.test.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "6.0.2",
+    "vite": "8.0.13",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

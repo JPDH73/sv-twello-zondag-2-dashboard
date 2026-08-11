@@ -1,0 +1,1007 @@
+{
+  "team": "SV Twello Zondag 2",
+  "season": "2026-2027",
+  "generatedAt": "2026-08-11T15:12:24.468Z",
+  "sourceFile": "2026-2027_zondag2.xlsx",
+  "totals": {
+    "players": 27,
+    "staff": 6,
+    "trainings": 3,
+    "matchesScheduled": 26,
+    "matchesPlayed": 1,
+    "goals": 0,
+    "assists": 0
+  },
+  "matches": [
+    {
+      "id": "M623608225",
+      "date": "2026-08-30",
+      "time": "11:30",
+      "home": "Voorwaarts T 5",
+      "away": "SV Twello 2",
+      "result": "0-2",
+      "competition": "Beker"
+    },
+    {
+      "id": "M669057056",
+      "date": "2026-09-06",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Columbia 3",
+      "result": "",
+      "competition": "Beker"
+    },
+    {
+      "id": "M1850179434",
+      "date": "2026-09-13",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "TKA 3",
+      "result": "",
+      "competition": "Beker"
+    },
+    {
+      "id": "M1515636623",
+      "date": "2026-09-20",
+      "time": "10:00",
+      "home": "Epse 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M2063443898",
+      "date": "2026-09-27",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Loenermark 3",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1206364897",
+      "date": "2026-10-04",
+      "time": "10:30",
+      "home": "SC Klarenbeek 3",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M225330184",
+      "date": "2026-10-11",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "WSV 4",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1088968169",
+      "date": "2026-10-25",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Sallandia 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1528424591",
+      "date": "2026-11-01",
+      "time": "11:30",
+      "home": "TKA 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M472456096",
+      "date": "2026-11-08",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Heeten 5",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1403218689",
+      "date": "2026-11-22",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Voorwaarts T 5",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M377994332",
+      "date": "2026-11-29",
+      "time": "09:30",
+      "home": "SV Schalkhaar 5",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1742797366",
+      "date": "2026-12-06",
+      "time": "11:30",
+      "home": "Terwolde 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1244967409",
+      "date": "2027-01-24",
+      "time": "11:30",
+      "home": "Loenermark 3",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M2050917256",
+      "date": "2027-01-31",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Epse 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1724910198",
+      "date": "2027-02-14",
+      "time": "10:30",
+      "home": "Sportclub Deventer 3",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1013492571",
+      "date": "2027-03-07",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "SC Klarenbeek 3",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M834179945",
+      "date": "2027-03-14",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "TKA 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1498390619",
+      "date": "2027-03-21",
+      "time": "10:30",
+      "home": "Sallandia 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M270318139",
+      "date": "2027-04-04",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Sportclub Deventer 3",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1119557406",
+      "date": "2027-04-11",
+      "time": "11:00",
+      "home": "Heeten 5",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M1441709955",
+      "date": "2027-04-18",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "Terwolde 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M448610583",
+      "date": "2027-04-25",
+      "time": "11:30",
+      "home": "WSV 4",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M877830509",
+      "date": "2027-05-09",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "SV Schalkhaar 5",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "M668121451",
+      "date": "2027-05-23",
+      "time": "11:30",
+      "home": "Voorwaarts T 5",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Competitie"
+    },
+    {
+      "id": "O000000001",
+      "date": "",
+      "time": "",
+      "home": "DAVO 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Oefenwedstrijd"
+    }
+  ],
+  "trainings": [
+    {
+      "date": "2026-08-11",
+      "attendees": []
+    },
+    {
+      "date": "2026-08-09",
+      "attendees": []
+    },
+    {
+      "date": "2026-08-06",
+      "attendees": []
+    }
+  ],
+  "players": [
+    {
+      "id": "sp1",
+      "number": "1",
+      "name": "Dennis Schreurs",
+      "position": "Keeper",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp2",
+      "number": "2",
+      "name": "Dennis Witteveen",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp3",
+      "number": "3",
+      "name": "Casper van Brink",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp4",
+      "number": "4",
+      "name": "Marc Albers",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp5",
+      "number": "5",
+      "name": "Jesse van Brink",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp6",
+      "number": "6",
+      "name": "Delano de Vogel",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp7",
+      "number": "8",
+      "name": "Tygo Vijge",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp8",
+      "number": "9",
+      "name": "Glenn Buitenhuis",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp9",
+      "number": "10",
+      "name": "Rodi Gerritsen",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp10",
+      "number": "11",
+      "name": "Niels Gijsberts",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp11",
+      "number": "12",
+      "name": "Jasper Nijdeken",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp12",
+      "number": "13",
+      "name": "Jean-Paul de Haas",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp13",
+      "number": "14",
+      "name": "Robbert Teelen",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp14",
+      "number": "15",
+      "name": "Thijs Oldenboom",
+      "position": "Aanvaller",
+      "foot": "links",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp15",
+      "number": "16",
+      "name": "Jervin Leisink Meijer",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp16",
+      "number": "18",
+      "name": "Thomas van Kooten",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp17",
+      "number": "19",
+      "name": "Jorn Oosting",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp18",
+      "number": "21",
+      "name": "Berry van der Scheer",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp19",
+      "number": "24",
+      "name": "Samwel Yuda Mkai",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp20",
+      "number": "27",
+      "name": "Tom Nijdeken",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp21",
+      "number": "27",
+      "name": "Tommy Nijdeken",
+      "position": "Middenvelder",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp22",
+      "number": "77",
+      "name": "Jani Setz",
+      "position": "Aanvaller",
+      "foot": "links",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp23",
+      "number": "89",
+      "name": "Nicky Eekhuis",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp24",
+      "number": "99",
+      "name": "Bram Dolman",
+      "position": "Aanvaller",
+      "foot": "rechts",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp25",
+      "number": "",
+      "name": "Denzel Boscher",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": true,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp26",
+      "number": "",
+      "name": "Koen Broekman",
+      "position": "Verdediger",
+      "foot": "links",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp27",
+      "number": "",
+      "name": "Stan Martens",
+      "position": "Verdediger",
+      "foot": "rechts",
+      "guest": true,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    }
+  ],
+  "staff": [
+    {
+      "id": "st1",
+      "name": "Andrew Hietbrink",
+      "role": "Coach",
+      "matches": 0
+    },
+    {
+      "id": "st2",
+      "name": "Christiaan Grootgens",
+      "role": "Technisch staflid",
+      "matches": 0
+    },
+    {
+      "id": "st3",
+      "name": "Jan Berkenbosch",
+      "role": "Technisch staflid",
+      "matches": 0
+    },
+    {
+      "id": "st4",
+      "name": "Jean-Paul de Haas",
+      "role": "Organisatorisch staflid",
+      "matches": 0
+    },
+    {
+      "id": "st5",
+      "name": "Jeffrey Karrenbeld",
+      "role": "Trainer",
+      "matches": 0
+    },
+    {
+      "id": "st6",
+      "name": "Sander Bouwmeester",
+      "role": "Ondersteunend staflid",
+      "matches": 0
+    }
+  ]
+}
