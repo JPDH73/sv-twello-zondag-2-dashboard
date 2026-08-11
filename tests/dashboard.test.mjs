@@ -23,3 +23,16 @@ test("website is gebouwd met het gegevensbestand", () => {
   assert.ok(fs.existsSync("dist/data/team.json"));
 });
 
+test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
+  assert.ok(data.players.some((player) => player.name === "Sergio Alkema"));
+  assert.equal(data.players.some((player) => player.name === "Tommy Nijdeken"), false);
+  assert.equal(data.players.find((player) => player.name === "Rodi Gerritsen")?.training.sessions.includes("2026-08-06"), true);
+});
+
+test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  assert.ok(source.includes("hero-dashboard.png"));
+  assert.ok(source.includes("One Town, One Team, One Twello"));
+  for (const tab of ["Dashboard", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
+  assert.equal(source.includes("Selectie, programma, trainingen en beslissende acties rechtstreeks vanuit het gedeelde Excel-bestand."), false);
+});

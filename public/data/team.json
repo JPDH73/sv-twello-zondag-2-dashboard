@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-11T15:12:24.468Z",
+  "generatedAt": "2026-08-11T20:58:06.397Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 27,
@@ -259,7 +259,17 @@
     },
     {
       "date": "2026-08-06",
-      "attendees": []
+      "attendees": [
+        "Tygo Vijge",
+        "Rodi Gerritsen",
+        "Jean-Paul de Haas",
+        "Thijs Oldenboom",
+        "Berry van der Scheer",
+        "Samwel Yuda Mkai",
+        "Nicky Eekhuis",
+        "Bram Dolman",
+        "Denzel Boscher"
+      ]
     }
   ],
   "players": [
@@ -427,10 +437,12 @@
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -479,10 +491,12 @@
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -557,10 +571,12 @@
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -609,10 +625,12 @@
       "foot": "links",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -655,6 +673,32 @@
     },
     {
       "id": "sp16",
+      "number": "17",
+      "name": "Sergio Alkema",
+      "position": "Verdediger",
+      "foot": "links",
+      "guest": false,
+      "training": {
+        "attended": 0,
+        "total": 3,
+        "percentage": 0,
+        "sessions": []
+      },
+      "totals": {
+        "matches": 0,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "flagged": 0,
+        "kept": 0
+      },
+      "matches": []
+    },
+    {
+      "id": "sp17",
       "number": "18",
       "name": "Thomas van Kooten",
       "position": "Verdediger",
@@ -680,7 +724,7 @@
       "matches": []
     },
     {
-      "id": "sp17",
+      "id": "sp18",
       "number": "19",
       "name": "Jorn Oosting",
       "position": "Middenvelder",
@@ -706,17 +750,19 @@
       "matches": []
     },
     {
-      "id": "sp18",
+      "id": "sp19",
       "number": "21",
       "name": "Berry van der Scheer",
       "position": "Verdediger",
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -732,11 +778,11 @@
       "matches": []
     },
     {
-      "id": "sp19",
-      "number": "24",
-      "name": "Samwel Yuda Mkai",
-      "position": "Aanvaller",
-      "foot": "rechts",
+      "id": "sp26",
+      "number": "20",
+      "name": "Koen Broekman",
+      "position": "Verdediger",
+      "foot": "links",
       "guest": false,
       "training": {
         "attended": 0,
@@ -759,16 +805,18 @@
     },
     {
       "id": "sp20",
-      "number": "27",
-      "name": "Tom Nijdeken",
-      "position": "Middenvelder",
+      "number": "24",
+      "name": "Samwel Yuda Mkai",
+      "position": "Aanvaller",
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -786,7 +834,7 @@
     {
       "id": "sp21",
       "number": "27",
-      "name": "Tommy Nijdeken",
+      "name": "Tom Nijdeken",
       "position": "Middenvelder",
       "foot": "rechts",
       "guest": false,
@@ -843,10 +891,12 @@
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -869,10 +919,12 @@
       "foot": "rechts",
       "guest": false,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,
@@ -895,36 +947,12 @@
       "foot": "rechts",
       "guest": true,
       "training": {
-        "attended": 0,
+        "attended": 1,
         "total": 3,
-        "percentage": 0,
-        "sessions": []
-      },
-      "totals": {
-        "matches": 0,
-        "goals": 0,
-        "assists": 0,
-        "yellow": 0,
-        "red": 0,
-        "penaltiesScored": 0,
-        "penaltiesMissed": 0,
-        "flagged": 0,
-        "kept": 0
-      },
-      "matches": []
-    },
-    {
-      "id": "sp26",
-      "number": "",
-      "name": "Koen Broekman",
-      "position": "Verdediger",
-      "foot": "links",
-      "guest": false,
-      "training": {
-        "attended": 0,
-        "total": 3,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 33,
+        "sessions": [
+          "2026-08-06"
+        ]
       },
       "totals": {
         "matches": 0,

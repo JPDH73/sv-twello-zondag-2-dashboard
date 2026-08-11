@@ -19,6 +19,15 @@ type TeamData = {
   players: Player[];
   staff: Staff[];
 };
+type View = "dashboard" | "team" | "wedstrijden" | "trainingen" | "statistieken";
+
+const views: { id: View; label: string }[] = [
+  { id: "dashboard", label: "Dashboard" },
+  { id: "team", label: "Team" },
+  { id: "wedstrijden", label: "Wedstrijden" },
+  { id: "trainingen", label: "Trainingen" },
+  { id: "statistieken", label: "Statistieken" },
+];
 
 function initials(name: string) {
   const parts = name.trim().split(/\s+/);
@@ -44,6 +53,7 @@ function leader(players: Player[], field: "goals" | "assists" | "training") {
 export function TeamDashboard() {
   const [data, setData] = useState<TeamData | null>(null);
   const [error, setError] = useState("");
+  const [activeView, setActiveView] = useState<View>("dashboard");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("nummer");
   const [selected, setSelected] = useState<Player | null>(null);
@@ -77,44 +87,81 @@ export function TeamDashboard() {
   if (!data) return <main className="loading"><div className="loading-card"><div className="loading-ball"/><strong>Teamdashboard laden…</strong></div></main>;
 
   const generated = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt));
-  const program = data.matches.filter((match) => match.date).slice(0, 8);
+  const program = data.matches.filter((match) => match.date).slice(0, 6);
+  const ranking = [...data.players].sort((a, b) => b.totals.goals - a.totals.goals || b.totals.assists - a.totals.assists || b.training.percentage - a.training.percentage || a.name.localeCompare(b.name, "nl"));
 
   return <main className="app-shell">
-    <header className="hero">
-      <div className="topbar"><div className="brand"><span className="logo-card"><img className="brand-logo" src="./sv-twello-logo.jpeg" alt="Logo SV Twello" /></span><span className="brand-team"><strong>Zondag 2</strong><span>Teamdashboard</span></span></div><span className="season-pill">Seizoen {data.season}</span></div>
-      <div className="hero-copy"><p className="eyebrow">Teamdashboard</p><h1>Alles van Zondag 2.<br/>Eén duidelijk overzicht.</h1><p className="hero-intro">Selectie, programma, trainingen en beslissende acties rechtstreeks vanuit het gedeelde Excel-bestand.</p><span className="updated"><span className="updated-dot"/>Bijgewerkt op {generated}</span></div>
+    <header className="site-header">
+      <div className="header-inner">
+        <div className="header-title"><strong>SV Twello Zondag 2</strong><span>Teamdashboard</span></div>
+        <span className="season-pill">Seizoen {data.season}</span>
+      </div>
+      <nav className="tabbar" aria-label="Dashboardonderdelen">
+        {views.map((view) => <button key={view.id} className={activeView === view.id ? "tab-button active" : "tab-button"} onClick={() => setActiveView(view.id)} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</button>)}
+      </nav>
     </header>
 
+    <section className="hero" aria-label="SV Twello Zondag 2">
+      <img src="./hero-dashboard.png" alt="SV Twello Zondag 2 Teamdashboard 2026–2027 met voetbalveld" />
+      <div className="hero-status">
+        <strong>One Town, One Team, One Twello</strong>
+        <span className="updated"><span className="updated-dot"/>Bijgewerkt op {generated}</span>
+      </div>
+    </section>
+
     <div className="content">
-      <section className="kpi-grid" aria-label="Teamtotalen">
-        <Kpi label="Selectie" value={data.totals.players} note={`${data.totals.staff} stafleden`} />
-        <Kpi label="Trainingen" value={data.totals.trainings} note="tot en met vandaag" />
-        <Kpi label="Wedstrijden" value={data.totals.matchesScheduled} note={`${data.totals.matchesPlayed} met uitslag of invoer`} />
-        <Kpi label="Goals + assists" value={data.totals.goals + data.totals.assists} note={`${data.totals.goals} goals · ${data.totals.assists} assists`} />
-      </section>
-
-      <section className="section"><div className="section-heading"><div><h2>Programma & uitslagen</h2><p>De eerste wedstrijden uit het actuele speelschema.</p></div></div><div className="fixture-grid">{program.map((match) => <Fixture key={match.id} match={match}/>)}</div></section>
-
-      <section className="section"><div className="section-heading"><div><h2>Teamleiders</h2><p>Koplopers op basis van de ingevoerde gegevens.</p></div></div><div className="leader-grid">
-        <Leader title="Doelpunten" player={leader(data.players, "goals")} score={leader(data.players, "goals")?.totals.goals ?? 0}/>
-        <Leader title="Assists" player={leader(data.players, "assists")} score={leader(data.players, "assists")?.totals.assists ?? 0}/>
-        <Leader title="Trainingen" player={leader(data.players, "training")} score={leader(data.players, "training")?.training.attended ?? 0}/>
-      </div></section>
-
-      <section className="section">
-        <div className="section-heading"><div><h2>Spelers</h2><p>Kies een speler voor trainingen en wedstrijdacties.</p></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
-        {visiblePlayers.length ? <div className="player-grid">{visiblePlayers.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
-      </section>
-
-      <section className="section"><div className="section-heading"><div><h2>Laatste trainingen</h2><p>Aanwezigheid per trainingsmoment.</p></div></div>{data.trainings.length ? <div className="training-grid">{data.trainings.slice(0, 6).map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatDate(training.date)}</div><strong>{training.attendees.length} spelers</strong><p>{training.attendees.length ? training.attendees.join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</section>
-
-      <section className="section"><div className="section-heading"><div><h2>Staf</h2><p>De begeleiding van SV Twello Zondag 2.</p></div></div><div className="staff-grid">{data.staff.map((member) => <article className="staff-card" key={member.id}><span className="avatar">{initials(member.name)}</span><div><strong>{member.name}</strong><span>{member.role}</span></div></article>)}</div></section>
-      <footer className="footer">Bron: {data.sourceFile} · Alleen geselecteerde teamgegevens worden gepubliceerd</footer>
+      {activeView === "dashboard" && <DashboardView data={data} program={program}/>}
+      {activeView === "team" && <TeamView data={data} players={visiblePlayers} query={query} setQuery={setQuery} sort={sort} setSort={setSort} setSelected={setSelected}/>}
+      {activeView === "wedstrijden" && <MatchesView matches={data.matches}/>}
+      {activeView === "trainingen" && <TrainingsView trainings={data.trainings}/>}
+      {activeView === "statistieken" && <StatisticsView data={data} ranking={ranking}/>}
+      <footer className="footer">One Town, One Team, One Twello · {data.sourceFile}</footer>
     </div>
     {selected && <PlayerDrawer player={selected} onClose={() => setSelected(null)}/>} 
   </main>;
 }
 
+function DashboardView({ data, program }: { data: TeamData; program: Match[] }) {
+  return <>
+    <section className="kpi-grid" aria-label="Teamtotalen">
+      <Kpi label="Selectie" value={data.totals.players} note={`${data.totals.staff} stafleden`} />
+      <Kpi label="Trainingen" value={data.totals.trainings} note="tot en met vandaag" />
+      <Kpi label="Wedstrijden" value={data.totals.matchesScheduled} note={`${data.totals.matchesPlayed} met uitslag of invoer`} />
+      <Kpi label="Goals + assists" value={data.totals.goals + data.totals.assists} note={`${data.totals.goals} goals · ${data.totals.assists} assists`} />
+    </section>
+    <SectionHeading title="Programma & uitslagen" subtitle="De eerstvolgende wedstrijden uit het actuele speelschema."/>
+    <div className="fixture-grid">{program.map((match) => <Fixture key={match.id} match={match}/>)}</div>
+    <SectionHeading title="Teamleiders" subtitle="Koplopers op basis van de ingevoerde gegevens."/>
+    <div className="leader-grid">
+      <Leader title="Doelpunten" player={leader(data.players, "goals")} score={leader(data.players, "goals")?.totals.goals ?? 0}/>
+      <Leader title="Assists" player={leader(data.players, "assists")} score={leader(data.players, "assists")?.totals.assists ?? 0}/>
+      <Leader title="Trainingen" player={leader(data.players, "training")} score={leader(data.players, "training")?.training.attended ?? 0}/>
+    </div>
+  </>;
+}
+
+function TeamView({ data, players, query, setQuery, sort, setSort, setSelected }: { data: TeamData; players: Player[]; query: string; setQuery: (value: string) => void; sort: string; setSort: (value: string) => void; setSelected: (player: Player) => void }) {
+  return <>
+    <div className="page-heading"><div><p className="eyebrow">Selectie {data.season}</p><h1>Team</h1><p>Kies een speler voor trainingen en wedstrijdacties.</p></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
+    {players.length ? <div className="player-grid">{players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
+    <SectionHeading title="Staf" subtitle="De begeleiding van SV Twello Zondag 2."/>
+    <div className="staff-grid">{data.staff.map((member) => <article className="staff-card" key={member.id}><span className="avatar">{initials(member.name)}</span><div><strong>{member.name}</strong><span>{member.role}</span></div></article>)}</div>
+  </>;
+}
+
+function MatchesView({ matches }: { matches: Match[] }) {
+  return <><div className="page-heading"><div><p className="eyebrow">Seizoenoverzicht</p><h1>Wedstrijden</h1><p>Het volledige programma en alle geregistreerde uitslagen.</p></div></div><div className="fixture-grid">{matches.map((match) => <Fixture key={match.id} match={match}/>)}</div></>;
+}
+
+function TrainingsView({ trainings }: { trainings: TeamData["trainings"] }) {
+  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1><p>De aanwezige spelers per trainingsmoment.</p></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? training.attendees.join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
+}
+
+function StatisticsView({ data, ranking }: { data: TeamData; ranking: Player[] }) {
+  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1><p>Doelpunten, assists en trainingsopkomst per speler.</p></div></div><div className="leader-grid stats-leaders"><Leader title="Doelpunten" player={leader(data.players, "goals")} score={leader(data.players, "goals")?.totals.goals ?? 0}/><Leader title="Assists" player={leader(data.players, "assists")} score={leader(data.players, "assists")?.totals.assists ?? 0}/><Leader title="Trainingen" player={leader(data.players, "training")} score={leader(data.players, "training")?.training.attended ?? 0}/></div><div className="ranking-card"><div className="ranking-head"><span>Speler</span><span>Wed.</span><span>Goals</span><span>Assists</span><span>Training</span></div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><strong>{player.name}</strong></span><span>{player.totals.matches}</span><span>{player.totals.goals}</span><span>{player.totals.assists}</span><span>{player.training.percentage}%</span></div>)}</div></>;
+}
+
+function SectionHeading({ title, subtitle }: { title: string; subtitle: string }) { return <div className="section-heading"><div><h2>{title}</h2><p>{subtitle}</p></div></div>; }
 function Kpi({ label, value, note }: { label: string; value: number; note: string }) { return <article className="kpi-card"><div className="kpi-label">{label}</div><div className="kpi-value">{value}</div><div className="kpi-note">{note}</div></article>; }
 function Leader({ title, player, score }: { title: string; player?: Player; score: number }) { return <article className="leader-card"><span className="leader-kind">Meeste {title.toLowerCase()}</span><span className="leader-score">{score}</span><div className="leader-name">{player?.name ?? "Nog geen invoer"}</div></article>; }
 function Fixture({ match }: { match: Match }) { return <article className="fixture-card"><div className="fixture-meta"><span>{match.competition || "Wedstrijd"}</span><span>{formatDate(match.date)} {match.time && `· ${match.time}`}</span></div><div className="fixture-teams"><strong>{match.home}</strong><span>{match.result || "–"}</span><strong>{match.away}</strong></div></article>; }
