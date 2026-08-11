@@ -81,7 +81,7 @@ export function TeamDashboard() {
 
   return <main className="app-shell">
     <header className="hero">
-      <div className="topbar"><div className="brand"><span className="brand-mark">SVT2</span><span>SV Twello Zondag 2</span></div><span className="season-pill">Seizoen {data.season}</span></div>
+      <div className="topbar"><div className="brand"><span className="logo-card"><img className="brand-logo" src="./sv-twello-logo.jpeg" alt="Logo SV Twello" /></span><span className="brand-team"><strong>Zondag 2</strong><span>Teamdashboard</span></span></div><span className="season-pill">Seizoen {data.season}</span></div>
       <div className="hero-copy"><p className="eyebrow">Teamdashboard</p><h1>Alles van Zondag 2.<br/>Eén duidelijk overzicht.</h1><p className="hero-intro">Selectie, programma, trainingen en beslissende acties rechtstreeks vanuit het gedeelde Excel-bestand.</p><span className="updated"><span className="updated-dot"/>Bijgewerkt op {generated}</span></div>
     </header>
 
