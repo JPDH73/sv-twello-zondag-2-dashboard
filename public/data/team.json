@@ -1,25 +1,35 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-11T21:16:47.810Z",
+  "generatedAt": "2026-08-11T21:42:24.227Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
-    "players": 27,
+    "players": 25,
+    "guests": 2,
     "staff": 6,
-    "trainings": 3,
+    "trainings": 1,
     "matchesScheduled": 26,
-    "matchesPlayed": 1,
+    "matchesPlayed": 0,
     "goals": 0,
     "assists": 0
   },
   "matches": [
+    {
+      "id": "O000000001",
+      "date": "2026-08-20",
+      "time": "20:00",
+      "home": "DAVO 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Oefenwedstrijd"
+    },
     {
       "id": "M623608225",
       "date": "2026-08-30",
       "time": "11:30",
       "home": "Voorwaarts T 5",
       "away": "SV Twello 2",
-      "result": "0-2",
+      "result": "",
       "competition": "Beker"
     },
     {
@@ -237,26 +247,9 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie"
-    },
-    {
-      "id": "O000000001",
-      "date": "",
-      "time": "",
-      "home": "DAVO 2",
-      "away": "SV Twello 2",
-      "result": "",
-      "competition": "Oefenwedstrijd"
     }
   ],
   "trainings": [
-    {
-      "date": "2026-08-11",
-      "attendees": []
-    },
-    {
-      "date": "2026-08-09",
-      "attendees": []
-    },
     {
       "date": "2026-08-06",
       "attendees": [
@@ -283,7 +276,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -312,7 +305,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -341,7 +334,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -370,7 +363,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -399,7 +392,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -428,7 +421,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -457,8 +450,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -488,7 +481,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -517,8 +510,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -548,7 +541,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -577,7 +570,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -606,8 +599,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -637,7 +630,7 @@
       "captain": true,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -666,8 +659,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -697,7 +690,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -726,7 +719,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -755,7 +748,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -784,7 +777,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -813,8 +806,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -844,7 +837,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -873,8 +866,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -904,7 +897,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -933,7 +926,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },
@@ -962,8 +955,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -993,8 +986,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -1024,8 +1017,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 3,
-        "percentage": 33,
+        "total": 1,
+        "percentage": 100,
         "sessions": [
           "2026-08-06"
         ]
@@ -1055,7 +1048,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 3,
+        "total": 1,
         "percentage": 0,
         "sessions": []
       },

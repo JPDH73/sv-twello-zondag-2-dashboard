@@ -13,7 +13,7 @@ type Player = {
 type Staff = { id: string; name: string; role: string; matches: number };
 type TeamData = {
   team: string; season: string; generatedAt: string; sourceFile: string;
-  totals: { players: number; staff: number; trainings: number; matchesScheduled: number; matchesPlayed: number; goals: number; assists: number };
+  totals: { players: number; guests: number; staff: number; trainings: number; matchesScheduled: number; matchesPlayed: number; goals: number; assists: number };
   matches: Match[];
   trainings: { date: string; attendees: string[] }[];
   players: Player[];
@@ -31,6 +31,7 @@ const views: { id: View; label: string }[] = [
 
 function initials(name: string) {
   const parts = name.trim().split(/\s+/);
+  if (parts[0]?.includes("-")) return parts[0].split("-").map((part) => part[0] ?? "").join("").toUpperCase();
   return `${parts[0]?.[0] ?? ""}${parts.at(-1)?.[0] ?? ""}`.toUpperCase();
 }
 function formatDate(value: string) {
@@ -48,6 +49,15 @@ function leader(players: Player[], field: "goals" | "assists" | "training") {
   const first = sorted[0];
   const score = first ? (field === "training" ? first.training.attended : first.totals[field]) : 0;
   return score > 0 ? first : undefined;
+}
+function metricPlayer(players: Player[], score: (player: Player) => number, direction: "max" | "min" = "max", requirePositive = true) {
+  const sorted = [...players].sort((a, b) => (direction === "max" ? score(b) - score(a) : score(a) - score(b)) || a.name.localeCompare(b.name, "nl"));
+  const first = sorted[0];
+  return first && (!requirePositive || score(first) > 0) ? { player: first, score: score(first) } : undefined;
+}
+function metricNames(players: Player[], field: keyof Player["totals"]) {
+  const scored = players.filter((player) => player.totals[field] > 0).sort((a, b) => b.totals[field] - a.totals[field] || a.name.localeCompare(b.name, "nl"));
+  return scored.length ? scored.map((player) => `${player.name} (${player.totals[field]})`) : ["Nog niemand"];
 }
 
 export function TeamDashboard() {
@@ -106,7 +116,7 @@ export function TeamDashboard() {
       <div className="pitch-lines" aria-hidden="true"><span className="pitch-circle"/><span className="pitch-box"/><span className="pitch-half"/></div>
       <div className="hero-main">
         <div className="hero-logo-panel"><img src="./sv-twello-logo.png" alt="Logo SV Twello" /></div>
-        <div className="hero-copy"><p>SV <span>Twello Zondag 2</span></p><strong>Teamdashboard {data.season}</strong></div>
+        <div className="hero-copy"><p>Zondag 2</p><strong>Teamdashboard 26–27</strong></div>
       </div>
       <div className="hero-status">
         <strong>One Town, One Team, One Twello</strong>
@@ -127,27 +137,37 @@ export function TeamDashboard() {
 }
 
 function DashboardView({ data, program }: { data: TeamData; program: Match[] }) {
+  const selection = data.players.filter((player) => !player.guest);
+  const mostLate = metricPlayer(selection, (player) => player.totals.late);
+  const leastTraining = metricPlayer(selection, (player) => player.training.attended, "min", false);
+  const mostAbsent = metricPlayer(selection, (player) => player.training.total - player.training.attended);
   return <>
     <section className="kpi-grid" aria-label="Teamtotalen">
-      <Kpi label="Selectie" value={data.totals.players} note={`${data.totals.staff} stafleden`} />
-      <Kpi label="Trainingen" value={data.totals.trainings} note="tot en met vandaag" />
-      <Kpi label="Wedstrijden" value={data.totals.matchesScheduled} note={`${data.totals.matchesPlayed} met uitslag of invoer`} />
-      <Kpi label="Goals + assists" value={data.totals.goals + data.totals.assists} note={`${data.totals.goals} goals · ${data.totals.assists} assists`} />
+      <Kpi label="Selectie" value={data.totals.players} note={`${data.totals.guests} gastspelers apart`} />
+      <Kpi label="Trainingen" value={data.totals.trainings} note="met ingevulde aanwezigheid" />
+      <Kpi label="Wedstrijden" value={data.totals.matchesScheduled} note={`${data.totals.matchesPlayed} gespeeld`} />
     </section>
     <SectionHeading title="Programma & uitslagen" subtitle="De eerstvolgende wedstrijden uit het actuele speelschema."/>
     <div className="fixture-grid">{program.map((match) => <Fixture key={match.id} match={match}/>)}</div>
-    <SectionHeading title="Teamleiders" subtitle="Koplopers op basis van de ingevoerde gegevens."/>
+    <SectionHeading title="Toppers" subtitle="De beste prestaties op basis van de ingevoerde gegevens."/>
     <div className="leader-grid">
-      <Leader title="Doelpunten" player={leader(data.players, "goals")} score={leader(data.players, "goals")?.totals.goals ?? 0}/>
-      <Leader title="Assists" player={leader(data.players, "assists")} score={leader(data.players, "assists")?.totals.assists ?? 0}/>
-      <Leader title="Trainingen" player={leader(data.players, "training")} score={leader(data.players, "training")?.training.attended ?? 0}/>
+      <Leader title="Doelpunten" player={leader(selection, "goals")} score={leader(selection, "goals")?.totals.goals ?? 0}/>
+      <Leader title="Assists" player={leader(selection, "assists")} score={leader(selection, "assists")?.totals.assists ?? 0}/>
+      <Leader title="Trainingen" player={leader(selection, "training")} score={leader(selection, "training")?.training.attended ?? 0}/>
+    </div>
+    <SectionHeading title="Losers" subtitle="De verbeterpunten van dit seizoen — met een knipoog."/>
+    <div className="loser-grid">
+      <Loser label="Meeste te laat" player={mostLate?.player} score={mostLate?.score ?? 0}/>
+      <Loser label="Minste trainingen" player={leastTraining?.player} score={leastTraining?.score ?? 0}/>
+      <Loser label="Meest afwezig" player={mostAbsent?.player} score={mostAbsent?.score ?? 0}/>
     </div>
   </>;
 }
 
 function TeamView({ data, players, query, setQuery, sort, setSort, setSelected }: { data: TeamData; players: Player[]; query: string; setQuery: (value: string) => void; sort: string; setSort: (value: string) => void; setSelected: (player: Player) => void }) {
+  const captain = data.players.find((player) => player.captain);
   return <>
-    <div className="page-heading"><div><p className="eyebrow">Selectie {data.season}</p><h1>Team</h1><p>Kies een speler voor trainingen en wedstrijdacties.</p></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
+    <div className="page-heading"><div><p className="eyebrow">Selectie {data.season}</p><h1>Team</h1><p>Kies een speler voor trainingen en wedstrijdacties.</p>{captain && <div className="captain-callout"><span>C</span><div><small>Aanvoerder</small><strong>{captain.name}</strong></div></div>}</div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
     {players.length ? <div className="player-grid">{players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
     <SectionHeading title="Staf" subtitle="De begeleiding van SV Twello Zondag 2."/>
     <div className="staff-grid">{data.staff.map((member) => <article className="staff-card" key={member.id}><span className="avatar">{initials(member.name)}</span><div><strong>{member.name}</strong><span>{member.role}</span></div></article>)}</div>
@@ -164,13 +184,15 @@ function TrainingsView({ trainings }: { trainings: TeamData["trainings"] }) {
 
 function StatisticsView({ data, ranking }: { data: TeamData; ranking: Player[] }) {
   const sum = (field: keyof Player["totals"]) => data.players.reduce((total, player) => total + player.totals[field], 0);
-  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1><p>Alle prestaties, wedstrijdacties en teamtaken per speler.</p></div></div><div className="leader-grid stats-leaders"><Leader title="Doelpunten" player={leader(data.players, "goals")} score={leader(data.players, "goals")?.totals.goals ?? 0}/><Leader title="Assists" player={leader(data.players, "assists")} score={leader(data.players, "assists")?.totals.assists ?? 0}/><Leader title="Trainingen" player={leader(data.players, "training")} score={leader(data.players, "training")?.training.attended ?? 0}/></div><SectionHeading title="Wedstrijdacties" subtitle="Ook de momenten naast goals en assists tellen mee."/><div className="action-grid"><ActionCard symbol="P+" label="Penalty's gescoord" value={sum("penaltiesScored")} tone="bright"/><ActionCard symbol="P−" label="Penalty's gemist" value={sum("penaltiesMissed")} tone="soft"/><ActionCard symbol="⏱" label="Te laat" value={sum("late")} tone="navy"/><ActionCard symbol="⚑" label="Gevlagd" value={sum("flagged")} tone="bright"/><ActionCard symbol="GK" label="Gekeept" value={sum("kept")} tone="soft"/><ActionCard symbol="C" label="Aanvoerder" value={sum("captain")} tone="navy"/></div><SectionHeading title="Spelersranglijst" subtitle="Wedstrijden, aanvallende acties, penalty's en trainingsopkomst."/><div className="ranking-card"><div className="ranking-head"><span>Speler</span><span>Wed.</span><span>Goals</span><span>Assists</span><span>Penalty +/−</span><span>Training</span></div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span><span>{player.totals.matches}</span><span>{player.totals.goals}</span><span>{player.totals.assists}</span><span>{player.totals.penaltiesScored} / {player.totals.penaltiesMissed}</span><span>{player.training.percentage}%</span></div>)}</div></>;
+  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1><p>Alle prestaties, wedstrijdacties en teamtaken per speler.</p></div></div><div className="leader-grid stats-leaders"><Leader title="Doelpunten" player={leader(data.players, "goals")} score={leader(data.players, "goals")?.totals.goals ?? 0}/><Leader title="Assists" player={leader(data.players, "assists")} score={leader(data.players, "assists")?.totals.assists ?? 0}/><Leader title="Trainingen" player={leader(data.players, "training")} score={leader(data.players, "training")?.training.attended ?? 0}/></div><SectionHeading title="Wedstrijdacties" subtitle="Ook de momenten naast goals en assists tellen mee."/><div className="action-grid"><ActionCard symbol="P+" label="Penalty's gescoord" value={sum("penaltiesScored")} tone="bright"/><ActionCard symbol="P−" label="Penalty's gemist" value={sum("penaltiesMissed")} tone="soft"/><ActionCard symbol="⏱" label="Te laat" value={sum("late")} tone="navy"/><ActionCard symbol="⚑" label="Gevlagd" value={sum("flagged")} tone="bright"/><ActionCard symbol="GK" label="Gekeept" value={sum("kept")} tone="soft"/><ActionCard symbol="C" label="Aanvoerder" value={sum("captain")} tone="navy"/></div><SectionHeading title="Wie deed wat?" subtitle="Per bijzondere actie zie je meteen welke spelers zijn geregistreerd."/><div className="who-grid"><ActionWho label="Gevlagd" names={metricNames(data.players, "flagged")}/><ActionWho label="Gekeept" names={metricNames(data.players, "kept")}/><ActionWho label="Aanvoerder geweest" names={metricNames(data.players, "captain")}/><ActionWho label="Gele kaart" names={metricNames(data.players, "yellow")}/><ActionWho label="Rode kaart" names={metricNames(data.players, "red")}/><ActionWho label="Penalty gescoord" names={metricNames(data.players, "penaltiesScored")}/><ActionWho label="Penalty gemist" names={metricNames(data.players, "penaltiesMissed")}/><ActionWho label="Te laat" names={metricNames(data.players, "late")}/></div><SectionHeading title="Spelersranglijst" subtitle="Wedstrijden, aanvallende acties, penalty's en trainingsopkomst."/><div className="ranking-card"><div className="ranking-head"><span>Speler</span><span>Wed.</span><span>Goals</span><span>Assists</span><span>Penalty +/−</span><span>Training</span></div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span><span>{player.totals.matches}</span><span>{player.totals.goals}</span><span>{player.totals.assists}</span><span>{player.totals.penaltiesScored} / {player.totals.penaltiesMissed}</span><span>{player.training.percentage}%</span></div>)}</div></>;
 }
 
 function SectionHeading({ title, subtitle }: { title: string; subtitle: string }) { return <div className="section-heading"><div><h2>{title}</h2><p>{subtitle}</p></div></div>; }
 function ActionCard({ symbol, label, value, tone }: { symbol: string; label: string; value: number; tone: "bright" | "soft" | "navy" }) { return <article className={`action-card ${tone}`}><span className="action-symbol">{symbol}</span><strong>{value}</strong><span>{label}</span></article>; }
+function ActionWho({ label, names }: { label: string; names: string[] }) { return <article className="who-card"><strong>{label}</strong><p>{names.join(" · ")}</p></article>; }
 function Kpi({ label, value, note }: { label: string; value: number; note: string }) { return <article className="kpi-card"><div className="kpi-label">{label}</div><div className="kpi-value">{value}</div><div className="kpi-note">{note}</div></article>; }
 function Leader({ title, player, score }: { title: string; player?: Player; score: number }) { return <article className="leader-card"><span className="leader-kind">Meeste {title.toLowerCase()}</span><span className="leader-score">{score}</span><div className="leader-name">{player?.name ?? "Nog geen invoer"}</div></article>; }
+function Loser({ label, player, score }: { label: string; player?: Player; score: number }) { return <article className="loser-card"><span>{label}</span><strong>{player?.name ?? "Nog niemand"}</strong><b>{score}</b></article>; }
 function Fixture({ match }: { match: Match }) { return <article className="fixture-card"><div className="fixture-meta"><span>{match.competition || "Wedstrijd"}</span><span>{formatDate(match.date)} {match.time && `· ${match.time}`}</span></div><div className="fixture-teams"><strong>{match.home}</strong><span>{match.result || "–"}</span><strong>{match.away}</strong></div></article>; }
 function PlayerCard({ player, onOpen }: { player: Player; onOpen: () => void }) { return <button className="player-card" onClick={onOpen} aria-label={`Bekijk statistieken van ${player.name}`}><div className="player-band"/><div className="player-body"><div className="player-head"><span className="avatar">{initials(player.name)}</span><span className="player-name"><strong>{player.name}</strong><span>{player.position}</span></span><span className="availability-badge" title="Rugnummer">{player.number || "–"}</span></div>{(player.captain || player.guest) && <div className="role-tags">{player.captain && <span className="role-tag captain">C · Aanvoerder</span>}{player.guest && <span className="role-tag guest">Gastspeler</span>}</div>}<div className="mini-stats"><span className="mini-stat"><strong>{player.training.attended}</strong><span>Training</span></span><span className="mini-stat"><strong>{player.totals.goals}</strong><span>Goals</span></span><span className="mini-stat"><strong>{player.totals.assists}</strong><span>Assists</span></span></div><div className="activity-chips"><span>Penalty {player.totals.penaltiesScored}/{player.totals.penaltiesMissed}</span><span>Te laat {player.totals.late}</span><span>Vlag {player.totals.flagged}</span></div><div className="progress-row"><span>Opkomst</span><span className="progress-track"><span className="progress-fill" style={{ width: `${player.training.percentage}%` }}/></span><strong>{player.training.percentage}%</strong></div></div></button>; }
 function PlayerDrawer({ player, onClose }: { player: Player; onClose: () => void }) { return <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}><aside className="drawer" role="dialog" aria-modal="true" aria-label={`Statistieken van ${player.name}`}><div className="drawer-hero"><div className="drawer-top"><span className="eyebrow">Spelerskaart</span><button className="close-button" onClick={onClose} aria-label="Sluiten">×</button></div><div className="drawer-person"><span className="avatar">{player.number || initials(player.name)}</span><div><h2>{player.name}</h2><p>{player.position} · {player.foot ? `${player.foot}benig` : "voorkeursvoet onbekend"}{player.captain ? " · aanvoerder" : ""}{player.guest ? " · gastspeler" : ""}</p></div></div></div><div className="drawer-content"><div className="detail-kpis"><Detail label="Wedstrijden" value={player.totals.matches}/><Detail label="Doelpunten" value={player.totals.goals}/><Detail label="Assists" value={player.totals.assists}/><Detail label="Opkomst" value={`${player.training.percentage}%`}/><Detail label="Penalty gescoord" value={player.totals.penaltiesScored}/><Detail label="Penalty gemist" value={player.totals.penaltiesMissed}/><Detail label="Te laat" value={player.totals.late}/><Detail label="Gevlagd" value={player.totals.flagged}/><Detail label="Gekeept" value={player.totals.kept}/><Detail label="Aanvoerder" value={player.totals.captain}/><Detail label="Geel" value={player.totals.yellow}/><Detail label="Rood" value={player.totals.red}/></div><section className="detail-section"><h3>Trainingen</h3>{player.training.sessions.length ? <div className="session-list">{player.training.sessions.map((date) => <span key={date}>{formatDate(date)}</span>)}</div> : <div className="no-matches">Nog geen aanwezigheid geregistreerd.</div>}</section><section className="detail-section"><h3>Wedstrijdhistorie</h3>{player.matches.length ? <div className="match-list">{player.matches.map((match) => <MatchRow key={match.id} match={match}/>)}</div> : <div className="no-matches">Nog geen wedstrijdgegevens voor deze speler.</div>}</section></div></aside></div>; }

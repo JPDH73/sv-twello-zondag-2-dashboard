@@ -30,6 +30,13 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.players.find((player) => player.name === "Denzel Boscher")?.guest, true);
   assert.equal(data.players.find((player) => player.name === "Stan Martens")?.guest, true);
   assert.equal(data.players.find((player) => player.name === "Robbert Teelen")?.captain, true);
+  assert.equal(data.totals.players, 25);
+  assert.equal(data.totals.guests, 2);
+  assert.equal(data.totals.trainings, 1);
+  const davo = data.matches.find((match) => match.id === "O000000001");
+  assert.equal(davo?.date, "2026-08-20");
+  assert.equal(davo?.time, "20:00");
+  assert.equal(data.matches.find((match) => match.id === "M623608225")?.result, "");
 });
 
 test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
@@ -37,6 +44,9 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.ok(source.includes("sv-twello-logo.png"));
   assert.ok(source.includes("One Town, One Team, One Twello"));
   for (const field of ["Penalty gescoord", "Penalty gemist", "Te laat", "Gevlagd", "Gekeept", "Aanvoerder"]) assert.ok(source.includes(field));
+  for (const section of ["Toppers", "Losers", "Wie deed wat?"]) assert.ok(source.includes(section));
+  assert.ok(source.includes("Teamdashboard 26–27"));
+  assert.ok(source.includes('parts[0]?.includes("-")'));
   for (const tab of ["Dashboard", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
   assert.equal(source.includes("Selectie, programma, trainingen en beslissende acties rechtstreeks vanuit het gedeelde Excel-bestand."), false);
 });
