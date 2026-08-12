@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-12T14:54:13.205Z",
+  "generatedAt": "2026-08-12T15:00:57.871Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -18,8 +18,8 @@
       "id": "O000000001",
       "date": "2026-08-20",
       "time": "20:00",
-      "home": "DAVO 2",
-      "away": "SV Twello 2",
+      "home": "SV Twello 2",
+      "away": "DAVO 2",
       "result": "",
       "competition": "Vriendschappelijk"
     },

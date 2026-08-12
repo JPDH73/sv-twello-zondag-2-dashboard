@@ -35,8 +35,8 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.totals.trainings, 2);
   assert.equal(data.trainings.some((training) => training.date === "2026-08-09"), true);
   const davo = data.matches.find((match) => match.id === "O000000001");
-  assert.equal(davo?.home, "DAVO 2");
-  assert.equal(davo?.away, "SV Twello 2");
+  assert.equal(davo?.home, "SV Twello 2");
+  assert.equal(davo?.away, "DAVO 2");
   assert.equal(davo?.date, "2026-08-20");
   assert.equal(davo?.time, "20:00");
   assert.equal(data.matches[0]?.id, "O000000001");
