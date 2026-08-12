@@ -114,10 +114,14 @@ test("staf heeft een aanklikbare wedstrijdhistorie en vernieuwde veldillustratie
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
   for (const text of ["StaffDrawer", "Bekijk wedstrijdhistorie", "Wedstrijdhistorie van", "staff-match-row"]) assert.ok(source.includes(text));
-  assert.equal(source.includes('className="pitch-circle"'), false);
-  assert.ok(source.includes('className="pitch-box"'));
+  assert.ok(source.includes('className="full-pitch"'));
+  assert.ok(source.includes('className="pitch-halfway"'));
+  assert.ok(source.includes('className="pitch-center"'));
+  assert.ok(source.includes('pitch-area-left'));
+  assert.ok(source.includes('pitch-area-right'));
+  assert.equal(source.includes('className="pitch-box"'), false);
   assert.ok(css.includes(".staff-status.deels-aanwezig"));
-  assert.ok(css.includes("transform: rotate(13deg)"));
+  assert.ok(css.includes("transform: rotate(12deg)"));
 });
 
 test("spelersranglijst kan op iedere statistiek worden gesorteerd", () => {

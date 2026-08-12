@@ -112,7 +112,14 @@ export function TeamDashboard() {
 
     <section className="hero" aria-label="SV Twello Zondag 2">
       <div className="hero-rays" aria-hidden="true"/>
-      <div className="pitch-lines" aria-hidden="true"><span className="pitch-box"><span className="pitch-goal"/><span className="pitch-spot"/><span className="pitch-arc"/></span></div>
+      <div className="pitch-lines" aria-hidden="true">
+        <span className="full-pitch">
+          <span className="pitch-halfway" />
+          <span className="pitch-center"><span className="pitch-center-spot" /></span>
+          <span className="pitch-area pitch-area-left"><span className="pitch-goal-area"/><span className="pitch-penalty-spot"/><span className="pitch-goal"/></span>
+          <span className="pitch-area pitch-area-right"><span className="pitch-goal-area"/><span className="pitch-penalty-spot"/><span className="pitch-goal"/></span>
+        </span>
+      </div>
       <div className="hero-main">
         <div className="hero-logo-panel"><img src="./sv-twello-logo.png" alt="Logo SV Twello" /></div>
         <div className="hero-copy"><p><span className="blue-letter">Z</span><span className="blue-letter">o</span>ndag <span className="blue-letter">2</span></p><strong>One Town, One Team, One Twello</strong></div>
