@@ -37,7 +37,7 @@ const number = (value) => {
 };
 const yes = (value) => value === true || value === 1 || ["ja", "yes", "true", "x"].includes(clean(value).toLowerCase());
 const dateOnly = (value) => {
-  if (value instanceof Date && !Number.isNaN(value.valueOf())) return value.toISOString().slice(0, 10);
+  if (value instanceof Date && !Number.isNaN(value.valueOf())) return `${value.getFullYear()}-${String(value.getMonth() + 1).padStart(2, "0")}-${String(value.getDate()).padStart(2, "0")}`;
   const text = clean(value);
   const iso = text.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
   if (iso) return iso;
@@ -225,7 +225,12 @@ const staff = staffRows.map((row) => {
   };
 });
 
-const matches = [...matchesById.values()].sort((a, b) => (a.date || "9999").localeCompare(b.date || "9999"));
+const seasonStart = "2026-08-01";
+const matches = [...matchesById.values()].sort((a, b) => {
+  const aDate = !a.date || a.date < seasonStart ? "9999" : a.date;
+  const bDate = !b.date || b.date < seasonStart ? "9999" : b.date;
+  return aDate.localeCompare(bDate);
+});
 const playedMatchIds = new Set(playerInputRows.filter((row) => clean(row.status_sp) || [row.doelpunten, row.assists, row.geel, row.rood].some(meaningful)).map((row) => clean(row.wedstrijd_id)));
 const trainings = trainingColumns.map(({ col, date }) => ({
   date,

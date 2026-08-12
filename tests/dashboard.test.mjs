@@ -37,7 +37,7 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   const davo = data.matches.find((match) => match.id === "O000000001");
   assert.equal(davo?.home, "DAVO 2");
   assert.equal(davo?.away, "SV Twello 2");
-  assert.equal(davo?.date, "2026-08-19");
+  assert.equal(davo?.date, "2026-08-20");
   assert.equal(davo?.time, "20:00");
   assert.equal(data.matches[0]?.id, "O000000001");
   assert.equal(data.matches.find((match) => match.id === "M623608225")?.result, "");
