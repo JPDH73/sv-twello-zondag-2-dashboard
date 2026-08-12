@@ -128,3 +128,14 @@ test("spelersranglijst kan op iedere statistiek worden gesorteerd", () => {
   assert.ok(css.includes(".ranking-sort.active"));
   assert.ok(css.includes(".ranking-controls"));
 });
+
+test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  assert.ok(css.includes("width: 39%; height: 42%"));
+  assert.ok(css.includes("font-size: clamp(64px,8.1vw,105px)"));
+  assert.ok(css.includes("border-radius: 0 0 82px 0"));
+  assert.ok(css.includes("letter-spacing: .16em"));
+  assert.ok(source.includes("One Town, One Team, One Twello"));
+  assert.equal(source.includes("One Town, One Team, One Trello"), false);
+});
