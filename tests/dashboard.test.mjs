@@ -58,7 +58,7 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.ok(source.includes("menu-toggle"));
   assert.ok(source.includes("matchAttendance.percentage"));
   assert.ok(source.includes("Meest afwezig op wedstrijddag"));
-  assert.ok(source.includes("const cutoff = score(sorted[Math.min(2, sorted.length - 1)])"));
+  assert.ok(source.includes("return sorted.slice(0, limit)"));
   assert.ok(source.includes("matchesScheduled} / ${data.totals.matchesPlayed"));
   assert.equal(source.includes("met ingevulde aanwezigheid"), false);
   assert.equal(source.includes("gastspelers apart"), false);
@@ -88,7 +88,7 @@ test("wedstrijdstatussen en speler-van-het-jaarhistorie komen uit Excel", () => 
 
 test("stafstatussen worden uit Excel doorgegeven", () => {
   for (const member of data.staff) {
-    assert.deepEqual(member.totals, { full: 0, partial: 0, absent: 0, late: 0 });
+    assert.deepEqual(member.totals, { present: 0, partial: 0, absent: 0 });
     assert.deepEqual(member.matches, []);
   }
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
@@ -97,5 +97,15 @@ test("stafstatussen worden uit Excel doorgegeven", () => {
     "De aanwezige spelers per trainingsmoment.",
     "Alle prestaties, aanwezigheid en teamtaken per speler.",
   ]) assert.equal(source.includes(removed), false);
-  for (const label of ["Volledig", "Deels", "Afwezig", "Te laat", "Nog geen wedstrijdinvoer"]) assert.ok(source.includes(label));
+  for (const label of ["Aanwezig", "Deels aanwezig", "Afwezig", "Nog geen wedstrijdinvoer"]) assert.ok(source.includes(label));
+});
+
+test("nieuwe statussen, top-vijfvolgorde en klasse worden gebruikt", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  for (const label of ["Deels gespeeld", "Volgespeeld", "Seizoenoverzicht (6e klasse-15)"]) assert.ok(source.includes(label));
+  assert.ok(source.includes("return sorted.slice(0, limit)"));
+  assert.ok(source.includes("const hasPlayedMatches = data.totals.matchesPlayed > 0"));
+  assert.ok(source.indexOf('<Leader title="Trainingen"') < source.indexOf('<Leader title="Doelpunten"'));
+  assert.ok(source.indexOf('<Loser label="Minste trainingen"') < source.indexOf('<Loser label="Meest afwezig op wedstrijddag"'));
+  assert.ok(source.indexOf('<Loser label="Meest afwezig op wedstrijddag"') < source.indexOf('<Loser label="Meest te laat op wedstrijddag"'));
 });

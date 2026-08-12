@@ -140,7 +140,7 @@ const players = playerRows.map((row) => {
   const trainingRow = trainingByPlayer.get(id) ?? [];
   const sessions = trainingColumns.filter(({ col }) => yes(trainingRow[col])).map(({ date }) => date);
   const totals = matchRecords.reduce((sum, match) => ({
-    matches: sum.matches + (["deels", "volledig"].includes(match.status.toLowerCase()) ? 1 : 0),
+    matches: sum.matches + (["deels gespeeld", "volgespeeld"].includes(match.status.toLowerCase()) ? 1 : 0),
     goals: sum.goals + match.goals,
     assists: sum.assists + match.assists,
     yellow: sum.yellow + match.yellow,
@@ -154,8 +154,8 @@ const players = playerRows.map((row) => {
     captain: sum.captain + (match.captain ? 1 : 0),
     absent: sum.absent + (match.status.toLowerCase() === "afwezig" ? 1 : 0),
     notPlayed: sum.notPlayed + (match.status.toLowerCase() === "niet gespeeld" ? 1 : 0),
-    partial: sum.partial + (match.status.toLowerCase() === "deels" ? 1 : 0),
-    full: sum.full + (match.status.toLowerCase() === "volledig" ? 1 : 0),
+    partial: sum.partial + (match.status.toLowerCase() === "deels gespeeld" ? 1 : 0),
+    full: sum.full + (match.status.toLowerCase() === "volgespeeld" ? 1 : 0),
   }), { matches: 0, goals: 0, assists: 0, yellow: 0, red: 0, penaltiesScored: 0, penaltiesMissed: 0, late: 0, flagged: 0, polo: 0, kept: 0, captain: 0, absent: 0, notPlayed: 0, partial: 0, full: 0 });
   const matchStatusTotal = totals.absent + totals.notPlayed + totals.partial + totals.full;
   const matchPresent = totals.notPlayed + totals.partial + totals.full;
@@ -196,20 +196,17 @@ const staff = staffRows.map((row) => {
   const entries = staffInputById.get(id) ?? [];
   const matchRecords = entries.flatMap((entry) => {
     const status = clean(entry.status_st);
-    const late = yes(entry["te laat"]);
-    if (![status, late].some(meaningful)) return [];
+    if (!meaningful(status)) return [];
     return [{
       ...(matchesById.get(clean(entry.wedstrijd_id)) ?? { id: clean(entry.wedstrijd_id), date: "", time: "", home: clean(entry.thuis), away: clean(entry.uit), result: "", competition: "Wedstrijd" }),
       status,
-      late,
     }];
   }).sort((a, b) => b.date.localeCompare(a.date));
   const totals = matchRecords.reduce((sum, match) => ({
-    full: sum.full + (match.status.toLowerCase() === "volledig" ? 1 : 0),
-    partial: sum.partial + (match.status.toLowerCase() === "deels" ? 1 : 0),
+    present: sum.present + (match.status.toLowerCase() === "aanwezig" ? 1 : 0),
+    partial: sum.partial + (match.status.toLowerCase() === "deels aanwezig" ? 1 : 0),
     absent: sum.absent + (match.status.toLowerCase() === "afwezig" ? 1 : 0),
-    late: sum.late + (match.late ? 1 : 0),
-  }), { full: 0, partial: 0, absent: 0, late: 0 });
+  }), { present: 0, partial: 0, absent: 0 });
   return {
     id,
     name: clean(row.naam),
