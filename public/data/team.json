@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-11T22:21:08.810Z",
+  "generatedAt": "2026-08-12T08:49:39.166Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -306,6 +306,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -335,6 +336,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -364,6 +366,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -393,6 +396,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -424,6 +428,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -453,6 +458,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -484,6 +490,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -513,6 +520,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -544,6 +552,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -573,6 +582,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -604,6 +614,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -635,6 +646,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -664,6 +676,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -696,6 +709,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -725,6 +739,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -754,6 +769,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -783,6 +799,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -812,6 +829,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -844,6 +862,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -873,6 +892,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -905,6 +925,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -934,6 +955,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -965,6 +987,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -997,6 +1020,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -1029,6 +1053,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -1060,6 +1085,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },
@@ -1089,6 +1115,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
+        "polo": 0,
         "kept": 0,
         "captain": 0
       },

@@ -2,9 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 import XLSX from "xlsx";
 
-const defaultFile = "/Users/jpdh/Library/CloudStorage/OneDrive-Persoonlijk/SV Twello zondag 2/2026-2027_zondag2.xlsx";
+const defaultFile = process.env.TEAM_EXCEL_PATH;
 const suppliedFile = process.argv.slice(2).find((argument) => argument !== "--");
-const inputPath = path.resolve(suppliedFile || defaultFile);
+const selectedFile = suppliedFile || defaultFile;
+if (!selectedFile) {
+  console.error("Geef het Excel-bestand mee als argument of via TEAM_EXCEL_PATH.");
+  process.exit(1);
+}
+const inputPath = path.resolve(selectedFile);
 const outputPath = path.resolve("public/data/team.json");
 
 if (!fs.existsSync(inputPath)) {
@@ -91,11 +96,12 @@ for (const row of playerInputRows) {
 }
 
 const trainingHeaders = trainingRows[0] ?? [];
-const trainingColumns = trainingHeaders
+const datedTrainingColumns = trainingHeaders
   .map((header, col) => ({ col, date: dateOnly(header) }))
   .filter(({ col, date }) => col >= 2 && date && date <= today);
 const trainingByPlayer = new Map();
 for (const row of trainingRows.slice(1)) trainingByPlayer.set(clean(row[0]), row);
+const trainingColumns = datedTrainingColumns.filter(({ col }) => [...trainingByPlayer.values()].some((row) => yes(row[col])));
 
 const players = playerRows.map((row) => {
   const id = clean(row.speler_id);
@@ -109,8 +115,10 @@ const players = playerRows.map((row) => {
     const penaltiesMissed = number(entry["penalty gemist"]);
     const late = yes(entry["te laat"]);
     const flagged = yes(entry.gevlagd);
+    const polo = yes(entry.polo);
     const kept = yes(entry.gekeept);
-    if (![status, goals, assists, yellow, red, penaltiesScored, penaltiesMissed, late, flagged, kept].some(meaningful)) return [];
+    const captain = yes(entry.aanvoerder);
+    if (![status, goals, assists, yellow, red, penaltiesScored, penaltiesMissed, late, flagged, polo, kept, captain].some(meaningful)) return [];
     return [{
       ...(matchesById.get(clean(entry.wedstrijd_id)) ?? { id: clean(entry.wedstrijd_id), date: "", time: "", home: clean(entry.thuis), away: clean(entry.uit), result: "", competition: "Wedstrijd" }),
       status,
@@ -122,7 +130,9 @@ const players = playerRows.map((row) => {
       penaltiesMissed,
       late,
       flagged,
+      polo,
       kept,
+      captain,
     }];
   }).sort((a, b) => b.date.localeCompare(a.date));
   const trainingRow = trainingByPlayer.get(id) ?? [];
@@ -135,9 +145,12 @@ const players = playerRows.map((row) => {
     red: sum.red + match.red,
     penaltiesScored: sum.penaltiesScored + match.penaltiesScored,
     penaltiesMissed: sum.penaltiesMissed + match.penaltiesMissed,
+    late: sum.late + (match.late ? 1 : 0),
     flagged: sum.flagged + (match.flagged ? 1 : 0),
+    polo: sum.polo + (match.polo ? 1 : 0),
     kept: sum.kept + (match.kept ? 1 : 0),
-  }), { matches: 0, goals: 0, assists: 0, yellow: 0, red: 0, penaltiesScored: 0, penaltiesMissed: 0, flagged: 0, kept: 0 });
+    captain: sum.captain + (match.captain ? 1 : 0),
+  }), { matches: 0, goals: 0, assists: 0, yellow: 0, red: 0, penaltiesScored: 0, penaltiesMissed: 0, late: 0, flagged: 0, polo: 0, kept: 0, captain: 0 });
   return {
     id,
     number: clean(row.rugnummer) === "-" ? "" : clean(row.rugnummer),
@@ -145,6 +158,7 @@ const players = playerRows.map((row) => {
     position: clean(row.positie),
     foot: clean(row.voet),
     guest: yes(row.gastspeler),
+    captain: yes(row.aanvoerder),
     training: {
       attended: sessions.length,
       total: trainingColumns.length,
@@ -188,7 +202,8 @@ const data = {
   generatedAt: new Date().toISOString(),
   sourceFile: path.basename(inputPath),
   totals: {
-    players: players.length,
+    players: players.filter((player) => !player.guest).length,
+    guests: players.filter((player) => player.guest).length,
     staff: staff.length,
     trainings: trainingColumns.length,
     matchesScheduled: matches.length,

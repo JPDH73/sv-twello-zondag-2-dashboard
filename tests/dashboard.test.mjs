@@ -45,12 +45,27 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.ok(source.includes("sv-twello-logo.png"));
   assert.ok(source.includes("One Town, One Team, One Twello"));
   for (const field of ["Te laat", "Gevlagd", "Gekeept", "Aanvoerder"]) assert.ok(source.includes(field));
-  for (const section of ["Toppers", "Losers", "Wie deed wat?"]) assert.ok(source.includes(section));
+  for (const section of ["Toppers", "Losers", "Spelersranglijst"]) assert.ok(source.includes(section));
   assert.equal(source.includes("Teamdashboard 26–27"), false);
   assert.equal(source.includes("Wedstrijdacties"), false);
   assert.equal(source.includes("captain-callout"), false);
   assert.ok(source.includes("players.filter((player) => score(player) === highest)"));
   assert.ok(source.includes('parts[0]?.includes("-")'));
   for (const tab of ["Dashboard", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
+  assert.ok(source.includes('label: "Spelers van het jaar"'));
+  assert.ok(source.includes("Polo vergeten"));
+  assert.ok(source.includes("const cutoff = score(sorted[Math.min(2, sorted.length - 1)])"));
+  assert.ok(source.includes("matchesScheduled} / ${data.totals.matchesPlayed"));
+  assert.equal(source.includes("met ingevulde aanwezigheid"), false);
+  assert.equal(source.includes("gastspelers apart"), false);
+  assert.equal(source.includes("Wie deed wat?"), false);
+  assert.equal(source.includes("progress-track"), false);
+  assert.equal(source.includes("De begeleiding van SV Twello Zondag 2."), false);
+  assert.equal(source.includes("Kies een speler voor trainingen en wedstrijdacties."), false);
+  assert.equal(source.includes("data.sourceFile"), false);
   assert.equal(source.includes("Selectie, programma, trainingen en beslissende acties rechtstreeks vanuit het gedeelde Excel-bestand."), false);
+});
+
+test("polo wordt uit Excel doorgegeven", () => {
+  assert.equal(data.players.every((player) => Number.isInteger(player.totals.polo)), true);
 });
