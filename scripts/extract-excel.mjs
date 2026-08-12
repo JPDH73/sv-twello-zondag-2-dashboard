@@ -47,6 +47,15 @@ const dateOnly = (value) => {
   }
   return "";
 };
+const timeOnly = (value) => {
+  if (value instanceof Date && !Number.isNaN(value.valueOf())) return `${String(value.getUTCHours()).padStart(2, "0")}:${String(value.getUTCMinutes()).padStart(2, "0")}`;
+  if (typeof value === "number") {
+    const parsed = XLSX.SSF.parse_date_code(value);
+    if (parsed) return `${String(parsed.H).padStart(2, "0")}:${String(parsed.M).padStart(2, "0")}`;
+  }
+  const text = clean(value);
+  return text.match(/\b([01]?\d|2[0-3]):[0-5]\d\b/)?.[0]?.padStart(5, "0") ?? text;
+};
 const meaningful = (value) => value !== null && value !== undefined && value !== false && clean(value) !== "" && value !== 0;
 
 const playerRows = records("spelers");
@@ -66,7 +75,7 @@ for (const row of matchRows) {
   matchesById.set(id, {
     id,
     date: dateOnly(row.datum),
-    time: clean(row.tijd),
+    time: timeOnly(row.tijd),
     home: clean(row.thuis),
     away: clean(row.uit),
     result: clean(row.uitslag),

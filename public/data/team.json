@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-12T12:29:40.459Z",
+  "generatedAt": "2026-08-12T14:45:46.495Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -15,8 +15,17 @@
   },
   "matches": [
     {
+      "id": "O000000001",
+      "date": "2026-08-19",
+      "time": "20:00",
+      "home": "DAVO 2",
+      "away": "SV Twello 2",
+      "result": "",
+      "competition": "Vriendschappelijk"
+    },
+    {
       "id": "M623608225",
-      "date": "2026-08-30",
+      "date": "2026-08-29",
       "time": "11:30",
       "home": "Voorwaarts T 5",
       "away": "SV Twello 2",
@@ -238,15 +247,6 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie"
-    },
-    {
-      "id": "O000000001",
-      "date": "",
-      "time": "",
-      "home": "DAVO 2",
-      "away": "SV Twello 2",
-      "result": "",
-      "competition": "Oefenwedstrijd"
     }
   ],
   "trainings": [
