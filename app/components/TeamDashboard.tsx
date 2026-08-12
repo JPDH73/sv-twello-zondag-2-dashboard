@@ -102,7 +102,7 @@ export function TeamDashboard() {
   return <main className="app-shell">
     <header className="site-header">
       <div className="header-inner">
-        <div className="header-title"><strong>SV Twello Zondag 2</strong><span>Teamdashboard</span></div>
+        <button className="header-title" type="button" onClick={() => { setActiveView("dashboard"); setMenuOpen(false); }} aria-label="Ga naar dashboard"><strong>SV Twello Zondag 2</strong><span>Teamdashboard</span></button>
         <div className="header-actions"><span className="season-pill">Seizoen {data.season}</span><button className="menu-toggle" aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen((open) => !open)}><span/><span/><span/><span className="sr-only">Menu</span></button></div>
       </div>
       <nav id="main-navigation" className={menuOpen ? "tabbar open" : "tabbar"} aria-label="Dashboardonderdelen">
@@ -110,7 +110,7 @@ export function TeamDashboard() {
       </nav>
     </header>
 
-    <section className="hero" aria-label="SV Twello Zondag 2">
+    {activeView === "dashboard" && <section className="hero" aria-label="SV Twello Zondag 2">
       <div className="hero-rays" aria-hidden="true"/>
       <div className="pitch-lines" aria-hidden="true">
         <span className="full-pitch">
@@ -127,7 +127,7 @@ export function TeamDashboard() {
       <div className="hero-status">
         <span className="updated"><span className="updated-dot"/>Bijgewerkt op {generated}</span>
       </div>
-    </section>
+    </section>}
 
     <div className="content">
       {activeView === "dashboard" && <DashboardView data={data} program={program}/>}
@@ -154,9 +154,9 @@ function DashboardView({ data, program }: { data: TeamData; program: Match[] }) 
   const trainingLeaders = leaders(selection, "training");
   return <>
     <section className="kpi-grid" aria-label="Teamtotalen">
-      <Kpi label="Selectie" value={data.totals.players} />
-      <Kpi label="Trainingen" value={data.totals.trainings} />
-      <Kpi label="Wedstrijden" value={`${data.totals.matchesScheduled} / ${data.totals.matchesPlayed}`} />
+      <Kpi label="Aantal selectiespelers" value={data.totals.players} />
+      <Kpi label="Aantal keer getraind" value={data.totals.trainings} />
+      <Kpi label="Wedstrijden / gespeeld" value={`${data.totals.matchesScheduled} / ${data.totals.matchesPlayed}`} />
     </section>
     <SectionHeading title="Programma & uitslagen"/>
     <div className="fixture-grid">{program.map((match) => <Fixture key={match.id} match={match}/>)}</div>

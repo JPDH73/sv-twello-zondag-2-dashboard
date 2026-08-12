@@ -21,6 +21,9 @@ button { color: inherit; }
 
 .site-header { position: sticky; top: 0; z-index: 30; color: white; background: rgba(12,32,62,.97); box-shadow: 0 10px 30px rgba(12,32,62,.2); backdrop-filter: blur(14px); }
 .header-inner { max-width: 1320px; margin: 0 auto; padding: 15px clamp(18px,5vw,68px) 10px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.header-title { padding: 0; border: 0; background: transparent; color: white; text-align: left; cursor: pointer; border-radius: 6px; }
+.header-title:hover strong, .header-title:focus-visible strong { color: #b9eaff; }
+.header-title:focus-visible { outline: 2px solid var(--blue-light); outline-offset: 5px; }
 .header-title strong, .header-title span { display: block; }
 .header-title strong { font-size: 18px; letter-spacing: -.02em; }
 .header-title span { margin-top: 2px; color: #9eddf5; font-size: 11px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }

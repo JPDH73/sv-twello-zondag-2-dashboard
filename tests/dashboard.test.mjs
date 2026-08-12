@@ -143,3 +143,13 @@ test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
   assert.ok(source.includes("One Town, One Team, One Twello"));
   assert.equal(source.includes("One Town, One Team, One Trello"), false);
 });
+
+test("banner staat alleen op dashboard en het koplogo keert terug naar home", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  assert.ok(source.includes('activeView === "dashboard" && <section className="hero"'));
+  assert.equal((source.match(/className="hero"/g) || []).length, 1);
+  assert.ok(source.includes('className="header-title" type="button"'));
+  assert.ok(source.includes('aria-label="Ga naar dashboard"'));
+  assert.ok(source.includes('setActiveView("dashboard")'));
+  for (const label of ["Aantal selectiespelers", "Aantal keer getraind", "Wedstrijden / gespeeld"]) assert.ok(source.includes(label));
+});
