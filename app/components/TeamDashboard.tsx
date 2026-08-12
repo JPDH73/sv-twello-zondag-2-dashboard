@@ -64,6 +64,7 @@ export function TeamDashboard() {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("nummer");
   const [selected, setSelected] = useState<Player | null>(null);
+  const [selectedStaff, setSelectedStaff] = useState<Staff | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -73,11 +74,11 @@ export function TeamDashboard() {
       .catch((err: Error) => setError(err.message));
   }, []);
   useEffect(() => {
-    if (!selected) return;
-    const close = (event: KeyboardEvent) => event.key === "Escape" && setSelected(null);
+    if (!selected && !selectedStaff) return;
+    const close = (event: KeyboardEvent) => { if (event.key === "Escape") { setSelected(null); setSelectedStaff(null); } };
     window.addEventListener("keydown", close);
     return () => window.removeEventListener("keydown", close);
-  }, [selected]);
+  }, [selected, selectedStaff]);
 
   const visiblePlayers = useMemo(() => {
     if (!data) return [];
@@ -111,7 +112,7 @@ export function TeamDashboard() {
 
     <section className="hero" aria-label="SV Twello Zondag 2">
       <div className="hero-rays" aria-hidden="true"/>
-      <div className="pitch-lines" aria-hidden="true"><span className="pitch-circle"/><span className="pitch-half"/><span className="pitch-box"><span className="pitch-goal"/><span className="pitch-spot"/><span className="pitch-arc"/></span></div>
+      <div className="pitch-lines" aria-hidden="true"><span className="pitch-box"><span className="pitch-goal"/><span className="pitch-spot"/><span className="pitch-arc"/></span></div>
       <div className="hero-main">
         <div className="hero-logo-panel"><img src="./sv-twello-logo.png" alt="Logo SV Twello" /></div>
         <div className="hero-copy"><p><span className="blue-letter">Z</span><span className="blue-letter">o</span>ndag <span className="blue-letter">2</span></p><strong>One Town, One Team, One Twello</strong></div>
@@ -123,14 +124,15 @@ export function TeamDashboard() {
 
     <div className="content">
       {activeView === "dashboard" && <DashboardView data={data} program={program}/>}
-      {activeView === "team" && <TeamView data={data} players={visiblePlayers} query={query} setQuery={setQuery} sort={sort} setSort={setSort} setSelected={setSelected}/>}
+      {activeView === "team" && <TeamView data={data} players={visiblePlayers} query={query} setQuery={setQuery} sort={sort} setSort={setSort} setSelected={setSelected} setSelectedStaff={setSelectedStaff}/>}
       {activeView === "wedstrijden" && <MatchesView matches={data.matches}/>}
       {activeView === "trainingen" && <TrainingsView trainings={data.trainings}/>}
-      {activeView === "statistieken" && <StatisticsView data={data} ranking={ranking}/>}
+      {activeView === "statistieken" && <StatisticsView data={data}/>}
       {activeView === "historie" && <HistoryView entries={data.playerOfYear}/>}
       <footer className="footer">One Town, One Team, One Twello</footer>
     </div>
     {selected && <PlayerDrawer player={selected} onClose={() => setSelected(null)}/>} 
+    {selectedStaff && <StaffDrawer member={selectedStaff} onClose={() => setSelectedStaff(null)}/>}
   </main>;
 }
 
@@ -166,12 +168,12 @@ function DashboardView({ data, program }: { data: TeamData; program: Match[] }) 
   </>;
 }
 
-function TeamView({ data, players, query, setQuery, sort, setSort, setSelected }: { data: TeamData; players: Player[]; query: string; setQuery: (value: string) => void; sort: string; setSort: (value: string) => void; setSelected: (player: Player) => void }) {
+function TeamView({ data, players, query, setQuery, sort, setSort, setSelected, setSelectedStaff }: { data: TeamData; players: Player[]; query: string; setQuery: (value: string) => void; sort: string; setSort: (value: string) => void; setSelected: (player: Player) => void; setSelectedStaff: (member: Staff) => void }) {
   return <>
     <div className="page-heading"><div><h1>Team</h1></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
     {players.length ? <div className="player-grid">{players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
     <SectionHeading title="Staf"/>
-    <div className="staff-grid">{data.staff.map((member) => <StaffCard key={member.id} member={member}/>)}</div>
+    <div className="staff-grid">{data.staff.map((member) => <StaffCard key={member.id} member={member} onOpen={() => setSelectedStaff(member)}/>)}</div>
   </>;
 }
 
@@ -183,19 +185,27 @@ function TrainingsView({ trainings }: { trainings: TeamData["trainings"] }) {
   return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? training.attendees.join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
 }
 
-function StatisticsView({ data, ranking }: { data: TeamData; ranking: Player[] }) {
+function StatisticsView({ data }: { data: TeamData }) {
+  const [rankingSort, setRankingSort] = useState("matches");
+  const [rankingDirection, setRankingDirection] = useState<"desc" | "asc">("desc");
   const goalLeaders = leaders(data.players, "goals");
   const assistLeaders = leaders(data.players, "assists");
   const trainingLeaders = leaders(data.players, "training");
   const columns = [
-    ["Wedstrijden", (p: Player) => p.totals.matches], ["Goals", (p: Player) => p.totals.goals], ["Assists", (p: Player) => p.totals.assists],
-    ["Penalty +", (p: Player) => p.totals.penaltiesScored], ["Penalty −", (p: Player) => p.totals.penaltiesMissed], ["Training", (p: Player) => `${p.training.percentage}%`],
-    ["Wedstrijd", (p: Player) => p.matchAttendance.total ? `${p.matchAttendance.percentage}%` : "Nog geen invoer"], ["Polo", (p: Player) => p.totals.polo],
-    ["Gevlagd", (p: Player) => p.totals.flagged], ["Gekeept", (p: Player) => p.totals.kept], ["Aanvoerder", (p: Player) => p.totals.captain],
-    ["Geel", (p: Player) => p.totals.yellow], ["Rood", (p: Player) => p.totals.red], ["Afwezig", (p: Player) => p.totals.absent],
-    ["Niet gespeeld", (p: Player) => p.totals.notPlayed], ["Deels gespeeld", (p: Player) => p.totals.partial], ["Volgespeeld", (p: Player) => p.totals.full],
+    ["matches", "Wedstrijden", (p: Player) => p.totals.matches, (p: Player) => p.totals.matches], ["goals", "Goals", (p: Player) => p.totals.goals, (p: Player) => p.totals.goals], ["assists", "Assists", (p: Player) => p.totals.assists, (p: Player) => p.totals.assists],
+    ["penaltiesScored", "Penalty +", (p: Player) => p.totals.penaltiesScored, (p: Player) => p.totals.penaltiesScored], ["penaltiesMissed", "Penalty −", (p: Player) => p.totals.penaltiesMissed, (p: Player) => p.totals.penaltiesMissed], ["training", "Training", (p: Player) => `${p.training.percentage}%`, (p: Player) => p.training.percentage],
+    ["matchAttendance", "Wedstrijd", (p: Player) => p.matchAttendance.total ? `${p.matchAttendance.percentage}%` : "Nog geen invoer", (p: Player) => p.matchAttendance.percentage], ["polo", "Polo", (p: Player) => p.totals.polo, (p: Player) => p.totals.polo],
+    ["flagged", "Gevlagd", (p: Player) => p.totals.flagged, (p: Player) => p.totals.flagged], ["kept", "Gekeept", (p: Player) => p.totals.kept, (p: Player) => p.totals.kept], ["captain", "Aanvoerder", (p: Player) => p.totals.captain, (p: Player) => p.totals.captain],
+    ["yellow", "Geel", (p: Player) => p.totals.yellow, (p: Player) => p.totals.yellow], ["red", "Rood", (p: Player) => p.totals.red, (p: Player) => p.totals.red], ["absent", "Afwezig", (p: Player) => p.totals.absent, (p: Player) => p.totals.absent],
+    ["notPlayed", "Niet gespeeld", (p: Player) => p.totals.notPlayed, (p: Player) => p.totals.notPlayed], ["partial", "Deels gespeeld", (p: Player) => p.totals.partial, (p: Player) => p.totals.partial], ["full", "Volgespeeld", (p: Player) => p.totals.full, (p: Player) => p.totals.full],
   ] as const;
-  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1></div></div><div className="leader-grid stats-leaders"><Leader title="Doelpunten" players={goalLeaders.players} score={goalLeaders.score}/><Leader title="Assists" players={assistLeaders.players} score={assistLeaders.score}/><Leader title="Trainingen" players={trainingLeaders.players} score={trainingLeaders.score}/></div><SectionHeading title="Spelersranglijst"/><div className="ranking-card"><div className="ranking-head"><span>Speler</span>{columns.map(([label]) => <span key={label}>{label}</span>)}</div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span>{columns.map(([label, value]) => <span key={label} data-label={label}>{value(player)}</span>)}</div>)}</div></>;
+  const activeColumn = columns.find(([key]) => key === rankingSort) ?? columns[0];
+  const ranking = [...data.players].sort((a, b) => {
+    const difference = activeColumn[3](b) - activeColumn[3](a);
+    return (rankingDirection === "desc" ? difference : -difference) || a.name.localeCompare(b.name, "nl");
+  });
+  const changeSort = (key: string) => { if (key === rankingSort) setRankingDirection((direction) => direction === "desc" ? "asc" : "desc"); else { setRankingSort(key); setRankingDirection("desc"); } };
+  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1></div></div><div className="leader-grid stats-leaders"><Leader title="Doelpunten" players={goalLeaders.players} score={goalLeaders.score}/><Leader title="Assists" players={assistLeaders.players} score={assistLeaders.score}/><Leader title="Trainingen" players={trainingLeaders.players} score={trainingLeaders.score}/></div><div className="ranking-title"><SectionHeading title="Spelersranglijst"/><div className="ranking-controls"><label><span>Sorteer op</span><select value={rankingSort} onChange={(event) => { setRankingSort(event.target.value); setRankingDirection("desc"); }}>{columns.map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><button onClick={() => setRankingDirection((direction) => direction === "desc" ? "asc" : "desc")} aria-label="Draai sorteervolgorde om">{rankingDirection === "desc" ? "Hoog → laag" : "Laag → hoog"}</button></div></div><div className="ranking-card"><div className="ranking-head"><span>Speler</span>{columns.map(([key, label]) => <span key={key}><button className={rankingSort === key ? "ranking-sort active" : "ranking-sort"} onClick={() => changeSort(key)}>{label}{rankingSort === key && <b aria-hidden="true">{rankingDirection === "desc" ? "↓" : "↑"}</b>}</button></span>)}</div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span>{columns.map(([key, label, value]) => <span key={key} data-label={label}>{value(player)}</span>)}</div>)}</div></>;
 }
 
 function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
@@ -207,7 +217,8 @@ function Kpi({ label, value }: { label: string; value: number | string }) { retu
 function Leader({ title, players, score }: { title: string; players: Player[]; score: number }) { return <article className="leader-card"><span className="leader-kind">Meeste {title.toLowerCase()}</span><span className="leader-score">{score}</span><div className="leader-name">{players.length ? players.map((player) => player.name).join(" · ") : "Nog geen invoer"}</div></article>; }
 function Loser({ label, players, score }: { label: string; players: Player[]; score: (player: Player) => number }) { return <article className="loser-card"><span className="loser-title">{label}</span>{players.length ? <ol>{players.map((player) => <li key={player.id}><strong>{player.name}</strong><b>{score(player)}</b></li>)}</ol> : <p>Nog geen invoer</p>}</article>; }
 function Fixture({ match }: { match: Match }) { return <article className="fixture-card"><div className="fixture-meta"><span>{match.competition || "Wedstrijd"}</span><span>{formatDate(match.date)} {match.time && `· ${match.time}`}</span></div><div className="fixture-teams"><strong>{match.home}</strong><span>{match.result || "–"}</span><strong>{match.away}</strong></div></article>; }
-function StaffCard({ member }: { member: Staff }) { return <article className="staff-card"><div className="staff-head"><span className="avatar">{initials(member.name)}</span><div><strong>{member.name}</strong><span>{member.role}</span></div></div><div className="staff-statuses"><span><b>{member.totals.present}</b>Aanwezig</span><span><b>{member.totals.partial}</b>Deels aanwezig</span><span><b>{member.totals.absent}</b>Afwezig</span></div>{member.matches.length ? <div className="staff-history">{member.matches.map((match) => <div key={match.id}><strong>{opponent(match) || "Tegenstander onbekend"}</strong><span>{formatDate(match.date)} · {match.status}</span></div>)}</div> : <p className="staff-empty">Nog geen wedstrijdinvoer</p>}</article>; }
+function StaffCard({ member, onOpen }: { member: Staff; onOpen: () => void }) { return <button className="staff-card" onClick={onOpen} aria-label={`Bekijk wedstrijdhistorie van ${member.name}`}><div className="staff-head"><span className="avatar">{initials(member.name)}</span><div><strong>{member.name}</strong><span>{member.role}</span></div><span className="staff-arrow" aria-hidden="true">›</span></div><div className="staff-statuses"><span><b>{member.totals.present}</b>Aanwezig</span><span><b>{member.totals.partial}</b>Deels aanwezig</span><span><b>{member.totals.absent}</b>Afwezig</span></div><p className="staff-open">Bekijk wedstrijdhistorie</p></button>; }
+function StaffDrawer({ member, onClose }: { member: Staff; onClose: () => void }) { return <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}><aside className="drawer" role="dialog" aria-modal="true" aria-label={`Wedstrijdhistorie van ${member.name}`}><div className="drawer-hero"><div className="drawer-top"><span className="eyebrow">Stafkaart</span><button className="close-button" onClick={onClose} aria-label="Sluiten">×</button></div><div className="drawer-person"><span className="avatar">{initials(member.name)}</span><div><h2>{member.name}</h2><p>{member.role}</p></div></div></div><div className="drawer-content"><div className="detail-kpis staff-detail-kpis"><Detail label="Aanwezig" value={member.totals.present}/><Detail label="Deels aanwezig" value={member.totals.partial}/><Detail label="Afwezig" value={member.totals.absent}/></div><section className="detail-section"><h3>Wedstrijdhistorie</h3>{member.matches.length ? <div className="staff-match-list">{member.matches.map((match) => <article className="staff-match-row" key={match.id}><div><strong>{opponent(match) || "Tegenstander onbekend"}</strong><span>{formatDate(match.date)} · {venue(match)} · {match.competition || "Wedstrijd"}</span></div><span className={`staff-status ${match.status.toLowerCase().replaceAll(" ", "-")}`}>{match.status}</span></article>)}</div> : <div className="no-matches">Nog geen wedstrijdgegevens voor dit staflid.</div>}</section></div></aside></div>; }
 function PlayerCard({ player, onOpen }: { player: Player; onOpen: () => void }) { return <button className="player-card" onClick={onOpen} aria-label={`Bekijk statistieken van ${player.name}`}><div className="player-band"/><div className="player-body"><div className="player-head"><span className="avatar">{initials(player.name)}</span><span className="player-name"><strong>{player.name}</strong><span>{player.position}</span></span><span className="availability-badge" title="Rugnummer">{player.number || "–"}</span></div>{(player.captain || player.guest) && <div className="role-tags">{player.captain && <span className="role-tag captain">C · Aanvoerder</span>}{player.guest && <span className="role-tag guest">Gastspeler</span>}</div>}<div className="attendance-pair"><span><small>Training</small><strong>{player.training.percentage}%</strong></span><span><small>Wedstrijd</small><strong>{player.matchAttendance.total ? `${player.matchAttendance.percentage}%` : "–"}</strong></span></div><div className="mini-stats"><span className="mini-stat"><strong>{player.totals.matches}</strong><span>Gespeeld</span></span><span className="mini-stat"><strong>{player.totals.goals}</strong><span>Goals</span></span><span className="mini-stat"><strong>{player.totals.assists}</strong><span>Assists</span></span></div><div className="status-chips"><span>Afwezig {player.totals.absent}</span><span>Niet gespeeld {player.totals.notPlayed}</span><span>Deels gespeeld {player.totals.partial}</span><span>Volgespeeld {player.totals.full}</span></div></div></button>; }
 function PlayerDrawer({ player, onClose }: { player: Player; onClose: () => void }) { return <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}><aside className="drawer" role="dialog" aria-modal="true" aria-label={`Statistieken van ${player.name}`}><div className="drawer-hero"><div className="drawer-top"><span className="eyebrow">Spelerskaart</span><button className="close-button" onClick={onClose} aria-label="Sluiten">×</button></div><div className="drawer-person"><span className="avatar">{player.number || initials(player.name)}</span><div><h2>{player.name}</h2><p>{player.position} · {player.foot ? `${player.foot}benig` : "voorkeursvoet onbekend"}{player.captain ? " · aanvoerder" : ""}{player.guest ? " · gastspeler" : ""}</p></div></div></div><div className="drawer-content"><div className="detail-kpis"><Detail label="Wedstrijden" value={player.totals.matches}/><Detail label="Doelpunten" value={player.totals.goals}/><Detail label="Assists" value={player.totals.assists}/><Detail label="Training opkomst" value={`${player.training.percentage}%`}/><Detail label="Wedstrijd opkomst" value={player.matchAttendance.total ? `${player.matchAttendance.percentage}%` : "Nog geen invoer"}/><Detail label="Afwezig" value={player.totals.absent}/><Detail label="Niet gespeeld" value={player.totals.notPlayed}/><Detail label="Deels gespeeld" value={player.totals.partial}/><Detail label="Volgespeeld" value={player.totals.full}/><Detail label="Penalty gescoord" value={player.totals.penaltiesScored}/><Detail label="Penalty gemist" value={player.totals.penaltiesMissed}/><Detail label="Te laat" value={player.totals.late}/><Detail label="Gevlagd" value={player.totals.flagged}/><Detail label="Polo vergeten" value={player.totals.polo}/><Detail label="Gekeept" value={player.totals.kept}/><Detail label="Aanvoerder" value={player.totals.captain}/><Detail label="Geel" value={player.totals.yellow}/><Detail label="Rood" value={player.totals.red}/></div><section className="detail-section"><h3>Trainingen</h3>{player.training.sessions.length ? <div className="session-list">{player.training.sessions.map((date) => <span key={date}>{formatDate(date)}</span>)}</div> : <div className="no-matches">Nog geen aanwezigheid geregistreerd.</div>}</section><section className="detail-section"><h3>Wedstrijdhistorie</h3>{player.matches.length ? <div className="match-list">{player.matches.map((match) => <MatchRow key={match.id} match={match}/>)}</div> : <div className="no-matches">Nog geen wedstrijdgegevens voor deze speler.</div>}</section></div></aside></div>; }
 function Detail({ label, value }: { label: string; value: string | number }) { return <div className="detail-kpi"><span>{label}</span><strong>{value}</strong></div>; }

@@ -97,7 +97,7 @@ test("stafstatussen worden uit Excel doorgegeven", () => {
     "De aanwezige spelers per trainingsmoment.",
     "Alle prestaties, aanwezigheid en teamtaken per speler.",
   ]) assert.equal(source.includes(removed), false);
-  for (const label of ["Aanwezig", "Deels aanwezig", "Afwezig", "Nog geen wedstrijdinvoer"]) assert.ok(source.includes(label));
+  for (const label of ["Aanwezig", "Deels aanwezig", "Afwezig", "Nog geen wedstrijdgegevens voor dit staflid"]) assert.ok(source.includes(label));
 });
 
 test("nieuwe statussen, top-vijfvolgorde en klasse worden gebruikt", () => {
@@ -108,4 +108,23 @@ test("nieuwe statussen, top-vijfvolgorde en klasse worden gebruikt", () => {
   assert.ok(source.indexOf('<Leader title="Trainingen"') < source.indexOf('<Leader title="Doelpunten"'));
   assert.ok(source.indexOf('<Loser label="Minste trainingen"') < source.indexOf('<Loser label="Meest afwezig op wedstrijddag"'));
   assert.ok(source.indexOf('<Loser label="Meest afwezig op wedstrijddag"') < source.indexOf('<Loser label="Meest te laat op wedstrijddag"'));
+});
+
+test("staf heeft een aanklikbare wedstrijdhistorie en vernieuwde veldillustratie", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  for (const text of ["StaffDrawer", "Bekijk wedstrijdhistorie", "Wedstrijdhistorie van", "staff-match-row"]) assert.ok(source.includes(text));
+  assert.equal(source.includes('className="pitch-circle"'), false);
+  assert.ok(source.includes('className="pitch-box"'));
+  assert.ok(css.includes(".staff-status.deels-aanwezig"));
+  assert.ok(css.includes("transform: rotate(13deg)"));
+});
+
+test("spelersranglijst kan op iedere statistiek worden gesorteerd", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  for (const text of ["rankingSort", "rankingDirection", "changeSort", "Sorteer op", "Hoog → laag", "Laag → hoog"]) assert.ok(source.includes(text));
+  assert.ok(source.includes('onClick={() => changeSort(key)}'));
+  assert.ok(css.includes(".ranking-sort.active"));
+  assert.ok(css.includes(".ranking-controls"));
 });
