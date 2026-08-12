@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-12T08:49:39.166Z",
+  "generatedAt": "2026-08-12T09:24:38.914Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -9,7 +9,7 @@
     "staff": 6,
     "trainings": 2,
     "matchesScheduled": 26,
-    "matchesPlayed": 1,
+    "matchesPlayed": 0,
     "goals": 0,
     "assists": 0
   },
@@ -20,7 +20,7 @@
       "time": "11:30",
       "home": "Voorwaarts T 5",
       "away": "SV Twello 2",
-      "result": "0-2",
+      "result": "",
       "competition": "Beker"
     },
     {
@@ -279,6 +279,33 @@
       ]
     }
   ],
+  "playerOfYear": [
+    {
+      "year": 2026,
+      "name": "Rodi Gerritsen",
+      "playerId": "sp9"
+    },
+    {
+      "year": 2025,
+      "name": "Jesse van Brink",
+      "playerId": "sp5"
+    },
+    {
+      "year": 2024,
+      "name": "Marc Albers",
+      "playerId": "sp4"
+    },
+    {
+      "year": 2023,
+      "name": "Casper van Kooten",
+      "playerId": "sp999"
+    },
+    {
+      "year": 2022,
+      "name": "Dennis Schreurs",
+      "playerId": "sp1"
+    }
+  ],
   "players": [
     {
       "id": "sp1",
@@ -296,6 +323,11 @@
           "2026-08-06"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -308,7 +340,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -326,6 +362,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -338,7 +379,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -356,6 +401,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -368,7 +418,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -386,6 +440,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -398,7 +457,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -418,6 +481,11 @@
           "2026-08-06"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -430,7 +498,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -448,6 +520,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -460,7 +537,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -480,6 +561,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -492,7 +578,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -510,6 +600,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -522,7 +617,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -542,6 +641,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -554,7 +658,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -572,6 +680,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -584,7 +697,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -604,6 +721,11 @@
           "2026-08-06"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -616,7 +738,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -636,6 +762,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -648,7 +779,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -666,6 +801,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -678,7 +818,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -699,6 +843,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -711,7 +860,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -729,6 +882,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -741,7 +899,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -759,6 +921,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -771,7 +938,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -789,6 +960,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -801,7 +977,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -819,6 +999,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -831,7 +1016,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -852,6 +1041,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -864,7 +1058,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -882,6 +1080,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -894,7 +1097,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -915,6 +1122,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -927,7 +1139,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -945,6 +1161,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -957,7 +1178,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -977,6 +1202,11 @@
           "2026-08-06"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -989,7 +1219,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -1010,6 +1244,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -1022,7 +1261,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -1043,6 +1286,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -1055,7 +1303,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -1075,6 +1327,11 @@
           "2026-08-09"
         ]
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -1087,7 +1344,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     },
@@ -1105,6 +1366,11 @@
         "percentage": 0,
         "sessions": []
       },
+      "matchAttendance": {
+        "present": 0,
+        "total": 0,
+        "percentage": 0
+      },
       "totals": {
         "matches": 0,
         "goals": 0,
@@ -1117,7 +1383,11 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 0
       },
       "matches": []
     }

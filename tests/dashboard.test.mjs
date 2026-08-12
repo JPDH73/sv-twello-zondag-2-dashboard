@@ -37,7 +37,8 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   const davo = data.matches.find((match) => match.id === "O000000001");
   assert.equal(davo?.home, "DAVO 2");
   assert.equal(davo?.away, "SV Twello 2");
-  assert.equal(data.matches.find((match) => match.id === "M623608225")?.result, "0-2");
+  assert.equal(data.matches.find((match) => match.id === "M623608225")?.result, "");
+  assert.equal(data.totals.matchesPlayed, 0);
 });
 
 test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
@@ -54,6 +55,9 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   for (const tab of ["Dashboard", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
   assert.ok(source.includes('label: "Spelers van het jaar"'));
   assert.ok(source.includes("Polo vergeten"));
+  assert.ok(source.includes("menu-toggle"));
+  assert.ok(source.includes("matchAttendance.percentage"));
+  assert.ok(source.includes("Meest afwezig op wedstrijddag"));
   assert.ok(source.includes("const cutoff = score(sorted[Math.min(2, sorted.length - 1)])"));
   assert.ok(source.includes("matchesScheduled} / ${data.totals.matchesPlayed"));
   assert.equal(source.includes("met ingevulde aanwezigheid"), false);
@@ -68,4 +72,16 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
 
 test("polo wordt uit Excel doorgegeven", () => {
   assert.equal(data.players.every((player) => Number.isInteger(player.totals.polo)), true);
+});
+
+test("wedstrijdstatussen en speler-van-het-jaarhistorie komen uit Excel", () => {
+  assert.equal(data.players.every((player) => player.matchAttendance.total === 0), true);
+  assert.deepEqual(data.playerOfYear.map(({ year, name }) => ({ year, name })), [
+    { year: 2026, name: "Rodi Gerritsen" },
+    { year: 2025, name: "Jesse van Brink" },
+    { year: 2024, name: "Marc Albers" },
+    { year: 2023, name: "Casper van Kooten" },
+    { year: 2022, name: "Dennis Schreurs" },
+  ]);
+  for (const field of ["absent", "notPlayed", "partial", "full"]) assert.equal(data.players.every((player) => Number.isInteger(player.totals[field])), true);
 });

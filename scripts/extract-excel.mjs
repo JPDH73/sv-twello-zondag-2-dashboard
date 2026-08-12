@@ -51,6 +51,8 @@ const meaningful = (value) => value !== null && value !== undefined && value !==
 
 const playerRows = records("spelers");
 const staffRows = records("staf");
+const playerOfYearSheet = workbook.SheetNames.find((name) => ["speler_jaar", "spelerjaar", "speler van het jaar"].includes(name.toLowerCase()));
+const playerOfYearRows = playerOfYearSheet ? records(playerOfYearSheet) : [];
 const matchRows = records("wedstrijden");
 const playerInputRows = records("wedstrijdinvoer_spelers");
 const staffInputRows = records("wedstrijdinvoer_staf");
@@ -150,7 +152,13 @@ const players = playerRows.map((row) => {
     polo: sum.polo + (match.polo ? 1 : 0),
     kept: sum.kept + (match.kept ? 1 : 0),
     captain: sum.captain + (match.captain ? 1 : 0),
-  }), { matches: 0, goals: 0, assists: 0, yellow: 0, red: 0, penaltiesScored: 0, penaltiesMissed: 0, late: 0, flagged: 0, polo: 0, kept: 0, captain: 0 });
+    absent: sum.absent + (match.status.toLowerCase() === "afwezig" ? 1 : 0),
+    notPlayed: sum.notPlayed + (match.status.toLowerCase() === "niet gespeeld" ? 1 : 0),
+    partial: sum.partial + (match.status.toLowerCase() === "deels" ? 1 : 0),
+    full: sum.full + (match.status.toLowerCase() === "volledig" ? 1 : 0),
+  }), { matches: 0, goals: 0, assists: 0, yellow: 0, red: 0, penaltiesScored: 0, penaltiesMissed: 0, late: 0, flagged: 0, polo: 0, kept: 0, captain: 0, absent: 0, notPlayed: 0, partial: 0, full: 0 });
+  const matchStatusTotal = totals.absent + totals.notPlayed + totals.partial + totals.full;
+  const matchPresent = totals.notPlayed + totals.partial + totals.full;
   return {
     id,
     number: clean(row.rugnummer) === "-" ? "" : clean(row.rugnummer),
@@ -164,6 +172,11 @@ const players = playerRows.map((row) => {
       total: trainingColumns.length,
       percentage: trainingColumns.length ? Math.round(sessions.length / trainingColumns.length * 100) : 0,
       sessions,
+    },
+    matchAttendance: {
+      present: matchPresent,
+      total: matchStatusTotal,
+      percentage: matchStatusTotal ? Math.round(matchPresent / matchStatusTotal * 100) : 0,
     },
     totals,
     matches: matchRecords,
@@ -195,6 +208,10 @@ const trainings = trainingColumns.map(({ col, date }) => ({
   date,
   attendees: players.filter((player) => yes((trainingByPlayer.get(player.id) ?? [])[col])).map((player) => player.name),
 })).sort((a, b) => b.date.localeCompare(a.date));
+const playerOfYear = playerOfYearRows
+  .map((row) => ({ year: number(row.jaar), name: clean(row.naam), playerId: clean(row.speler_id) }))
+  .filter((entry) => entry.year && entry.name)
+  .sort((a, b) => b.year - a.year);
 
 const data = {
   team: "SV Twello Zondag 2",
@@ -213,6 +230,7 @@ const data = {
   },
   matches,
   trainings,
+  playerOfYear,
   players,
   staff,
 };
