@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-12T09:24:38.914Z",
+  "generatedAt": "2026-08-12T10:09:06.083Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -1397,37 +1397,73 @@
       "id": "st1",
       "name": "Andrew Hietbrink",
       "role": "Coach",
-      "matches": 0
+      "totals": {
+        "full": 0,
+        "partial": 0,
+        "absent": 0,
+        "late": 0
+      },
+      "matches": []
     },
     {
       "id": "st2",
       "name": "Christiaan Grootgens",
       "role": "Technisch staflid",
-      "matches": 0
+      "totals": {
+        "full": 0,
+        "partial": 0,
+        "absent": 0,
+        "late": 0
+      },
+      "matches": []
     },
     {
       "id": "st3",
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
-      "matches": 0
+      "totals": {
+        "full": 0,
+        "partial": 0,
+        "absent": 0,
+        "late": 0
+      },
+      "matches": []
     },
     {
       "id": "st4",
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
-      "matches": 0
+      "totals": {
+        "full": 0,
+        "partial": 0,
+        "absent": 0,
+        "late": 0
+      },
+      "matches": []
     },
     {
       "id": "st5",
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer",
-      "matches": 0
+      "totals": {
+        "full": 0,
+        "partial": 0,
+        "absent": 0,
+        "late": 0
+      },
+      "matches": []
     },
     {
       "id": "st6",
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
-      "matches": 0
+      "totals": {
+        "full": 0,
+        "partial": 0,
+        "absent": 0,
+        "late": 0
+      },
+      "matches": []
     }
   ]
 }

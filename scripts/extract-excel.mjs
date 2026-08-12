@@ -194,11 +194,28 @@ for (const row of staffInputRows) {
 const staff = staffRows.map((row) => {
   const id = clean(row.staf_id);
   const entries = staffInputById.get(id) ?? [];
+  const matchRecords = entries.flatMap((entry) => {
+    const status = clean(entry.status_st);
+    const late = yes(entry["te laat"]);
+    if (![status, late].some(meaningful)) return [];
+    return [{
+      ...(matchesById.get(clean(entry.wedstrijd_id)) ?? { id: clean(entry.wedstrijd_id), date: "", time: "", home: clean(entry.thuis), away: clean(entry.uit), result: "", competition: "Wedstrijd" }),
+      status,
+      late,
+    }];
+  }).sort((a, b) => b.date.localeCompare(a.date));
+  const totals = matchRecords.reduce((sum, match) => ({
+    full: sum.full + (match.status.toLowerCase() === "volledig" ? 1 : 0),
+    partial: sum.partial + (match.status.toLowerCase() === "deels" ? 1 : 0),
+    absent: sum.absent + (match.status.toLowerCase() === "afwezig" ? 1 : 0),
+    late: sum.late + (match.late ? 1 : 0),
+  }), { full: 0, partial: 0, absent: 0, late: 0 });
   return {
     id,
     name: clean(row.naam),
     role: clean(row.rol),
-    matches: entries.filter((entry) => ["volledig", "deels"].includes(clean(entry.status_st).toLowerCase())).length,
+    totals,
+    matches: matchRecords,
   };
 });
 

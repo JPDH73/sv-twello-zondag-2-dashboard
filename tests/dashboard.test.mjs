@@ -85,3 +85,17 @@ test("wedstrijdstatussen en speler-van-het-jaarhistorie komen uit Excel", () => 
   ]);
   for (const field of ["absent", "notPlayed", "partial", "full"]) assert.equal(data.players.every((player) => Number.isInteger(player.totals[field])), true);
 });
+
+test("stafstatussen worden uit Excel doorgegeven", () => {
+  for (const member of data.staff) {
+    assert.deepEqual(member.totals, { full: 0, partial: 0, absent: 0, late: 0 });
+    assert.deepEqual(member.matches, []);
+  }
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  for (const removed of [
+    "Het volledige programma en alle geregistreerde uitslagen.",
+    "De aanwezige spelers per trainingsmoment.",
+    "Alle prestaties, aanwezigheid en teamtaken per speler.",
+  ]) assert.equal(source.includes(removed), false);
+  for (const label of ["Volledig", "Deels", "Afwezig", "Te laat", "Nog geen wedstrijdinvoer"]) assert.ok(source.includes(label));
+});

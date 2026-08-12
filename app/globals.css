@@ -157,11 +157,21 @@ button { color: inherit; }
 .empty-state { padding: 46px; border: 1px dashed #b8cede; border-radius: 20px; text-align: center; color: var(--muted); background: rgba(255,255,255,.6); }
 
 .staff-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
-.staff-card { display: flex; align-items: center; gap: 14px; padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+.staff-card { padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
 .staff-card div { min-width: 0; }
+.staff-head { display: flex; align-items: center; gap: 14px; }
 .staff-card .avatar { display: grid; place-items: center; line-height: 1; }
-.staff-card div strong, .staff-card div span { display: block; }
-.staff-card div span { margin-top: 3px; color: var(--muted); font-size: 12px; }
+.staff-head div strong, .staff-head div span { display: block; }
+.staff-head div span { margin-top: 3px; color: var(--muted); font-size: 12px; }
+.staff-statuses { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 6px; margin-top: 16px; }
+.staff-statuses span { padding: 8px 4px; border-radius: 10px; background: var(--ice); color: var(--muted); font-size: 8px; font-weight: 800; text-align: center; text-transform: uppercase; }
+.staff-statuses b { display: block; margin-bottom: 2px; color: var(--navy); font-size: 16px; }
+.staff-history { display: grid; gap: 7px; margin-top: 13px; }
+.staff-history > div { padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; }
+.staff-history strong, .staff-history span { display: block; }
+.staff-history strong { font-size: 11px; }
+.staff-history span { margin-top: 2px; color: var(--muted); font-size: 9px; }
+.staff-empty { margin: 13px 0 0; padding: 9px 10px; border-radius: 10px; color: var(--muted); background: #f8fbfd; font-size: 10px; font-weight: 750; text-align: center; }
 
 .ranking-card { overflow-x: auto; border: 1px solid var(--line); border-radius: 20px; background: white; }
 .ranking-head, .ranking-row { display: grid; grid-template-columns: minmax(230px,1.8fr) repeat(17,minmax(82px,.45fr)); gap: 8px; align-items: center; min-width: 1800px; padding: 13px 18px; }
