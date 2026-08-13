@@ -2,8 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 
-const repo = "/Users/jpdh/Documents/SV Twello dashboard actualiseren/repository";
-const data = JSON.parse(fs.readFileSync(`${repo}/public/data/team.json`, "utf8"));
+const data = JSON.parse(fs.readFileSync("public/data/team.json", "utf8"));
 
 test("dashboard bevat de verwachte teamgegevens", () => {
   assert.equal(data.team, "SV Twello Zondag 2");
@@ -20,8 +19,8 @@ test("openbare data bevat geen leeftijd of geboortedatum", () => {
 });
 
 test("website is gebouwd met het gegevensbestand", () => {
-  assert.ok(fs.existsSync(`${repo}/dist/index.html`));
-  assert.ok(fs.existsSync(`${repo}/dist/data/team.json`));
+  assert.ok(fs.existsSync("dist/index.html"));
+  assert.ok(fs.existsSync("dist/data/team.json"));
 });
 
 test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
@@ -47,7 +46,7 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
 });
 
 test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
-  const source = fs.readFileSync(`${repo}/app/components/TeamDashboard.tsx`, "utf8");
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   assert.ok(source.includes("sv-twello-logo.png"));
   assert.ok(source.includes("One Town, One Team, One Twello"));
   for (const field of ["Te laat", "Gevlagd", "Gekeept", "Aanvoerder"]) assert.ok(source.includes(field));
