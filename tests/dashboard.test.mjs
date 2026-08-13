@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 
-const data = JSON.parse(fs.readFileSync("public/data/team.json", "utf8"));
+const repo = "/Users/jpdh/Documents/SV Twello dashboard actualiseren/repository";
+const data = JSON.parse(fs.readFileSync(`${repo}/public/data/team.json`, "utf8"));
 
 test("dashboard bevat de verwachte teamgegevens", () => {
   assert.equal(data.team, "SV Twello Zondag 2");
@@ -19,8 +20,8 @@ test("openbare data bevat geen leeftijd of geboortedatum", () => {
 });
 
 test("website is gebouwd met het gegevensbestand", () => {
-  assert.ok(fs.existsSync("dist/index.html"));
-  assert.ok(fs.existsSync("dist/data/team.json"));
+  assert.ok(fs.existsSync(`${repo}/dist/index.html`));
+  assert.ok(fs.existsSync(`${repo}/dist/data/team.json`));
 });
 
 test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
@@ -32,7 +33,8 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.players.find((player) => player.name === "Robbert Teelen")?.captain, true);
   assert.equal(data.totals.players, 25);
   assert.equal(data.totals.guests, 2);
-  assert.equal(data.totals.trainings, 2);
+  assert.equal(data.totals.trainings, 3);
+  assert.equal(data.trainings.some((training) => training.date === "2026-08-13"), true);
   assert.equal(data.trainings.some((training) => training.date === "2026-08-09"), true);
   const davo = data.matches.find((match) => match.id === "O000000001");
   assert.equal(davo?.home, "SV Twello 2");
@@ -45,7 +47,7 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
 });
 
 test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
-  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const source = fs.readFileSync(`${repo}/app/components/TeamDashboard.tsx`, "utf8");
   assert.ok(source.includes("sv-twello-logo.png"));
   assert.ok(source.includes("One Town, One Team, One Twello"));
   for (const field of ["Te laat", "Gevlagd", "Gekeept", "Aanvoerder"]) assert.ok(source.includes(field));
@@ -83,8 +85,8 @@ test("wedstrijdstatussen en speler-van-het-jaarhistorie komen uit Excel", () => 
     { year: 2026, name: "Rodi Gerritsen" },
     { year: 2025, name: "Jesse van Brink" },
     { year: 2024, name: "Marc Albers" },
-    { year: 2023, name: "Casper van Kooten" },
-    { year: 2022, name: "Dennis Schreurs" },
+    { year: 2023, name: "Dennis Geurts" },
+    { year: 2022, name: "Casper van Kooten" },
   ]);
   for (const field of ["absent", "notPlayed", "partial", "full"]) assert.equal(data.players.every((player) => Number.isInteger(player.totals[field])), true);
 });
