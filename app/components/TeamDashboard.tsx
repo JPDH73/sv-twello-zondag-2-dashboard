@@ -229,7 +229,7 @@ function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
         {entries.map((entry) => <button key={`${entry.year}-${entry.playerId}`} type="button" role="tab" aria-selected={entry.year === selectedEntry.year} className={entry.year === selectedEntry.year ? "active" : ""} onClick={() => setSelectedYear(entry.year)}>{entry.year}</button>)}
       </div>
       <div className="award-stage" aria-live="polite">
-        <img className="award-trophy" src="./speler-van-het-jaar-beker.png" alt={`Beker Speler van het jaar voor ${selectedEntry.name}`} />
+        <img className="award-trophy" src="./speler-van-het-jaar-beker.jpg" alt={`Beker Speler van het jaar voor ${selectedEntry.name}`} decoding="async" />
         <div className="award-plaque">
           <img src="./sv-twello-mark.png" alt="SV Twello" />
           <span aria-hidden="true" />

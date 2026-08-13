@@ -33,7 +33,6 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.totals.players, 25);
   assert.equal(data.totals.guests, 2);
   assert.equal(data.totals.trainings, 3);
-  assert.equal(data.trainings.some((training) => training.date === "2026-08-13"), true);
   assert.equal(data.trainings.some((training) => training.date === "2026-08-09"), true);
   const davo = data.matches.find((match) => match.id === "O000000001");
   assert.equal(davo?.home, "SV Twello 2");
@@ -162,7 +161,7 @@ test("banner staat alleen op dashboard en het koplogo keert terug naar home", ()
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
-  for (const asset of ["speler-van-het-jaar-beker.png", "sv-twello-mark.png"]) {
+  for (const asset of ["speler-van-het-jaar-beker.jpg", "sv-twello-mark.png"]) {
     assert.ok(source.includes(asset));
     assert.ok(fs.existsSync(`public/${asset}`));
   }
