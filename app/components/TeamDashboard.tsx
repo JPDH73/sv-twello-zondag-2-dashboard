@@ -230,14 +230,9 @@ function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
       </div>
       <div className="award-stage" aria-live="polite">
         <img className="award-trophy" src="./speler-van-het-jaar-beker.jpg" alt={`Beker Speler van het jaar voor ${selectedEntry.name}`} decoding="async" />
-        <div className="award-plaque">
-          <img src="./sv-twello-mark.png" alt="SV Twello" />
-          <span aria-hidden="true" />
-          <strong>{selectedEntry.name}</strong>
-        </div>
       </div>
       <article className="award-motivation">
-        <span>Motivatie · {selectedEntry.year}</span>
+        <span>Winnaar {selectedEntry.year - 1}/{selectedEntry.year}</span>
         <h2>{selectedEntry.name}</h2>
         <p>{selectedEntry.motivation || "De motivatie voor deze winnaar is nog niet ingevuld in Excel."}</p>
       </article>

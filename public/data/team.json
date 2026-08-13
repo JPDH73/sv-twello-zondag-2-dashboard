@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-13T13:58:13.600Z",
+  "generatedAt": "2026-08-13T14:17:55.140Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -298,31 +298,31 @@
       "year": 2026,
       "name": "Rodi Gerritsen",
       "playerId": "sp9",
-      "motivation": ""
+      "motivation": "Topscorer van het team en met zijn doelpunten beslissend geweest in vele wedstrijden."
     },
     {
       "year": 2025,
       "name": "Jesse van Brink",
       "playerId": "sp5",
-      "motivation": ""
+      "motivation": "Haalde iedere wedstrijd zijn niveau en was met zijn energie en inzet een voorbeeld voor de rest van het team."
     },
     {
       "year": 2024,
       "name": "Marc Albers",
       "playerId": "sp4",
-      "motivation": ""
+      "motivation": "Omdat hij hem al zo lang graag wilde. 😉"
     },
     {
       "year": 2023,
-      "name": "Dennis Geurts",
+      "name": "Dennis Schreurs",
       "playerId": "sp998",
-      "motivation": ""
+      "motivation": "Met zijn reddingen meerdere wedstrijden beslist. In één-op-één-situaties was hij onverslaanbaar."
     },
     {
       "year": 2022,
       "name": "Casper van Kooten",
       "playerId": "sp999",
-      "motivation": ""
+      "motivation": "Steeg boven zichzelf uit en was met zijn fysieke spel een plaag voor iedere tegenstander."
     }
   ],
   "players": [

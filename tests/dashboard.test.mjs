@@ -83,7 +83,7 @@ test("wedstrijdstatussen en speler-van-het-jaarhistorie komen uit Excel", () => 
     { year: 2026, name: "Rodi Gerritsen" },
     { year: 2025, name: "Jesse van Brink" },
     { year: 2024, name: "Marc Albers" },
-    { year: 2023, name: "Dennis Geurts" },
+    { year: 2023, name: "Dennis Schreurs" },
     { year: 2022, name: "Casper van Kooten" },
   ]);
   assert.equal(data.playerOfYear.every((entry) => typeof entry.motivation === "string"), true);
@@ -161,11 +161,12 @@ test("banner staat alleen op dashboard en het koplogo keert terug naar home", ()
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
-  for (const asset of ["speler-van-het-jaar-beker.jpg", "sv-twello-mark.png"]) {
+  for (const asset of ["speler-van-het-jaar-beker.jpg"]) {
     assert.ok(source.includes(asset));
     assert.ok(fs.existsSync(`public/${asset}`));
   }
-  for (const text of ["selectedYear", "award-year-selector", "award-plaque", "award-motivation", "Motivatie"]) assert.ok(source.includes(text));
+  for (const text of ["selectedYear", "award-year-selector", "award-motivation", "Winnaar"]) assert.ok(source.includes(text));
+  assert.equal(source.includes("award-plaque"), false);
   assert.ok(css.includes(".award-stage"));
   assert.ok(css.includes("aspect-ratio: 2/3"));
 });
