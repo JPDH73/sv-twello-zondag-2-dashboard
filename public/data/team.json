@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-13T13:40:50.654Z",
+  "generatedAt": "2026-08-13T13:58:13.600Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -297,27 +297,32 @@
     {
       "year": 2026,
       "name": "Rodi Gerritsen",
-      "playerId": "sp9"
+      "playerId": "sp9",
+      "motivation": ""
     },
     {
       "year": 2025,
       "name": "Jesse van Brink",
-      "playerId": "sp5"
+      "playerId": "sp5",
+      "motivation": ""
     },
     {
       "year": 2024,
       "name": "Marc Albers",
-      "playerId": "sp4"
+      "playerId": "sp4",
+      "motivation": ""
     },
     {
       "year": 2023,
       "name": "Dennis Geurts",
-      "playerId": "sp998"
+      "playerId": "sp998",
+      "motivation": ""
     },
     {
       "year": 2022,
       "name": "Casper van Kooten",
-      "playerId": "sp999"
+      "playerId": "sp999",
+      "motivation": ""
     }
   ],
   "players": [

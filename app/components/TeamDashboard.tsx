@@ -18,7 +18,7 @@ type TeamData = {
   totals: { players: number; guests: number; staff: number; trainings: number; matchesScheduled: number; matchesPlayed: number; goals: number; assists: number };
   matches: Match[];
   trainings: { date: string; attendees: string[] }[];
-  playerOfYear: { year: number; name: string; playerId: string }[];
+  playerOfYear: { year: number; name: string; playerId: string; motivation: string }[];
   players: Player[];
   staff: Staff[];
 };
@@ -30,7 +30,7 @@ const views: { id: View; label: string }[] = [
   { id: "wedstrijden", label: "Wedstrijden" },
   { id: "trainingen", label: "Trainingen" },
   { id: "statistieken", label: "Statistieken" },
-  { id: "historie", label: "Spelers van het jaar" },
+  { id: "historie", label: "Speler van het jaar" },
 ];
 
 function initials(name: string) {
@@ -216,7 +216,33 @@ function StatisticsView({ data }: { data: TeamData }) {
 }
 
 function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
-  return <><div className="page-heading"><div><p className="eyebrow">Erelijst</p><h1>Spelers van het jaar</h1></div></div><div className="history-grid">{entries.length ? entries.map((entry) => <article className="history-card" key={`${entry.year}-${entry.playerId}`}><span>{entry.year}</span><strong>{entry.name}</strong></article>) : <div className="empty-state">Nog geen winnaar vastgelegd.</div>}</div></>;
+  const [selectedYear, setSelectedYear] = useState(entries[0]?.year ?? 0);
+  useEffect(() => {
+    if (entries.length && !entries.some((entry) => entry.year === selectedYear)) setSelectedYear(entries[0].year);
+  }, [entries, selectedYear]);
+  const selectedEntry = entries.find((entry) => entry.year === selectedYear) ?? entries[0];
+
+  return <>
+    <div className="page-heading award-heading"><div><p className="eyebrow">Erelijst</p><h1>Speler van het jaar</h1></div></div>
+    {selectedEntry ? <section className="award-shell">
+      <div className="award-year-selector" role="tablist" aria-label="Kies een seizoen">
+        {entries.map((entry) => <button key={`${entry.year}-${entry.playerId}`} type="button" role="tab" aria-selected={entry.year === selectedEntry.year} className={entry.year === selectedEntry.year ? "active" : ""} onClick={() => setSelectedYear(entry.year)}>{entry.year}</button>)}
+      </div>
+      <div className="award-stage" aria-live="polite">
+        <img className="award-trophy" src="./speler-van-het-jaar-beker.png" alt={`Beker Speler van het jaar voor ${selectedEntry.name}`} />
+        <div className="award-plaque">
+          <img src="./sv-twello-mark.png" alt="SV Twello" />
+          <span aria-hidden="true" />
+          <strong>{selectedEntry.name}</strong>
+        </div>
+      </div>
+      <article className="award-motivation">
+        <span>Motivatie · {selectedEntry.year}</span>
+        <h2>{selectedEntry.name}</h2>
+        <p>{selectedEntry.motivation || "De motivatie voor deze winnaar is nog niet ingevuld in Excel."}</p>
+      </article>
+    </section> : <div className="empty-state">Nog geen winnaar vastgelegd.</div>}
+  </>;
 }
 
 function SectionHeading({ title, subtitle }: { title: string; subtitle?: string }) { return <div className="section-heading"><div><h2>{title}</h2>{subtitle && <p>{subtitle}</p>}</div></div>; }

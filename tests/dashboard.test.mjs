@@ -57,7 +57,7 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.ok(source.includes("players.filter((player) => score(player) === highest)"));
   assert.ok(source.includes('parts[0]?.includes("-")'));
   for (const tab of ["Dashboard", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
-  assert.ok(source.includes('label: "Spelers van het jaar"'));
+  assert.ok(source.includes('label: "Speler van het jaar"'));
   assert.ok(source.includes("Polo vergeten"));
   assert.ok(source.includes("menu-toggle"));
   assert.ok(source.includes("matchAttendance.percentage"));
@@ -87,6 +87,7 @@ test("wedstrijdstatussen en speler-van-het-jaarhistorie komen uit Excel", () => 
     { year: 2023, name: "Dennis Geurts" },
     { year: 2022, name: "Casper van Kooten" },
   ]);
+  assert.equal(data.playerOfYear.every((entry) => typeof entry.motivation === "string"), true);
   for (const field of ["absent", "notPlayed", "partial", "full"]) assert.equal(data.players.every((player) => Number.isInteger(player.totals[field])), true);
 });
 
@@ -156,4 +157,16 @@ test("banner staat alleen op dashboard en het koplogo keert terug naar home", ()
   assert.ok(source.includes('aria-label="Ga naar dashboard"'));
   assert.ok(source.includes('setActiveView("dashboard")'));
   for (const label of ["Aantal selectiespelers", "Aantal keer getraind", "Wedstrijden / gespeeld"]) assert.ok(source.includes(label));
+});
+
+test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  for (const asset of ["speler-van-het-jaar-beker.png", "sv-twello-mark.png"]) {
+    assert.ok(source.includes(asset));
+    assert.ok(fs.existsSync(`public/${asset}`));
+  }
+  for (const text of ["selectedYear", "award-year-selector", "award-plaque", "award-motivation", "Motivatie"]) assert.ok(source.includes(text));
+  assert.ok(css.includes(".award-stage"));
+  assert.ok(css.includes("aspect-ratio: 2/3"));
 });

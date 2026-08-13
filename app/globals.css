@@ -206,11 +206,23 @@ button { color: inherit; }
 .ranking-name { min-width: 0; }
 .ranking-name strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ranking-name em { display: inline-block; margin: 3px 5px 0 0; color: var(--blue); font-size: 9px; font-style: normal; font-weight: 850; text-transform: uppercase; }
-.history-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
-.history-card { padding: 28px; border-radius: 22px; color: white; background: linear-gradient(135deg,var(--navy),var(--blue)); box-shadow: 0 18px 45px rgba(27,50,91,.15); }
-.history-card span { display: block; color: #b9e8f8; font-size: 12px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
-.history-card strong { display: block; margin-top: 18px; font-size: 26px; }
-.history-card p { margin: 10px 0 0; color: #e4f6fc; line-height: 1.6; }
+.award-heading { margin-bottom: 16px; }
+.award-shell { position: relative; overflow: hidden; padding: clamp(18px,3vw,36px); border: 1px solid rgba(27,50,91,.1); border-radius: 28px; background: radial-gradient(circle at 50% 30%,rgba(0,142,207,.11),transparent 34%),linear-gradient(145deg,#fff,#f3f8fc); box-shadow: 0 24px 65px rgba(27,50,91,.12); }
+.award-shell::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg,transparent 48%,rgba(255,255,255,.72) 49%,transparent 50%); opacity: .5; }
+.award-year-selector { position: relative; z-index: 2; display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.award-year-selector button { min-width: 68px; min-height: 42px; padding: 0 16px; border: 1px solid #c8d8e5; border-radius: 999px; color: var(--navy); background: rgba(255,255,255,.9); font: inherit; font-size: 13px; font-weight: 850; cursor: pointer; transition: transform .16s ease,box-shadow .16s ease,color .16s ease,background .16s ease; }
+.award-year-selector button:hover, .award-year-selector button:focus-visible { transform: translateY(-2px); outline: none; box-shadow: 0 8px 22px rgba(27,50,91,.14); }
+.award-year-selector button.active { border-color: var(--navy); color: white; background: linear-gradient(135deg,var(--navy),var(--blue)); box-shadow: 0 10px 25px rgba(0,142,207,.22); }
+.award-stage { position: relative; z-index: 1; width: min(100%,560px); aspect-ratio: 2/3; margin: 20px auto 0; }
+.award-trophy { display: block; width: 100%; height: 100%; object-fit: contain; }
+.award-plaque { position: absolute; left: 32.1%; top: 83.3%; width: 36.1%; height: 8%; display: grid; grid-template-columns: 36% 1px minmax(0,1fr); align-items: center; gap: 5px; padding: 4px 6px; overflow: hidden; border: 1px solid #b9c1c9; border-radius: 3px; background: linear-gradient(155deg,#fdfefe 0%,#d6dde2 45%,#f8fafb 72%,#bcc5cd 100%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.72),0 2px 8px rgba(10,23,41,.32); }
+.award-plaque img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+.award-plaque > span { width: 1px; height: 72%; background: rgba(27,50,91,.28); }
+.award-plaque strong { min-width: 0; color: var(--navy); font-size: clamp(7px,1.18vw,13px); line-height: 1.05; letter-spacing: -.02em; text-align: left; overflow-wrap: anywhere; }
+.award-motivation { position: relative; z-index: 2; max-width: 780px; margin: -4px auto 0; padding: clamp(20px,3vw,30px); border-left: 4px solid var(--blue); border-radius: 18px; background: white; box-shadow: 0 16px 42px rgba(27,50,91,.1); }
+.award-motivation span { color: var(--blue); font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.award-motivation h2 { margin: 8px 0 10px; color: var(--navy); font-size: clamp(22px,3vw,31px); letter-spacing: -.035em; }
+.award-motivation p { margin: 0; color: #40546d; font-size: 15px; line-height: 1.75; }
 
 .drawer-backdrop { position: fixed; inset: 0; z-index: 50; display: flex; justify-content: flex-end; background: rgba(8,24,48,.65); backdrop-filter: blur(4px); }
 .drawer { width: min(760px,100%); height: 100%; overflow-y: auto; background: var(--paper); box-shadow: -20px 0 60px rgba(0,0,0,.2); animation: slide-in .22s ease-out; }
@@ -307,7 +319,13 @@ button { color: inherit; }
   .ranking-player { grid-column: 1 / -1; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
   .ranking-row > span:not(.ranking-player) { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; padding: 7px 8px; border-radius: 9px; background: var(--ice); text-align: right; font-weight: 850; overflow-wrap: anywhere; }
   .ranking-row > span:not(.ranking-player)::before { content: attr(data-label); color: var(--muted); font-size: 8px; font-weight: 850; letter-spacing: .05em; text-align: left; text-transform: uppercase; }
-  .history-grid { grid-template-columns: 1fr; }
+  .award-shell { padding: 16px 10px 20px; border-radius: 20px; }
+  .award-year-selector { gap: 6px; }
+  .award-year-selector button { min-width: 58px; min-height: 38px; padding: 0 11px; font-size: 12px; }
+  .award-stage { margin-top: 10px; }
+  .award-plaque { gap: 3px; padding: 3px 4px; }
+  .award-plaque strong { font-size: clamp(6px,2.15vw,10px); }
+  .award-motivation { margin: -2px 6px 0; padding: 18px; }
   .action-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .who-grid { grid-template-columns: 1fr; }
 }
