@@ -275,7 +275,7 @@ function StatisticsView({ data }: { data: TeamData }) {
 
 function TeamHistoryView() {
   return <>
-    <div className="page-heading"><div><p className="eyebrow">Door de jaren heen</p><h1>Teamhistorie</h1></div></div>
+    <div className="page-heading"><div><p className="eyebrow">De eindstanden door de jaren heen</p><h1>Teamhistorie</h1></div></div>
     <section className="team-history">
       <div className="team-history-table" role="table" aria-label="Teamhistorie">
         <div className="team-history-head" role="row"><span>Seizoen</span><span>Team</span><span>Klasse</span><span>Eindpositie</span></div>

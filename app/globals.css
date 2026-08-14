@@ -233,7 +233,7 @@ button { color: inherit; }
 .team-history-row > strong:first-child { color: var(--blue); }
 .team-history-row .history-result { display: flex; align-items: center; gap: 8px; justify-self: start; }
 .team-history-row .history-result span { font-size: 18px; line-height: 1; }
-.team-history-row .former-team { font-weight: 850; }
+.team-history-row .former-team { font-weight: 400; }
 .team-history-row .former-team small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; font-weight: 750; }
 .award-heading { margin-bottom: 16px; }
 .award-shell { position: relative; overflow: hidden; padding: clamp(18px,3vw,36px); border: 1px solid rgba(27,50,91,.1); border-radius: 28px; background: radial-gradient(circle at 50% 30%,rgba(0,142,207,.11),transparent 34%),linear-gradient(145deg,#fff,#f3f8fc); box-shadow: 0 24px 65px rgba(27,50,91,.12); }

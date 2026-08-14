@@ -151,12 +151,14 @@ test("teamhistorie heeft een eigen menu met de volledige historie", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
   for (const text of ["Teamhistorie", "Seizoen", "Klasse", "Eindpositie", "2025/2026", "2018/2019", "1e van 10", "12e van 12", "toen nog SV Twello 3", "🏆", "🏮"]) assert.ok(source.includes(text));
+  assert.ok(source.includes("De eindstanden door de jaren heen"));
   assert.ok(source.includes('{ id: "teamhistorie", label: "Teamhistorie" }'));
   assert.ok(source.includes('activeView === "teamhistorie" && <TeamHistoryView/>'));
   const statisticsSource = source.slice(source.indexOf("function StatisticsView"), source.indexOf("function TeamHistoryView"));
   assert.equal(statisticsSource.includes('className="team-history"'), false);
   assert.ok(css.includes(".team-history-table"));
   assert.ok(css.includes(".team-history-row .history-result"));
+  assert.ok(css.includes(".team-history-row .former-team { font-weight: 400; }"));
   assert.equal(css.includes(".team-history-row .champion"), false);
 });
 
