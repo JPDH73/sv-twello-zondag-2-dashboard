@@ -152,7 +152,7 @@ button { color: inherit; }
 .player-card > * { position: relative; z-index: 1; }
 .player-card:hover, .player-card:focus-visible { transform: translateY(-4px); filter: drop-shadow(0 22px 30px rgba(27,50,91,.28)); outline: none; }
 .player-card:focus-visible::after { border: 2px solid white; }
-.player-pitch { position: absolute; inset: 0; z-index: 0; opacity: .16; background: linear-gradient(118deg,transparent 45%,white 45% 45.35%,transparent 45.35%),radial-gradient(circle at 77% 21%,transparent 0 14%,white 14.3% 14.8%,transparent 15%),linear-gradient(165deg,transparent 62%,var(--blue) 62% 76%,transparent 76%); }
+.player-pitch { position: absolute; inset: 0; z-index: 0; opacity: .16; background: linear-gradient(118deg,transparent 45%,white 45% 45.35%,transparent 45.35%),linear-gradient(165deg,transparent 62%,var(--blue) 62% 76%,transparent 76%); }
 .player-topline { display: flex; justify-content: space-between; color: rgba(255,255,255,.72); font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .player-identity { position: relative; display: grid; place-items: center; flex: 1; min-height: 205px; }
 .player-rating { position: absolute; top: 24px; left: 0; display: flex; flex-direction: column; align-items: center; }
@@ -161,9 +161,11 @@ button { color: inherit; }
 .player-portrait { position: relative; display: grid; place-items: center; width: 158px; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; background: radial-gradient(circle at 50% 38%,rgba(0,142,207,.55),rgba(0,142,207,.08) 62%,transparent 63%); overflow: hidden; }
 .player-portrait strong { position: relative; z-index: 2; font-size: 55px; letter-spacing: -.07em; }
 .player-portrait i { position: absolute; left: 50%; bottom: -15px; width: 185px; height: 92px; transform: translateX(-50%); clip-path: polygon(25% 0,75% 0,100% 38%,88% 100%,12% 100%,0 38%); background: linear-gradient(90deg,rgba(255,255,255,.24) 0 33%,rgba(0,142,207,.72) 33% 67%,rgba(255,255,255,.24) 67%); }
-.club-badge { position: absolute; z-index: 3; top: 10px; right: -2px; display: grid; place-items: center; width: 140px; }
-.club-badge-mark { display: grid; place-items: center; width: 132px; height: 132px; padding: 0; border-radius: 50%; background: white; box-shadow: 0 9px 22px rgba(4,18,38,.32); overflow: hidden; }
-.club-badge-mark img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; transform: translate(2px,-7px) scale(1.08); transform-origin: center; }
+.club-badge { position: absolute; z-index: 3; top: -16px; right: -16px; display: grid; place-items: center; width: 140px; }
+.club-badge-mark { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 132px; height: 132px; padding: 13px 10px 14px; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; }
+.club-badge-mark img { display: block; width: 84%; height: 61px; object-fit: contain; filter: drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 3px 5px rgba(4,18,38,.22)); }
+.club-badge-name { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin-top: 2px; color: white; font-size: 14px; font-weight: 950; letter-spacing: -.045em; line-height: 1; white-space: nowrap; }
+.club-badge-name b { color: var(--blue-light); font: inherit; }
 .player-card-name { display: flex; flex-direction: column; align-items: center; min-width: 0; text-align: center; }
 .player-card-name strong { max-width: 100%; font-size: clamp(18px,1.7vw,24px); line-height: 1.05; letter-spacing: .035em; text-transform: uppercase; overflow-wrap: anywhere; }
 .player-card-name small { margin-top: 6px; color: rgba(255,255,255,.72); font-size: 11px; }
@@ -185,7 +187,7 @@ button { color: inherit; }
 .staff-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; align-items: start; }
 .staff-ea-card { color: #101317; background: linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72); filter: drop-shadow(0 18px 24px rgba(84,76,24,.22)); }
 .staff-ea-card:hover, .staff-ea-card:focus-visible { filter: drop-shadow(0 22px 30px rgba(84,76,24,.32)); }
-.staff-ea-card .player-pitch { opacity: .16; background: linear-gradient(118deg,transparent 45%,#101317 45% 45.35%,transparent 45.35%),radial-gradient(circle at 77% 21%,transparent 0 14%,#101317 14.3% 14.8%,transparent 15%),linear-gradient(165deg,transparent 62%,#d1c64f 62% 76%,transparent 76%); }
+.staff-ea-card .player-pitch { opacity: .16; background: linear-gradient(118deg,transparent 45%,#101317 45% 45.35%,transparent 45.35%),linear-gradient(165deg,transparent 62%,#d1c64f 62% 76%,transparent 76%); }
 .staff-ea-card .player-topline,
 .staff-ea-card .player-card-name small,
 .staff-ea-card .player-open,
@@ -195,7 +197,10 @@ button { color: inherit; }
 .staff-ea-card .player-key-stats { border-color: rgba(16,19,23,.28); }
 .staff-ea-card .player-key-stats > span + span { border-color: rgba(16,19,23,.18); }
 .staff-ea-card .player-open b { color: #101317; }
-.staff-ea-card .club-badge-mark { box-shadow: 0 9px 22px rgba(84,76,24,.28); }
+.staff-ea-card .club-badge-mark { background: transparent; box-shadow: none; }
+.staff-ea-card .club-badge-mark img { filter: drop-shadow(0 3px 5px rgba(84,76,24,.22)); }
+.staff-ea-card .club-badge-name { color: #101317; }
+.staff-ea-card .club-badge-name b { color: var(--blue); }
 .staff-key-stats small { letter-spacing: .025em; }
 
 .ranking-card { overflow-x: auto; border: 1px solid var(--line); border-radius: 20px; background: white; }

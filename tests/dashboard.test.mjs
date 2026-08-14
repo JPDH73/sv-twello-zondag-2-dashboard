@@ -169,16 +169,17 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.equal(source.includes('title="Programma & uitslagen"'), false);
   for (const title of ["Trainingsbeest", "Scherpschutter", "Assistkoning", "Trainingsspook", "Onzichtbare man", "Uitslaper"]) assert.ok(source.includes(title));
   for (const className of ["player-pitch", "player-rating", "player-portrait", "club-badge", "club-badge-mark", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
-  assert.ok(source.includes("./sv-twello-badge-v3.jpg"));
-  assert.ok(fs.existsSync("public/sv-twello-badge-v3.jpg"));
+  assert.ok(source.includes("./sv-twello-mark-transparent.png"));
+  assert.ok(source.includes('className="club-badge-name"'));
+  assert.ok(fs.existsSync("public/sv-twello-mark-transparent.png"));
   assert.ok(source.includes("Bekijk alle statistieken"));
   assert.ok(css.includes("clip-path: polygon(8% 0,92% 0"));
   assert.ok(css.includes(".player-card-name"));
   assert.ok(css.includes("grid-template-columns: minmax(0,1fr) auto minmax(0,1fr)"));
   assert.ok(css.includes("background: white"));
   assert.ok(css.includes("width: 132px; height: 132px"));
-  assert.ok(css.includes("width: 100%; height: 100%"));
-  assert.ok(css.includes("translate(2px,-7px) scale(1.08)"));
+  assert.ok(css.includes("background: transparent"));
+  assert.ok(css.includes(".club-badge-name"));
 });
 
 test("staf heeft een eigen menu en grijze EA-kaarten", () => {
@@ -192,6 +193,11 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   assert.ok(css.includes("linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72)"));
   assert.ok(css.includes(".staff-ea-card .player-key-stats > span + span"));
   assert.ok(css.includes("@media (max-width: 800px)"));
+  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Christiaan Grootgens", "Jean-Paul de Haas"];
+  for (let index = 1; index < requestedOrder.length; index += 1) {
+    assert.ok(source.indexOf(`"${requestedOrder[index - 1]}"`) < source.indexOf(`"${requestedOrder[index]}"`));
+  }
+  assert.ok(source.includes("orderedStaff.map"));
 });
 
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {

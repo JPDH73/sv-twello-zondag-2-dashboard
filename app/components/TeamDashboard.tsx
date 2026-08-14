@@ -34,6 +34,15 @@ const views: { id: View; label: string }[] = [
   { id: "historie", label: "Speler van het jaar" },
 ];
 
+const staffOrder = [
+  "Andrew Hietbrink",
+  "Jeffrey Karrenbeld",
+  "Sander Bouwmeester",
+  "Jan Berkenbosch",
+  "Christiaan Grootgens",
+  "Jean-Paul de Haas",
+];
+
 function initials(name: string) {
   const parts = name.trim().split(/\s+/);
   if (parts[0]?.includes("-")) return parts[0].split("-").map((part) => part[0] ?? "").join("").toUpperCase();
@@ -200,9 +209,14 @@ function DashboardView({ data, program }: { data: TeamData; program: Match[] }) 
 }
 
 function StaffView({ staff, setSelectedStaff }: { staff: Staff[]; setSelectedStaff: (member: Staff) => void }) {
+  const orderedStaff = [...staff].sort((a, b) => {
+    const aIndex = staffOrder.indexOf(a.name);
+    const bIndex = staffOrder.indexOf(b.name);
+    return (aIndex < 0 ? staffOrder.length : aIndex) - (bIndex < 0 ? staffOrder.length : bIndex);
+  });
   return <>
     <div className="page-heading"><div><h1>Staf</h1></div></div>
-    <div className="staff-grid">{staff.map((member) => <StaffCard key={member.id} member={member} onOpen={() => setSelectedStaff(member)}/>)}</div>
+    <div className="staff-grid">{orderedStaff.map((member) => <StaffCard key={member.id} member={member} onOpen={() => setSelectedStaff(member)}/>)}</div>
   </>;
 }
 
@@ -274,7 +288,7 @@ function Kpi({ label, value }: { label: string; value: number | string }) { retu
 function Leader({ title, awardTitle, players, score }: { title: string; awardTitle?: string; players: Player[]; score: number }) { return <article className="leader-card"><span className="leader-kind">Meeste {title.toLowerCase()}</span>{awardTitle && <strong className="leader-award">{awardTitle}</strong>}<span className="leader-score">{score}</span><div className="leader-name">{players.length ? players.map((player) => player.name).join(" · ") : "Nog geen invoer"}</div></article>; }
 function Loser({ label, awardTitle, players, score }: { label: string; awardTitle: string; players: Player[]; score: (player: Player) => number }) { return <article className="loser-card"><span className="loser-title">{label}</span><strong className="loser-award">{awardTitle}</strong>{players.length ? <ol>{players.map((player) => <li key={player.id}><strong>{player.name}</strong><b>{score(player)}</b></li>)}</ol> : <p>Nog geen invoer</p>}</article>; }
 function Fixture({ match, showResult = true }: { match: Match; showResult?: boolean }) { return <article className="fixture-card"><div className="fixture-meta"><span>{match.competition || "Wedstrijd"}</span><span>{formatDate(match.date)} {match.time && `· ${match.time}`}</span></div><div className={showResult ? "fixture-teams" : "fixture-teams upcoming"}><strong>{match.home}</strong>{showResult ? <span>{match.result || "–"}</span> : <span className="fixture-separator" aria-hidden="true">–</span>}<strong>{match.away}</strong></div></article>; }
-function ClubBadge() { return <span className="club-badge" aria-label="SV Twello"><span className="club-badge-mark"><img src="./sv-twello-badge-v3.jpg" alt="" aria-hidden="true"/></span></span>; }
+function ClubBadge() { return <span className="club-badge" aria-label="SV Twello"><span className="club-badge-mark"><img src="./sv-twello-mark-transparent.png" alt="" aria-hidden="true"/><span className="club-badge-name"><b>SV</b><span>TWELLO</span></span></span></span>; }
 function StaffCard({ member, onOpen }: { member: Staff; onOpen: () => void }) {
   const total = member.totals.present + member.totals.partial + member.totals.absent;
   return <button className="player-card staff-ea-card" onClick={onOpen} aria-label={`Bekijk wedstrijdhistorie van ${member.name}`}><span className="player-pitch" aria-hidden="true"/><span className="player-topline"><span>SVT · 2026/27</span><span>{staffCode(member.role)}</span></span><span className="player-identity"><span className="player-rating"><strong>{total}</strong><small>WD</small></span><span className="player-portrait" aria-hidden="true"><strong>{initials(member.name)}</strong><i/></span><ClubBadge/></span><span className="player-card-name"><strong>{member.name}</strong><small>{member.role}</small></span><span className="player-key-stats staff-key-stats"><span><strong>{total}</strong><small>Wedstr.</small></span><span><strong>{member.totals.present}</strong><small>Aanwezig</small></span><span><strong>{member.totals.partial}</strong><small>Deels</small></span><span><strong>{member.totals.absent}</strong><small>Afwezig</small></span></span><span className="player-open">Bekijk wedstrijdhistorie <b aria-hidden="true">›</b></span></button>;
