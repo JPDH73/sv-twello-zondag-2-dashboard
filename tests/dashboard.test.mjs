@@ -158,6 +158,21 @@ test("banner staat alleen op dashboard en het koplogo keert terug naar home", ()
   for (const label of ["Aantal selectiespelers", "Aantal keer getraind", "Wedstrijden / gespeeld"]) assert.ok(source.includes(label));
 });
 
+test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-achtige spelerskaarten", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.ok(source.includes("upcomingMatches(data.matches)"));
+  assert.ok(source.includes("slice(0, limit)"));
+  assert.ok(source.includes('title="Eerstvolgende wedstrijden"'));
+  assert.ok(source.includes("showResult={false}"));
+  assert.equal(source.includes('title="Programma & uitslagen"'), false);
+  for (const title of ["Trainingsbeest", "Scherpschutter", "Assistkoning", "Trainingsspook", "Onzichtbare man", "Uitslaper"]) assert.ok(source.includes(title));
+  for (const className of ["player-pitch", "player-rating", "player-portrait", "player-crest", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
+  assert.ok(source.includes("Bekijk alle statistieken"));
+  assert.ok(css.includes("clip-path: polygon(8% 0,92% 0"));
+  assert.ok(css.includes(".player-card-name"));
+});
+
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
