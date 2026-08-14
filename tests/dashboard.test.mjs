@@ -169,13 +169,14 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.equal(source.includes('title="Programma & uitslagen"'), false);
   for (const title of ["Trainingsbeest", "Scherpschutter", "Assistkoning", "Trainingsspook", "Onzichtbare man", "Uitslaper"]) assert.ok(source.includes(title));
   for (const className of ["player-pitch", "player-rating", "player-portrait", "club-badge", "club-badge-mark", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
-  assert.ok(source.includes("./sv-twello-badge-v2.png"));
+  assert.ok(source.includes("./sv-twello-badge-v3.jpg"));
+  assert.ok(fs.existsSync("public/sv-twello-badge-v3.jpg"));
   assert.ok(source.includes("Bekijk alle statistieken"));
   assert.ok(css.includes("clip-path: polygon(8% 0,92% 0"));
   assert.ok(css.includes(".player-card-name"));
   assert.ok(css.includes("grid-template-columns: minmax(0,1fr) auto minmax(0,1fr)"));
   assert.ok(css.includes("background: white"));
-  assert.ok(css.includes("width: 120px; height: 120px"));
+  assert.ok(css.includes("width: 132px; height: 132px"));
   assert.ok(css.includes("width: 100%; height: 100%"));
 });
 
@@ -187,7 +188,7 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   for (const text of ["StaffView", "staff-ea-card", "staff-key-stats", "Aanwezig", "Deels", "Afwezig", "Bekijk wedstrijdhistorie"]) assert.ok(source.includes(text));
   assert.equal(source.includes('<SectionHeading title="Staf"'), false);
   assert.ok(css.includes(".staff-ea-card"));
-  assert.ok(css.includes("linear-gradient(145deg,#252c37,#4a5563 54%,#7a8794)"));
+  assert.ok(css.includes("linear-gradient(145deg,#101317,#242a31 54%,#353d45)"));
   assert.ok(css.includes("@media (max-width: 800px)"));
 });
 
