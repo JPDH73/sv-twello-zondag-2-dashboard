@@ -55,7 +55,7 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.equal(source.includes("captain-callout"), false);
   assert.ok(source.includes("players.filter((player) => score(player) === highest)"));
   assert.ok(source.includes('parts[0]?.includes("-")'));
-  for (const tab of ["Dashboard", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
+  for (const tab of ["Dashboard", "Staf", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
   assert.ok(source.includes('label: "Speler van het jaar"'));
   assert.ok(source.includes("Polo vergeten"));
   assert.ok(source.includes("menu-toggle"));
@@ -167,10 +167,22 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.ok(source.includes("showResult={false}"));
   assert.equal(source.includes('title="Programma & uitslagen"'), false);
   for (const title of ["Trainingsbeest", "Scherpschutter", "Assistkoning", "Trainingsspook", "Onzichtbare man", "Uitslaper"]) assert.ok(source.includes(title));
-  for (const className of ["player-pitch", "player-rating", "player-portrait", "player-crest", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
+  for (const className of ["player-pitch", "player-rating", "player-portrait", "club-badge", "club-badge-mark", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
   assert.ok(source.includes("Bekijk alle statistieken"));
   assert.ok(css.includes("clip-path: polygon(8% 0,92% 0"));
   assert.ok(css.includes(".player-card-name"));
+});
+
+test("staf heeft een eigen menu en grijze EA-kaarten", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.ok(source.indexOf('{ id: "dashboard"') < source.indexOf('{ id: "staf"'));
+  assert.ok(source.indexOf('{ id: "staf"') < source.indexOf('{ id: "team"'));
+  for (const text of ["StaffView", "staff-ea-card", "staff-key-stats", "Aanwezig", "Deels", "Afwezig", "Bekijk wedstrijdhistorie"]) assert.ok(source.includes(text));
+  assert.equal(source.includes('<SectionHeading title="Staf"'), false);
+  assert.ok(css.includes(".staff-ea-card"));
+  assert.ok(css.includes("linear-gradient(145deg,#252c37,#4a5563 54%,#7a8794)"));
+  assert.ok(css.includes("@media (max-width: 800px)"));
 });
 
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
