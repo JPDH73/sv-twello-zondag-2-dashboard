@@ -114,6 +114,15 @@ test("nieuwe statussen, top-vijfvolgorde en klasse worden gebruikt", () => {
   assert.ok(source.indexOf('<Loser label="Meest afwezig op wedstrijddag"') < source.indexOf('<Loser label="Meest te laat op wedstrijddag"'));
 });
 
+test("statistieken herhalen de dashboardtoppers niet en trainingsnamen staan alfabetisch", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const statisticsSource = source.slice(source.indexOf("function StatisticsView"), source.indexOf("function HistoryView"));
+  assert.equal(statisticsSource.includes("<Leader"), false);
+  assert.equal(statisticsSource.includes("stats-leaders"), false);
+  assert.ok(source.includes('sortNames(training.attendees).join(" · ")'));
+  assert.ok(source.includes('localeCompare(b, "nl", { sensitivity: "base" })'));
+});
+
 test("staf heeft een aanklikbare wedstrijdhistorie en vernieuwde veldillustratie", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");

@@ -52,6 +52,7 @@ function formatDate(value: string) {
   if (!value) return "Datum nog niet bekend";
   return new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "short", year: "numeric" }).format(new Date(`${value}T12:00:00`));
 }
+function sortNames(names: string[]) { return [...names].sort((a, b) => a.localeCompare(b, "nl", { sensitivity: "base" })); }
 function opponent(match: Match) { return match.home === "SV Twello 2" ? match.away : match.home; }
 function venue(match: Match) { return match.home === "SV Twello 2" ? "Thuis" : "Uit"; }
 function positionCode(position: string) {
@@ -232,15 +233,12 @@ function MatchesView({ matches }: { matches: Match[] }) {
 }
 
 function TrainingsView({ trainings }: { trainings: TeamData["trainings"] }) {
-  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? training.attendees.join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
+  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? sortNames(training.attendees).join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
 }
 
 function StatisticsView({ data }: { data: TeamData }) {
   const [rankingSort, setRankingSort] = useState("matches");
   const [rankingDirection, setRankingDirection] = useState<"desc" | "asc">("desc");
-  const goalLeaders = leaders(data.players, "goals");
-  const assistLeaders = leaders(data.players, "assists");
-  const trainingLeaders = leaders(data.players, "training");
   const columns = [
     ["matches", "Wedstrijden", (p: Player) => p.totals.matches, (p: Player) => p.totals.matches], ["goals", "Goals", (p: Player) => p.totals.goals, (p: Player) => p.totals.goals], ["assists", "Assists", (p: Player) => p.totals.assists, (p: Player) => p.totals.assists],
     ["penaltiesScored", "Penalty +", (p: Player) => p.totals.penaltiesScored, (p: Player) => p.totals.penaltiesScored], ["penaltiesMissed", "Penalty −", (p: Player) => p.totals.penaltiesMissed, (p: Player) => p.totals.penaltiesMissed], ["training", "Training", (p: Player) => `${p.training.percentage}%`, (p: Player) => p.training.percentage],
@@ -255,7 +253,7 @@ function StatisticsView({ data }: { data: TeamData }) {
     return (rankingDirection === "desc" ? difference : -difference) || a.name.localeCompare(b.name, "nl");
   });
   const changeSort = (key: string) => { if (key === rankingSort) setRankingDirection((direction) => direction === "desc" ? "asc" : "desc"); else { setRankingSort(key); setRankingDirection("desc"); } };
-  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1></div></div><div className="leader-grid stats-leaders"><Leader title="Doelpunten" players={goalLeaders.players} score={goalLeaders.score}/><Leader title="Assists" players={assistLeaders.players} score={assistLeaders.score}/><Leader title="Trainingen" players={trainingLeaders.players} score={trainingLeaders.score}/></div><div className="ranking-title"><SectionHeading title="Spelersranglijst"/><div className="ranking-controls"><label><span>Sorteer op</span><select value={rankingSort} onChange={(event) => { setRankingSort(event.target.value); setRankingDirection("desc"); }}>{columns.map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><button onClick={() => setRankingDirection((direction) => direction === "desc" ? "asc" : "desc")} aria-label="Draai sorteervolgorde om">{rankingDirection === "desc" ? "Hoog → laag" : "Laag → hoog"}</button></div></div><div className="ranking-card"><div className="ranking-head"><span>Speler</span>{columns.map(([key, label]) => <span key={key}><button className={rankingSort === key ? "ranking-sort active" : "ranking-sort"} onClick={() => changeSort(key)}>{label}{rankingSort === key && <b aria-hidden="true">{rankingDirection === "desc" ? "↓" : "↑"}</b>}</button></span>)}</div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span>{columns.map(([key, label, value]) => <span key={key} data-label={label}>{value(player)}</span>)}</div>)}</div></>;
+  return <><div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1></div></div><div className="ranking-title"><SectionHeading title="Spelersranglijst"/><div className="ranking-controls"><label><span>Sorteer op</span><select value={rankingSort} onChange={(event) => { setRankingSort(event.target.value); setRankingDirection("desc"); }}>{columns.map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><button onClick={() => setRankingDirection((direction) => direction === "desc" ? "asc" : "desc")} aria-label="Draai sorteervolgorde om">{rankingDirection === "desc" ? "Hoog → laag" : "Laag → hoog"}</button></div></div><div className="ranking-card"><div className="ranking-head"><span>Speler</span>{columns.map(([key, label]) => <span key={key}><button className={rankingSort === key ? "ranking-sort active" : "ranking-sort"} onClick={() => changeSort(key)}>{label}{rankingSort === key && <b aria-hidden="true">{rankingDirection === "desc" ? "↓" : "↑"}</b>}</button></span>)}</div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span>{columns.map(([key, label, value]) => <span key={key} data-label={label}>{value(player)}</span>)}</div>)}</div></>;
 }
 
 function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
