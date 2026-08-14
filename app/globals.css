@@ -163,7 +163,7 @@ button { color: inherit; }
 .player-portrait i { position: absolute; left: 50%; bottom: -15px; width: 185px; height: 92px; transform: translateX(-50%); clip-path: polygon(25% 0,75% 0,100% 38%,88% 100%,12% 100%,0 38%); background: linear-gradient(90deg,rgba(255,255,255,.24) 0 33%,rgba(0,142,207,.72) 33% 67%,rgba(255,255,255,.24) 67%); }
 .club-badge { position: absolute; z-index: 3; top: 10px; right: -2px; display: grid; place-items: center; width: 140px; }
 .club-badge-mark { display: grid; place-items: center; width: 132px; height: 132px; padding: 0; border-radius: 50%; background: white; box-shadow: 0 9px 22px rgba(4,18,38,.32); overflow: hidden; }
-.club-badge-mark img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; transform: translateY(-4px) scale(1.08); transform-origin: center; }
+.club-badge-mark img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; transform: translate(2px,-7px) scale(1.08); transform-origin: center; }
 .player-card-name { display: flex; flex-direction: column; align-items: center; min-width: 0; text-align: center; }
 .player-card-name strong { max-width: 100%; font-size: clamp(18px,1.7vw,24px); line-height: 1.05; letter-spacing: .035em; text-transform: uppercase; overflow-wrap: anywhere; }
 .player-card-name small { margin-top: 6px; color: rgba(255,255,255,.72); font-size: 11px; }
@@ -183,11 +183,19 @@ button { color: inherit; }
 .empty-state { padding: 46px; border: 1px dashed #b8cede; border-radius: 20px; text-align: center; color: var(--muted); background: rgba(255,255,255,.6); }
 
 .staff-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; align-items: start; }
-.staff-ea-card { background: linear-gradient(145deg,#101317,#242a31 54%,#353d45); filter: drop-shadow(0 18px 24px rgba(16,19,23,.24)); }
-.staff-ea-card:hover, .staff-ea-card:focus-visible { filter: drop-shadow(0 22px 30px rgba(16,19,23,.34)); }
-.staff-ea-card .player-pitch { opacity: .12; background: linear-gradient(118deg,transparent 45%,white 45% 45.35%,transparent 45.35%),radial-gradient(circle at 77% 21%,transparent 0 14%,white 14.3% 14.8%,transparent 15%),linear-gradient(165deg,transparent 62%,#a5afb9 62% 76%,transparent 76%); }
-.staff-ea-card .player-portrait { background: radial-gradient(circle at 50% 38%,rgba(207,214,221,.42),rgba(120,132,144,.12) 62%,transparent 63%); }
-.staff-ea-card .player-portrait i { background: linear-gradient(90deg,rgba(255,255,255,.2) 0 33%,rgba(155,166,177,.62) 33% 67%,rgba(255,255,255,.2) 67%); }
+.staff-ea-card { color: #101317; background: linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72); filter: drop-shadow(0 18px 24px rgba(84,76,24,.22)); }
+.staff-ea-card:hover, .staff-ea-card:focus-visible { filter: drop-shadow(0 22px 30px rgba(84,76,24,.32)); }
+.staff-ea-card .player-pitch { opacity: .16; background: linear-gradient(118deg,transparent 45%,#101317 45% 45.35%,transparent 45.35%),radial-gradient(circle at 77% 21%,transparent 0 14%,#101317 14.3% 14.8%,transparent 15%),linear-gradient(165deg,transparent 62%,#d1c64f 62% 76%,transparent 76%); }
+.staff-ea-card .player-topline,
+.staff-ea-card .player-card-name small,
+.staff-ea-card .player-open,
+.staff-ea-card .player-key-stats small { color: rgba(16,19,23,.72); }
+.staff-ea-card .player-portrait { border-color: rgba(16,19,23,.28); background: radial-gradient(circle at 50% 38%,rgba(255,255,255,.72),rgba(168,153,51,.2) 62%,transparent 63%); }
+.staff-ea-card .player-portrait i { background: linear-gradient(90deg,rgba(16,19,23,.18) 0 33%,rgba(201,187,76,.76) 33% 67%,rgba(16,19,23,.18) 67%); }
+.staff-ea-card .player-key-stats { border-color: rgba(16,19,23,.28); }
+.staff-ea-card .player-key-stats > span + span { border-color: rgba(16,19,23,.18); }
+.staff-ea-card .player-open b { color: #101317; }
+.staff-ea-card .club-badge-mark { box-shadow: 0 9px 22px rgba(84,76,24,.28); }
 .staff-key-stats small { letter-spacing: .025em; }
 
 .ranking-card { overflow-x: auto; border: 1px solid var(--line); border-radius: 20px; background: white; }
