@@ -178,7 +178,7 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.ok(css.includes("background: white"));
   assert.ok(css.includes("width: 132px; height: 132px"));
   assert.ok(css.includes("width: 100%; height: 100%"));
-  assert.ok(css.includes("translateY(-4px) scale(1.08)"));
+  assert.ok(css.includes("translate(2px,-7px) scale(1.08)"));
 });
 
 test("staf heeft een eigen menu en grijze EA-kaarten", () => {
@@ -189,7 +189,8 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   for (const text of ["StaffView", "staff-ea-card", "staff-key-stats", "Aanwezig", "Deels", "Afwezig", "Bekijk wedstrijdhistorie"]) assert.ok(source.includes(text));
   assert.equal(source.includes('<SectionHeading title="Staf"'), false);
   assert.ok(css.includes(".staff-ea-card"));
-  assert.ok(css.includes("linear-gradient(145deg,#101317,#242a31 54%,#353d45)"));
+  assert.ok(css.includes("linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72)"));
+  assert.ok(css.includes(".staff-ea-card .player-key-stats > span + span"));
   assert.ok(css.includes("@media (max-width: 800px)"));
 });
 
