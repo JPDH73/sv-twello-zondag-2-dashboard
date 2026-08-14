@@ -161,7 +161,7 @@ button { color: inherit; }
 .player-portrait { position: relative; display: grid; place-items: center; width: 158px; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; background: radial-gradient(circle at 50% 38%,rgba(0,142,207,.55),rgba(0,142,207,.08) 62%,transparent 63%); overflow: hidden; }
 .player-portrait strong { position: relative; z-index: 2; font-size: 55px; letter-spacing: -.07em; }
 .player-portrait i { position: absolute; left: 50%; bottom: -15px; width: 185px; height: 92px; transform: translateX(-50%); clip-path: polygon(25% 0,75% 0,100% 38%,88% 100%,12% 100%,0 38%); background: linear-gradient(90deg,rgba(255,255,255,.24) 0 33%,rgba(0,142,207,.72) 33% 67%,rgba(255,255,255,.24) 67%); }
-.club-badge { position: absolute; z-index: 3; top: -16px; right: -16px; display: grid; place-items: center; width: 140px; }
+.club-badge { position: absolute; z-index: 3; top: -28px; right: -28px; display: grid; place-items: center; width: 140px; }
 .club-badge-mark { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 132px; height: 132px; padding: 13px 10px 14px; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; }
 .club-badge-mark img { display: block; width: 84%; height: 61px; object-fit: contain; filter: drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 3px 5px rgba(4,18,38,.22)); }
 .club-badge-name { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin-top: 2px; color: white; font-size: 14px; font-weight: 950; letter-spacing: -.045em; line-height: 1; white-space: nowrap; }

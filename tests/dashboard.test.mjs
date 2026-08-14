@@ -190,6 +190,7 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.ok(css.includes("width: 132px; height: 132px"));
   assert.ok(css.includes("background: transparent"));
   assert.ok(css.includes(".club-badge-name"));
+  assert.ok(css.includes("top: -28px; right: -28px"));
 });
 
 test("staf heeft een eigen menu en grijze EA-kaarten", () => {
