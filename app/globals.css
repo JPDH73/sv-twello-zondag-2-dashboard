@@ -99,8 +99,8 @@ button { color: inherit; }
 .fixture-teams { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; margin-top: 18px; }
 .fixture-teams strong:last-child { text-align: right; }
 .fixture-teams span { min-width: 48px; padding: 7px 10px; border-radius: 10px; background: var(--navy); color: white; text-align: center; font-weight: 850; }
-.fixture-teams.upcoming { grid-template-columns: 1fr 1fr; }
-.fixture-teams.upcoming strong:first-child::after { content: " —"; color: var(--blue); }
+.fixture-teams.upcoming { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); }
+.fixture-teams.upcoming .fixture-separator { min-width: 0; padding: 0; border-radius: 0; background: transparent; color: var(--blue); font-size: 20px; line-height: 1; }
 .training-date { margin-bottom: 8px; color: var(--blue); font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .training-card strong { font-size: 19px; }
 .training-card p { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
@@ -161,9 +161,9 @@ button { color: inherit; }
 .player-portrait { position: relative; display: grid; place-items: center; width: 158px; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; background: radial-gradient(circle at 50% 38%,rgba(0,142,207,.55),rgba(0,142,207,.08) 62%,transparent 63%); overflow: hidden; }
 .player-portrait strong { position: relative; z-index: 2; font-size: 55px; letter-spacing: -.07em; }
 .player-portrait i { position: absolute; left: 50%; bottom: -15px; width: 185px; height: 92px; transform: translateX(-50%); clip-path: polygon(25% 0,75% 0,100% 38%,88% 100%,12% 100%,0 38%); background: linear-gradient(90deg,rgba(255,255,255,.24) 0 33%,rgba(0,142,207,.72) 33% 67%,rgba(255,255,255,.24) 67%); }
-.club-badge { position: absolute; top: 15px; right: -2px; display: flex; flex-direction: column; align-items: center; width: 64px; color: white; }
-.club-badge-mark { display: grid; place-items: center; width: 54px; height: 54px; padding: 9px 6px; border: 2px solid rgba(255,255,255,.7); border-radius: 50%; background: linear-gradient(145deg,#ffe878,#d7ad2d); box-shadow: 0 7px 18px rgba(4,18,38,.24); overflow: hidden; }
-.club-badge-mark img { display: block; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+.club-badge { position: absolute; top: 12px; right: -3px; display: flex; flex-direction: column; align-items: center; width: 68px; color: white; }
+.club-badge-mark { display: grid; place-items: center; width: 58px; height: 58px; padding: 0; border: 2px solid white; border-radius: 50%; background: white; box-shadow: 0 7px 18px rgba(4,18,38,.24); overflow: hidden; }
+.club-badge-mark img { display: block; width: 94%; height: 94%; object-fit: contain; }
 .club-badge small { margin-top: 5px; color: rgba(255,255,255,.88); font-size: 8px; font-weight: 900; letter-spacing: .045em; line-height: 1; text-align: center; text-transform: uppercase; white-space: nowrap; }
 .player-card-name { display: flex; flex-direction: column; align-items: center; min-width: 0; text-align: center; }
 .player-card-name strong { max-width: 100%; font-size: clamp(18px,1.7vw,24px); line-height: 1.05; letter-spacing: .035em; text-transform: uppercase; overflow-wrap: anywhere; }
