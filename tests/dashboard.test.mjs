@@ -169,14 +169,14 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.equal(source.includes('title="Programma & uitslagen"'), false);
   for (const title of ["Trainingsbeest", "Scherpschutter", "Assistkoning", "Trainingsspook", "Onzichtbare man", "Uitslaper"]) assert.ok(source.includes(title));
   for (const className of ["player-pitch", "player-rating", "player-portrait", "club-badge", "club-badge-mark", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
-  assert.ok(source.includes('className="club-badge-name"'));
-  assert.ok(source.includes("<b>SV</b><span>TWELLO</span>"));
+  assert.ok(source.includes("./sv-twello-badge-v2.png"));
   assert.ok(source.includes("Bekijk alle statistieken"));
   assert.ok(css.includes("clip-path: polygon(8% 0,92% 0"));
   assert.ok(css.includes(".player-card-name"));
   assert.ok(css.includes("grid-template-columns: minmax(0,1fr) auto minmax(0,1fr)"));
   assert.ok(css.includes("background: white"));
   assert.ok(css.includes("width: 120px; height: 120px"));
+  assert.ok(css.includes("width: 100%; height: 100%"));
 });
 
 test("staf heeft een eigen menu en grijze EA-kaarten", () => {
