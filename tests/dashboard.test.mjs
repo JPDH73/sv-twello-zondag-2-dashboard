@@ -165,12 +165,15 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.ok(source.includes("slice(0, limit)"));
   assert.ok(source.includes('title="Eerstvolgende wedstrijden"'));
   assert.ok(source.includes("showResult={false}"));
+  assert.ok(source.includes('className="fixture-separator"'));
   assert.equal(source.includes('title="Programma & uitslagen"'), false);
   for (const title of ["Trainingsbeest", "Scherpschutter", "Assistkoning", "Trainingsspook", "Onzichtbare man", "Uitslaper"]) assert.ok(source.includes(title));
   for (const className of ["player-pitch", "player-rating", "player-portrait", "club-badge", "club-badge-mark", "player-key-stats", "player-open"]) assert.ok(source.includes(className));
   assert.ok(source.includes("Bekijk alle statistieken"));
   assert.ok(css.includes("clip-path: polygon(8% 0,92% 0"));
   assert.ok(css.includes(".player-card-name"));
+  assert.ok(css.includes("grid-template-columns: minmax(0,1fr) auto minmax(0,1fr)"));
+  assert.ok(css.includes("background: white"));
 });
 
 test("staf heeft een eigen menu en grijze EA-kaarten", () => {
