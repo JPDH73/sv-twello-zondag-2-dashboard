@@ -178,6 +178,7 @@ test("dashboard toont de twee volgende wedstrijden, kleedkamerprijzen en EA-acht
   assert.ok(css.includes("background: white"));
   assert.ok(css.includes("width: 132px; height: 132px"));
   assert.ok(css.includes("width: 100%; height: 100%"));
+  assert.ok(css.includes("translateY(-4px) scale(1.08)"));
 });
 
 test("staf heeft een eigen menu en grijze EA-kaarten", () => {
