@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type Match = { id: string; date: string; time: string; home: string; away: string; result: string; competition: string };
 type PlayerMatch = Match & { status: string; goals: number; assists: number; yellow: number; red: number; penaltiesScored: number; penaltiesMissed: number; late: boolean; flagged: boolean; polo: boolean; kept: boolean; captain: boolean };
@@ -274,6 +274,13 @@ function StatisticsView({ data }: { data: TeamData }) {
 }
 
 function TeamHistoryView() {
+  const storyVideoRef = useRef<HTMLVideoElement>(null);
+  const [storyPlaying, setStoryPlaying] = useState(false);
+  const playStoryVideo = () => {
+    const video = storyVideoRef.current;
+    if (!video) return;
+    video.play().catch(() => setStoryPlaying(false));
+  };
   return <>
     <div className="page-heading"><div><p className="eyebrow">De eindstanden door de jaren heen</p><h1>Teamhistorie</h1></div></div>
     <section className="team-history">
@@ -293,8 +300,9 @@ function TeamHistoryView() {
         <h2 id="panenka-title"><span>Jan’s Legendarische Panenka</span><small>| Afscheidswedstrijd 12 juni 2022</small></h2>
       </div>
       <div className="team-story-video">
-        <video controls playsInline preload="metadata" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022">
-          <source src="./media/jans-legendarische-panenka-2022-v3.mp4" type="video/mp4" />
+        {!storyPlaying && <button className="team-story-play" type="button" onClick={playStoryVideo} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>Bekijk de Panenka</strong></button>}
+        <video ref={storyVideoRef} controls playsInline preload="auto" onPlay={() => setStoryPlaying(true)} onPause={() => setStoryPlaying(false)} onEnded={() => setStoryPlaying(false)} aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022">
+          <source src="./media/jans-legendarische-panenka-2022-v4.mp4" type="video/mp4" />
           Je browser ondersteunt deze video niet.
         </video>
       </div>
