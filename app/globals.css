@@ -221,7 +221,7 @@ button { color: inherit; }
 .ranking-name { min-width: 0; }
 .ranking-name strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ranking-name em { display: inline-block; margin: 3px 5px 0 0; color: var(--blue); font-size: 9px; font-style: normal; font-weight: 850; text-transform: uppercase; }
-.team-history { margin-top: 54px; }
+.team-history { margin-top: 0; }
 .team-history-title { margin-bottom: 18px; }
 .team-history-title .eyebrow { margin-bottom: 5px; }
 .team-history-title h2 { margin: 0; color: var(--navy); font-size: clamp(25px,3vw,36px); letter-spacing: -.035em; }
@@ -231,10 +231,10 @@ button { color: inherit; }
 .team-history-row { border-top: 1px solid var(--line); color: var(--navy); font-size: 13px; }
 .team-history-row:nth-child(odd) { background: rgba(231,244,250,.48); }
 .team-history-row > strong:first-child { color: var(--blue); }
-.team-history-row .champion, .team-history-row .last-place { justify-self: start; padding: 6px 9px; border-radius: 999px; font-size: 11px; }
-.team-history-row .champion { color: #075f45; background: #d9f8eb; }
-.team-history-row .last-place { color: #8a2830; background: #ffe0e3; }
+.team-history-row .history-result { display: flex; align-items: center; gap: 8px; justify-self: start; }
+.team-history-row .history-result span { font-size: 18px; line-height: 1; }
 .team-history-row .former-team { font-weight: 850; }
+.team-history-row .former-team small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; font-weight: 750; }
 .award-heading { margin-bottom: 16px; }
 .award-shell { position: relative; overflow: hidden; padding: clamp(18px,3vw,36px); border: 1px solid rgba(27,50,91,.1); border-radius: 28px; background: radial-gradient(circle at 50% 30%,rgba(0,142,207,.11),transparent 34%),linear-gradient(145deg,#fff,#f3f8fc); box-shadow: 0 24px 65px rgba(27,50,91,.12); }
 .award-shell::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg,transparent 48%,rgba(255,255,255,.72) 49%,transparent 50%); opacity: .5; }
@@ -357,13 +357,14 @@ button { color: inherit; }
   .ranking-player { grid-column: 1 / -1; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
   .ranking-row > span:not(.ranking-player) { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; padding: 7px 8px; border-radius: 9px; background: var(--ice); text-align: right; font-weight: 850; overflow-wrap: anywhere; }
   .ranking-row > span:not(.ranking-player)::before { content: attr(data-label); color: var(--muted); font-size: 8px; font-weight: 850; letter-spacing: .05em; text-align: left; text-transform: uppercase; }
-  .team-history { margin-top: 42px; }
+  .team-history { margin-top: 0; }
   .team-history-table { overflow: visible; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
   .team-history-head { display: none; }
   .team-history-row { margin-bottom: 12px; padding: 14px; border: 1px solid var(--line); border-radius: 17px; background: white !important; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
   .team-history-row > * { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-width: 0; }
   .team-history-row > *::before { content: attr(data-label); color: var(--muted); font-size: 8px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
-  .team-history-row .champion, .team-history-row .last-place { justify-self: stretch; padding: 7px 9px; border-radius: 10px; }
+  .team-history-row .history-result { align-items: center; flex-direction: row; justify-self: stretch; }
+  .team-history-row .history-result::before { margin-right: auto; }
   .award-shell { padding: 16px 10px 20px; border-radius: 20px; }
   .award-year-selector { gap: 6px; }
   .award-year-selector button { min-width: 58px; min-height: 38px; padding: 0 11px; font-size: 12px; }

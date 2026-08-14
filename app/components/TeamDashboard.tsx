@@ -22,7 +22,7 @@ type TeamData = {
   players: Player[];
   staff: Staff[];
 };
-type View = "dashboard" | "staf" | "team" | "wedstrijden" | "trainingen" | "statistieken" | "historie";
+type View = "dashboard" | "staf" | "team" | "wedstrijden" | "trainingen" | "statistieken" | "teamhistorie" | "historie";
 
 const views: { id: View; label: string }[] = [
   { id: "dashboard", label: "Dashboard" },
@@ -31,6 +31,7 @@ const views: { id: View; label: string }[] = [
   { id: "wedstrijden", label: "Wedstrijden" },
   { id: "trainingen", label: "Trainingen" },
   { id: "statistieken", label: "Statistieken" },
+  { id: "teamhistorie", label: "Teamhistorie" },
   { id: "historie", label: "Speler van het jaar" },
 ];
 
@@ -44,13 +45,13 @@ const staffOrder = [
 ];
 
 const teamHistory = [
-  { season: "2025/2026", team: "SV Twello 2", division: "5e klasse", position: "12e van 12 (laatste)" },
+  { season: "2025/2026", team: "SV Twello 2", division: "5e klasse", position: "12e van 12", result: "last" },
   { season: "2024/2025", team: "SV Twello 2", division: "5e klasse", position: "5e van 10" },
   { season: "2023/2024", team: "SV Twello 2", division: "5e klasse", position: "10e van 11" },
-  { season: "2022/2023", team: "SV Twello 2", division: "6e klasse", position: "1e van 10 (kampioen)" },
-  { season: "2021/2022", team: "SV Twello 2", division: "6e klasse", position: "1e van 12 (kampioen)" },
+  { season: "2022/2023", team: "SV Twello 2", division: "6e klasse", position: "1e van 10", result: "champion" },
+  { season: "2021/2022", team: "SV Twello 2", division: "6e klasse", position: "1e van 12", result: "champion" },
   { season: "2019/2020", team: "SV Twello 2", division: "6e klasse", position: "10e van 12" },
-  { season: "2018/2019", team: "SV Twello 3", division: "6e klasse", position: "12e van 12 (laatste)" },
+  { season: "2018/2019", team: "SV Twello 2", formerTeam: "toen nog SV Twello 3", division: "6e klasse", position: "12e van 12", result: "last" },
 ];
 
 function initials(name: string) {
@@ -180,6 +181,7 @@ export function TeamDashboard() {
       {activeView === "wedstrijden" && <MatchesView matches={data.matches}/>}
       {activeView === "trainingen" && <TrainingsView trainings={data.trainings}/>}
       {activeView === "statistieken" && <StatisticsView data={data}/>}
+      {activeView === "teamhistorie" && <TeamHistoryView/>}
       {activeView === "historie" && <HistoryView entries={data.playerOfYear}/>}
       <footer className="footer">One Town, One Team, One Twello</footer>
     </div>
@@ -268,11 +270,21 @@ function StatisticsView({ data }: { data: TeamData }) {
     <div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1></div></div>
     <div className="ranking-title"><SectionHeading title="Spelersranglijst"/><div className="ranking-controls"><label><span>Sorteer op</span><select value={rankingSort} onChange={(event) => { setRankingSort(event.target.value); setRankingDirection("desc"); }}>{columns.map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><button onClick={() => setRankingDirection((direction) => direction === "desc" ? "asc" : "desc")} aria-label="Draai sorteervolgorde om">{rankingDirection === "desc" ? "Hoog → laag" : "Laag → hoog"}</button></div></div>
     <div className="ranking-card"><div className="ranking-head"><span>Speler</span>{columns.map(([key, label]) => <span key={key}><button className={rankingSort === key ? "ranking-sort active" : "ranking-sort"} onClick={() => changeSort(key)}>{label}{rankingSort === key && <b aria-hidden="true">{rankingDirection === "desc" ? "↓" : "↑"}</b>}</button></span>)}</div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span>{columns.map(([key, label, value]) => <span key={key} data-label={label}>{value(player)}</span>)}</div>)}</div>
+  </>;
+}
+
+function TeamHistoryView() {
+  return <>
+    <div className="page-heading"><div><p className="eyebrow">Door de jaren heen</p><h1>Teamhistorie</h1></div></div>
     <section className="team-history">
-      <div className="team-history-title"><p className="eyebrow">Historie</p><h2>Teamhistorie</h2></div>
       <div className="team-history-table" role="table" aria-label="Teamhistorie">
         <div className="team-history-head" role="row"><span>Seizoen</span><span>Team</span><span>Klasse</span><span>Eindpositie</span></div>
-        {teamHistory.map((entry) => <div className="team-history-row" role="row" key={entry.season}><strong data-label="Seizoen">{entry.season}</strong><span data-label="Team" className={entry.team === "SV Twello 3" ? "former-team" : ""}>{entry.team}</span><span data-label="Klasse">{entry.division}</span><strong data-label="Eindpositie" className={entry.position.includes("kampioen") ? "champion" : entry.position.includes("laatste") ? "last-place" : ""}>{entry.position}</strong></div>)}
+        {teamHistory.map((entry) => <div className="team-history-row" role="row" key={entry.season}>
+          <strong data-label="Seizoen">{entry.season}</strong>
+          <span data-label="Team" className={entry.formerTeam ? "former-team" : ""}>{entry.team}{entry.formerTeam && <small>({entry.formerTeam})</small>}</span>
+          <span data-label="Klasse">{entry.division}</span>
+          <strong data-label="Eindpositie" className={entry.result ? `history-result ${entry.result}` : ""}>{entry.result === "champion" && <span aria-label="Kampioen" title="Kampioen">🏆</span>}{entry.result === "last" && <span aria-label="Laatste plaats" title="Laatste plaats">🏮</span>}{entry.position}</strong>
+        </div>)}
       </div>
     </section>
   </>;

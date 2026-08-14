@@ -56,7 +56,7 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.equal(source.includes("captain-callout"), false);
   assert.ok(source.includes("players.filter((player) => score(player) === highest)"));
   assert.ok(source.includes('parts[0]?.includes("-")'));
-  for (const tab of ["Dashboard", "Staf", "Team", "Wedstrijden", "Trainingen", "Statistieken"]) assert.ok(source.includes(`label: "${tab}"`));
+  for (const tab of ["Dashboard", "Staf", "Team", "Wedstrijden", "Trainingen", "Statistieken", "Teamhistorie"]) assert.ok(source.includes(`label: "${tab}"`));
   assert.ok(source.includes('label: "Speler van het jaar"'));
   assert.ok(source.includes("Polo vergeten"));
   assert.ok(source.includes("menu-toggle"));
@@ -147,13 +147,17 @@ test("spelersranglijst kan op iedere statistiek worden gesorteerd", () => {
   assert.ok(css.includes(".ranking-controls"));
 });
 
-test("statistieken eindigen met de volledige teamhistorie", () => {
+test("teamhistorie heeft een eigen menu met de volledige historie", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
-  for (const text of ["Historie", "Teamhistorie", "Seizoen", "Klasse", "Eindpositie", "2025/2026", "2018/2019", "1e van 10 (kampioen)", "12e van 12 (laatste)", "SV Twello 3"]) assert.ok(source.includes(text));
-  assert.ok(source.indexOf('title="Spelersranglijst"') < source.indexOf('className="team-history"'));
+  for (const text of ["Teamhistorie", "Seizoen", "Klasse", "Eindpositie", "2025/2026", "2018/2019", "1e van 10", "12e van 12", "toen nog SV Twello 3", "🏆", "🏮"]) assert.ok(source.includes(text));
+  assert.ok(source.includes('{ id: "teamhistorie", label: "Teamhistorie" }'));
+  assert.ok(source.includes('activeView === "teamhistorie" && <TeamHistoryView/>'));
+  const statisticsSource = source.slice(source.indexOf("function StatisticsView"), source.indexOf("function TeamHistoryView"));
+  assert.equal(statisticsSource.includes('className="team-history"'), false);
   assert.ok(css.includes(".team-history-table"));
-  assert.ok(css.includes(".team-history-row .champion"));
+  assert.ok(css.includes(".team-history-row .history-result"));
+  assert.equal(css.includes(".team-history-row .champion"), false);
 });
 
 test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
