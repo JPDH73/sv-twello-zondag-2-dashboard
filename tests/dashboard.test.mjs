@@ -42,6 +42,7 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.matches[0]?.id, "O000000001");
   assert.equal(data.matches.find((match) => match.id === "M623608225")?.result, "");
   assert.equal(data.totals.matchesPlayed, 0);
+  assert.equal(data.staff.find((member) => member.name === "Jeffrey Karrenbeld")?.role, "Trainer / assistent-coach");
 });
 
 test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {

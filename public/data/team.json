@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-13T14:34:28.230Z",
+  "generatedAt": "2026-08-14T15:13:20.858Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -1469,7 +1469,7 @@
     {
       "id": "st5",
       "name": "Jeffrey Karrenbeld",
-      "role": "Trainer",
+      "role": "Trainer / assistent-coach",
       "totals": {
         "present": 0,
         "partial": 0,
