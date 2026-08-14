@@ -229,7 +229,7 @@ function StaffView({ staff, setSelectedStaff }: { staff: Staff[]; setSelectedSta
     return (aIndex < 0 ? staffOrder.length : aIndex) - (bIndex < 0 ? staffOrder.length : bIndex);
   });
   return <>
-    <div className="page-heading"><div><h1>Staf</h1></div></div>
+    <div className="page-heading"><div><h1>Teammanagement</h1></div></div>
     <div className="staff-grid">{orderedStaff.map((member) => <StaffCard key={member.id} member={member} onOpen={() => setSelectedStaff(member)}/>)}</div>
   </>;
 }

@@ -213,6 +213,7 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   const css = fs.readFileSync("app/globals.css", "utf8");
   assert.ok(source.indexOf('{ id: "dashboard"') < source.indexOf('{ id: "staf"'));
   assert.ok(source.indexOf('{ id: "staf"') < source.indexOf('{ id: "team"'));
+  assert.ok(source.includes("<h1>Teammanagement</h1>"));
   for (const text of ["StaffView", "staff-ea-card", "staff-key-stats", "Aanwezig", "Deels", "Afwezig", "Bekijk wedstrijdhistorie"]) assert.ok(source.includes(text));
   assert.equal(source.includes('<SectionHeading title="Staf"'), false);
   assert.ok(css.includes(".staff-ea-card"));
