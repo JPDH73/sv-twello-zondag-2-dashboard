@@ -65,8 +65,8 @@ function positionCode(position: string) {
 }
 function staffCode(role: string) {
   const normalized = role.toLocaleLowerCase("nl");
-  if (normalized.includes("coach")) return "COACH";
   if (normalized.includes("trainer")) return "TRAINER";
+  if (normalized.includes("coach")) return "COACH";
   if (normalized.includes("leider")) return "LEI";
   return "STAF";
 }
