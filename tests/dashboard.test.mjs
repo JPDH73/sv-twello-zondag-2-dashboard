@@ -147,6 +147,15 @@ test("spelersranglijst kan op iedere statistiek worden gesorteerd", () => {
   assert.ok(css.includes(".ranking-controls"));
 });
 
+test("statistieken eindigen met de volledige teamhistorie", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  for (const text of ["Historie", "Teamhistorie", "Seizoen", "Klasse", "Eindpositie", "2025/2026", "2018/2019", "1e van 10 (kampioen)", "12e van 12 (laatste)", "SV Twello 3"]) assert.ok(source.includes(text));
+  assert.ok(source.indexOf('title="Spelersranglijst"') < source.indexOf('className="team-history"'));
+  assert.ok(css.includes(".team-history-table"));
+  assert.ok(css.includes(".team-history-row .champion"));
+});
+
 test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
   const css = fs.readFileSync("app/globals.css", "utf8");
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
