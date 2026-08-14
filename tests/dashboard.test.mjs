@@ -209,6 +209,8 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   assert.ok(source.includes("orderedStaff.map"));
   assert.ok(source.includes('normalized.includes("coach")'));
   assert.ok(source.includes('return "COACH"'));
+  assert.ok(source.includes('normalized.includes("trainer")'));
+  assert.ok(source.includes('return "TRAINER"'));
 });
 
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
