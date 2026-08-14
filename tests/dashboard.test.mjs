@@ -162,19 +162,16 @@ test("teamhistorie heeft een eigen menu met de volledige historie", () => {
   assert.equal(css.includes(".team-history-row .champion"), false);
 });
 
-test("teamhistorie toont Jans legendarische Panenka als mobiele video", () => {
+test("teamhistorie toont Jans legendarische Panenka als betrouwbare mobiele animatie", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
   assert.ok(source.includes("Jan’s Legendarische Panenka"));
   assert.ok(source.includes("| Afscheidswedstrijd 12 juni 2022"));
-  assert.ok(source.includes("jans-legendarische-panenka-2022-v4.mp4"));
-  assert.ok(source.includes("URL.createObjectURL(blob)"));
-  assert.ok(source.includes('cache: "force-cache"'));
-  assert.ok(source.includes("controls playsInline preload=\"auto\""));
+  assert.ok(source.includes("jans-legendarische-panenka-2022.gif"));
   assert.ok(source.includes("Bekijk de Panenka"));
-  assert.ok(source.includes("video.play()"));
-  assert.ok(css.includes(".team-story-video video"));
-  assert.ok(fs.existsSync("public/media/jans-legendarische-panenka-2022-v4.mp4"));
+  assert.ok(source.includes("team-story-placeholder"));
+  assert.ok(css.includes(".team-story-video img"));
+  assert.ok(fs.existsSync("public/media/jans-legendarische-panenka-2022.gif"));
 });
 
 test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
