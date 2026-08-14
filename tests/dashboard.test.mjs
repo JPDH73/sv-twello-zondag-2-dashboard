@@ -167,10 +167,10 @@ test("teamhistorie toont Jans legendarische Panenka als mobiele video", () => {
   const css = fs.readFileSync("app/globals.css", "utf8");
   assert.ok(source.includes("Jan’s Legendarische Panenka"));
   assert.ok(source.includes("| Afscheidswedstrijd 12 juni 2022"));
-  assert.ok(source.includes('src="./media/jans-legendarische-panenka-2022.mp4"'));
+  assert.ok(source.includes('src="./media/jans-legendarische-panenka-2022-v2.mp4"'));
   assert.ok(source.includes("controls playsInline preload=\"metadata\""));
   assert.ok(css.includes(".team-story-video video"));
-  assert.ok(fs.existsSync("public/media/jans-legendarische-panenka-2022.mp4"));
+  assert.ok(fs.existsSync("public/media/jans-legendarische-panenka-2022-v2.mp4"));
 });
 
 test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
