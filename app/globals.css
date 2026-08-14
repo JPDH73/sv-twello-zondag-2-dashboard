@@ -235,6 +235,13 @@ button { color: inherit; }
 .team-history-row .history-result span { font-size: 18px; line-height: 1; }
 .team-history-row .former-team { font-weight: 400; }
 .team-history-row .former-team small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; font-weight: 750; }
+.team-story { display: grid; grid-template-columns: minmax(220px,.72fr) minmax(0,1.55fr); gap: clamp(20px,4vw,48px); align-items: center; margin-top: 34px; padding: clamp(20px,4vw,42px); border-radius: 24px; color: white; background: linear-gradient(135deg,var(--navy-deep),var(--navy) 58%,#075b8b); box-shadow: 0 20px 48px rgba(27,50,91,.16); overflow: hidden; }
+.team-story-copy .eyebrow { color: var(--blue-light); }
+.team-story-copy h2 { margin: 5px 0 9px; font-size: clamp(27px,3.5vw,44px); line-height: .98; letter-spacing: -.045em; }
+.team-story-copy h2 span, .team-story-copy h2 small { display: block; }
+.team-story-copy h2 small { margin-top: 11px; color: #cfe8f4; font-size: 13px; font-weight: 750; letter-spacing: 0; line-height: 1.35; }
+.team-story-video { overflow: hidden; border: 1px solid rgba(255,255,255,.18); border-radius: 18px; background: #050c16; box-shadow: 0 16px 34px rgba(0,0,0,.28); }
+.team-story-video video { display: block; width: 100%; max-height: 520px; background: #050c16; object-fit: contain; }
 .award-heading { margin-bottom: 16px; }
 .award-shell { position: relative; overflow: hidden; padding: clamp(18px,3vw,36px); border: 1px solid rgba(27,50,91,.1); border-radius: 28px; background: radial-gradient(circle at 50% 30%,rgba(0,142,207,.11),transparent 34%),linear-gradient(145deg,#fff,#f3f8fc); box-shadow: 0 24px 65px rgba(27,50,91,.12); }
 .award-shell::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg,transparent 48%,rgba(255,255,255,.72) 49%,transparent 50%); opacity: .5; }
@@ -365,6 +372,9 @@ button { color: inherit; }
   .team-history-row > *::before { content: attr(data-label); color: var(--muted); font-size: 8px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
   .team-history-row .history-result { align-items: center; flex-direction: row; justify-self: stretch; }
   .team-history-row .history-result::before { margin-right: auto; }
+  .team-story { grid-template-columns: 1fr; margin-top: 24px; padding: 18px; border-radius: 20px; }
+  .team-story-copy h2 { font-size: clamp(25px,8vw,36px); }
+  .team-story-video { border-radius: 14px; }
   .award-shell { padding: 16px 10px 20px; border-radius: 20px; }
   .award-year-selector { gap: 6px; }
   .award-year-selector button { min-width: 58px; min-height: 38px; padding: 0 11px; font-size: 12px; }

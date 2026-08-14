@@ -287,6 +287,18 @@ function TeamHistoryView() {
         </div>)}
       </div>
     </section>
+    <section className="team-story" aria-labelledby="panenka-title">
+      <div className="team-story-copy">
+        <p className="eyebrow">Team story</p>
+        <h2 id="panenka-title"><span>Jan’s Legendarische Panenka</span><small>| Afscheidswedstrijd 12 juni 2022</small></h2>
+      </div>
+      <div className="team-story-video">
+        <video controls playsInline preload="metadata" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022">
+          <source src="./media/jans-legendarische-panenka-2022.mp4" type="video/mp4" />
+          Je browser ondersteunt deze video niet.
+        </video>
+      </div>
+    </section>
   </>;
 }
 

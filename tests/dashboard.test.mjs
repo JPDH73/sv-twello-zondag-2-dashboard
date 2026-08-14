@@ -162,6 +162,17 @@ test("teamhistorie heeft een eigen menu met de volledige historie", () => {
   assert.equal(css.includes(".team-history-row .champion"), false);
 });
 
+test("teamhistorie toont Jans legendarische Panenka als mobiele video", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.ok(source.includes("Jan’s Legendarische Panenka"));
+  assert.ok(source.includes("| Afscheidswedstrijd 12 juni 2022"));
+  assert.ok(source.includes('src="./media/jans-legendarische-panenka-2022.mp4"'));
+  assert.ok(source.includes("controls playsInline preload=\"metadata\""));
+  assert.ok(css.includes(".team-story-video video"));
+  assert.ok(fs.existsSync("public/media/jans-legendarische-panenka-2022.mp4"));
+});
+
 test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
   const css = fs.readFileSync("app/globals.css", "utf8");
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
