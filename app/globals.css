@@ -247,6 +247,8 @@ button { color: inherit; }
 .team-story-play strong { font-size: 13px; letter-spacing: .04em; }
 .team-story-play:hover span, .team-story-play:focus-visible span { transform: scale(1.06); background: var(--blue-light); }
 .team-story-play:focus-visible { outline: 3px solid var(--blue-light); outline-offset: -5px; }
+.team-story-play:disabled { cursor: wait; }
+.team-story-play:disabled span { opacity: .65; }
 .award-heading { margin-bottom: 16px; }
 .award-shell { position: relative; overflow: hidden; padding: clamp(18px,3vw,36px); border: 1px solid rgba(27,50,91,.1); border-radius: 28px; background: radial-gradient(circle at 50% 30%,rgba(0,142,207,.11),transparent 34%),linear-gradient(145deg,#fff,#f3f8fc); box-shadow: 0 24px 65px rgba(27,50,91,.12); }
 .award-shell::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg,transparent 48%,rgba(255,255,255,.72) 49%,transparent 50%); opacity: .5; }

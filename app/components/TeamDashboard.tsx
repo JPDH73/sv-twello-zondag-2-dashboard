@@ -276,6 +276,24 @@ function StatisticsView({ data }: { data: TeamData }) {
 function TeamHistoryView() {
   const storyVideoRef = useRef<HTMLVideoElement>(null);
   const [storyPlaying, setStoryPlaying] = useState(false);
+  const [storyVideoUrl, setStoryVideoUrl] = useState("");
+  const [storyVideoLoadError, setStoryVideoLoadError] = useState(false);
+  useEffect(() => {
+    let active = true;
+    let objectUrl = "";
+    fetch("./media/jans-legendarische-panenka-2022-v4.mp4", { cache: "force-cache" })
+      .then((response) => { if (!response.ok) throw new Error("Video kon niet worden geladen."); return response.blob(); })
+      .then((blob) => {
+        objectUrl = URL.createObjectURL(blob);
+        if (active) setStoryVideoUrl(objectUrl);
+        else URL.revokeObjectURL(objectUrl);
+      })
+      .catch(() => { if (active) setStoryVideoLoadError(true); });
+    return () => {
+      active = false;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
+  }, []);
   const playStoryVideo = () => {
     const video = storyVideoRef.current;
     if (!video) return;
@@ -300,9 +318,8 @@ function TeamHistoryView() {
         <h2 id="panenka-title"><span>Jan’s Legendarische Panenka</span><small>| Afscheidswedstrijd 12 juni 2022</small></h2>
       </div>
       <div className="team-story-video">
-        {!storyPlaying && <button className="team-story-play" type="button" onClick={playStoryVideo} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>Bekijk de Panenka</strong></button>}
-        <video ref={storyVideoRef} controls playsInline preload="auto" onPlay={() => setStoryPlaying(true)} onPause={() => setStoryPlaying(false)} onEnded={() => setStoryPlaying(false)} aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022">
-          <source src="./media/jans-legendarische-panenka-2022-v4.mp4" type="video/mp4" />
+        {!storyPlaying && <button className="team-story-play" type="button" onClick={playStoryVideo} disabled={!storyVideoUrl} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>{storyVideoLoadError ? "Video kon niet laden" : storyVideoUrl ? "Bekijk de Panenka" : "Video laden…"}</strong></button>}
+        <video ref={storyVideoRef} src={storyVideoUrl || undefined} controls playsInline preload="auto" onPlay={() => setStoryPlaying(true)} onPause={() => setStoryPlaying(false)} onEnded={() => setStoryPlaying(false)} aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022">
           Je browser ondersteunt deze video niet.
         </video>
       </div>
