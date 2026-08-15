@@ -297,9 +297,8 @@ function TeamHistoryView() {
       </div>
       <div className="team-story-video">
         {!storyPlaying && <button className="team-story-play" type="button" onClick={() => setStoryPlaying(true)} disabled={!storyReady} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>{storyLoadError ? "Beelden konden niet laden" : storyReady ? "Bekijk de Panenka" : "Beelden laden…"}</strong></button>}
-        <div className="team-story-strip" role="img" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022">
-          <img className={storyPlaying ? "playing" : ""} src="./media/jans-panenka-strip.png" alt="" aria-hidden="true" onLoad={() => setStoryReady(true)} onError={() => setStoryLoadError(true)} />
-        </div>
+        <img className="team-story-preload" src="./media/jans-panenka-sprite.png" alt="" aria-hidden="true" onLoad={() => setStoryReady(true)} onError={() => setStoryLoadError(true)} />
+        <div className={storyPlaying ? "team-story-strip playing" : "team-story-strip"} role="img" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022" />
       </div>
     </section>
   </>;

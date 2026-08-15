@@ -241,10 +241,41 @@ button { color: inherit; }
 .team-story-copy h2 span, .team-story-copy h2 small { display: block; }
 .team-story-copy h2 small { margin-top: 11px; color: #cfe8f4; font-size: 13px; font-weight: 750; letter-spacing: 0; line-height: 1.35; }
 .team-story-video { position: relative; justify-self: center; width: min(100%,284px); overflow: hidden; border: 1px solid rgba(255,255,255,.18); border-radius: 18px; background: #050c16; box-shadow: 0 16px 34px rgba(0,0,0,.28); }
-.team-story-strip { display: block; width: 100%; aspect-ratio: 29/53; overflow: hidden; background: #050c16; }
-.team-story-strip img { display: block; width: 3000%; max-width: none; height: 100%; object-fit: fill; transform: translateX(0); }
-.team-story-strip img.playing { animation: panenka-frames 5s steps(30,end) infinite; }
-@keyframes panenka-frames { to { transform: translateX(-100%); } }
+.team-story-preload { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.team-story-strip { display: block; width: 100%; aspect-ratio: 29/53; background-color: #050c16; background-image: url("/media/jans-panenka-sprite.png"); background-repeat: no-repeat; background-position: 0 0; background-size: 600% 500%; }
+.team-story-strip.playing { animation: panenka-frames 5s steps(1,end) infinite; }
+@keyframes panenka-frames {
+  0% { background-position: 0 0; }
+  3.333% { background-position: 20% 0; }
+  6.667% { background-position: 40% 0; }
+  10% { background-position: 60% 0; }
+  13.333% { background-position: 80% 0; }
+  16.667% { background-position: 100% 0; }
+  20% { background-position: 0 25%; }
+  23.333% { background-position: 20% 25%; }
+  26.667% { background-position: 40% 25%; }
+  30% { background-position: 60% 25%; }
+  33.333% { background-position: 80% 25%; }
+  36.667% { background-position: 100% 25%; }
+  40% { background-position: 0 50%; }
+  43.333% { background-position: 20% 50%; }
+  46.667% { background-position: 40% 50%; }
+  50% { background-position: 60% 50%; }
+  53.333% { background-position: 80% 50%; }
+  56.667% { background-position: 100% 50%; }
+  60% { background-position: 0 75%; }
+  63.333% { background-position: 20% 75%; }
+  66.667% { background-position: 40% 75%; }
+  70% { background-position: 60% 75%; }
+  73.333% { background-position: 80% 75%; }
+  76.667% { background-position: 100% 75%; }
+  80% { background-position: 0 100%; }
+  83.333% { background-position: 20% 100%; }
+  86.667% { background-position: 40% 100%; }
+  90% { background-position: 60% 100%; }
+  93.333% { background-position: 80% 100%; }
+  96.667%,100% { background-position: 100% 100%; }
+}
 .team-story-play { position: absolute; inset: 0; z-index: 2; display: grid; place-content: center; justify-items: center; gap: 10px; width: 100%; border: 0; color: white; background: linear-gradient(rgba(5,12,22,.18),rgba(5,12,22,.58)); cursor: pointer; }
 .team-story-play span { display: grid; place-items: center; width: 68px; height: 68px; padding-left: 5px; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(0,142,207,.92); font-size: 27px; box-shadow: 0 12px 28px rgba(0,0,0,.3); transition: transform .16s ease,background .16s ease; }
 .team-story-play strong { font-size: 13px; letter-spacing: .04em; }
@@ -396,5 +427,5 @@ button { color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
-  .team-story-strip img.playing { animation-duration: 5s !important; }
+  .team-story-strip.playing { animation-duration: 5s !important; }
 }
