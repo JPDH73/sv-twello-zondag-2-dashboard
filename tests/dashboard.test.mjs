@@ -169,10 +169,11 @@ test("teamhistorie toont Jans legendarische Panenka met een mobiele beeldstrook"
   assert.ok(source.includes("| Afscheidswedstrijd 12 juni 2022"));
   assert.ok(source.includes("jans-panenka-strip.png"));
   assert.ok(source.includes("Bekijk de Panenka"));
-  assert.ok(source.includes("team-story-strip playing"));
+  assert.ok(source.includes('className={storyPlaying ? "playing" : ""}'));
   assert.ok(css.includes("@keyframes panenka-frames"));
   assert.ok(css.includes("steps(30,end)"));
-  assert.ok(css.includes(".team-story-strip.playing { animation-duration: 5s !important; }"));
+  assert.ok(css.includes("width: min(100%,284px)"));
+  assert.ok(css.includes(".team-story-strip img.playing { animation-duration: 5s !important; }"));
   assert.ok(fs.existsSync("public/media/jans-panenka-strip.png"));
 });
 
