@@ -43,6 +43,7 @@ const staffOrder = [
   "Christiaan Grootgens",
   "Jean-Paul de Haas",
 ];
+const panenkaFrames = Array.from({ length: 30 }, (_, index) => `./media/panenka-frames/frame-${String(index + 1).padStart(2, "0")}.jpg`);
 
 const teamHistory = [
   { season: "2025/2026", team: "SV Twello 2", division: "5e klasse", position: "12e van 12", result: "last" },
@@ -277,6 +278,30 @@ function TeamHistoryView() {
   const [storyReady, setStoryReady] = useState(false);
   const [storyPlaying, setStoryPlaying] = useState(false);
   const [storyLoadError, setStoryLoadError] = useState(false);
+  const [storyFrame, setStoryFrame] = useState(0);
+  useEffect(() => {
+    let active = true;
+    let loaded = 0;
+    const images = panenkaFrames.map((source) => {
+      const image = new Image();
+      image.onload = () => {
+        loaded += 1;
+        if (active && loaded === panenkaFrames.length) setStoryReady(true);
+      };
+      image.onerror = () => { if (active) setStoryLoadError(true); };
+      image.src = source;
+      return image;
+    });
+    return () => {
+      active = false;
+      images.forEach((image) => { image.onload = null; image.onerror = null; });
+    };
+  }, []);
+  useEffect(() => {
+    if (!storyPlaying) return;
+    const timer = window.setInterval(() => setStoryFrame((frame) => (frame + 1) % panenkaFrames.length), 1000 / 6);
+    return () => window.clearInterval(timer);
+  }, [storyPlaying]);
   return <>
     <div className="page-heading"><div><p className="eyebrow">De eindstanden door de jaren heen</p><h1>Teamhistorie</h1></div></div>
     <section className="team-history">
@@ -296,9 +321,8 @@ function TeamHistoryView() {
         <h2 id="panenka-title"><span>Jan’s Legendarische Panenka</span><small>| Afscheidswedstrijd 12 juni 2022</small></h2>
       </div>
       <div className="team-story-video">
-        {!storyPlaying && <button className="team-story-play" type="button" onClick={() => setStoryPlaying(true)} disabled={!storyReady} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>{storyLoadError ? "Beelden konden niet laden" : storyReady ? "Bekijk de Panenka" : "Beelden laden…"}</strong></button>}
-        <img className="team-story-preload" src="./media/jans-panenka-sprite.png" alt="" aria-hidden="true" onLoad={() => setStoryReady(true)} onError={() => setStoryLoadError(true)} />
-        <div className={storyPlaying ? "team-story-strip playing" : "team-story-strip"} role="img" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022" />
+        {!storyPlaying && <button className="team-story-play" type="button" onClick={() => { setStoryFrame(0); setStoryPlaying(true); }} disabled={!storyReady} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>{storyLoadError ? "Beelden konden niet laden" : storyReady ? "Bekijk de Panenka" : "Beelden laden…"}</strong></button>}
+        <img className="team-story-frame" src={panenkaFrames[storyFrame]} alt="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022" />
       </div>
     </section>
   </>;

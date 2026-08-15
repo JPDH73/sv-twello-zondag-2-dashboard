@@ -162,20 +162,19 @@ test("teamhistorie heeft een eigen menu met de volledige historie", () => {
   assert.equal(css.includes(".team-history-row .champion"), false);
 });
 
-test("teamhistorie toont Jans legendarische Panenka met een mobiele beeldstrook", () => {
+test("teamhistorie toont Jans legendarische Panenka met vooraf geladen mobiele beelden", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
   assert.ok(source.includes("Jan’s Legendarische Panenka"));
   assert.ok(source.includes("| Afscheidswedstrijd 12 juni 2022"));
-  assert.ok(source.includes("jans-panenka-sprite.png"));
+  assert.ok(source.includes("panenka-frames/frame-"));
   assert.ok(source.includes("Bekijk de Panenka"));
-  assert.ok(source.includes('className={storyPlaying ? "team-story-strip playing" : "team-story-strip"}'));
-  assert.ok(css.includes("@keyframes panenka-frames"));
-  assert.ok(css.includes("steps(1,end)"));
+  assert.ok(source.includes("window.setInterval"));
+  assert.ok(source.includes("setStoryFrame"));
   assert.ok(css.includes("width: min(100%,284px)"));
-  assert.ok(css.includes("background-size: 600% 500%"));
-  assert.ok(css.includes(".team-story-strip.playing { animation-duration: 5s !important; }"));
-  assert.ok(fs.existsSync("public/media/jans-panenka-sprite.png"));
+  assert.ok(css.includes(".team-story-frame"));
+  assert.ok(fs.existsSync("public/media/panenka-frames/frame-01.jpg"));
+  assert.ok(fs.existsSync("public/media/panenka-frames/frame-30.jpg"));
 });
 
 test("bovenbeeld volgt de aangeleverde bannercompositie", () => {
