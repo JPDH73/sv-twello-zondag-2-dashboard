@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Match = { id: string; date: string; time: string; home: string; away: string; result: string; competition: string };
 type PlayerMatch = Match & { status: string; goals: number; assists: number; yellow: number; red: number; penaltiesScored: number; penaltiesMissed: number; late: boolean; flagged: boolean; polo: boolean; kept: boolean; captain: boolean };
@@ -274,41 +274,15 @@ function StatisticsView({ data }: { data: TeamData }) {
 }
 
 function TeamHistoryView() {
-  const storyCanvasRef = useRef<HTMLCanvasElement>(null);
-  const storySpriteRef = useRef<HTMLImageElement | null>(null);
   const [storyReady, setStoryReady] = useState(false);
   const [storyPlaying, setStoryPlaying] = useState(false);
   const [storyLoadError, setStoryLoadError] = useState(false);
   useEffect(() => {
-    const sprite = new Image();
-    sprite.onload = () => {
-      storySpriteRef.current = sprite;
-      const context = storyCanvasRef.current?.getContext("2d");
-      context?.drawImage(sprite, 0, 0, 232, 424, 0, 0, 232, 424);
-      setStoryReady(true);
-    };
-    sprite.onerror = () => setStoryLoadError(true);
-    sprite.src = "./media/jans-panenka-sprite.png";
-    return () => { storySpriteRef.current = null; };
+    const strip = new Image();
+    strip.onload = () => setStoryReady(true);
+    strip.onerror = () => setStoryLoadError(true);
+    strip.src = "./media/jans-panenka-strip.png";
   }, []);
-  useEffect(() => {
-    if (!storyPlaying || !storyReady) return;
-    let animationFrame = 0;
-    const startedAt = performance.now();
-    const draw = (now: number) => {
-      const context = storyCanvasRef.current?.getContext("2d");
-      const sprite = storySpriteRef.current;
-      if (context && sprite) {
-        const frame = Math.floor((now - startedAt) / (1000 / 6)) % 30;
-        const column = frame % 6;
-        const row = Math.floor(frame / 6);
-        context.drawImage(sprite, column * 232, row * 424, 232, 424, 0, 0, 232, 424);
-      }
-      animationFrame = requestAnimationFrame(draw);
-    };
-    animationFrame = requestAnimationFrame(draw);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [storyPlaying, storyReady]);
   return <>
     <div className="page-heading"><div><p className="eyebrow">De eindstanden door de jaren heen</p><h1>Teamhistorie</h1></div></div>
     <section className="team-history">
@@ -329,7 +303,7 @@ function TeamHistoryView() {
       </div>
       <div className="team-story-video">
         {!storyPlaying && <button className="team-story-play" type="button" onClick={() => setStoryPlaying(true)} disabled={!storyReady} aria-label="Speel Jan’s Legendarische Panenka af"><span aria-hidden="true">▶</span><strong>{storyLoadError ? "Beelden konden niet laden" : storyReady ? "Bekijk de Panenka" : "Beelden laden…"}</strong></button>}
-        <canvas ref={storyCanvasRef} width="232" height="424" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022" />
+        <div className={storyPlaying ? "team-story-strip playing" : "team-story-strip"} role="img" aria-label="Jan’s Legendarische Panenka tijdens de afscheidswedstrijd van 12 juni 2022" />
       </div>
     </section>
   </>;

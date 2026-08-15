@@ -241,7 +241,9 @@ button { color: inherit; }
 .team-story-copy h2 span, .team-story-copy h2 small { display: block; }
 .team-story-copy h2 small { margin-top: 11px; color: #cfe8f4; font-size: 13px; font-weight: 750; letter-spacing: 0; line-height: 1.35; }
 .team-story-video { position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,.18); border-radius: 18px; background: #050c16; box-shadow: 0 16px 34px rgba(0,0,0,.28); }
-.team-story-video canvas { display: block; width: 100%; height: auto; max-height: 520px; background: radial-gradient(circle at 50% 44%,rgba(0,142,207,.24),transparent 24%),linear-gradient(145deg,#101e33,#050c16); object-fit: contain; }
+.team-story-strip { display: block; width: 100%; aspect-ratio: 29/53; max-height: 520px; background-color: #050c16; background-image: url("/media/jans-panenka-strip.png"); background-repeat: no-repeat; background-position: 0 0; background-size: 3000% 100%; }
+.team-story-strip.playing { animation: panenka-frames 5s steps(30,end) infinite; }
+@keyframes panenka-frames { to { background-position: 103.448275% 0; } }
 .team-story-play { position: absolute; inset: 0; z-index: 2; display: grid; place-content: center; justify-items: center; gap: 10px; width: 100%; border: 0; color: white; background: linear-gradient(rgba(5,12,22,.18),rgba(5,12,22,.58)); cursor: pointer; }
 .team-story-play span { display: grid; place-items: center; width: 68px; height: 68px; padding-left: 5px; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(0,142,207,.92); font-size: 27px; box-shadow: 0 12px 28px rgba(0,0,0,.3); transition: transform .16s ease,background .16s ease; }
 .team-story-play strong { font-size: 13px; letter-spacing: .04em; }
@@ -393,4 +395,5 @@ button { color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .team-story-strip.playing { animation-duration: 5s !important; }
 }
