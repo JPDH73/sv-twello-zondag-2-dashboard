@@ -42,7 +42,7 @@ const staffOrder = [
   "Sander Bouwmeester",
   "Jan Berkenbosch",
   "Jean-Paul de Haas",
-  "Christiaan Grootgens",
+  "Christiaan Göttgens",
 ];
 const selectionLines = [
   { position: "Keeper", title: "Keepers" },

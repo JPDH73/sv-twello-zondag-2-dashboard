@@ -243,7 +243,7 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   assert.ok(css.includes("linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72)"));
   assert.ok(css.includes(".staff-ea-card .player-key-stats > span + span"));
   assert.ok(css.includes("@media (max-width: 800px)"));
-  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Jean-Paul de Haas", "Christiaan Grootgens"];
+  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Jean-Paul de Haas", "Christiaan Göttgens"];
   for (let index = 1; index < requestedOrder.length; index += 1) {
     assert.ok(source.indexOf(`"${requestedOrder[index - 1]}"`) < source.indexOf(`"${requestedOrder[index]}"`));
   }
