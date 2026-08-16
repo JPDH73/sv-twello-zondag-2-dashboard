@@ -174,7 +174,7 @@ button { color: inherit; }
 .role-tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
 .role-tag { padding: 5px 8px; border-radius: 999px; font-size: 10px; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; }
 .role-tag.captain { color: white; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3); }
-.role-tag.guest { color: white; background: rgba(0,142,207,.38); border: 1px solid rgba(255,255,255,.24); }
+.role-tag.guest { color: var(--navy); background: #b9eafd; border: 1px solid #8edcf7; }
 .player-key-stats { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); margin-top: 16px; border-top: 1px solid rgba(255,255,255,.26); border-bottom: 1px solid rgba(255,255,255,.26); }
 .player-key-stats > span { display: flex; flex-direction: column; align-items: center; min-width: 0; padding: 10px 3px; text-align: center; }
 .player-key-stats > span + span { border-left: 1px solid rgba(255,255,255,.17); }
