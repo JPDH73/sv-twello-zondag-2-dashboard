@@ -10,7 +10,7 @@ if (!selectedFile) {
   process.exit(1);
 }
 const inputPath = path.resolve(selectedFile);
-const outputPath = path.resolve("public/data/team.json");
+const outputPath = path.resolve(process.env.TEAM_OUTPUT_PATH || "public/data/team.json");
 
 if (!fs.existsSync(inputPath)) {
   console.error(`Excel-bestand niet gevonden: ${inputPath}`);
