@@ -243,7 +243,7 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   assert.ok(css.includes("linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72)"));
   assert.ok(css.includes(".staff-ea-card .player-key-stats > span + span"));
   assert.ok(css.includes("@media (max-width: 800px)"));
-  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Jean-Paul de Haas", "Christiaan Göttgens"];
+  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Christiaan Göttgens", "Jean-Paul de Haas"];
   for (let index = 1; index < requestedOrder.length; index += 1) {
     assert.ok(source.indexOf(`"${requestedOrder[index - 1]}"`) < source.indexOf(`"${requestedOrder[index]}"`));
   }
@@ -261,7 +261,9 @@ test("selectie wordt per linie in een eigen rij getoond", () => {
   for (const [position, title] of [["Keeper", "Keepers"], ["Verdediger", "Verdedigers"], ["Middenvelder", "Middenvelders"], ["Aanvaller", "Aanvallers"]]) {
     assert.ok(source.includes(`{ position: "${position}", title: "${title}" }`));
   }
-  assert.ok(source.includes('players.filter((player) => player.position === line.position)'));
+  assert.ok(source.includes('players.filter((player) => !player.guest && player.position === line.position)'));
+  assert.ok(source.includes('const guestPlayers = players.filter((player) => player.guest)'));
+  assert.ok(source.includes('id="selection-guests">Gastspelers</h2>'));
   assert.ok(source.includes('className="selection-line"'));
   assert.ok(source.includes('<div className="player-grid">{line.players.map'));
   assert.ok(css.includes(".selection-lines { display: grid;"));

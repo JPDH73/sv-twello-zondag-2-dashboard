@@ -41,8 +41,8 @@ const staffOrder = [
   "Jeffrey Karrenbeld",
   "Sander Bouwmeester",
   "Jan Berkenbosch",
-  "Jean-Paul de Haas",
   "Christiaan Göttgens",
+  "Jean-Paul de Haas",
 ];
 const selectionLines = [
   { position: "Keeper", title: "Keepers" },
@@ -235,11 +235,12 @@ function StaffView({ staff, setSelectedStaff }: { staff: Staff[]; setSelectedSta
 function TeamView({ players, query, setQuery, sort, setSort, setSelected }: { players: Player[]; query: string; setQuery: (value: string) => void; sort: string; setSort: (value: string) => void; setSelected: (player: Player) => void }) {
   const groupedPlayers = selectionLines.map((line) => ({
     ...line,
-    players: players.filter((player) => player.position === line.position),
+    players: players.filter((player) => !player.guest && player.position === line.position),
   }));
+  const guestPlayers = players.filter((player) => player.guest);
   return <>
     <div className="page-heading"><div><h1>Selectie</h1></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
-    {players.length ? <div className="selection-lines">{groupedPlayers.map((line) => line.players.length ? <section className="selection-line" key={line.position} aria-labelledby={`selection-${line.position}`}><h2 id={`selection-${line.position}`}>{line.title}</h2><div className="player-grid">{line.players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div></section> : null)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
+    {players.length ? <div className="selection-lines">{groupedPlayers.map((line) => line.players.length ? <section className="selection-line" key={line.position} aria-labelledby={`selection-${line.position}`}><h2 id={`selection-${line.position}`}>{line.title}</h2><div className="player-grid">{line.players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div></section> : null)}{guestPlayers.length ? <section className="selection-line" aria-labelledby="selection-guests"><h2 id="selection-guests">Gastspelers</h2><div className="player-grid">{guestPlayers.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div></section> : null}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
   </>;
 }
 
