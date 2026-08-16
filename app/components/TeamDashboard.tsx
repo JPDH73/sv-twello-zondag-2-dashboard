@@ -28,7 +28,7 @@ type View = "dashboard" | "staf" | "team" | "wedstrijden" | "trainingen" | "stat
 const views: { id: View; label: string }[] = [
   { id: "dashboard", label: "Dashboard" },
   { id: "staf", label: "Staf" },
-  { id: "team", label: "Team" },
+  { id: "team", label: "Selectie" },
   { id: "wedstrijden", label: "Wedstrijden" },
   { id: "trainingen", label: "Trainingen" },
   { id: "statistieken", label: "Statistieken" },
@@ -41,8 +41,14 @@ const staffOrder = [
   "Jeffrey Karrenbeld",
   "Sander Bouwmeester",
   "Jan Berkenbosch",
-  "Christiaan Grootgens",
   "Jean-Paul de Haas",
+  "Christiaan Grootgens",
+];
+const selectionLines = [
+  { position: "Keeper", title: "Keepers" },
+  { position: "Verdediger", title: "Verdedigers" },
+  { position: "Middenvelder", title: "Middenvelders" },
+  { position: "Aanvaller", title: "Aanvallers" },
 ];
 const panenkaFrames = Array.from({ length: 30 }, (_, index) => `./media/panenka-frames/frame-${String(index + 1).padStart(2, "0")}.jpg`);
 
@@ -227,9 +233,13 @@ function StaffView({ staff, setSelectedStaff }: { staff: Staff[]; setSelectedSta
 }
 
 function TeamView({ players, query, setQuery, sort, setSort, setSelected }: { players: Player[]; query: string; setQuery: (value: string) => void; sort: string; setSort: (value: string) => void; setSelected: (player: Player) => void }) {
+  const groupedPlayers = selectionLines.map((line) => ({
+    ...line,
+    players: players.filter((player) => player.position === line.position),
+  }));
   return <>
-    <div className="page-heading"><div><h1>Team</h1></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
-    {players.length ? <div className="player-grid">{players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
+    <div className="page-heading"><div><h1>Selectie</h1></div><div className="controls"><label className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><span className="sr-only">Zoek speler</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek op naam…" /></label><label><span className="sr-only">Sorteer spelers</span><select className="sort-select" value={sort} onChange={(event) => setSort(event.target.value)}><option value="nummer">Sorteer: rugnummer</option><option value="naam">Naam</option><option value="training">Trainingspercentage</option><option value="goals">Doelpunten</option><option value="assists">Assists</option></select></label></div></div>
+    {players.length ? <div className="selection-lines">{groupedPlayers.map((line) => line.players.length ? <section className="selection-line" key={line.position} aria-labelledby={`selection-${line.position}`}><h2 id={`selection-${line.position}`}>{line.title}</h2><div className="player-grid">{line.players.map((player) => <PlayerCard key={player.id} player={player} onOpen={() => setSelected(player)}/>)}</div></section> : null)}</div> : <div className="empty-state">Geen speler gevonden voor “{query}”.</div>}
   </>;
 }
 

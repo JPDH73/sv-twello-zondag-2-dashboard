@@ -64,7 +64,7 @@ test("dashboard gebruikt de nieuwe header en tabnavigatie", () => {
   assert.equal(source.includes("captain-callout"), false);
   assert.ok(source.includes("players.filter((player) => score(player) === highest)"));
   assert.ok(source.includes('parts[0]?.includes("-")'));
-  for (const tab of ["Dashboard", "Staf", "Team", "Wedstrijden", "Trainingen", "Statistieken", "Teamhistorie"]) assert.ok(source.includes(`label: "${tab}"`));
+  for (const tab of ["Dashboard", "Staf", "Selectie", "Wedstrijden", "Trainingen", "Statistieken", "Teamhistorie"]) assert.ok(source.includes(`label: "${tab}"`));
   assert.ok(source.includes('label: "Speler van het jaar"'));
   assert.ok(source.includes("Polo vergeten"));
   assert.ok(source.includes("menu-toggle"));
@@ -243,7 +243,7 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   assert.ok(css.includes("linear-gradient(145deg,#fffef0,#fffda5 54%,#e8df72)"));
   assert.ok(css.includes(".staff-ea-card .player-key-stats > span + span"));
   assert.ok(css.includes("@media (max-width: 800px)"));
-  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Christiaan Grootgens", "Jean-Paul de Haas"];
+  const requestedOrder = ["Andrew Hietbrink", "Jeffrey Karrenbeld", "Sander Bouwmeester", "Jan Berkenbosch", "Jean-Paul de Haas", "Christiaan Grootgens"];
   for (let index = 1; index < requestedOrder.length; index += 1) {
     assert.ok(source.indexOf(`"${requestedOrder[index - 1]}"`) < source.indexOf(`"${requestedOrder[index]}"`));
   }
@@ -253,6 +253,18 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
   assert.ok(source.includes('normalized.includes("trainer")'));
   assert.ok(source.includes('return "TRAINER"'));
   assert.ok(source.indexOf('normalized.includes("trainer")') < source.indexOf('normalized.includes("coach")'));
+});
+
+test("selectie wordt per linie in een eigen rij getoond", () => {
+  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  for (const [position, title] of [["Keeper", "Keepers"], ["Verdediger", "Verdedigers"], ["Middenvelder", "Middenvelders"], ["Aanvaller", "Aanvallers"]]) {
+    assert.ok(source.includes(`{ position: "${position}", title: "${title}" }`));
+  }
+  assert.ok(source.includes('players.filter((player) => player.position === line.position)'));
+  assert.ok(source.includes('className="selection-line"'));
+  assert.ok(source.includes('<div className="player-grid">{line.players.map'));
+  assert.ok(css.includes(".selection-lines { display: grid;"));
 });
 
 test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
