@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import teamData from "virtual:team-data";
 
 type Match = { id: string; date: string; time: string; home: string; away: string; result: string; competition: string };
 type PlayerMatch = Match & { status: string; goals: number; assists: number; yellow: number; red: number; penaltiesScored: number; penaltiesMissed: number; late: boolean; flagged: boolean; polo: boolean; kept: boolean; captain: boolean };
@@ -69,7 +70,7 @@ function opponent(match: Match) { return match.home === "SV Twello 2" ? match.aw
 function venue(match: Match) { return match.home === "SV Twello 2" ? "Thuis" : "Uit"; }
 function positionCode(position: string) {
   const normalized = position.toLocaleLowerCase("nl");
-  if (normalized.includes("keeper")) return "K";
+  if (normalized.includes("keeper")) return "Kee";
   if (normalized.includes("verded")) return "VER";
   if (normalized.includes("midden")) return "MID";
   if (normalized.includes("aanval")) return "AAN";
@@ -101,8 +102,7 @@ function rankedPlayers(players: Player[], score: (player: Player) => number, dir
   return sorted.slice(0, limit);
 }
 export function TeamDashboard() {
-  const [data, setData] = useState<TeamData | null>(null);
-  const [error, setError] = useState("");
+  const [data] = useState<TeamData>(teamData as TeamData);
   const [activeView, setActiveView] = useState<View>("dashboard");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("nummer");
@@ -110,12 +110,6 @@ export function TeamDashboard() {
   const [selectedStaff, setSelectedStaff] = useState<Staff | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    fetch("./data/team.json", { cache: "no-store" })
-      .then((response) => { if (!response.ok) throw new Error("Dashboardgegevens konden niet worden geladen."); return response.json(); })
-      .then((json: TeamData) => setData(json))
-      .catch((err: Error) => setError(err.message));
-  }, []);
   useEffect(() => {
     if (!selected && !selectedStaff) return;
     const close = (event: KeyboardEvent) => { if (event.key === "Escape") { setSelected(null); setSelectedStaff(null); } };
@@ -134,9 +128,6 @@ export function TeamDashboard() {
       return (Number(a.number) || 999) - (Number(b.number) || 999) || a.name.localeCompare(b.name, "nl");
     });
   }, [data, query, sort]);
-
-  if (error) return <main className="error-box"><h1>Dashboard niet beschikbaar</h1><p>{error}</p></main>;
-  if (!data) return <main className="loading"><div className="loading-card"><div className="loading-ball"/><strong>Teamdashboard laden…</strong></div></main>;
 
   const generated = new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt));
   const program = upcomingMatches(data.matches);
@@ -172,7 +163,7 @@ export function TeamDashboard() {
     </section>}
 
     <div className="content">
-      {activeView === "dashboard" && <DashboardView data={data} program={program}/>}
+      {activeView === "dashboard" && <DashboardView data={data} program={program} onNavigate={setActiveView}/>}
       {activeView === "staf" && (
         <StaffView staff={data.staff} setSelectedStaff={setSelectedStaff}/>
       )}
@@ -191,7 +182,7 @@ export function TeamDashboard() {
   </main>;
 }
 
-function DashboardView({ data, program }: { data: TeamData; program: Match[] }) {
+function DashboardView({ data, program, onNavigate }: { data: TeamData; program: Match[]; onNavigate: (view: View) => void }) {
   const selection = data.players.filter((player) => !player.guest);
   const hasPlayedMatches = data.totals.matchesPlayed > 0;
   const mostLate = hasPlayedMatches ? rankedPlayers(selection, (player) => player.totals.late, "max", true) : [];
@@ -202,9 +193,9 @@ function DashboardView({ data, program }: { data: TeamData; program: Match[] }) 
   const trainingLeaders = leaders(selection, "training");
   return <>
     <section className="kpi-grid" aria-label="Teamtotalen">
-      <Kpi label="Aantal selectiespelers" value={data.totals.players} />
-      <Kpi label="Aantal keer getraind" value={data.totals.trainings} />
-      <Kpi label="Wedstrijden / gespeeld" value={`${data.totals.matchesScheduled} / ${data.totals.matchesPlayed}`} />
+      <Kpi label="Aantal selectiespelers" value={data.totals.players} onClick={() => onNavigate("team")} />
+      <Kpi label="Aantal keer getraind" value={data.totals.trainings} onClick={() => onNavigate("trainingen")} />
+      <Kpi label="Wedstrijden / gespeeld" value={`${data.totals.matchesScheduled} / ${data.totals.matchesPlayed}`} onClick={() => onNavigate("wedstrijden")} />
     </section>
     <SectionHeading title="Eerstvolgende wedstrijden"/>
     {program.length ? <div className="fixture-grid">{program.map((match) => <Fixture key={match.id} match={match} showResult={false}/>)}</div> : <div className="empty-state">Er staan nog geen volgende wedstrijden gepland.</div>}
@@ -354,7 +345,7 @@ function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
 }
 
 function SectionHeading({ title, subtitle }: { title: string; subtitle?: string }) { return <div className="section-heading"><div><h2>{title}</h2>{subtitle && <p>{subtitle}</p>}</div></div>; }
-function Kpi({ label, value }: { label: string; value: number | string }) { return <article className="kpi-card"><div className="kpi-label">{label}</div><div className="kpi-value">{value}</div></article>; }
+function Kpi({ label, value, onClick }: { label: string; value: number | string; onClick: () => void }) { return <button className="kpi-card" type="button" onClick={onClick}><div className="kpi-label">{label}</div><div className="kpi-value">{value}</div></button>; }
 function Leader({ title, awardTitle, players, score }: { title: string; awardTitle?: string; players: Player[]; score: number }) { return <article className="leader-card"><span className="leader-kind">Meeste {title.toLowerCase()}</span>{awardTitle && <strong className="leader-award">{awardTitle}</strong>}<span className="leader-score">{score}</span><div className="leader-name">{players.length ? players.map((player) => player.name).join(" · ") : "Nog geen invoer"}</div></article>; }
 function Loser({ label, awardTitle, players, score }: { label: string; awardTitle: string; players: Player[]; score: (player: Player) => number }) { return <article className="loser-card"><span className="loser-title">{label}</span><strong className="loser-award">{awardTitle}</strong>{players.length ? <ol>{players.map((player) => <li key={player.id}><strong>{player.name}</strong><b>{score(player)}</b></li>)}</ol> : <p>Nog geen invoer</p>}</article>; }
 function Fixture({ match, showResult = true }: { match: Match; showResult?: boolean }) { return <article className="fixture-card"><div className="fixture-meta"><span>{match.competition || "Wedstrijd"}</span><span>{formatDate(match.date)} {match.time && `· ${match.time}`}</span></div><div className={showResult ? "fixture-teams" : "fixture-teams upcoming"}><strong>{match.home}</strong>{showResult ? <span>{match.result || "–"}</span> : <span className="fixture-separator" aria-hidden="true">–</span>}<strong>{match.away}</strong></div></article>; }
@@ -364,7 +355,7 @@ function StaffCard({ member, onOpen }: { member: Staff; onOpen: () => void }) {
   return <button className="player-card staff-ea-card" onClick={onOpen} aria-label={`Bekijk wedstrijdhistorie van ${member.name}`}><span className="player-pitch" aria-hidden="true"/><span className="player-topline"><span>SVT · 2026/27</span><span>{staffCode(member.role)}</span></span><span className="player-identity"><span className="player-rating"><strong>{total}</strong><small>WD</small></span><span className="player-portrait" aria-hidden="true"><strong>{initials(member.name)}</strong><i/></span><ClubBadge/></span><span className="player-card-name"><strong>{member.name}</strong><small>{member.role}</small></span><span className="player-key-stats staff-key-stats"><span><strong>{total}</strong><small>Wedstr.</small></span><span><strong>{member.totals.present}</strong><small>Aanwezig</small></span><span><strong>{member.totals.partial}</strong><small>Deels</small></span><span><strong>{member.totals.absent}</strong><small>Afwezig</small></span></span><span className="player-open">Bekijk wedstrijdhistorie <b aria-hidden="true">›</b></span></button>;
 }
 function StaffDrawer({ member, onClose }: { member: Staff; onClose: () => void }) { return <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}><aside className="drawer" role="dialog" aria-modal="true" aria-label={`Wedstrijdhistorie van ${member.name}`}><div className="drawer-hero"><div className="drawer-top"><span className="eyebrow">Stafkaart</span><button className="close-button" onClick={onClose} aria-label="Sluiten">×</button></div><div className="drawer-person"><span className="avatar">{initials(member.name)}</span><div><h2>{member.name}</h2><p>{member.role}</p></div></div></div><div className="drawer-content"><div className="detail-kpis staff-detail-kpis"><Detail label="Aanwezig" value={member.totals.present}/><Detail label="Deels aanwezig" value={member.totals.partial}/><Detail label="Afwezig" value={member.totals.absent}/></div><section className="detail-section"><h3>Wedstrijdhistorie</h3>{member.matches.length ? <div className="staff-match-list">{member.matches.map((match) => <article className="staff-match-row" key={match.id}><div><strong>{opponent(match) || "Tegenstander onbekend"}</strong><span>{formatDate(match.date)} · {venue(match)} · {match.competition || "Wedstrijd"}</span></div><span className={`staff-status ${match.status.toLowerCase().replaceAll(" ", "-")}`}>{match.status}</span></article>)}</div> : <div className="no-matches">Nog geen wedstrijdgegevens voor dit staflid.</div>}</section></div></aside></div>; }
-function PlayerCard({ player, onOpen }: { player: Player; onOpen: () => void }) { return <button className="player-card" onClick={onOpen} aria-label={`Bekijk alle statistieken van ${player.name}`}><span className="player-pitch" aria-hidden="true"/><span className="player-topline"><span>SVT · 2026/27</span><span>{player.guest ? "Gast" : positionCode(player.position)}</span></span><span className="player-identity"><span className="player-rating"><strong>{player.number || "–"}</strong><small>{positionCode(player.position)}</small></span><span className="player-portrait" aria-hidden="true"><strong>{initials(player.name)}</strong><i/></span><ClubBadge/></span><span className="player-card-name"><strong>{player.name}</strong><small>{player.position}{player.foot ? ` · ${player.foot}benig` : ""}</small></span>{(player.captain || player.guest) && <span className="role-tags">{player.captain && <span className="role-tag captain">C · Aanvoerder</span>}{player.guest && <span className="role-tag guest">Gastspeler</span>}</span>}<span className="player-key-stats"><span><strong>{player.totals.matches}</strong><small>Wedstr.</small></span><span><strong>{player.totals.goals}</strong><small>Goals</small></span><span><strong>{player.totals.assists}</strong><small>Assists</small></span><span><strong>{player.training.percentage}%</strong><small>Training</small></span></span><span className="player-open">Bekijk alle statistieken <b aria-hidden="true">›</b></span></button>; }
+function PlayerCard({ player, onOpen }: { player: Player; onOpen: () => void }) { return <button className="player-card" onClick={onOpen} aria-label={`Bekijk alle statistieken van ${player.name}`}><span className="player-pitch" aria-hidden="true"/><span className="player-topline"><span>SVT · 2026/27</span><span>{positionCode(player.position)}</span></span><span className="player-identity"><span className="player-rating"><strong>{player.number || "–"}</strong><small>{positionCode(player.position)}</small></span><span className="player-portrait" aria-hidden="true"><strong>{initials(player.name)}</strong><i/></span><ClubBadge/></span><span className="player-card-name"><strong>{player.name}</strong><small>{player.position}{player.foot ? ` · ${player.foot}benig` : ""}</small></span>{(player.captain || player.guest) && <span className="role-tags">{player.captain && <span className="role-tag captain">C · Aanvoerder</span>}{player.guest && <span className="role-tag guest">Gastspeler</span>}</span>}<span className="player-key-stats"><span><strong>{player.totals.matches}</strong><small>Wedstr.</small></span><span><strong>{player.totals.goals}</strong><small>Goals</small></span><span><strong>{player.totals.assists}</strong><small>Assists</small></span><span><strong>{player.training.percentage}%</strong><small>Training</small></span></span><span className="player-open">Bekijk alle statistieken <b aria-hidden="true">›</b></span></button>; }
 function PlayerDrawer({ player, onClose }: { player: Player; onClose: () => void }) { return <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}><aside className="drawer" role="dialog" aria-modal="true" aria-label={`Statistieken van ${player.name}`}><div className="drawer-hero"><div className="drawer-top"><span className="eyebrow">Spelerskaart</span><button className="close-button" onClick={onClose} aria-label="Sluiten">×</button></div><div className="drawer-person"><span className="avatar">{player.number || initials(player.name)}</span><div><h2>{player.name}</h2><p>{player.position} · {player.foot ? `${player.foot}benig` : "voorkeursvoet onbekend"}{player.captain ? " · aanvoerder" : ""}{player.guest ? " · gastspeler" : ""}</p></div></div></div><div className="drawer-content"><div className="detail-kpis"><Detail label="Wedstrijden" value={player.totals.matches}/><Detail label="Doelpunten" value={player.totals.goals}/><Detail label="Assists" value={player.totals.assists}/><Detail label="Training opkomst" value={`${player.training.percentage}%`}/><Detail label="Wedstrijd opkomst" value={player.matchAttendance.total ? `${player.matchAttendance.percentage}%` : "Nog geen invoer"}/><Detail label="Afwezig" value={player.totals.absent}/><Detail label="Niet gespeeld" value={player.totals.notPlayed}/><Detail label="Deels gespeeld" value={player.totals.partial}/><Detail label="Volgespeeld" value={player.totals.full}/><Detail label="Penalty gescoord" value={player.totals.penaltiesScored}/><Detail label="Penalty gemist" value={player.totals.penaltiesMissed}/><Detail label="Te laat" value={player.totals.late}/><Detail label="Gevlagd" value={player.totals.flagged}/><Detail label="Polo vergeten" value={player.totals.polo}/><Detail label="Gekeept" value={player.totals.kept}/><Detail label="Aanvoerder" value={player.totals.captain}/><Detail label="Geel" value={player.totals.yellow}/><Detail label="Rood" value={player.totals.red}/></div><section className="detail-section"><h3>Trainingen</h3>{player.training.sessions.length ? <div className="session-list">{player.training.sessions.map((date) => <span key={date}>{formatDate(date)}</span>)}</div> : <div className="no-matches">Nog geen aanwezigheid geregistreerd.</div>}</section><section className="detail-section"><h3>Wedstrijdhistorie</h3>{player.matches.length ? <div className="match-list">{player.matches.map((match) => <MatchRow key={match.id} match={match}/>)}</div> : <div className="no-matches">Nog geen wedstrijdgegevens voor deze speler.</div>}</section></div></aside></div>; }
 function Detail({ label, value }: { label: string; value: string | number }) { return <div className="detail-kpi"><span>{label}</span><strong>{value}</strong></div>; }
 function MatchRow({ match }: { match: PlayerMatch }) { const tags = [`Penalty ${match.penaltiesScored}/${match.penaltiesMissed}`, match.late && "Te laat", match.flagged && "Gevlagd", match.polo && "Polo vergeten", match.kept && "Gekeept", match.captain && "Aanvoerder"].filter(Boolean); return <article className="match-row"><div className="match-main"><strong>{opponent(match) || "Tegenstander onbekend"}</strong><span>{formatDate(match.date)} · {venue(match)} · {match.status || "Status onbekend"}</span></div><MatchCell value={match.goals} label="Goals"/><MatchCell value={match.assists} label="Assists"/><MatchCell value={match.yellow} label="Geel"/><MatchCell value={match.red} label="Rood"/><div className="match-tags">{tags.map((tag) => <span key={String(tag)}>{tag}</span>)}</div></article>; }

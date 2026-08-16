@@ -1,23 +1,19 @@
 # SV Twello Zondag 2 – teamdashboard
 
-Openbaar teamdashboard voor seizoen 2026-2027. De gedeelde Excel in OneDrive is de bron; de website publiceert alleen de benodigde teamgegevens en geen leeftijden of geboortedata.
+Openbaar teamdashboard voor seizoen 2026-2027. De Excel in `data/2026-2027_zondag2.xlsx` is de enige bron; de website bundelt alleen de benodigde teamgegevens en geen leeftijden of geboortedata.
 
 ## Bijwerken op de Mac
 
-1. Pas de gedeelde Excel aan en wacht totdat OneDrive klaar is met synchroniseren.
-2. Open deze map in Codex en geef aan wat gewijzigd is, of voer lokaal uit:
+1. Pas de Excel aan en wacht totdat OneDrive klaar is met synchroniseren.
+2. Werk lokaal bij en controleer:
 
    ```bash
-   pnpm run extract:excel -- "/Users/jpdh/Library/CloudStorage/OneDrive-Persoonlijk/SV Twello zondag 2/2026-2027_zondag2.xlsx"
    pnpm run test
-   git add public/data/team.json
-   git commit -m "Werk dashboardgegevens bij"
-   git push origin main
    ```
 
 3. GitHub Actions bouwt en publiceert de website automatisch.
 
-De Excel zelf hoort niet in deze openbare repository. Alleen `public/data/team.json` gaat naar GitHub.
+De Excel staat in deze repository en wordt tijdens de Vite-build direct in de website gebundeld. Er is geen `team.json` of andere handmatig bijgehouden export nodig.
 
 ## Branches
 

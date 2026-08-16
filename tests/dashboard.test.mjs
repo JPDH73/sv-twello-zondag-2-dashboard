@@ -1,8 +1,15 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import test from "node:test";
 
-const data = JSON.parse(fs.readFileSync("public/data/team.json", "utf8"));
+const outputPath = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "sv-twello-test-")), "team.json");
+execFileSync(process.execPath, ["scripts/extract-excel.mjs", "data/2026-2027_zondag2.xlsx"], {
+  env: { ...process.env, TEAM_OUTPUT_PATH: outputPath },
+});
+const data = JSON.parse(fs.readFileSync(outputPath, "utf8"));
 
 test("dashboard bevat de verwachte teamgegevens", () => {
   assert.equal(data.team, "SV Twello Zondag 2");
@@ -20,7 +27,8 @@ test("openbare data bevat geen leeftijd of geboortedatum", () => {
 
 test("website is gebouwd met het gegevensbestand", () => {
   assert.ok(fs.existsSync("dist/index.html"));
-  assert.ok(fs.existsSync("dist/data/team.json"));
+  assert.equal(fs.existsSync("dist/data/team.json"), false);
+  assert.equal(fs.existsSync("public/data/team.json"), false);
 });
 
 test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
@@ -32,7 +40,7 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.players.find((player) => player.name === "Robbert Teelen")?.captain, true);
   assert.equal(data.totals.players, 25);
   assert.equal(data.totals.guests, 2);
-  assert.equal(data.totals.trainings, 3);
+  assert.equal(data.totals.trainings, 4);
   assert.equal(data.trainings.some((training) => training.date === "2026-08-09"), true);
   const davo = data.matches.find((match) => match.id === "O000000001");
   assert.equal(davo?.home, "SV Twello 2");
