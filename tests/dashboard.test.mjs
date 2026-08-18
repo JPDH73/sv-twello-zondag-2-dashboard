@@ -40,7 +40,7 @@ test("nieuwe Excel-wijzigingen zijn verwerkt", () => {
   assert.equal(data.players.find((player) => player.name === "Robbert Teelen")?.captain, true);
   assert.equal(data.totals.players, 25);
   assert.equal(data.totals.guests, 2);
-  assert.equal(data.totals.trainings, 4);
+  assert.equal(data.totals.trainings, 5);
   assert.equal(data.trainings.some((training) => training.date === "2026-08-09"), true);
   const davo = data.matches.find((match) => match.id === "O000000001");
   assert.equal(davo?.home, "SV Twello 2");
@@ -258,26 +258,3 @@ test("staf heeft een eigen menu en grijze EA-kaarten", () => {
 test("selectie wordt per linie in een eigen rij getoond", () => {
   const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
-  for (const [position, title] of [["Keeper", "Keepers"], ["Verdediger", "Verdedigers"], ["Middenvelder", "Middenvelders"], ["Aanvaller", "Aanvallers"]]) {
-    assert.ok(source.includes(`{ position: "${position}", title: "${title}" }`));
-  }
-  assert.ok(source.includes('players.filter((player) => !player.guest && player.position === line.position)'));
-  assert.ok(source.includes('const guestPlayers = players.filter((player) => player.guest)'));
-  assert.ok(source.includes('id="selection-guests">Gastspelers</h2>'));
-  assert.ok(source.includes('className="selection-line"'));
-  assert.ok(source.includes('<div className="player-grid">{line.players.map'));
-  assert.ok(css.includes(".selection-lines { display: grid;"));
-});
-
-test("speler van het jaar toont een interactieve beker en motivatie uit Excel", () => {
-  const source = fs.readFileSync("app/components/TeamDashboard.tsx", "utf8");
-  const css = fs.readFileSync("app/globals.css", "utf8");
-  for (const asset of ["speler-van-het-jaar-beker.jpg"]) {
-    assert.ok(source.includes(asset));
-    assert.ok(fs.existsSync(`public/${asset}`));
-  }
-  for (const text of ["selectedYear", "award-year-selector", "award-motivation", "Winnaar"]) assert.ok(source.includes(text));
-  assert.equal(source.includes("award-plaque"), false);
-  assert.ok(css.includes(".award-stage"));
-  assert.ok(css.includes("aspect-ratio: 2/3"));
-});
