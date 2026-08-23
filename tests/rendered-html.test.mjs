@@ -39,3 +39,15 @@ test("GitHub Pages-build bevat gegevens en sociale kaart", async () => {
   assert.ok(data.matches.every((match) => typeof match.manOfTheMatch === "string"));
   assert.equal(data.matches.find((match) => match.id === "O000000001")?.goalEvents.length, 5);
 });
+
+test("selectie blijft per linie ingedeeld met gastspelers onderaan", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  for (const title of ["Keepers", "Verdedigers", "Middenvelders", "Aanvallers", "Gastspelers"]) {
+    assert.match(source, new RegExp(title));
+  }
+  assert.match(source, /players\.filter\(\(player\) => !player\.guest && player\.position === line\.position\)/);
+  assert.match(source, /const guestPlayers = players\.filter\(\(player\) => player\.guest\)/);
+  assert.match(source, /normalized\.includes\("keeper"\)\) return "KEE"/);
+  assert.match(css, /\.selection-lines/);
+});
