@@ -1,13 +1,13 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-21T11:24:14.677Z",
+  "generatedAt": "2026-08-23T13:02:47.530Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
     "guests": 2,
     "staff": 6,
-    "trainings": 5,
+    "trainings": 6,
     "matchesScheduled": 26,
     "matchesPlayed": 1,
     "goals": 3,
@@ -329,6 +329,23 @@
   ],
   "trainings": [
     {
+      "date": "2026-08-23",
+      "attendees": [
+        "Dennis Schreurs",
+        "Dennis Witteveen",
+        "Marc Albers",
+        "Tygo Vijge",
+        "Rodi Gerritsen",
+        "Niels Gijsberts",
+        "Jean-Paul de Haas",
+        "Jervin Leisink Meijer",
+        "Jorn Oosting",
+        "Berry van der Scheer",
+        "Samwel Yuda Mkai",
+        "Nicky Eekhuis"
+      ]
+    },
+    {
       "date": "2026-08-18",
       "attendees": [
         "Dennis Schreurs",
@@ -445,13 +462,14 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 3,
-        "total": 5,
-        "percentage": 60,
+        "attended": 4,
+        "total": 6,
+        "percentage": 67,
         "sessions": [
           "2026-08-06",
           "2026-08-16",
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -538,11 +556,12 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "attended": 2,
+        "total": 6,
+        "percentage": 33,
         "sessions": [
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -630,7 +649,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -718,12 +737,13 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 2,
-        "total": 5,
-        "percentage": 40,
+        "attended": 3,
+        "total": 6,
+        "percentage": 50,
         "sessions": [
           "2026-08-16",
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -811,8 +831,8 @@
       "captain": false,
       "training": {
         "attended": 3,
-        "total": 5,
-        "percentage": 60,
+        "total": 6,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
           "2026-08-13",
@@ -904,7 +924,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -992,12 +1012,13 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 2,
-        "total": 5,
-        "percentage": 40,
+        "attended": 3,
+        "total": 6,
+        "percentage": 50,
         "sessions": [
           "2026-08-09",
-          "2026-08-13"
+          "2026-08-13",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -1085,7 +1106,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -1173,14 +1194,15 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 4,
-        "total": 5,
-        "percentage": 80,
+        "attended": 5,
+        "total": 6,
+        "percentage": 83,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
           "2026-08-16",
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -1267,11 +1289,12 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "attended": 2,
+        "total": 6,
+        "percentage": 33,
         "sessions": [
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -1359,8 +1382,8 @@
       "captain": false,
       "training": {
         "attended": 4,
-        "total": 5,
-        "percentage": 80,
+        "total": 6,
+        "percentage": 67,
         "sessions": [
           "2026-08-06",
           "2026-08-13",
@@ -1452,13 +1475,14 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 3,
-        "total": 5,
-        "percentage": 60,
+        "attended": 4,
+        "total": 6,
+        "percentage": 67,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
-          "2026-08-16"
+          "2026-08-16",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -1546,7 +1570,7 @@
       "captain": true,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -1635,8 +1659,8 @@
       "captain": false,
       "training": {
         "attended": 3,
-        "total": 5,
-        "percentage": 60,
+        "total": 6,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -1727,12 +1751,13 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 2,
-        "total": 5,
-        "percentage": 40,
+        "attended": 3,
+        "total": 6,
+        "percentage": 50,
         "sessions": [
           "2026-08-13",
-          "2026-08-16"
+          "2026-08-16",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -1820,7 +1845,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -1909,8 +1934,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "total": 6,
+        "percentage": 17,
         "sessions": [
           "2026-08-18"
         ]
@@ -1999,11 +2024,12 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "attended": 2,
+        "total": 6,
+        "percentage": 33,
         "sessions": [
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -2090,15 +2116,16 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 5,
-        "total": 5,
+        "attended": 6,
+        "total": 6,
         "percentage": 100,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
           "2026-08-13",
           "2026-08-16",
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -2186,7 +2213,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -2274,14 +2301,15 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 4,
-        "total": 5,
-        "percentage": 80,
+        "attended": 5,
+        "total": 6,
+        "percentage": 83,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
           "2026-08-16",
-          "2026-08-18"
+          "2026-08-18",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -2369,7 +2397,7 @@
       "captain": false,
       "training": {
         "attended": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0,
         "sessions": []
       },
@@ -2458,8 +2486,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "total": 6,
+        "percentage": 17,
         "sessions": [
           "2026-08-06"
         ]
@@ -2548,12 +2576,13 @@
       "guest": false,
       "captain": false,
       "training": {
-        "attended": 2,
-        "total": 5,
-        "percentage": 40,
+        "attended": 3,
+        "total": 6,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
-          "2026-08-09"
+          "2026-08-09",
+          "2026-08-23"
         ]
       },
       "matchAttendance": {
@@ -2641,8 +2670,8 @@
       "captain": false,
       "training": {
         "attended": 5,
-        "total": 5,
-        "percentage": 100,
+        "total": 6,
+        "percentage": 83,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -2736,8 +2765,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "total": 6,
+        "percentage": 17,
         "sessions": [
           "2026-08-09"
         ]
@@ -2827,8 +2856,8 @@
       "captain": false,
       "training": {
         "attended": 1,
-        "total": 5,
-        "percentage": 20,
+        "total": 6,
+        "percentage": 17,
         "sessions": [
           "2026-08-18"
         ]
