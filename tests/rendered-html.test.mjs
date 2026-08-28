@@ -65,6 +65,6 @@ test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaa
   assert.match(source, /selection\.filter\(\(player\) => player\.training\.rankingEligible\)/);
   assert.match(source, /leaders\(trainingRankingPlayers, "training"\)/);
   assert.match(source, /lowestTrainingPlayers\(trainingRankingPlayers\)/);
-  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*maxNames=\{5\}/);
+  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*maxNames=\{5\} showScore=\{false\}/);
   assert.match(source, /selected\.length \+ group\.length > max/);
 });
