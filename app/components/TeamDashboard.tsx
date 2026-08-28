@@ -72,6 +72,11 @@ function formatDate(value: string) {
   if (!value) return "Datum nog niet bekend";
   return new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "short", year: "numeric" }).format(new Date(`${value}T12:00:00`));
 }
+function formatTrainingDate(value: string) {
+  if (!value) return "Datum nog niet bekend";
+  const date = new Date(`${value}T12:00:00`);
+  return new Intl.DateTimeFormat("nl-NL", { day: "2-digit", month: "2-digit", year: "numeric" }).format(date);
+}
 function sortNames(names: string[]) { return [...names].sort((a, b) => a.localeCompare(b, "nl", { sensitivity: "base" })); }
 function dashboardPlayerName(name: string, players: Player[]) {
   const parts = name.trim().split(/\s+/);
@@ -301,7 +306,7 @@ function MatchesView({ matches, players, staff }: { matches: Match[]; players: P
 
 function TrainingsView({ trainings, players }: { trainings: TeamData["trainings"]; players: Player[] }) {
   const shortName = (name: string) => dashboardPlayerName(name, players);
-  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? sortNames(training.attendees.map(shortName)).join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
+  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatTrainingDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? sortNames(training.attendees.map(shortName)).join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
 }
 
 function StatisticsView({ data }: { data: TeamData }) {
