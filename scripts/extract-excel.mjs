@@ -155,6 +155,7 @@ for (const row of playerInputRows) {
 }
 
 const trainingHeaders = trainingRows[0] ?? [];
+const trainingRankingColumn = trainingHeaders.findIndex((header) => clean(header).toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "") === "beestspook");
 const datedTrainingColumns = trainingHeaders
   .map((header, col) => ({ col, date: dateOnly(header) }))
   .filter(({ col, date }) => col >= 2 && date && date <= today);
@@ -233,6 +234,7 @@ const players = playerRows.map((row) => {
     guest: yes(row.gastspeler),
     captain: yes(row.aanvoerder),
     training: {
+      rankingEligible: trainingRankingColumn >= 0 && yes(trainingRow[trainingRankingColumn]),
       attended: sessions.length,
       total: trainingColumns.length,
       percentage: trainingColumns.length ? Math.round(sessions.length / trainingColumns.length * 100) : 0,
