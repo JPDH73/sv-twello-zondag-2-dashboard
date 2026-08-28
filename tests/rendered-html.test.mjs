@@ -59,3 +59,12 @@ test("trainingskaders tonen de weekdag en datum", async () => {
   assert.match(formatter, /`\$\{weekday\} \$\{date\.getDate\(\)\}-\$\{date\.getMonth\(\) \+ 1\}-\$\{date\.getFullYear\(\)\}`/);
   assert.match(source, /formatTrainingDate\(training\.date\)/);
 });
+
+test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaal vijf trainingsspoken", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  assert.match(source, /selection\.filter\(\(player\) => player\.training\.rankingEligible\)/);
+  assert.match(source, /leaders\(trainingRankingPlayers, "training"\)/);
+  assert.match(source, /lowestTrainingPlayers\(trainingRankingPlayers\)/);
+  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*maxNames=\{5\}/);
+  assert.match(source, /selected\.length \+ group\.length > max/);
+});
