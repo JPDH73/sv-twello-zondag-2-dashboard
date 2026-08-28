@@ -52,10 +52,10 @@ test("selectie blijft per linie ingedeeld met gastspelers onderaan", async () =>
   assert.match(css, /\.selection-lines/);
 });
 
-test("trainingskaders tonen alleen de numerieke datum zonder weekdag", async () => {
+test("trainingskaders tonen de weekdag en datum", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const formatter = source.slice(source.indexOf("function formatTrainingDate"), source.indexOf("function sortNames"));
-  assert.match(formatter, /day: "2-digit", month: "2-digit", year: "numeric"/);
-  assert.doesNotMatch(formatter, /weekday/);
+  assert.match(formatter, /weekday: "long"/);
+  assert.match(formatter, /`\$\{weekday\} \$\{date\.getDate\(\)\}-\$\{date\.getMonth\(\) \+ 1\}-\$\{date\.getFullYear\(\)\}`/);
   assert.match(source, /formatTrainingDate\(training\.date\)/);
 });
