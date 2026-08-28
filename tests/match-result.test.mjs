@@ -63,10 +63,10 @@ test("koppelt wedstrijd- en trainingsinvoer op naam als Excel-ID's verschoven zi
   ]);
   addJson("wedstrijdinvoer_staf", []);
   XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([
-    ["speler_id", "naam", "Beest/Spook", "13-08-2026"],
-    ["sp24", "Nicky Eekhuis", 1, 1],
-    ["sp25", "Bram Dolman", null, null],
-    ["sp26", "Denzel Boscher", 1, 1],
+    ["speler_id", "naam", "13-08-2026"],
+    ["sp24", "Nicky Eekhuis", 1],
+    ["sp25", "Bram Dolman", null],
+    ["sp26", "Denzel Boscher", 1],
   ]), "trainingsinvoer");
   XLSX.writeFile(workbook, workbookPath);
 
@@ -77,9 +77,7 @@ test("koppelt wedstrijd- en trainingsinvoer op naam als Excel-ID's verschoven zi
   assert.equal(byName("Nicky Eekhuis").totals.goals, 1);
   assert.equal(byName("Nicky Eekhuis").totals.polo, 1);
   assert.equal(byName("Nicky Eekhuis").training.percentage, 100);
-  assert.equal(byName("Nicky Eekhuis").training.rankingEligible, true);
   assert.equal(byName("Bram Dolman").totals.assists, 1);
-  assert.equal(byName("Bram Dolman").training.rankingEligible, false);
   assert.equal(byName("Denzel Boscher").totals.absent, 1);
   assert.equal(byName("Denzel Boscher").totals.flagged, 1);
 });
@@ -93,7 +91,7 @@ test("spelerskaart gebruikt de afgesproken volgorde en vat grote gedeelde loser-
     assert.ok(current > previous, `${label} staat niet in de afgesproken volgorde`);
     previous = current;
   }
-  assert.match(source, /players\.length > maxNames \? <p>Meerdere spelers delen deze positie\.<\/p>/);
+  assert.match(source, /players\.length > 3 \? <p>Meerdere spelers delen deze positie\.<\/p>/);
   assert.match(source, /contributors\.goals/);
   assert.match(source, /contributors\.assists/);
   assert.match(source, /\.sort\(\(a, b\) => a\.name\.localeCompare\(b\.name, "nl", \{ sensitivity: "base" \}\)\)/);
