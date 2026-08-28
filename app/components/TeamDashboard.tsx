@@ -8,7 +8,7 @@ type PlayerMatch = Match & { status: string; goals: number; assists: number; yel
 type MatchContributors = { goals: { name: string; count: number }[]; assists: { name: string; count: number }[] };
 type Player = {
   id: string; number: string; name: string; position: string; foot: string; guest: boolean; captain: boolean;
-  training: { rankingEligible: boolean; attended: number; total: number; percentage: number; sessions: string[] };
+  training: { attended: number; total: number; percentage: number; sessions: string[] };
   matchAttendance: { present: number; total: number; percentage: number };
   totals: { matches: number; goals: number; assists: number; yellow: number; red: number; penaltiesScored: number; penaltiesMissed: number; late: number; flagged: number; polo: number; kept: number; captain: number; absent: number; notPlayed: number; partial: number; full: number };
   matches: PlayerMatch[];
@@ -134,18 +134,6 @@ function rankedPlayers(players: Player[], score: (player: Player) => number, dir
   if (!sorted.length || (hideWhenZero && score(sorted[0]) === 0)) return [];
   return sorted.slice(0, limit);
 }
-function lowestTrainingPlayers(players: Player[], target = 3, max = 5) {
-  const sorted = [...players].sort((a, b) => a.training.attended - b.training.attended || a.name.localeCompare(b.name, "nl"));
-  const selected: Player[] = [];
-  for (let index = 0; index < sorted.length && selected.length < target;) {
-    const score = sorted[index].training.attended;
-    const group = sorted.slice(index).filter((player) => player.training.attended === score);
-    if (selected.length && selected.length + group.length > max) break;
-    selected.push(...group.slice(0, Math.max(0, max - selected.length)));
-    index += group.length;
-  }
-  return selected;
-}
 export function TeamDashboard() {
   const [data, setData] = useState<TeamData | null>(null);
   const [error, setError] = useState("");
@@ -246,14 +234,13 @@ export function TeamDashboard() {
 function DashboardView({ data, program, onNavigate }: { data: TeamData; program: Match[]; onNavigate: (view: View) => void }) {
   const [selectedMatch, setSelectedMatch] = useState<Match | null>(null);
   const selection = data.players.filter((player) => !player.guest);
-  const trainingRankingPlayers = selection.filter((player) => player.training.rankingEligible);
   const hasPlayedMatches = data.totals.matchesPlayed > 0;
   const mostLate = hasPlayedMatches ? rankedPlayers(selection, (player) => player.totals.late, "max", true) : [];
-  const leastTraining = data.totals.trainings ? lowestTrainingPlayers(trainingRankingPlayers) : [];
+  const leastTraining = hasPlayedMatches && data.totals.trainings ? rankedPlayers(selection, (player) => player.training.attended, "min") : [];
   const mostAbsent = hasPlayedMatches ? rankedPlayers(selection, (player) => player.totals.absent, "max", true) : [];
   const goalLeaders = leaders(selection, "goals");
   const assistLeaders = leaders(selection, "assists");
-  const trainingLeaders = leaders(trainingRankingPlayers, "training");
+  const trainingLeaders = leaders(selection, "training");
   const latestResult = latestPlayedMatch(data.matches);
   const latestContributors = latestResult ? matchContributors(data.players, latestResult.id) : undefined;
   const displayName = (player: Player) => dashboardPlayerName(player.name, data.players);
@@ -281,7 +268,7 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
     </div>
     <SectionHeading title="Losers"/>
     <div className="loser-grid">
-      <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5}/>
+      <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName}/>
       <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName}/>
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName}/>
     </div>
@@ -429,7 +416,7 @@ function HistoryView({ entries }: { entries: TeamData["playerOfYear"] }) {
 function SectionHeading({ title, subtitle }: { title: string; subtitle?: string }) { return <div className="section-heading"><div><h2>{title}</h2>{subtitle && <p>{subtitle}</p>}</div></div>; }
 function Kpi({ label, value, linkLabel, onOpen }: { label: string; value: number | string; linkLabel?: string; onOpen?: () => void }) { const content = <><span className="kpi-label">{label}</span><span className="kpi-value">{value}</span>{linkLabel && <span className="kpi-link">{linkLabel} <b aria-hidden="true">›</b></span>}</>; return onOpen ? <button type="button" className="kpi-card interactive" onClick={onOpen} aria-label={`${label}: ${value}. ${linkLabel}`}>{content}</button> : <article className="kpi-card">{content}</article>; }
 function Leader({ title, awardTitle, players, score, displayName = (player) => player.name }: { title: string; awardTitle?: string; players: Player[]; score: number; displayName?: (player: Player) => string }) { return <article className="leader-card"><span className="leader-kind">Meeste {title.toLowerCase()}</span>{awardTitle && <strong className="leader-award">{awardTitle}</strong>}<span className="leader-score">{score}</span><div className="leader-name">{players.length ? players.map(displayName).join(" · ") : "Nog geen invoer"}</div></article>; }
-function Loser({ label, awardTitle, players, score, displayName = (player) => player.name, maxNames = 3 }: { label: string; awardTitle: string; players: Player[]; score: (player: Player) => number; displayName?: (player: Player) => string; maxNames?: number }) { return <article className="loser-card"><span className="loser-title">{label}</span><strong className="loser-award">{awardTitle}</strong>{players.length > maxNames ? <p>Meerdere spelers delen deze positie.</p> : players.length ? <ol>{players.map((player) => <li key={player.id}><strong>{displayName(player)}</strong><b>{score(player)}</b></li>)}</ol> : <p>Nog geen invoer</p>}</article>; }
+function Loser({ label, awardTitle, players, score, displayName = (player) => player.name }: { label: string; awardTitle: string; players: Player[]; score: (player: Player) => number; displayName?: (player: Player) => string }) { return <article className="loser-card"><span className="loser-title">{label}</span><strong className="loser-award">{awardTitle}</strong>{players.length > 3 ? <p>Meerdere spelers delen deze positie.</p> : players.length ? <ol>{players.map((player) => <li key={player.id}><strong>{displayName(player)}</strong><b>{score(player)}</b></li>)}</ol> : <p>Nog geen invoer</p>}</article>; }
 function MatchGroup({ label, empty, children }: { label?: string; empty: string; children?: ReactNode }) { return <section className="match-group">{label && <h3>{label}</h3>}<div className="fixture-stack">{Children.count(children) ? children : <div className="match-empty">{empty}</div>}</div></section>; }
 function Fixture({ match, showResult = true, emphasis = false, contributors, manOfTheMatchLabel, showMvp = true, onOpen }: { match: Match; showResult?: boolean; emphasis?: boolean; contributors?: MatchContributors; manOfTheMatchLabel?: string; showMvp?: boolean; onOpen?: () => void }) { const finalResult = showResult && hasFinalResult(match.result); const contributorLabel = (entries: MatchContributors["goals"]) => entries.map((entry) => `${entry.name}${entry.count > 1 ? ` ×${entry.count}` : ""}`).join(" · "); const content = <><div className="fixture-meta"><span>{match.competition || "Wedstrijd"}</span><span>{formatDate(match.date)} {match.time && `· ${match.time}`}</span></div><div className={finalResult ? "fixture-teams" : "fixture-teams upcoming"}><strong>{match.home || "Thuisteam onbekend"}</strong>{finalResult ? <span>{match.result.trim()}</span> : <span className="fixture-separator" aria-label="Nog niet gespeeld">vs</span>}<strong>{match.away || "Uitteam onbekend"}</strong></div>{finalResult && contributors && (contributors.goals.length > 0 || contributors.assists.length > 0) && <div className="match-contributors">{contributors.goals.length > 0 && <div><span aria-hidden="true">⚽</span><span>{contributorLabel(contributors.goals)}</span></div>}{contributors.assists.length > 0 && <div><span aria-hidden="true">🎯</span><span>{contributorLabel(contributors.assists)}</span></div>}</div>}{showMvp && finalResult && match.manOfTheMatch?.trim() && <div className="match-mvp"><span aria-hidden="true">⭐</span> {(manOfTheMatchLabel || match.manOfTheMatch).trim()}</div>}</>; const className = `fixture-card${emphasis ? " latest-result" : ""}${onOpen ? " interactive" : ""}`; return onOpen ? <button type="button" className={className} onClick={onOpen} aria-label={`Bekijk wedstrijdstatistieken van ${match.home} tegen ${match.away}`}>{content}<span className="fixture-open">Bekijk wedstrijdstatistieken <b aria-hidden="true">›</b></span></button> : <article className={className}>{content}</article>; }
 function GoalTimeline({ match }: { match: Match }) { if (!match.goalEvents?.length) return null; const teamClass = (team: string) => team.localeCompare("SV Twello 2", "nl", { sensitivity: "base" }) === 0 ? "twello" : "opponent"; return <section className="goal-flow" aria-label={`Wedstrijdverloop van ${match.home} tegen ${match.away}`}><div className="goal-flow-heading"><h3>Wedstrijdverloop</h3><div className="goal-flow-matchup"><span><i className={`goal-flow-team-dot ${teamClass(match.home)}`} aria-hidden="true"/>{match.home}</span><b aria-hidden="true">–</b><span><i className={`goal-flow-team-dot ${teamClass(match.away)}`} aria-hidden="true"/>{match.away}</span></div></div><div className="goal-flow-halves" aria-hidden="true"><span>Eerste helft</span><span>Tweede helft</span></div><div className="goal-flow-timeline" role="img" aria-label={match.goalEvents.map((event) => `Na ${event.minute} minuten ${event.score}`).join(", ")}><div className="goal-flow-track"/><div className="goal-flow-half-divider"/>{match.goalEvents.map((event, index) => <div className={`goal-flow-event ${teamClass(event.team)} ${index === 0 || index % 2 === 1 ? "above" : "below"}`} style={{ left: `${Math.max(0, Math.min(100, event.minute / 90 * 100))}%` }} key={`${event.minute}-${event.score}`}><span aria-hidden="true">⚽</span><strong>{event.score}</strong></div>)}</div></section>; }
