@@ -63,7 +63,7 @@ test("koppelt wedstrijd- en trainingsinvoer op naam als Excel-ID's verschoven zi
   ]);
   addJson("wedstrijdinvoer_staf", []);
   XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([
-    ["speler_id", "naam", new Date("2026-08-13")],
+    ["speler_id", "naam", "13-08-2026"],
     ["sp24", "Nicky Eekhuis", 1],
     ["sp25", "Bram Dolman", null],
     ["sp26", "Denzel Boscher", 1],
