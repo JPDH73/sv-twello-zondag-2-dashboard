@@ -75,7 +75,8 @@ function formatDate(value: string) {
 function formatTrainingDate(value: string) {
   if (!value) return "Datum nog niet bekend";
   const date = new Date(`${value}T12:00:00`);
-  return new Intl.DateTimeFormat("nl-NL", { day: "2-digit", month: "2-digit", year: "numeric" }).format(date);
+  const weekday = new Intl.DateTimeFormat("nl-NL", { weekday: "long" }).format(date);
+  return `${weekday} ${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
 }
 function sortNames(names: string[]) { return [...names].sort((a, b) => a.localeCompare(b, "nl", { sensitivity: "base" })); }
 function dashboardPlayerName(name: string, players: Player[]) {
