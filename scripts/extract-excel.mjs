@@ -52,6 +52,8 @@ const dateOnly = (value) => {
   const text = clean(value);
   const iso = text.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
   if (iso) return iso;
+  const dutch = text.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})(?:\s|$)/);
+  if (dutch) return `${dutch[3]}-${dutch[2].padStart(2, "0")}-${dutch[1].padStart(2, "0")}`;
   if (typeof value === "number") {
     const parsed = XLSX.SSF.parse_date_code(value);
     if (parsed) return `${parsed.y}-${String(parsed.m).padStart(2, "0")}-${String(parsed.d).padStart(2, "0")}`;
