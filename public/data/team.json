@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-30T14:41:36.227Z",
+  "generatedAt": "2026-08-30T14:57:58.100Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -532,6 +532,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 6,
@@ -684,6 +685,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -834,6 +836,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": false,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": false,
         "attended": 0,
@@ -979,6 +982,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 5,
@@ -1130,6 +1134,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -1280,6 +1285,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 1,
@@ -1427,6 +1433,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 5,
@@ -1578,6 +1585,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": false,
         "attended": 0,
@@ -1723,6 +1731,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 7,
@@ -1876,6 +1885,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -2026,6 +2036,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -2176,6 +2187,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 5,
@@ -2327,6 +2339,7 @@
       "guest": false,
       "captain": true,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 1,
@@ -2474,6 +2487,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -2624,6 +2638,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -2774,6 +2789,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": false,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": false,
         "attended": 0,
@@ -2919,6 +2935,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 2,
@@ -3067,6 +3084,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -3217,6 +3235,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 6,
@@ -3369,6 +3388,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": false,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 1,
@@ -3516,6 +3536,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 5,
@@ -3667,6 +3688,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 1,
@@ -3814,6 +3836,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 3,
@@ -3963,6 +3986,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 4,
@@ -4113,6 +4137,7 @@
       "guest": false,
       "captain": false,
       "invisibleManEligible": true,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
         "attended": 7,
@@ -4266,6 +4291,7 @@
       "guest": true,
       "captain": false,
       "invisibleManEligible": false,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": false,
         "attended": 2,
@@ -4414,6 +4440,7 @@
       "guest": true,
       "captain": false,
       "invisibleManEligible": false,
+      "lateRankingEligible": true,
       "training": {
         "rankingEligible": false,
         "attended": 1,
