@@ -165,6 +165,8 @@ for (const row of playerInputRows) {
 const trainingHeaders = trainingRows[0] ?? [];
 const trainingRankingColumn = trainingHeaders.findIndex((header) => clean(header).toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "") === "beestspook");
 const invisibleManColumn = trainingHeaders.findIndex((header) => clean(header).toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "") === "onzichtbareman");
+const playerColumns = new Set(playerRows.flatMap((row) => Object.keys(row)).map((header) => header.toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "")));
+const sleeperRankingConfigured = playerColumns.has("uitslaper") || playerColumns.has("uitslapers");
 const datedTrainingColumns = trainingHeaders
   .map((header, col) => ({ col, date: dateOnly(header) }))
   .filter(({ col, date }) => col >= 2 && date && date <= today);
@@ -243,8 +245,9 @@ const players = playerRows.map((row) => {
     guest: yes(row.gastspeler),
     captain: yes(row.aanvoerder),
     invisibleManEligible: yes(field(row, ["onzichtbare man", "onzichtbare_man", "onzichtbareman"])) || (invisibleManColumn >= 0 && yes(trainingRow[invisibleManColumn])),
+    lateRankingEligible: !sleeperRankingConfigured || yes(field(row, ["uitslaper", "uitslapers"])),
     training: {
-      rankingEligible: trainingRankingColumn >= 0 && yes(trainingRow[trainingRankingColumn]),
+      rankingEligible: yes(field(row, ["beest/spook", "beest_spook", "beestspook"])) || (trainingRankingColumn >= 0 && yes(trainingRow[trainingRankingColumn])),
       attended: sessions.length,
       total: trainingColumns.length,
       percentage: trainingColumns.length ? Math.round(sessions.length / trainingColumns.length * 100) : 0,
