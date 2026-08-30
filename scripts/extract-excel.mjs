@@ -93,7 +93,7 @@ const goalEventsByMatch = new Map([
     { minute: 47, score: "1-2", team: "SV Twello 2" },
     { minute: 55, score: "1-3", team: "SV Twello 2" },
     { minute: 60, score: "1-4", team: "SV Twello 2" },
-    { minute: 66, score: "2-4", team: "Voorwaarts T 5" },
+    { minute: 70, score: "2-4", team: "Voorwaarts T 5" },
   ]],
   ["O000000001", [
     { minute: 10, score: "1-0", team: "SV Twello 2" },
