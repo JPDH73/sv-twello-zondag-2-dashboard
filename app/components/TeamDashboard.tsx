@@ -132,7 +132,8 @@ function leaders(players: Player[], field: "goals" | "assists" | "training") {
 function rankedPlayers(players: Player[], score: (player: Player) => number, direction: "max" | "min" = "max", hideWhenZero = false, limit = 5) {
   const sorted = [...players].sort((a, b) => (direction === "max" ? score(b) - score(a) : score(a) - score(b)) || a.name.localeCompare(b.name, "nl"));
   if (!sorted.length || (hideWhenZero && score(sorted[0]) === 0)) return [];
-  return sorted.slice(0, limit);
+  const winningScore = score(sorted[0]);
+  return sorted.filter((player) => score(player) === winningScore).slice(0, limit);
 }
 function lowestTrainingPlayers(players: Player[], target = 3, max = 5) {
   const sorted = [...players].sort((a, b) => a.training.attended - b.training.attended || a.name.localeCompare(b.name, "nl"));
