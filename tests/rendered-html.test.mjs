@@ -73,6 +73,7 @@ test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaa
 
 test("onzichtbare man gebruikt alleen de aangevinkte spelers en toont de uitslag", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  assert.match(source, /sorted\.filter\(\(player\) => score\(player\) === winningScore\)\.slice\(0, limit\)/);
   assert.match(source, /selection\.filter\(\(player\) => player\.invisibleManEligible\)/);
   assert.match(source, /rankedPlayers\(invisibleManPlayers, \(player\) => player\.totals\.absent/);
   assert.match(source, /awardTitle="Onzichtbare man"[\s\S]*maxNames=\{5\}[\s\S]*inlineNames cardScore=\{mostAbsent\.length \? mostAbsent\[0\]\.totals\.absent : undefined\}/);
