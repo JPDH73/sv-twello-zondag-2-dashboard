@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-08-28T13:32:22.572Z",
+  "generatedAt": "2026-08-30T13:40:18.002Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 8,
     "matchesScheduled": 26,
-    "matchesPlayed": 1,
-    "goals": 3,
-    "assists": 3
+    "matchesPlayed": 2,
+    "goals": 7,
+    "assists": 6
   },
   "matches": [
     {
@@ -57,10 +57,41 @@
       "time": "11:30",
       "home": "Voorwaarts T 5",
       "away": "SV Twello 2",
-      "result": "",
+      "result": "2-4",
       "competition": "Beker",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "manOfTheMatch": "Robbert Teelen",
+      "goalEvents": [
+        {
+          "minute": 10,
+          "score": "1-0",
+          "team": "Voorwaarts T 5"
+        },
+        {
+          "minute": 30,
+          "score": "1-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 47,
+          "score": "1-2",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 55,
+          "score": "1-3",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 60,
+          "score": "1-4",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 66,
+          "score": "2-4",
+          "team": "Voorwaarts T 5"
+        }
+      ]
     },
     {
       "id": "M669057056",
@@ -515,12 +546,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -530,14 +561,68 @@
         "late": 0,
         "flagged": 0,
         "polo": 0,
-        "kept": 1,
+        "kept": 2,
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
         "partial": 0,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -610,12 +695,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -624,15 +709,69 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
-        "polo": 0,
+        "polo": 1,
         "kept": 0,
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": true,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -701,7 +840,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -717,12 +856,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -796,12 +989,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -815,10 +1008,64 @@
         "captain": 1,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -891,14 +1138,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 1,
-        "percentage": 0
+        "present": 1,
+        "total": 2,
+        "percentage": 50
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -910,10 +1157,64 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -984,7 +1285,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -1000,12 +1301,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1079,12 +1434,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1098,10 +1453,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1170,7 +1579,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -1186,12 +1595,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1267,14 +1730,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -1287,9 +1750,63 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1362,12 +1879,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 1,
         "assists": 0,
         "yellow": 0,
@@ -1382,9 +1899,63 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1458,7 +2029,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -1474,12 +2045,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1553,12 +2178,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -1572,10 +2197,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1645,29 +2324,83 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 1,
-        "percentage": 0
+        "present": 1,
+        "total": 2,
+        "percentage": 50
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
-        "polo": 0,
+        "polo": 1,
         "kept": 0,
-        "captain": 0,
+        "captain": 1,
         "absent": 1,
         "notPlayed": 0,
         "partial": 0,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": true,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1740,12 +2473,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1759,10 +2492,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1835,13 +2622,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
-        "goals": 0,
+        "matches": 2,
+        "goals": 2,
         "assists": 1,
         "yellow": 0,
         "red": 0,
@@ -1854,10 +2641,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 2,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -1926,7 +2767,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -1942,12 +2783,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2019,8 +2914,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 1,
-        "percentage": 100
+        "total": 2,
+        "percentage": 50
       },
       "totals": {
         "matches": 1,
@@ -2035,12 +2930,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2113,12 +3062,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -2133,9 +3082,63 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2211,8 +3214,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 1,
-        "percentage": 100
+        "total": 2,
+        "percentage": 50
       },
       "totals": {
         "matches": 1,
@@ -2227,12 +3230,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 1,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2303,7 +3360,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -2319,12 +3376,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2398,12 +3509,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -2417,10 +3528,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2491,7 +3656,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -2507,12 +3672,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2585,7 +3804,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -2601,12 +3820,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2679,13 +3952,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
-        "goals": 1,
+        "matches": 2,
+        "goals": 3,
         "assists": 0,
         "yellow": 0,
         "red": 0,
@@ -2698,10 +3971,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 2,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2777,12 +4104,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 1,
+        "present": 2,
+        "total": 2,
         "percentage": 100
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -2796,10 +4123,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2870,12 +4251,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 1,
-        "percentage": 0
+        "present": 1,
+        "total": 2,
+        "percentage": 50
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -2889,10 +4270,64 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -2963,7 +4398,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 1,
+        "total": 2,
         "percentage": 0
       },
       "totals": {
@@ -2975,16 +4410,70 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 0,
+        "flagged": 1,
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -3043,11 +4532,54 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 1,
+        "present": 2,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -3095,9 +4627,52 @@
       "totals": {
         "present": 1,
         "partial": 0,
-        "absent": 0
+        "absent": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -3143,11 +4718,54 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 1,
+        "present": 2,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -3193,11 +4811,54 @@
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
       "totals": {
-        "present": 1,
+        "present": 2,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -3243,11 +4904,54 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 1,
+        "present": 2,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
@@ -3293,11 +4997,54 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 0,
+        "present": 1,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "M623608225",
+          "date": "2026-08-30",
+          "time": "11:30",
+          "home": "Voorwaarts T 5",
+          "away": "SV Twello 2",
+          "result": "2-4",
+          "competition": "Beker",
+          "manOfTheMatch": "Robbert Teelen",
+          "goalEvents": [
+            {
+              "minute": 10,
+              "score": "1-0",
+              "team": "Voorwaarts T 5"
+            },
+            {
+              "minute": 30,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 47,
+              "score": "1-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 55,
+              "score": "1-3",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "1-4",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 66,
+              "score": "2-4",
+              "team": "Voorwaarts T 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "O000000001",
           "date": "2026-08-20",
