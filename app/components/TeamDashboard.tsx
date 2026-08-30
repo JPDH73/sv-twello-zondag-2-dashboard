@@ -7,7 +7,7 @@ type Match = { id: string; date: string; time: string; home: string; away: strin
 type PlayerMatch = Match & { status: string; goals: number; assists: number; yellow: number; red: number; penaltiesScored: number; penaltiesMissed: number; late: boolean; flagged: boolean; polo: boolean; kept: boolean; captain: boolean };
 type MatchContributors = { goals: { name: string; count: number }[]; assists: { name: string; count: number }[] };
 type Player = {
-  id: string; number: string; name: string; position: string; foot: string; guest: boolean; captain: boolean; invisibleManEligible: boolean;
+  id: string; number: string; name: string; position: string; foot: string; guest: boolean; captain: boolean; invisibleManEligible: boolean; lateRankingEligible: boolean;
   training: { rankingEligible: boolean; attended: number; total: number; percentage: number; sessions: string[] };
   matchAttendance: { present: number; total: number; percentage: number };
   totals: { matches: number; goals: number; assists: number; yellow: number; red: number; penaltiesScored: number; penaltiesMissed: number; late: number; flagged: number; polo: number; kept: number; captain: number; absent: number; notPlayed: number; partial: number; full: number };
@@ -248,8 +248,9 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
   const selection = data.players.filter((player) => !player.guest);
   const trainingRankingPlayers = selection.filter((player) => player.training.rankingEligible);
   const invisibleManPlayers = selection.filter((player) => player.invisibleManEligible);
+  const sleeperRankingPlayers = selection.filter((player) => player.lateRankingEligible);
   const hasPlayedMatches = data.totals.matchesPlayed > 0;
-  const mostLate = hasPlayedMatches ? rankedPlayers(selection, (player) => player.totals.late, "max", true) : [];
+  const mostLate = hasPlayedMatches ? rankedPlayers(sleeperRankingPlayers, (player) => player.totals.late, "max", true) : [];
   const leastTraining = data.totals.trainings ? lowestTrainingPlayers(trainingRankingPlayers) : [];
   const mostAbsent = hasPlayedMatches ? rankedPlayers(invisibleManPlayers, (player) => player.totals.absent, "max", true) : [];
   const goalLeaders = leaders(selection, "goals");
@@ -283,8 +284,8 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
     <SectionHeading title="Losers"/>
     <div className="loser-grid">
       <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastTraining.length ? `${leastTraining[0].training.percentage}%` : undefined}/>
-      <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} cardScore={mostAbsent.length ? `${mostAbsent[0].totals.absent}×` : undefined}/>
-      <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName}/>
+      <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={mostAbsent.length ? mostAbsent[0].totals.absent : undefined}/>
+      <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
     {selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={data.players} staff={data.staff} onClose={() => setSelectedMatch(null)}/>}
   </>;
