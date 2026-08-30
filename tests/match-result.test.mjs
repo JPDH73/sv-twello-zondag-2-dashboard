@@ -21,7 +21,7 @@ test("kiest alleen de nieuwste wedstrijd met echte uitslag en neemt de MVP over"
   addJson("speler_jaar", []);
   addJson("wedstrijden", [
     { wedstrijd_id: "oud", datum: "2026-08-10", tijd: "10:30", thuis: "SV Twello 2", uit: "Club A", uitslag: "1-0", competitie: "Beker" },
-    { wedstrijd_id: "nieuw", datum: "2026-08-17", tijd: "10:30", thuis: "Club B", uit: "SV Twello 2", uitslag: "2 - 3", competitie: "Beker", "Man van de wedstrijd": "Jan Jansen" },
+    { wedstrijd_id: "M623608225", datum: "2026-08-17", tijd: "10:30", thuis: "Voorwaarts T 5", uit: "SV Twello 2", uitslag: "2-4", competitie: "Beker", "Man van de wedstrijd": "Jan Jansen" },
     { wedstrijd_id: "open", datum: "2026-08-24", tijd: "10:30", thuis: "SV Twello 2", uit: "Club C", uitslag: "", competitie: "Beker" },
   ]);
   addJson("wedstrijdinvoer_spelers", []);
@@ -35,10 +35,17 @@ test("kiest alleen de nieuwste wedstrijd met echte uitslag en neemt de MVP over"
   const latest = played.sort((a, b) => b.date.localeCompare(a.date))[0];
 
   assert.equal(data.totals.matchesPlayed, 2);
-  assert.equal(latest.id, "nieuw");
-  assert.equal(latest.result, "2 - 3");
+  assert.equal(latest.id, "M623608225");
+  assert.equal(latest.result, "2-4");
   assert.equal(latest.manOfTheMatch, "Jan Jansen");
-  assert.ok(Array.isArray(latest.goalEvents));
+  assert.deepEqual(latest.goalEvents.map(({ minute, score }) => ({ minute, score })), [
+    { minute: 10, score: "1-0" },
+    { minute: 30, score: "1-1" },
+    { minute: 47, score: "1-2" },
+    { minute: 55, score: "1-3" },
+    { minute: 60, score: "1-4" },
+    { minute: 66, score: "2-4" },
+  ]);
   assert.equal(data.matches.find((match) => match.id === "open").manOfTheMatch, "");
 });
 
