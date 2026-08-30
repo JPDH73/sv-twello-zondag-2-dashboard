@@ -65,7 +65,8 @@ test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaa
   assert.match(source, /selection\.filter\(\(player\) => player\.training\.rankingEligible\)/);
   assert.match(source, /leaders\(trainingRankingPlayers, "training"\)/);
   assert.match(source, /lowestTrainingPlayers\(trainingRankingPlayers\)/);
-  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*maxNames=\{5\} showScore=\{false\} inlineNames/);
+  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*inlineNames cardScore=\{leastTraining\.length \? `\$\{leastTraining\[0\]\.training\.percentage\}%` : undefined\}/);
   assert.match(source, /players\.map\(displayName\)\.join\(" · "\)/);
+  assert.match(source, /cardScore !== undefined && <span className="leader-score">\{cardScore\}<\/span>/);
   assert.match(source, /selected\.length \+ group\.length > max/);
 });
