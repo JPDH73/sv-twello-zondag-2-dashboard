@@ -164,6 +164,7 @@ for (const row of playerInputRows) {
 
 const trainingHeaders = trainingRows[0] ?? [];
 const trainingRankingColumn = trainingHeaders.findIndex((header) => clean(header).toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "") === "beestspook");
+const invisibleManColumn = trainingHeaders.findIndex((header) => clean(header).toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "") === "onzichtbareman");
 const datedTrainingColumns = trainingHeaders
   .map((header, col) => ({ col, date: dateOnly(header) }))
   .filter(({ col, date }) => col >= 2 && date && date <= today);
@@ -241,6 +242,7 @@ const players = playerRows.map((row) => {
     foot: clean(row.voet),
     guest: yes(row.gastspeler),
     captain: yes(row.aanvoerder),
+    invisibleManEligible: yes(field(row, ["onzichtbare man", "onzichtbare_man", "onzichtbareman"])) || (invisibleManColumn >= 0 && yes(trainingRow[invisibleManColumn])),
     training: {
       rankingEligible: trainingRankingColumn >= 0 && yes(trainingRow[trainingRankingColumn]),
       attended: sessions.length,
