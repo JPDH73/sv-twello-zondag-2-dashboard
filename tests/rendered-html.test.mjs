@@ -75,5 +75,7 @@ test("onzichtbare man gebruikt alleen de aangevinkte spelers en toont de uitslag
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   assert.match(source, /selection\.filter\(\(player\) => player\.invisibleManEligible\)/);
   assert.match(source, /rankedPlayers\(invisibleManPlayers, \(player\) => player\.totals\.absent/);
-  assert.match(source, /awardTitle="Onzichtbare man"[\s\S]*cardScore=\{mostAbsent\.length \? `\$\{mostAbsent\[0\]\.totals\.absent\}×` : undefined\}/);
+  assert.match(source, /awardTitle="Onzichtbare man"[\s\S]*maxNames=\{5\}[\s\S]*inlineNames cardScore=\{mostAbsent\.length \? mostAbsent\[0\]\.totals\.absent : undefined\}/);
+  assert.match(source, /selection\.filter\(\(player\) => player\.lateRankingEligible\)/);
+  assert.match(source, /awardTitle="Uitslaper"[\s\S]*inlineNames cardScore=\{mostLate\.length \? mostLate\[0\]\.totals\.late : undefined\}/);
 });
