@@ -44,7 +44,7 @@ test("kiest alleen de nieuwste wedstrijd met echte uitslag en neemt de MVP over"
     { minute: 47, score: "1-2" },
     { minute: 55, score: "1-3" },
     { minute: 60, score: "1-4" },
-    { minute: 66, score: "2-4" },
+    { minute: 70, score: "2-4" },
   ]);
   assert.equal(data.matches.find((match) => match.id === "open").manOfTheMatch, "");
 });
