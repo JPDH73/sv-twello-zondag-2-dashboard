@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-03T07:29:43.018Z",
+  "generatedAt": "2026-09-03T08:20:22.976Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 25,
@@ -363,6 +363,7 @@
       "date": "2026-09-01",
       "attendees": [
         "Dennis Witteveen",
+        "Marc Albers",
         "Jesse van Brink",
         "Tygo Vijge",
         "Rodi Gerritsen",
@@ -1002,15 +1003,16 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 5,
+        "attended": 6,
         "total": 9,
-        "percentage": 56,
+        "percentage": 67,
         "sessions": [
           "2026-08-16",
           "2026-08-18",
           "2026-08-23",
           "2026-08-25",
-          "2026-08-27"
+          "2026-08-27",
+          "2026-09-01"
         ]
       },
       "matchAttendance": {
