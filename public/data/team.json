@@ -1,10 +1,10 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-05T11:54:36.558Z",
+  "generatedAt": "2026-09-05T12:09:21.720Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
-    "players": 25,
+    "players": 24,
     "guests": 2,
     "staff": 6,
     "trainings": 10,
@@ -2811,152 +2811,6 @@
           "status": "Volgespeeld",
           "goals": 0,
           "assists": 1,
-          "yellow": 0,
-          "red": 0,
-          "penaltiesScored": 0,
-          "penaltiesMissed": 0,
-          "late": false,
-          "flagged": false,
-          "polo": false,
-          "kept": false,
-          "captain": false
-        }
-      ]
-    },
-    {
-      "id": "sp16",
-      "number": "17",
-      "name": "Sergio Alkema",
-      "position": "Verdediger",
-      "foot": "links",
-      "guest": false,
-      "captain": false,
-      "invisibleManEligible": false,
-      "lateRankingEligible": true,
-      "training": {
-        "rankingEligible": false,
-        "attended": 0,
-        "total": 10,
-        "percentage": 0,
-        "sessions": []
-      },
-      "matchAttendance": {
-        "present": 0,
-        "total": 2,
-        "percentage": 0
-      },
-      "totals": {
-        "matches": 0,
-        "goals": 0,
-        "assists": 0,
-        "yellow": 0,
-        "red": 0,
-        "penaltiesScored": 0,
-        "penaltiesMissed": 0,
-        "late": 0,
-        "flagged": 0,
-        "polo": 0,
-        "kept": 0,
-        "captain": 0,
-        "absent": 2,
-        "notPlayed": 0,
-        "partial": 0,
-        "full": 0
-      },
-      "matches": [
-        {
-          "id": "M623608225",
-          "date": "2026-08-30",
-          "time": "11:30",
-          "home": "Voorwaarts T 5",
-          "away": "SV Twello 2",
-          "result": "2-4",
-          "competition": "Beker",
-          "manOfTheMatch": "Robbert Teelen",
-          "goalEvents": [
-            {
-              "minute": 10,
-              "score": "1-0",
-              "team": "Voorwaarts T 5"
-            },
-            {
-              "minute": 30,
-              "score": "1-1",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 47,
-              "score": "1-2",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 55,
-              "score": "1-3",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 60,
-              "score": "1-4",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 70,
-              "score": "2-4",
-              "team": "Voorwaarts T 5"
-            }
-          ],
-          "status": "Afwezig",
-          "goals": 0,
-          "assists": 0,
-          "yellow": 0,
-          "red": 0,
-          "penaltiesScored": 0,
-          "penaltiesMissed": 0,
-          "late": false,
-          "flagged": false,
-          "polo": false,
-          "kept": false,
-          "captain": false
-        },
-        {
-          "id": "O000000001",
-          "date": "2026-08-20",
-          "time": "20:00",
-          "home": "SV Twello 2",
-          "away": "DAVO 2",
-          "result": "3-2",
-          "competition": "Vriendschappelijk",
-          "manOfTheMatch": "Bram Dolman",
-          "goalEvents": [
-            {
-              "minute": 10,
-              "score": "1-0",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 65,
-              "score": "2-0",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 70,
-              "score": "2-1",
-              "team": "DAVO 2"
-            },
-            {
-              "minute": 80,
-              "score": "3-1",
-              "team": "SV Twello 2"
-            },
-            {
-              "minute": 85,
-              "score": "3-2",
-              "team": "DAVO 2"
-            }
-          ],
-          "status": "Afwezig",
-          "goals": 0,
-          "assists": 0,
           "yellow": 0,
           "red": 0,
           "penaltiesScored": 0,
