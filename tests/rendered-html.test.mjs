@@ -32,7 +32,7 @@ test("GitHub Pages-build bevat gegevens en sociale kaart", async () => {
   ]);
   const data = JSON.parse(json);
   assert.equal(data.team, "SV Twello Zondag 2");
-  assert.equal(data.totals.players, 25);
+  assert.equal(data.totals.players, 24);
   assert.ok(Array.isArray(data.players));
   assert.equal(data.players.length, data.totals.players + data.totals.guests);
   assert.ok(Array.isArray(data.matches));
