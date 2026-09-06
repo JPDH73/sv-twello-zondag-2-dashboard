@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-05T12:09:21.720Z",
+  "generatedAt": "2026-09-06T12:54:39.355Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,7 +9,7 @@
     "staff": 6,
     "trainings": 10,
     "matchesScheduled": 26,
-    "matchesPlayed": 2,
+    "matchesPlayed": 3,
     "goals": 7,
     "assists": 6
   },
@@ -99,7 +99,7 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "Columbia 3",
-      "result": "",
+      "result": "3-0 · BNO",
       "competition": "Beker",
       "manOfTheMatch": "",
       "goalEvents": []
