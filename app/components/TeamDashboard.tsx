@@ -109,6 +109,7 @@ function upcomingMatches(matches: Match[], limit = 2) {
   return matches.filter((match) => match.date && match.date >= today && !hasFinalResult(match.result)).sort((a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time)).slice(0, limit);
 }
 function hasFinalResult(result: string) { return /\d+\s*[-–:]\s*\d+/.test(result?.trim() ?? ""); }
+function isBnoResult(result: string) { return /\bBNO\b/i.test(result?.trim() ?? ""); }
 function latestPlayedMatch(matches: Match[]) {
   return [...matches]
     .filter((match) => match.date && hasFinalResult(match.result))
@@ -450,17 +451,18 @@ function MatchDetailsDrawer({ match, players, staff, onClose }: { match: Match; 
     const stats = member.matches.find((staffMatch) => staffMatch.id === match.id);
     return stats ? [{ member, stats }] : [];
   }).sort((a, b) => a.member.name.localeCompare(b.member.name, "nl", { sensitivity: "base" }));
+  const isBno = isBnoResult(match.result);
   return <div className="drawer-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
     <aside className="drawer" role="dialog" aria-modal="true" aria-label={`Wedstrijdstatistieken van ${match.home} tegen ${match.away}`}>
       <div className="drawer-hero match-detail-hero">
         <div className="drawer-top"><span className="eyebrow">Wedstrijdstatistieken</span><button className="close-button" onClick={onClose} aria-label="Sluiten">×</button></div>
         <div className="match-detail-heading"><h2>{match.home || "Thuisteam onbekend"} <span>{hasFinalResult(match.result) ? match.result.trim() : "–"}</span> {match.away || "Uitteam onbekend"}</h2><p>{formatDate(match.date)} {match.time && `· ${match.time}`} · {match.competition || "Wedstrijd"}</p></div>
       </div>
-      <div className="drawer-content"><GoalTimeline match={match}/><section className="detail-section match-player-section"><h3>Statistieken per speler</h3>{entries.length ? <div className="match-player-list">{entries.map(({ player, stats }) => {
+      <div className="drawer-content">{isBno && <div className="no-matches bno-explanation"><strong>BNO — bezoekers niet opgekomen.</strong><span>De 3-0 is de officiële uitslag. Er zijn geen speler- of stafstatistieken voor deze wedstrijd.</span></div>}<GoalTimeline match={match}/><section className="detail-section match-player-section"><h3>Statistieken per speler</h3>{entries.length ? <div className="match-player-list">{entries.map(({ player, stats }) => {
         const isManOfTheMatch = Boolean(match.manOfTheMatch?.trim()) && player.name.localeCompare(match.manOfTheMatch.trim(), "nl", { sensitivity: "base" }) === 0;
         const tags = [isManOfTheMatch && "⭐ Man van de wedstrijd", stats.penaltiesScored > 0 && `Penalty gescoord: ${stats.penaltiesScored}`, stats.penaltiesMissed > 0 && `Penalty gemist: ${stats.penaltiesMissed}`, stats.captain && "Aanvoerder", stats.kept && "Gekeept", stats.flagged && "Gevlagd", stats.polo && "Polo vergeten", stats.late && "Te laat"].filter(Boolean);
         return <article className={`match-player-row${isManOfTheMatch ? " man-of-the-match" : ""}`} key={player.id}><div className="match-player-name"><strong>{player.name}</strong><span>{stats.status || "Geen status ingevuld"}</span></div><MatchCell value={stats.goals} label="Goals"/><MatchCell value={stats.assists} label="Assists"/><MatchCell value={stats.yellow} label="Geel"/><MatchCell value={stats.red} label="Rood"/>{tags.length > 0 && <div className="match-tags">{tags.map((tag) => <span key={String(tag)}>{tag}</span>)}</div>}</article>;
-      })}</div> : <div className="no-matches">Voor deze wedstrijd zijn nog geen spelerstatistieken ingevuld.</div>}</section><section className="detail-section match-staff-section"><h3>Statistieken per staf</h3>{staffEntries.length ? <div className="staff-match-list">{staffEntries.map(({ member, stats }) => <article className="staff-match-row" key={member.id}><div><strong>{member.name}</strong></div><span className={`staff-status ${stats.status.toLowerCase().replaceAll(" ", "-")}`}>{stats.status || "Geen status ingevuld"}</span></article>)}</div> : <div className="no-matches">Voor deze wedstrijd zijn nog geen stafstatistieken ingevuld.</div>}</section></div>
+      })}</div> : <div className="no-matches">{isBno ? "Geen spelerstatistieken: de wedstrijd is niet gespeeld." : "Voor deze wedstrijd zijn nog geen spelerstatistieken ingevuld."}</div>}</section><section className="detail-section match-staff-section"><h3>Statistieken per staf</h3>{staffEntries.length ? <div className="staff-match-list">{staffEntries.map(({ member, stats }) => <article className="staff-match-row" key={member.id}><div><strong>{member.name}</strong></div><span className={`staff-status ${stats.status.toLowerCase().replaceAll(" ", "-")}`}>{stats.status || "Geen status ingevuld"}</span></article>)}</div> : <div className="no-matches">{isBno ? "Geen stafstatistieken: de wedstrijd is niet gespeeld." : "Voor deze wedstrijd zijn nog geen stafstatistieken ingevuld."}</div>}</section></div>
     </aside>
   </div>;
 }
