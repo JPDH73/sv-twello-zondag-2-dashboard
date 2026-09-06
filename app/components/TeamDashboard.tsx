@@ -127,6 +127,13 @@ function upcomingMatches(matches: Match[], limit = 2) {
 }
 function hasFinalResult(result: string) { return /\d+\s*[-–:]\s*\d+/.test(result?.trim() ?? ""); }
 function isBnoResult(result: string) { return /\bBNO\b/i.test(result?.trim() ?? ""); }
+function matchType(competition: string) {
+  const normalized = competition.trim().toLocaleLowerCase("nl");
+  if (normalized.includes("beker")) return "Beker";
+  if (normalized.includes("competitie")) return "Competitie";
+  if (normalized.includes("oefen") || normalized.includes("vriend")) return "Oefenwedstrijd";
+  return "Overig";
+}
 function latestPlayedMatch(matches: Match[]) {
   return [...matches]
     .filter((match) => match.date && hasFinalResult(match.result))
@@ -306,7 +313,8 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
       <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={mostAbsent.length ? mostAbsent[0].totals.absent : undefined}/>
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
-    {selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={data.players} staff={data.staff} onClose={() => setSelectedMatch(null)}/>}
+    <a className="standings-link" href="https://www.voetbal.nl/team/T1719192193/stand" target="_blank" rel="noreferrer"><span><small>Competitiestand</small><strong>Bekijk SV Twello 2 op Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
+    {selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={data.players} staff={data.staff} onClose={() => setSelectedMatch(null)}/>} 
   </>;
 }
 
@@ -336,7 +344,10 @@ function TeamView({ players, query, setQuery, sort, setSort, setSelected }: { pl
 
 function MatchesView({ matches, players, staff }: { matches: Match[]; players: Player[]; staff: Staff[] }) {
   const [selectedMatch, setSelectedMatch] = useState<Match | null>(null);
-  return <><div className="page-heading"><div><p className="eyebrow">Seizoenoverzicht (6e klasse-15)</p><h1>Wedstrijden</h1></div></div><SectionHeading title="Programma"/><div className="fixture-grid">{matches.map((match) => <Fixture key={match.id} match={match} showMvp={false} onOpen={() => setSelectedMatch(match)}/>)}</div>{selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={players} staff={staff} onClose={() => setSelectedMatch(null)}/>}</>;
+  const [typeFilter, setTypeFilter] = useState("Alle wedstrijden");
+  const availableTypes = ["Competitie", "Beker", "Oefenwedstrijd", "Overig"].filter((type) => matches.some((match) => matchType(match.competition) === type));
+  const visibleMatches = typeFilter === "Alle wedstrijden" ? matches : matches.filter((match) => matchType(match.competition) === typeFilter);
+  return <><div className="page-heading"><div><p className="eyebrow">Seizoenoverzicht (6e klasse-15)</p><h1>Wedstrijden</h1></div><div className="controls match-controls"><label><span className="sr-only">Filter op wedstrijdtype</span><select className="sort-select" value={typeFilter} onChange={(event) => setTypeFilter(event.target.value)}><option>Alle wedstrijden</option>{availableTypes.map((type) => <option key={type} value={type}>{type === "Oefenwedstrijd" ? "Oefenwedstrijden" : type}</option>)}</select></label></div></div><SectionHeading title="Programma" subtitle={`${visibleMatches.length} ${visibleMatches.length === 1 ? "wedstrijd" : "wedstrijden"}`}/>{visibleMatches.length ? <div className="fixture-grid">{visibleMatches.map((match) => <Fixture key={match.id} match={match} showMvp={false} onOpen={() => setSelectedMatch(match)}/>)}</div> : <div className="empty-state">Geen wedstrijden gevonden voor dit type.</div>}{selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={players} staff={staff} onClose={() => setSelectedMatch(null)}/>}</>;
 }
 
 function TrainingsView({ trainings, players }: { trainings: TeamData["trainings"]; players: Player[] }) {

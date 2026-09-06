@@ -134,6 +134,12 @@ button { color: inherit; }
 .training-card p { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 
 .leader-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+.standings-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 16px; padding: 18px 22px; border: 1px solid rgba(0,142,207,.24); border-radius: 18px; color: var(--navy); background: linear-gradient(135deg,#fff,#eef8fc); box-shadow: 0 12px 30px rgba(27,50,91,.07); text-decoration: none; transition: transform .16s ease,border-color .16s ease,box-shadow .16s ease; }
+.standings-link:hover, .standings-link:focus-visible { transform: translateY(-2px); border-color: rgba(0,142,207,.58); outline: none; box-shadow: 0 16px 36px rgba(27,50,91,.12); }
+.standings-link span { display: grid; gap: 4px; }
+.standings-link small { color: var(--blue); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.standings-link strong { font-size: 15px; }
+.standings-link > b { color: var(--blue); font-size: 24px; line-height: 1; }
 .leader-card { position: relative; overflow: hidden; min-height: 150px; padding: 22px; border-radius: 20px; color: white; background: var(--navy); }
 .leader-card:nth-child(2) { background: var(--blue); }
 .leader-card:nth-child(3) { background: linear-gradient(135deg,var(--navy-soft),var(--blue)); }

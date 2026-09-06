@@ -54,6 +54,15 @@ test("wedstrijdkaarten koppelen clublogo's en hebben een mobiele maat", async ()
   assert.match(css, /\.fixture-team-logo-wrap \{ flex-basis: 42px; width: 42px; height: 42px; \}/);
 });
 
+test("wedstrijden kunnen op type worden gefilterd en dashboard linkt naar de stand", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  for (const type of ["Alle wedstrijden", "Competitie", "Beker", "Oefenwedstrijd"]) assert.match(source, new RegExp(type));
+  assert.match(source, /matches\.filter\(\(match\) => matchType\(match\.competition\) === typeFilter\)/);
+  assert.match(source, /https:\/\/www\.voetbal\.nl\/team\/T1719192193\/stand/);
+  assert.match(css, /\.standings-link/);
+});
+
 test("selectie blijft per linie ingedeeld met gastspelers onderaan", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
