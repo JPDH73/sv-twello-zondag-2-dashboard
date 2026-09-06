@@ -105,8 +105,12 @@ button { color: inherit; }
 .fixture-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; }
 .fixture-meta span:first-child { color: var(--blue); font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
 .fixture-teams { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; margin-top: 18px; }
-.fixture-teams strong:last-child { text-align: right; }
-.fixture-teams span { min-width: 48px; padding: 7px 10px; border-radius: 10px; background: var(--navy); color: white; text-align: center; font-weight: 850; }
+.fixture-team { display: flex; align-items: center; min-width: 0; gap: 10px; }
+.fixture-team-home { justify-content: flex-end; text-align: right; }
+.fixture-team-away { justify-content: flex-start; text-align: left; }
+.fixture-team strong { min-width: 0; overflow-wrap: anywhere; }
+.fixture-team-logo { flex: 0 0 auto; width: 48px; height: 48px; padding: 2px; object-fit: contain; mix-blend-mode: multiply; }
+.fixture-teams > .fixture-score { min-width: 58px; padding: 7px 10px; border-radius: 10px; background: var(--navy); color: white; text-align: center; font-weight: 850; }
 .fixture-teams.upcoming { grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); }
 .fixture-teams.upcoming .fixture-separator { min-width: 0; padding: 0; border-radius: 0; background: transparent; color: var(--blue); font-size: 20px; line-height: 1; }
 .match-overview { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
@@ -416,6 +420,11 @@ button { color: inherit; }
   .kpi-grid { grid-template-columns: 1fr; }
   .kpi-card { padding: 17px; }
   .player-grid, .training-grid, .fixture-grid, .staff-grid { grid-template-columns: 1fr; }
+  .fixture-card { padding: 17px; }
+  .fixture-teams { gap: 7px; }
+  .fixture-team { gap: 6px; font-size: 12px; line-height: 1.25; }
+  .fixture-team-logo { width: 36px; height: 36px; }
+  .fixture-teams > .fixture-score { min-width: 50px; padding: 6px 7px; font-size: 12px; }
   .selection-lines { gap: 30px; }
   .player-grid { gap: 16px; }
   .player-card { min-height: 448px; padding: 20px 22px 18px; }

@@ -40,6 +40,19 @@ test("GitHub Pages-build bevat gegevens en sociale kaart", async () => {
   assert.equal(data.matches.find((match) => match.id === "O000000001")?.goalEvents.length, 5);
 });
 
+test("wedstrijdkaarten koppelen clublogo's en hebben een mobiele maat", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  for (const club of ["tka 2", "tka 3", "voorwaarts t 5", "sportclub deventer 3", "epse 2", "heeten 5", "sc klarenbeek 3", "loenermark 3", "sallandia 2", "sv schalkhaar 5", "terwolde 2", "wsv 4"]) {
+    assert.match(source, new RegExp(`"${club}"`));
+  }
+  assert.match(source, /function TeamLogo/);
+  assert.match(source, /fixture-team-home/);
+  assert.match(source, /fixture-team-away/);
+  assert.match(css, /\.fixture-team-logo \{[^}]*width: 48px;[^}]*height: 48px;/);
+  assert.match(css, /\.fixture-team-logo \{ width: 36px; height: 36px; \}/);
+});
+
 test("selectie blijft per linie ingedeeld met gastspelers onderaan", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
