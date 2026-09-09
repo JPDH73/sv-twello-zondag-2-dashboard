@@ -24,7 +24,7 @@ type TeamData = {
   players: Player[];
   staff: Staff[];
 };
-type View = "dashboard" | "staf" | "team" | "wedstrijden" | "trainingen" | "statistieken" | "teamhistorie" | "historie";
+type View = "dashboard" | "staf" | "team" | "wedstrijden" | "trainingen" | "statistieken" | "bardienst" | "teamhistorie" | "historie";
 
 const views: { id: View; label: string }[] = [
   { id: "dashboard", label: "Dashboard" },
@@ -33,6 +33,7 @@ const views: { id: View; label: string }[] = [
   { id: "wedstrijden", label: "Wedstrijden" },
   { id: "trainingen", label: "Trainingen" },
   { id: "statistieken", label: "Statistieken" },
+  { id: "bardienst", label: "Bardienst" },
   { id: "teamhistorie", label: "Teamhistorie" },
   { id: "historie", label: "Speler van het jaar" },
 ];
@@ -90,6 +91,15 @@ const teamHistory = [
   { season: "2021/2022", team: "SV Twello 2", division: "6e klasse", position: "1e van 12", result: "champion" },
   { season: "2019/2020", team: "SV Twello 2", division: "6e klasse", position: "10e van 12" },
   { season: "2018/2019", team: "SV Twello 2", formerTeam: "toen nog SV Twello 3", division: "6e klasse", position: "12e van 12", result: "last" },
+];
+
+const barDuties = [
+  { date: "19-sep-26", names: "Jani & Dennis S" },
+  { date: "24-okt-26", names: "Dennis W & Thijs" },
+  { date: "05-dec-26", names: "Thomas & Bram" },
+  { date: "23-jan-27", names: "Delano & Samwel" },
+  { date: "20-mrt-27", names: "Tom & Jesse" },
+  { date: "17-apr-27", names: "Niels & Jervin" },
 ];
 
 function initials(name: string) {
@@ -272,6 +282,7 @@ export function TeamDashboard() {
       {activeView === "wedstrijden" && <MatchesView matches={data.matches} players={data.players} staff={data.staff}/>}
       {activeView === "trainingen" && <TrainingsView trainings={data.trainings} players={data.players}/>}
       {activeView === "statistieken" && <StatisticsView data={data}/>}
+      {activeView === "bardienst" && <BarDutyView/>}
       {activeView === "teamhistorie" && <TeamHistoryView/>}
       {activeView === "historie" && <HistoryView entries={data.playerOfYear}/>}
       <footer className="footer">One Town, One Team, One Twello</footer>
@@ -388,6 +399,29 @@ function StatisticsView({ data }: { data: TeamData }) {
     <div className="page-heading"><div><p className="eyebrow">Prestaties</p><h1>Statistieken</h1></div></div>
     <div className="ranking-title"><SectionHeading title="Spelersranglijst"/><div className="ranking-controls"><label><span>Sorteer op</span><select value={rankingSort} onChange={(event) => { setRankingSort(event.target.value); setRankingDirection("desc"); }}>{columns.map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><button onClick={() => setRankingDirection((direction) => direction === "desc" ? "asc" : "desc")} aria-label="Draai sorteervolgorde om">{rankingDirection === "desc" ? "Hoog → laag" : "Laag → hoog"}</button></div></div>
     <div className="ranking-card"><div className="ranking-head"><span>Speler</span>{columns.map(([key, label]) => <span key={key}><button className={rankingSort === key ? "ranking-sort active" : "ranking-sort"} onClick={() => changeSort(key)}>{label}{rankingSort === key && <b aria-hidden="true">{rankingDirection === "desc" ? "↓" : "↑"}</b>}</button></span>)}</div>{ranking.map((player, index) => <div className="ranking-row" key={player.id}><span className="ranking-player"><b>{index + 1}</b><span className="avatar small">{initials(player.name)}</span><span className="ranking-name"><strong>{player.name}</strong>{player.captain && <em>Aanvoerder</em>}{player.guest && <em>Gastspeler</em>}</span></span>{columns.map(([key, label, value]) => <span key={key} data-label={label}>{value(player)}</span>)}</div>)}</div>
+  </>;
+}
+
+function BarDutyView() {
+  return <>
+    <div className="page-heading"><div><p className="eyebrow">Kantinediensten</p><h1>Bardienst</h1></div></div>
+    <section className="bar-duty-hero" aria-label="Bardiensten SV Twello Zondag 2">
+      <img src="./bardiensten-sv-twello.png" alt="SV Twello-kantine met het bardienstrooster voor seizoen 2026-2027" />
+    </section>
+    <section className="bar-duty-schedule" aria-labelledby="bar-duty-heading">
+      <div className="bar-duty-heading">
+        <div><p className="eyebrow">Seizoen 2026-2027</p><h2 id="bar-duty-heading">Overzicht bardiensten</h2></div>
+        <span>{barDuties.length} diensten</span>
+      </div>
+      <div className="bar-duty-table" role="table" aria-label="Overzicht bardiensten">
+        <div className="bar-duty-row bar-duty-table-head" role="row">
+          <span role="columnheader">Datum</span><span role="columnheader">Bardienst</span>
+        </div>
+        {barDuties.map((duty) => <div className="bar-duty-row" role="row" key={duty.date}>
+          <time role="cell">{duty.date}</time><strong role="cell">{duty.names}</strong>
+        </div>)}
+      </div>
+    </section>
   </>;
 }
 
