@@ -87,6 +87,10 @@ const staffInputRows = records("wedstrijdinvoer_staf");
 const trainingRows = matrix("trainingsinvoer");
 const today = new Date().toISOString().slice(0, 10);
 const goalEventsByMatch = new Map([
+  ["M1850179434", [
+    { minute: 25, score: "1-0", team: "SV Twello 2" },
+    { minute: 75, score: "2-0", team: "SV Twello 2" },
+  ]],
   ["M623608225", [
     { minute: 10, score: "1-0", team: "Voorwaarts T 5" },
     { minute: 30, score: "1-1", team: "SV Twello 2" },
