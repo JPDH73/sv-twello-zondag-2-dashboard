@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-11T10:19:09.101Z",
+  "generatedAt": "2026-09-13T11:19:17.920Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 11,
     "matchesScheduled": 26,
-    "matchesPlayed": 3,
-    "goals": 7,
-    "assists": 6
+    "matchesPlayed": 4,
+    "goals": 9,
+    "assists": 8
   },
   "matches": [
     {
@@ -110,10 +110,21 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "TKA 3",
-      "result": "",
+      "result": "2-0",
       "competition": "Beker",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "manOfTheMatch": "Tygo Vijge",
+      "goalEvents": [
+        {
+          "minute": 25,
+          "score": "1-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 75,
+          "score": "2-0",
+          "team": "SV Twello 2"
+        }
+      ]
     },
     {
       "id": "M1515636623",
@@ -599,8 +610,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 2,
-        "percentage": 100
+        "total": 3,
+        "percentage": 67
       },
       "totals": {
         "matches": 2,
@@ -615,12 +626,46 @@
         "polo": 0,
         "kept": 2,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 0,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -751,12 +796,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -770,10 +815,44 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -898,7 +977,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 2,
+        "total": 3,
         "percentage": 0
       },
       "totals": {
@@ -914,12 +993,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1052,12 +1165,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1071,10 +1184,44 @@
         "captain": 1,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1205,13 +1352,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 2,
-        "percentage": 50
+        "present": 2,
+        "total": 3,
+        "percentage": 67
       },
       "totals": {
-        "matches": 1,
-        "goals": 0,
+        "matches": 2,
+        "goals": 1,
         "assists": 1,
         "yellow": 0,
         "red": 0,
@@ -1225,9 +1372,43 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1353,12 +1534,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 2,
-        "percentage": 0
+        "present": 1,
+        "total": 3,
+        "percentage": 33
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1372,10 +1553,44 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1507,14 +1722,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -1527,9 +1742,43 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1654,7 +1903,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 2,
+        "total": 3,
         "percentage": 0
       },
       "totals": {
@@ -1670,12 +1919,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1809,12 +2092,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 1,
         "assists": 1,
         "yellow": 0,
@@ -1829,9 +2112,43 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -1962,19 +2279,19 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
-        "goals": 1,
+        "matches": 3,
+        "goals": 2,
         "assists": 0,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
-        "late": 1,
+        "late": 2,
         "flagged": 0,
         "polo": 0,
         "kept": 0,
@@ -1982,9 +2299,43 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": true,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -2117,7 +2468,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 2,
+        "total": 3,
         "percentage": 0
       },
       "totals": {
@@ -2133,12 +2484,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -2270,8 +2655,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 2,
-        "percentage": 100
+        "total": 3,
+        "percentage": 67
       },
       "totals": {
         "matches": 2,
@@ -2286,12 +2671,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -2418,8 +2837,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 2,
-        "percentage": 50
+        "total": 3,
+        "percentage": 33
       },
       "totals": {
         "matches": 1,
@@ -2434,12 +2853,46 @@
         "polo": 1,
         "kept": 0,
         "captain": 1,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -2569,14 +3022,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -2589,9 +3042,43 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -2722,12 +3209,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 2,
         "assists": 1,
         "yellow": 0,
@@ -2741,10 +3228,44 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -2873,12 +3394,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 2,
-        "percentage": 50
+        "present": 2,
+        "total": 3,
+        "percentage": 67
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -2887,15 +3408,49 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
-        "polo": 0,
+        "polo": 1,
         "kept": 0,
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": true,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3027,15 +3582,15 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
-        "yellow": 0,
+        "yellow": 1,
         "red": 0,
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
@@ -3047,9 +3602,43 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 1,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3181,12 +3770,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 2,
-        "percentage": 50
+        "present": 2,
+        "total": 3,
+        "percentage": 67
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -3201,9 +3790,43 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3330,7 +3953,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 2,
+        "total": 3,
         "percentage": 0
       },
       "totals": {
@@ -3346,12 +3969,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3483,12 +4140,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -3502,10 +4159,44 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3635,7 +4326,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 2,
+        "total": 3,
         "percentage": 0
       },
       "totals": {
@@ -3651,12 +4342,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3787,7 +4512,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 2,
+        "total": 3,
         "percentage": 0
       },
       "totals": {
@@ -3803,12 +4528,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -3938,12 +4697,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 3,
         "assists": 0,
         "yellow": 0,
@@ -3953,14 +4712,48 @@
         "late": 0,
         "flagged": 0,
         "polo": 1,
-        "kept": 0,
+        "kept": 1,
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4094,8 +4887,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 2,
-        "percentage": 100
+        "total": 3,
+        "percentage": 67
       },
       "totals": {
         "matches": 2,
@@ -4110,12 +4903,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4243,8 +5070,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 2,
-        "percentage": 50
+        "total": 3,
+        "percentage": 33
       },
       "totals": {
         "matches": 1,
@@ -4259,12 +5086,46 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4390,9 +5251,9 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 2,
-        "percentage": 0
+        "present": 1,
+        "total": 3,
+        "percentage": 33
       },
       "totals": {
         "matches": 0,
@@ -4403,16 +5264,50 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 1,
-        "polo": 0,
+        "flagged": 2,
+        "polo": 1,
         "kept": 0,
         "captain": 0,
         "absent": 2,
-        "notPlayed": 0,
+        "notPlayed": 1,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Niet gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": true,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4525,11 +5420,34 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 2,
+        "present": 3,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4620,9 +5538,32 @@
       "totals": {
         "present": 1,
         "partial": 0,
-        "absent": 1
+        "absent": 2
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4711,11 +5652,34 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 2,
+        "present": 3,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4806,9 +5770,32 @@
       "totals": {
         "present": 2,
         "partial": 0,
-        "absent": 0
+        "absent": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4897,11 +5884,34 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 2,
+        "present": 3,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
@@ -4990,11 +6000,34 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 1,
+        "present": 2,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "M1850179434",
+          "date": "2026-09-13",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "TKA 3",
+          "result": "2-0",
+          "competition": "Beker",
+          "manOfTheMatch": "Tygo Vijge",
+          "goalEvents": [
+            {
+              "minute": 25,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M623608225",
           "date": "2026-08-30",
