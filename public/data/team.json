@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-17T07:05:42.719Z",
+  "generatedAt": "2026-09-17T07:17:24.187Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -380,7 +380,8 @@
         "Jasper Nijdeken",
         "Jervin Leisink Meijer",
         "Samwel Yuda Mkai",
-        "Tom Nijdeken"
+        "Tom Nijdeken",
+        "Marijn Ruijl"
       ]
     },
     {
@@ -5446,10 +5447,12 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": false,
-        "attended": 0,
+        "attended": 1,
         "total": 12,
-        "percentage": 0,
-        "sessions": []
+        "percentage": 8,
+        "sessions": [
+          "2026-09-15"
+        ]
       },
       "matchAttendance": {
         "present": 0,
