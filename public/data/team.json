@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-18T10:37:56.054Z",
+  "generatedAt": "2026-09-20T20:49:16.403Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,7 +9,7 @@
     "staff": 6,
     "trainings": 13,
     "matchesScheduled": 26,
-    "matchesPlayed": 4,
+    "matchesPlayed": 5,
     "goals": 9,
     "assists": 8
   },
@@ -132,9 +132,9 @@
       "time": "10:00",
       "home": "Epse 2",
       "away": "SV Twello 2",
-      "result": "",
+      "result": "0-0",
       "competition": "Competitie",
-      "manOfTheMatch": "",
+      "manOfTheMatch": "Bram Dolman",
       "goalEvents": []
     },
     {
@@ -639,8 +639,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 3,
-        "percentage": 67
+        "total": 4,
+        "percentage": 50
       },
       "totals": {
         "matches": 2,
@@ -655,12 +655,35 @@
         "polo": 0,
         "kept": 2,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 0,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -825,12 +848,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -844,10 +867,33 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -1006,7 +1052,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 3,
+        "total": 4,
         "percentage": 0
       },
       "totals": {
@@ -1022,12 +1068,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -1196,12 +1265,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1215,10 +1284,33 @@
         "captain": 1,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -1384,12 +1476,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 3,
-        "percentage": 67
+        "present": 3,
+        "total": 4,
+        "percentage": 75
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 1,
         "assists": 1,
         "yellow": 0,
@@ -1404,9 +1496,32 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -1567,8 +1682,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 3,
-        "percentage": 33
+        "total": 4,
+        "percentage": 25
       },
       "totals": {
         "matches": 1,
@@ -1583,12 +1698,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -1755,12 +1893,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -1775,9 +1913,32 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -1936,7 +2097,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 3,
+        "total": 4,
         "percentage": 0
       },
       "totals": {
@@ -1952,12 +2113,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -2126,12 +2310,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 1,
         "assists": 1,
         "yellow": 0,
@@ -2146,9 +2330,32 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -2316,8 +2523,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 3,
-        "percentage": 100
+        "total": 4,
+        "percentage": 75
       },
       "totals": {
         "matches": 3,
@@ -2332,12 +2539,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 1,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -2506,7 +2736,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 3,
+        "total": 4,
         "percentage": 0
       },
       "totals": {
@@ -2522,12 +2752,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -2693,8 +2946,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 3,
-        "percentage": 67
+        "total": 4,
+        "percentage": 50
       },
       "totals": {
         "matches": 2,
@@ -2709,12 +2962,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -2875,8 +3151,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 3,
-        "percentage": 33
+        "total": 4,
+        "percentage": 25
       },
       "totals": {
         "matches": 1,
@@ -2891,12 +3167,35 @@
         "polo": 1,
         "kept": 0,
         "captain": 1,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 0,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -3060,12 +3359,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -3079,10 +3378,33 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -3249,12 +3571,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 2,
         "assists": 1,
         "yellow": 0,
@@ -3268,10 +3590,33 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -3435,8 +3780,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 3,
-        "percentage": 67
+        "total": 4,
+        "percentage": 50
       },
       "totals": {
         "matches": 2,
@@ -3451,12 +3796,35 @@
         "polo": 1,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -3623,12 +3991,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 1,
@@ -3639,13 +4007,36 @@
         "flagged": 1,
         "polo": 1,
         "kept": 0,
-        "captain": 0,
+        "captain": 1,
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -3812,12 +4203,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 3,
-        "percentage": 67
+        "present": 3,
+        "total": 4,
+        "percentage": 75
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -3832,9 +4223,32 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -3995,7 +4409,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 3,
+        "total": 4,
         "percentage": 0
       },
       "totals": {
@@ -4011,12 +4425,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -4184,12 +4621,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -4203,10 +4640,33 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -4371,7 +4831,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 3,
+        "total": 4,
         "percentage": 0
       },
       "totals": {
@@ -4387,12 +4847,35 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -4556,9 +5039,9 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 3,
-        "percentage": 0
+        "present": 1,
+        "total": 4,
+        "percentage": 25
       },
       "totals": {
         "matches": 0,
@@ -4574,11 +5057,34 @@
         "kept": 0,
         "captain": 0,
         "absent": 3,
-        "notPlayed": 0,
+        "notPlayed": 1,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Niet gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -4743,12 +5249,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 3,
         "assists": 0,
         "yellow": 0,
@@ -4758,14 +5264,37 @@
         "late": 0,
         "flagged": 0,
         "polo": 1,
-        "kept": 1,
+        "kept": 2,
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -4933,12 +5462,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 3,
-        "percentage": 67
+        "present": 3,
+        "total": 4,
+        "percentage": 75
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -4952,10 +5481,33 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5116,12 +5668,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 3,
-        "percentage": 33
+        "present": 2,
+        "total": 4,
+        "percentage": 50
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -5135,10 +5687,33 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5298,9 +5873,9 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 3,
-        "percentage": 33
+        "present": 2,
+        "total": 4,
+        "percentage": 50
       },
       "totals": {
         "matches": 0,
@@ -5311,16 +5886,39 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 2,
+        "flagged": 3,
         "polo": 1,
         "kept": 0,
         "captain": 0,
         "absent": 2,
-        "notPlayed": 1,
+        "notPlayed": 2,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Niet gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5480,12 +6078,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 0,
-        "percentage": 0
+        "present": 1,
+        "total": 1,
+        "percentage": 100
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -5499,10 +6097,34 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 0
       },
-      "matches": []
+      "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        }
+      ]
     }
   ],
   "staff": [
@@ -5511,11 +6133,23 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 3,
+        "present": 4,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5629,9 +6263,21 @@
       "totals": {
         "present": 1,
         "partial": 0,
-        "absent": 2
+        "absent": 3
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig"
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5743,11 +6389,23 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 3,
+        "present": 4,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5861,9 +6519,21 @@
       "totals": {
         "present": 2,
         "partial": 0,
-        "absent": 1
+        "absent": 2
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Afwezig"
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -5975,11 +6645,23 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 3,
+        "present": 4,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
@@ -6091,11 +6773,23 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 2,
+        "present": 3,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "M1515636623",
+          "date": "2026-09-20",
+          "time": "10:00",
+          "home": "Epse 2",
+          "away": "SV Twello 2",
+          "result": "0-0",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1850179434",
           "date": "2026-09-13",
