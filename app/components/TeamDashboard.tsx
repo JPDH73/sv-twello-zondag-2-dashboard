@@ -183,7 +183,9 @@ function rankedPlayers(players: Player[], score: (player: Player) => number, dir
   return sorted.filter((player) => score(player) === winningScore).slice(0, limit);
 }
 function lowestTrainingPlayers(players: Player[], target = 3, max = 5) {
-  const sorted = [...players].sort((a, b) => a.training.attended - b.training.attended || a.name.localeCompare(b.name, "nl"));
+  const sorted = players
+    .filter((player) => player.training.attended > 0)
+    .sort((a, b) => a.training.attended - b.training.attended || a.name.localeCompare(b.name, "nl"));
   const selected: Player[] = [];
   for (let index = 0; index < sorted.length && selected.length < target;) {
     const score = sorted[index].training.attended;
