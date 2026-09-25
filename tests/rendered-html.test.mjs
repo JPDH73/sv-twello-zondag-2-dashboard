@@ -49,6 +49,8 @@ test("wedstrijdkaarten koppelen clublogo's en hebben een mobiele maat", async ()
   assert.match(source, /function TeamLogo/);
   assert.match(source, /fixture-team-home/);
   assert.match(source, /fixture-team-away/);
+  assert.match(source, /fixture-team fixture-team-home"><TeamLogo team=\{match\.home\}\/><strong>{match\.home/);
+  assert.match(source, /fixture-team fixture-team-away"><strong>\{match\.away[\s\S]*?<TeamLogo team=\{match\.away\}\/><\/span>/);
   assert.match(source, /<small>SV TWELLO<\/small>/);
   assert.match(css, /\.fixture-team-logo-wrap \{[^}]*width: 54px;[^}]*height: 54px;/);
   assert.match(css, /\.fixture-team-logo-wrap \{ flex-basis: 42px; width: 42px; height: 42px; \}/);
@@ -60,7 +62,36 @@ test("wedstrijden kunnen op type worden gefilterd en dashboard linkt naar de sta
   for (const type of ["Alle wedstrijden", "Competitie", "Beker", "Oefenwedstrijd"]) assert.match(source, new RegExp(type));
   assert.match(source, /matches\.filter\(\(match\) => matchType\(match\.competition\) === typeFilter\)/);
   assert.match(source, /https:\/\/www\.voetbal\.nl\/team\/T1719192193\/stand/);
+  assert.match(source, /https:\/\/apps\.sportlink\.com\/voetbalnl\/team_details\/T1719192193/);
+  assert.match(source, /onClick=\{openVoetbalNlStandings\}/);
+  assert.match(source, /Open SV Twello 2 in Voetbal\.nl/);
   assert.match(css, /\.standings-link/);
+});
+
+test("bardienst heeft een eigen menu, grote afbeelding en compleet rooster", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  await access(new URL("../public/bardiensten-sv-twello.png", import.meta.url));
+  assert.match(source, /\{ id: "bardienst", label: "Bardienst" \}/);
+  assert.match(source, /activeView === "bardienst" && <BarDutyView\/>/);
+  assert.match(source, /bardiensten-sv-twello\.png/);
+  for (const duty of ["Jani & Dennis S", "Dennis W & Thijs", "Thomas & Bram", "Delano & Samwel", "Tom & Jesse", "Niels & Jervin"]) {
+    assert.match(source, new RegExp(duty.replace("&", "\\&")));
+  }
+  assert.match(css, /\.bar-duty-hero img \{[^}]*width: 100%;[^}]*aspect-ratio: 3\/2;/);
+  assert.match(css, /\.bar-duty-table-head \{ display: none; \}/);
+});
+
+test("toppers en losers gebruiken de zes aangeleverde clubemblemen", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  await access(new URL("../public/sv-twello-awards.png", import.meta.url));
+  for (const emblem of ["training", "goals", "assists", "ghost", "invisible", "late"]) {
+    assert.match(css, new RegExp(`\\.award-emblem-${emblem}`));
+  }
+  assert.match(source, /function AwardEmblem/);
+  assert.match(css, /background-image: url\("\/sv-twello-awards\.png"\)/);
+  assert.match(css, /background-size: 300% 200%/);
 });
 
 test("selectie blijft per linie ingedeeld met gastspelers onderaan", async () => {
@@ -88,7 +119,7 @@ test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaa
   assert.match(source, /selection\.filter\(\(player\) => player\.training\.rankingEligible\)/);
   assert.match(source, /leaders\(trainingRankingPlayers, "training"\)/);
   assert.match(source, /lowestTrainingPlayers\(trainingRankingPlayers\)/);
-  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*inlineNames cardScore=\{leastTraining\.length \? `\$\{leastTraining\[0\]\.training\.percentage\}%` : undefined\}/);
+  assert.match(source, /awardTitle="Trainingsspook"[\s\S]*inlineNames cardScore=\{leastTraining\.length \? leastTraining\[0\]\.training\.attended : undefined\}/);
   assert.match(source, /players\.map\(displayName\)\.join\(" · "\)/);
   assert.match(source, /cardScore !== undefined && <span className="leader-score">\{cardScore\}<\/span>/);
   assert.match(source, /selected\.length \+ group\.length > max/);

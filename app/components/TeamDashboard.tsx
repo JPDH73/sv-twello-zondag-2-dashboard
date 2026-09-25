@@ -332,7 +332,7 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
     </div>
     <SectionHeading title="Losers"/>
     <div className="loser-grid">
-      <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastTraining.length ? `${leastTraining[0].training.percentage}%` : undefined}/>
+      <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastTraining.length ? leastTraining[0].training.attended : undefined}/>
       <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={mostAbsent.length ? mostAbsent[0].totals.absent : undefined}/>
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
