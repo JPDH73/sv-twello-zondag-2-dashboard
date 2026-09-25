@@ -125,12 +125,12 @@ test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaa
   assert.match(source, /score\(player\) === winningScore/);
 });
 
-test("onzichtbare man toont alle niet-gastspelers met exact de minste gespeelde wedstrijden", async () => {
+test("onzichtbare man toont niet-gastspelers met exact de meeste echte afwezigheden", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   assert.match(source, /sorted\.filter\(\(player\) => score\(player\) === winningScore\)\.slice\(0, limit\)/);
   assert.match(source, /const selection = data\.players\.filter\(\(player\) => !player\.guest\)/);
-  assert.match(source, /rankedPlayers\(selection, \(player\) => player\.totals\.matches, "min"\)/);
-  assert.match(source, /awardTitle="Onzichtbare man"[\s\S]*maxNames=\{5\}[\s\S]*inlineNames cardScore=\{leastPlayed\.length \? leastPlayed\[0\]\.totals\.matches : undefined\}/);
+  assert.match(source, /rankedPlayers\(selection, \(player\) => player\.totals\.absent, "max", true\)/);
+  assert.match(source, /awardTitle="Onzichtbare man"[\s\S]*maxNames=\{5\}[\s\S]*inlineNames cardScore=\{mostAbsent\.length \? mostAbsent\[0\]\.totals\.absent : undefined\}/);
   assert.match(source, /selection\.filter\(\(player\) => player\.lateRankingEligible\)/);
   assert.match(source, /awardTitle="Uitslaper"[\s\S]*inlineNames cardScore=\{mostLate\.length \? mostLate\[0\]\.totals\.late : undefined\}/);
 });

@@ -288,7 +288,7 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
   const hasPlayedMatches = data.totals.matchesPlayed > 0;
   const mostLate = hasPlayedMatches ? rankedPlayers(sleeperRankingPlayers, (player) => player.totals.late, "max", true) : [];
   const leastTraining = data.totals.trainings ? rankedPlayers(trainingRankingPlayers, (player) => player.training.attended, "min") : [];
-  const leastPlayed = rankedPlayers(selection, (player) => player.totals.matches, "min");
+  const mostAbsent = hasPlayedMatches ? rankedPlayers(selection, (player) => player.totals.absent, "max", true) : [];
   const goalLeaders = leaders(selection, "goals");
   const assistLeaders = leaders(selection, "assists");
   const trainingLeaders = leaders(trainingRankingPlayers, "training");
@@ -320,7 +320,7 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
     <SectionHeading title="Losers"/>
     <div className="loser-grid">
       <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastTraining.length ? leastTraining[0].training.attended : undefined}/>
-      <Loser label="Minste wedstrijden gespeeld" awardTitle="Onzichtbare man" players={leastPlayed} score={(player) => player.totals.matches} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastPlayed.length ? leastPlayed[0].totals.matches : undefined}/>
+      <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={mostAbsent.length ? mostAbsent[0].totals.absent : undefined}/>
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
     <a className="standings-link" href={voetbalNlStandingsUrl} target="_blank" rel="noreferrer" onClick={openVoetbalNlStandings}><span><small>Competitiestand</small><strong>Open SV Twello 2 in Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
