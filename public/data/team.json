@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-25T08:25:14.640Z",
+  "generatedAt": "2026-09-25T09:07:08.531Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -1074,7 +1074,7 @@
       "invisibleManEligible": false,
       "lateRankingEligible": true,
       "training": {
-        "rankingEligible": false,
+        "rankingEligible": true,
         "attended": 0,
         "total": 15,
         "percentage": 0,
@@ -2122,7 +2122,7 @@
       "invisibleManEligible": true,
       "lateRankingEligible": true,
       "training": {
-        "rankingEligible": false,
+        "rankingEligible": true,
         "attended": 1,
         "total": 15,
         "percentage": 7,
@@ -2748,7 +2748,7 @@
       "id": "sp11",
       "number": "12",
       "name": "Jasper Nijdeken",
-      "position": "Middenvelder",
+      "position": "Aanvaller",
       "foot": "rechts",
       "guest": false,
       "captain": false,
@@ -4435,7 +4435,7 @@
     },
     {
       "id": "sp26",
-      "number": "20",
+      "number": "",
       "name": "Koen Broekman",
       "position": "Verdediger",
       "foot": "links",
@@ -4444,7 +4444,7 @@
       "invisibleManEligible": false,
       "lateRankingEligible": true,
       "training": {
-        "rankingEligible": true,
+        "rankingEligible": false,
         "attended": 1,
         "total": 15,
         "percentage": 7,
@@ -5276,7 +5276,7 @@
       "id": "sp23",
       "number": "89",
       "name": "Nicky Eekhuis",
-      "position": "Aanvaller",
+      "position": "Middenvelder",
       "foot": "rechts",
       "guest": false,
       "captain": false,
@@ -5487,7 +5487,7 @@
       "id": "sp24",
       "number": "99",
       "name": "Bram Dolman",
-      "position": "Aanvaller",
+      "position": "Verdediger",
       "foot": "rechts",
       "guest": false,
       "captain": false,
@@ -6110,7 +6110,7 @@
     },
     {
       "id": "sp28",
-      "number": "",
+      "number": "20",
       "name": "Marijn Ruijl",
       "position": "Verdediger",
       "foot": "",
@@ -6119,7 +6119,7 @@
       "invisibleManEligible": false,
       "lateRankingEligible": true,
       "training": {
-        "rankingEligible": false,
+        "rankingEligible": true,
         "attended": 2,
         "total": 15,
         "percentage": 13,
