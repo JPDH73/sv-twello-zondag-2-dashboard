@@ -38,14 +38,19 @@ test("GitHub Pages-build bevat gegevens en sociale kaart", async () => {
   assert.ok(Array.isArray(data.matches));
   assert.ok(data.matches.every((match) => typeof match.manOfTheMatch === "string"));
   assert.equal(data.matches.find((match) => match.id === "O000000001")?.goalEvents.length, 5);
+  const wijhe = data.matches.find((match) => match.id === "B2026101801");
+  assert.deepEqual(wijhe && { date: wijhe.date, time: wijhe.time, home: wijhe.home, away: wijhe.away, result: wijhe.result, competition: wijhe.competition }, {
+    date: "2026-10-18", time: "10:30", home: "SV Twello 2", away: "Wijhe '92 4", result: "", competition: "Beker",
+  });
 });
 
 test("wedstrijdkaarten koppelen clublogo's en hebben een mobiele maat", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
-  for (const club of ["columbia 3", "davo 2", "tka 2", "tka 3", "voorwaarts t 5", "sportclub deventer 3", "epse 2", "heeten 5", "sc klarenbeek 3", "loenermark 3", "sallandia 2", "sv schalkhaar 5", "terwolde 2", "wsv 4"]) {
+  for (const club of ["columbia 3", "davo 2", "tka 2", "tka 3", "voorwaarts t 5", "sportclub deventer 3", "epse 2", "heeten 5", "sc klarenbeek 3", "loenermark 3", "sallandia 2", "sv schalkhaar 5", "terwolde 2", "wsv 4", "wijhe '92 4"]) {
     assert.match(source, new RegExp(`"${club}"`));
   }
+  await access(new URL("../public/team-logos/wijhe-92.png", import.meta.url));
   assert.match(source, /function TeamLogo/);
   assert.match(source, /fixture-team-home/);
   assert.match(source, /fixture-team-away/);

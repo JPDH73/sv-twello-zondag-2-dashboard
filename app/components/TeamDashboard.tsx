@@ -81,6 +81,7 @@ const teamLogos: Record<string, string> = {
   "sv schalkhaar 5": "./team-logos/sv-schalkhaar.png",
   "terwolde 2": "./team-logos/terwolde.png",
   "wsv 4": "./team-logos/wsv.png",
+  "wijhe '92 4": "./team-logos/wijhe-92.png",
 };
 
 const teamHistory = [
