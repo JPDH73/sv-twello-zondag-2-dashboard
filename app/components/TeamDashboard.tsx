@@ -182,18 +182,6 @@ function rankedPlayers(players: Player[], score: (player: Player) => number, dir
   const winningScore = score(sorted[0]);
   return sorted.filter((player) => score(player) === winningScore).slice(0, limit);
 }
-function lowestTrainingPlayers(players: Player[], target = 3, max = 5) {
-  const sorted = [...players].sort((a, b) => a.training.attended - b.training.attended || a.name.localeCompare(b.name, "nl"));
-  const selected: Player[] = [];
-  for (let index = 0; index < sorted.length && selected.length < target;) {
-    const score = sorted[index].training.attended;
-    const group = sorted.slice(index).filter((player) => player.training.attended === score);
-    if (selected.length && selected.length + group.length > max) break;
-    selected.push(...group.slice(0, Math.max(0, max - selected.length)));
-    index += group.length;
-  }
-  return selected;
-}
 export function TeamDashboard() {
   const [data, setData] = useState<TeamData | null>(null);
   const [error, setError] = useState("");
@@ -296,12 +284,11 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
   const [selectedMatch, setSelectedMatch] = useState<Match | null>(null);
   const selection = data.players.filter((player) => !player.guest);
   const trainingRankingPlayers = selection.filter((player) => player.training.rankingEligible);
-  const invisibleManPlayers = selection.filter((player) => player.invisibleManEligible);
   const sleeperRankingPlayers = selection.filter((player) => player.lateRankingEligible);
   const hasPlayedMatches = data.totals.matchesPlayed > 0;
   const mostLate = hasPlayedMatches ? rankedPlayers(sleeperRankingPlayers, (player) => player.totals.late, "max", true) : [];
-  const leastTraining = data.totals.trainings ? lowestTrainingPlayers(trainingRankingPlayers) : [];
-  const mostAbsent = hasPlayedMatches ? rankedPlayers(invisibleManPlayers, (player) => player.totals.absent, "max", true) : [];
+  const leastTraining = data.totals.trainings ? rankedPlayers(trainingRankingPlayers, (player) => player.training.attended, "min") : [];
+  const leastPlayed = rankedPlayers(selection, (player) => player.totals.matches, "min");
   const goalLeaders = leaders(selection, "goals");
   const assistLeaders = leaders(selection, "assists");
   const trainingLeaders = leaders(trainingRankingPlayers, "training");
@@ -332,8 +319,8 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
     </div>
     <SectionHeading title="Losers"/>
     <div className="loser-grid">
-      <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5} showScore={false} inlineNames inlineScores cardScore={leastTraining.length ? leastTraining[0].training.attended : undefined}/>
-      <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={mostAbsent.length ? mostAbsent[0].totals.absent : undefined}/>
+      <Loser label="Minste trainingen" awardTitle="Trainingsspook" players={leastTraining} score={(player) => player.training.attended} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastTraining.length ? leastTraining[0].training.attended : undefined}/>
+      <Loser label="Minste wedstrijden gespeeld" awardTitle="Onzichtbare man" players={leastPlayed} score={(player) => player.totals.matches} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={leastPlayed.length ? leastPlayed[0].totals.matches : undefined}/>
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
     <a className="standings-link" href={voetbalNlStandingsUrl} target="_blank" rel="noreferrer" onClick={openVoetbalNlStandings}><span><small>Competitiestand</small><strong>Open SV Twello 2 in Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
