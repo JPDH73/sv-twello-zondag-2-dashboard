@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-09-28T07:11:10.899Z",
+  "generatedAt": "2026-09-28T07:51:26.362Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -2026,12 +2026,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
+        "present": 2,
         "total": 5,
-        "percentage": 20
+        "percentage": 40
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -2043,9 +2043,9 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 4,
+        "absent": 3,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
@@ -2090,7 +2090,7 @@
               "team": "Loenermark 3"
             }
           ],
-          "status": "Afwezig",
+          "status": "Deels gespeeld",
           "goals": 0,
           "assists": 0,
           "yellow": 0,
@@ -4163,8 +4163,8 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 3,
-        "full": 2
+        "partial": 4,
+        "full": 1
       },
       "matches": [
         {
@@ -4208,7 +4208,7 @@
               "team": "Loenermark 3"
             }
           ],
-          "status": "Volgespeeld",
+          "status": "Deels gespeeld",
           "goals": 1,
           "assists": 0,
           "yellow": 0,
