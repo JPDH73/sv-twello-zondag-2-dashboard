@@ -196,6 +196,9 @@ for (const row of trainingRows.slice(1)) {
   if (playerName) trainingByPlayerName.set(playerName, row);
 }
 const trainingColumns = datedTrainingColumns.filter(({ col }) => trainingRows.slice(1).some((row) => yes(row[col])));
+// Een losse individuele training verschijnt wel in het overzicht en bij de speler,
+// maar telt niet als volledige teamtraining in de dashboardteller.
+const countedTrainingColumns = trainingColumns.filter(({ col }) => trainingRows.slice(1).filter((row) => yes(row[col])).length > 1);
 const trainingRowFor = (playerId, playerName) => trainingByPlayerName.get(nameKey(playerName)) ?? trainingByPlayerId.get(playerId) ?? [];
 
 const players = playerRows.map((row) => {
@@ -266,8 +269,8 @@ const players = playerRows.map((row) => {
     training: {
       rankingEligible: yes(field(row, ["beest/spook", "beest_spook", "beestspook"])) || (trainingRankingColumn >= 0 && yes(trainingRow[trainingRankingColumn])),
       attended: sessions.length,
-      total: trainingColumns.length,
-      percentage: trainingColumns.length ? Math.round(sessions.length / trainingColumns.length * 100) : 0,
+      total: countedTrainingColumns.length,
+      percentage: countedTrainingColumns.length ? Math.min(100, Math.round(sessions.length / countedTrainingColumns.length * 100)) : 0,
       sessions,
     },
     matchAttendance: {
@@ -337,7 +340,7 @@ const data = {
     players: players.filter((player) => !player.guest).length,
     guests: players.filter((player) => player.guest).length,
     staff: staff.length,
-    trainings: trainingColumns.length,
+    trainings: countedTrainingColumns.length,
     matchesScheduled: matches.length,
     matchesPlayed: matches.filter((match) => resultIsFinal(match.result)).length,
     goals: players.reduce((sum, player) => sum + player.totals.goals, 0),

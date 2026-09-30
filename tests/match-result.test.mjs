@@ -105,6 +105,39 @@ test("koppelt wedstrijd- en trainingsinvoer op naam als Excel-ID's verschoven zi
   assert.equal(byName("Denzel Boscher").lateRankingEligible, true);
 });
 
+test("toont een individuele training zonder de teller voor teamtrainingen te verhogen", () => {
+  const testDir = fs.mkdtempSync(path.join(os.tmpdir(), "svt-dashboard-training-"));
+  const workbookPath = path.join(testDir, "bron.xlsx");
+  const workbook = XLSX.utils.book_new();
+  const addJson = (name, rows) => XLSX.utils.book_append_sheet(workbook, XLSX.utils.json_to_sheet(rows), name);
+
+  addJson("spelers", [
+    { speler_id: "sp1", naam: "Samwel Yuda Mkai", "Beest/Spook": true },
+    { speler_id: "sp2", naam: "Jan Jansen", "Beest/Spook": true },
+  ]);
+  addJson("staf", []);
+  addJson("speler_jaar", []);
+  addJson("wedstrijden", []);
+  addJson("wedstrijdinvoer_spelers", []);
+  addJson("wedstrijdinvoer_staf", []);
+  XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([
+    ["speler_id", "naam", "24-09-2026", "29-09-2026"],
+    ["sp1", "Samwel Yuda Mkai", 1, 1],
+    ["sp2", "Jan Jansen", 1, null],
+  ]), "trainingsinvoer");
+  XLSX.writeFile(workbook, workbookPath);
+
+  execFileSync(process.execPath, [extractor, workbookPath], { cwd: testDir, stdio: "pipe" });
+  const data = JSON.parse(fs.readFileSync(path.join(testDir, "public", "data", "team.json"), "utf8"));
+  const samwel = data.players.find((player) => player.name === "Samwel Yuda Mkai");
+
+  assert.equal(data.totals.trainings, 1);
+  assert.equal(samwel.training.attended, 2);
+  assert.equal(samwel.training.total, 1);
+  assert.deepEqual(samwel.training.sessions, ["2026-09-24", "2026-09-29"]);
+  assert.deepEqual(data.trainings.find((training) => training.date === "2026-09-29").attendees, ["Samwel Yuda Mkai"]);
+});
+
 test("spelerskaart gebruikt de afgesproken volgorde en vat grote gedeelde loser-posities samen", () => {
   const source = fs.readFileSync(path.join(repoRoot, "app", "components", "TeamDashboard.tsx"), "utf8");
   const labels = ["Trainingspercentage", "Wedstrijden", "Wedstrijd opkomst", "Afwezig", "Volgespeeld", "Deels gespeeld", "Niet gespeeld", "Doelpunten", "Assists", "Penalty gescoord", "Penalty gemist", "Geel", "Rood", "Aanvoerder", "Gekeept", "Gevlagd", "Polo vergeten", "Te laat"];
