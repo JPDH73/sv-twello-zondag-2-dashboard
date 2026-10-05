@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-03T09:33:38.746Z",
+  "generatedAt": "2026-10-05T12:09:27.122Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 16,
     "matchesScheduled": 27,
-    "matchesPlayed": 6,
-    "goals": 12,
-    "assists": 9
+    "matchesPlayed": 7,
+    "goals": 13,
+    "assists": 10
   },
   "matches": [
     {
@@ -185,10 +185,31 @@
       "time": "10:30",
       "home": "SC Klarenbeek 3",
       "away": "SV Twello 2",
-      "result": "",
+      "result": "3-1",
       "competition": "Competitie",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "manOfTheMatch": "Onbeslist",
+      "goalEvents": [
+        {
+          "minute": 12,
+          "score": "1-0",
+          "team": "SC Klarenbeek 3"
+        },
+        {
+          "minute": 24,
+          "score": "1-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 31,
+          "score": "2-1",
+          "team": "SC Klarenbeek 3"
+        },
+        {
+          "minute": 58,
+          "score": "3-1",
+          "team": "SC Klarenbeek 3"
+        }
+      ]
     },
     {
       "id": "M225330184",
@@ -737,12 +758,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 5,
-        "percentage": 40
+        "present": 3,
+        "total": 6,
+        "percentage": 50
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -752,14 +773,58 @@
         "late": 0,
         "flagged": 0,
         "polo": 0,
-        "kept": 2,
+        "kept": 3,
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
         "partial": 0,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -1002,12 +1067,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 5,
-        "percentage": 80
+        "present": 5,
+        "total": 6,
+        "percentage": 83
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1021,10 +1086,54 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -1260,7 +1369,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0
       },
       "totals": {
@@ -1276,12 +1385,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -1530,12 +1683,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 1,
         "assists": 0,
         "yellow": 1,
@@ -1550,9 +1703,53 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 5,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -1797,8 +1994,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 5,
-        "percentage": 60
+        "total": 6,
+        "percentage": 50
       },
       "totals": {
         "matches": 3,
@@ -1813,12 +2010,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 1,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -2056,14 +2297,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 5,
-        "percentage": 40
+        "present": 3,
+        "total": 6,
+        "percentage": 50
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -2076,9 +2317,53 @@
         "absent": 3,
         "notPlayed": 0,
         "partial": 2,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -2323,8 +2608,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 5,
-        "percentage": 80
+        "total": 6,
+        "percentage": 67
       },
       "totals": {
         "matches": 4,
@@ -2339,12 +2624,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 2,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -2582,12 +2911,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 5,
-        "percentage": 0
+        "present": 1,
+        "total": 6,
+        "percentage": 17
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -2601,10 +2930,54 @@
         "captain": 0,
         "absent": 5,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -2852,13 +3225,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
-        "goals": 1,
+        "matches": 6,
+        "goals": 2,
         "assists": 1,
         "yellow": 0,
         "red": 0,
@@ -2872,9 +3245,53 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 3
+        "full": 4
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -3119,12 +3536,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 5,
-        "percentage": 60
+        "present": 4,
+        "total": 6,
+        "percentage": 67
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 2,
         "assists": 0,
         "yellow": 0,
@@ -3138,10 +3555,54 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -3390,7 +3851,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0
       },
       "totals": {
@@ -3406,12 +3867,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -3655,8 +4160,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 5,
-        "percentage": 60
+        "total": 6,
+        "percentage": 50
       },
       "totals": {
         "matches": 3,
@@ -3671,12 +4176,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -3914,8 +4463,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 5,
-        "percentage": 40
+        "total": 6,
+        "percentage": 33
       },
       "totals": {
         "matches": 2,
@@ -3930,12 +4479,56 @@
         "polo": 1,
         "kept": 0,
         "captain": 2,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -4178,12 +4771,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 1,
         "assists": 1,
         "yellow": 0,
@@ -4197,10 +4790,54 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -4446,12 +5083,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 2,
         "assists": 1,
         "yellow": 0,
@@ -4465,10 +5102,54 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -4709,8 +5390,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 5,
-        "percentage": 60
+        "total": 6,
+        "percentage": 50
       },
       "totals": {
         "matches": 3,
@@ -4725,12 +5406,56 @@
         "polo": 2,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -4977,15 +5702,15 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 0,
-        "yellow": 2,
+        "yellow": 3,
         "red": 0,
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
@@ -4997,9 +5722,53 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 4
+        "full": 5
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 1,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -5245,12 +6014,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 5,
-        "percentage": 80
+        "present": 5,
+        "total": 6,
+        "percentage": 83
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 1,
         "assists": 0,
         "yellow": 0,
@@ -5264,10 +6033,54 @@
         "captain": 1,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -5505,7 +6318,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0
       },
       "totals": {
@@ -5521,12 +6334,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -5773,12 +6630,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -5792,10 +6649,54 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -6039,7 +6940,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 5,
+        "total": 6,
         "percentage": 0
       },
       "totals": {
@@ -6055,12 +6956,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -6304,8 +7249,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 5,
-        "percentage": 40
+        "total": 6,
+        "percentage": 33
       },
       "totals": {
         "matches": 1,
@@ -6320,12 +7265,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 1,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -6569,12 +7558,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 5,
+        "present": 6,
+        "total": 6,
         "percentage": 100
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 3,
         "assists": 0,
         "yellow": 0,
@@ -6589,9 +7578,53 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
-        "full": 4
+        "full": 5
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -6838,8 +7871,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 5,
-        "percentage": 80
+        "total": 6,
+        "percentage": 67
       },
       "totals": {
         "matches": 4,
@@ -6854,12 +7887,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -7098,8 +8175,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 5,
-        "percentage": 60
+        "total": 6,
+        "percentage": 50
       },
       "totals": {
         "matches": 3,
@@ -7114,12 +8191,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -7356,12 +8477,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 5,
-        "percentage": 60
+        "present": 4,
+        "total": 6,
+        "percentage": 67
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -7375,10 +8496,54 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 2,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -7617,12 +8782,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 2,
+        "present": 3,
+        "total": 3,
         "percentage": 100
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -7637,9 +8802,53 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 0
+        "full": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -7726,11 +8935,44 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 5,
+        "present": 6,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -7899,9 +9141,42 @@
       "totals": {
         "present": 2,
         "partial": 0,
-        "absent": 3
+        "absent": 4
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -8070,9 +9345,42 @@
       "totals": {
         "present": 5,
         "partial": 0,
-        "absent": 0
+        "absent": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -8241,9 +9549,42 @@
       "totals": {
         "present": 3,
         "partial": 0,
-        "absent": 2
+        "absent": 3
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -8410,11 +9751,44 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 5,
+        "present": 6,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
@@ -8581,11 +9955,44 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 4,
+        "present": 5,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "M1206364897",
+          "date": "2026-10-04",
+          "time": "10:30",
+          "home": "SC Klarenbeek 3",
+          "away": "SV Twello 2",
+          "result": "3-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Onbeslist",
+          "goalEvents": [
+            {
+              "minute": 12,
+              "score": "1-0",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 24,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 31,
+              "score": "2-1",
+              "team": "SC Klarenbeek 3"
+            },
+            {
+              "minute": 58,
+              "score": "3-1",
+              "team": "SC Klarenbeek 3"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M2063443898",
           "date": "2026-09-27",
