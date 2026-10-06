@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-05T13:48:28.262Z",
+  "generatedAt": "2026-10-06T11:18:57.024Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9136,7 +9136,7 @@
     },
     {
       "id": "st2",
-      "name": "Christiaan Grootgens",
+      "name": "Christian Göttgens",
       "role": "Technisch staflid",
       "totals": {
         "present": 2,

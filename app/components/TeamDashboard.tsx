@@ -43,7 +43,7 @@ const staffOrder = [
   "Jeffrey Karrenbeld",
   "Sander Bouwmeester",
   "Jan Berkenbosch",
-  "Christiaan Grootgens",
+  "Christian Göttgens",
   "Jean-Paul de Haas",
 ];
 
