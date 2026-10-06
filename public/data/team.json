@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-06T11:18:57.024Z",
+  "generatedAt": "2026-10-06T11:45:17.912Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -5718,7 +5718,7 @@
         "flagged": 1,
         "polo": 1,
         "kept": 0,
-        "captain": 1,
+        "captain": 2,
         "absent": 0,
         "notPlayed": 0,
         "partial": 1,
@@ -5767,7 +5767,7 @@
           "flagged": false,
           "polo": false,
           "kept": false,
-          "captain": false
+          "captain": true
         },
         {
           "id": "M2063443898",
@@ -9139,9 +9139,9 @@
       "name": "Christian Göttgens",
       "role": "Technisch staflid",
       "totals": {
-        "present": 2,
+        "present": 3,
         "partial": 0,
-        "absent": 4
+        "absent": 3
       },
       "matches": [
         {
@@ -9175,7 +9175,7 @@
               "team": "SC Klarenbeek 3"
             }
           ],
-          "status": "Afwezig"
+          "status": "Aanwezig"
         },
         {
           "id": "M2063443898",
