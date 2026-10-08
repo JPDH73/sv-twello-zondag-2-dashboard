@@ -363,7 +363,16 @@ function MatchesView({ matches, players, staff }: { matches: Match[]; players: P
 
 function TrainingsView({ trainings, players }: { trainings: TeamData["trainings"]; players: Player[] }) {
   const shortName = (name: string) => dashboardPlayerName(name, players);
-  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => <article className="training-card" key={training.date}><div className="training-date">{formatTrainingDate(training.date)}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? sortNames(training.attendees.map(shortName)).join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>)}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
+  const officialTrainingNumberByDate = new Map(
+    [...trainings]
+      .filter((training) => training.attendees.length > 1)
+      .sort((left, right) => left.date.localeCompare(right.date))
+      .map((training, index) => [training.date, index + 1]),
+  );
+  return <><div className="page-heading"><div><p className="eyebrow">Aanwezigheid</p><h1>Trainingen</h1></div></div>{trainings.length ? <div className="training-grid">{trainings.map((training) => {
+    const trainingNumber = officialTrainingNumberByDate.get(training.date);
+    return <article className="training-card" key={training.date}><div className="training-card-header"><div className="training-date">{formatTrainingDate(training.date)}</div>{trainingNumber !== undefined && <span className="training-number">Training {trainingNumber}</span>}</div><strong>{training.attendees.length} spelers aanwezig</strong><p>{training.attendees.length ? sortNames(training.attendees.map(shortName)).join(" · ") : "Geen aanwezigen geregistreerd"}</p></article>;
+  })}</div> : <div className="empty-state">Er zijn nog geen trainingen tot en met vandaag.</div>}</>;
 }
 
 function StatisticsView({ data }: { data: TeamData }) {

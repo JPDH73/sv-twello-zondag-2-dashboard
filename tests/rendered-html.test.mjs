@@ -147,6 +147,15 @@ test("trainingskaders tonen de weekdag en datum", async () => {
   assert.match(source, /formatTrainingDate\(training\.date\)/);
 });
 
+test("officiële trainingen zijn chronologisch genummerd en individuele trainingen niet", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  assert.match(source, /\.filter\(\(training\) => training\.attendees\.length > 1\)/);
+  assert.match(source, /\.sort\(\(left, right\) => left\.date\.localeCompare\(right\.date\)\)/);
+  assert.match(source, /trainingNumber !== undefined && <span className="training-number">Training \{trainingNumber\}<\/span>/);
+  assert.match(css, /\.training-number/);
+});
+
 test("trainingsranglijsten gebruiken alleen aangevinkte spelers en tonen maximaal vijf trainingsspoken", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   assert.match(source, /selection\.filter\(\(player\) => player\.training\.rankingEligible\)/);

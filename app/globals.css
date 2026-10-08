@@ -129,7 +129,9 @@ button { color: inherit; }
 .match-mvp { display: flex; align-items: center; justify-content: center; gap: 5px; width: fit-content; max-width: 100%; margin: 13px auto 0; padding: 6px 9px; border-radius: 999px; color: var(--navy); background: var(--ice); font-size: 12px; font-weight: 800; line-height: 1; }
 .match-mvp span { flex: 0 0 auto; font-size: 13px; }
 .match-empty { min-height: 112px; display: grid; place-items: center; padding: 20px; border: 1px dashed #bfd1de; border-radius: 18px; color: var(--muted); background: rgba(255,255,255,.6); text-align: center; font-size: 13px; }
-.training-date { margin-bottom: 8px; color: var(--blue); font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.training-card-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.training-date { color: var(--blue); font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.training-number { flex: 0 0 auto; padding: 5px 8px; border-radius: 999px; color: var(--navy); background: var(--ice); font-size: 10px; font-weight: 850; letter-spacing: .05em; text-transform: uppercase; }
 .training-card strong { font-size: 19px; }
 .training-card p { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 
