@@ -1,13 +1,13 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-08T10:21:23.014Z",
+  "generatedAt": "2026-10-10T10:56:09.709Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
     "guests": 3,
     "staff": 6,
-    "trainings": 17,
+    "trainings": 18,
     "matchesScheduled": 27,
     "matchesPlayed": 7,
     "goals": 13,
@@ -17,7 +17,7 @@
     {
       "id": "O000000001",
       "date": "2026-08-20",
-      "time": "20:14",
+      "time": "20:00",
       "home": "SV Twello 2",
       "away": "DAVO 2",
       "result": "3-2",
@@ -434,6 +434,23 @@
   ],
   "trainings": [
     {
+      "date": "2026-10-08",
+      "attendees": [
+        "Dennis Schreurs",
+        "Marc Albers",
+        "Jesse van Brink",
+        "Delano de Vogel",
+        "Niels Gijsberts",
+        "Jasper Nijdeken",
+        "Robbert Teelen",
+        "Thijs Oldenboom",
+        "Jervin Leisink Meijer",
+        "Jorn Oosting",
+        "Nicky Eekhuis",
+        "Marijn Ruijl"
+      ]
+    },
+    {
       "date": "2026-10-06",
       "attendees": [
         "Marc Albers",
@@ -757,9 +774,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 7,
-        "total": 17,
-        "percentage": 41,
+        "attended": 8,
+        "total": 18,
+        "percentage": 44,
         "sessions": [
           "2026-08-06",
           "2026-08-16",
@@ -767,7 +784,8 @@
           "2026-08-23",
           "2026-08-25",
           "2026-08-27",
-          "2026-10-01"
+          "2026-10-01",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -1006,7 +1024,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -1067,8 +1085,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 7,
-        "total": 17,
-        "percentage": 41,
+        "total": 18,
+        "percentage": 39,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -1315,7 +1333,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -1376,7 +1394,7 @@
       "training": {
         "rankingEligible": true,
         "attended": 0,
-        "total": 17,
+        "total": 18,
         "percentage": 0,
         "sessions": []
       },
@@ -1616,7 +1634,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -1676,9 +1694,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 14,
-        "total": 17,
-        "percentage": 82,
+        "attended": 15,
+        "total": 18,
+        "percentage": 83,
         "sessions": [
           "2026-08-16",
           "2026-08-18",
@@ -1693,7 +1711,8 @@
           "2026-09-22",
           "2026-09-24",
           "2026-10-01",
-          "2026-10-06"
+          "2026-10-06",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -1932,7 +1951,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -1992,9 +2011,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 8,
-        "total": 17,
-        "percentage": 47,
+        "attended": 9,
+        "total": 18,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
           "2026-08-13",
@@ -2003,7 +2022,8 @@
           "2026-09-01",
           "2026-09-10",
           "2026-09-15",
-          "2026-09-22"
+          "2026-09-22",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -2242,7 +2262,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -2302,12 +2322,13 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 2,
-        "total": 17,
-        "percentage": 12,
+        "attended": 3,
+        "total": 18,
+        "percentage": 17,
         "sessions": [
           "2026-08-27",
-          "2026-10-01"
+          "2026-10-01",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -2546,7 +2567,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -2607,8 +2628,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 9,
-        "total": 17,
-        "percentage": 53,
+        "total": 18,
+        "percentage": 50,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
@@ -2857,7 +2878,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -2918,8 +2939,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 3,
-        "total": 17,
-        "percentage": 18,
+        "total": 18,
+        "percentage": 17,
         "sessions": [
           "2026-09-22",
           "2026-10-01",
@@ -3162,7 +3183,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -3223,8 +3244,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 13,
-        "total": 17,
-        "percentage": 76,
+        "total": 18,
+        "percentage": 72,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
@@ -3477,7 +3498,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -3537,9 +3558,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 10,
-        "total": 17,
-        "percentage": 59,
+        "attended": 11,
+        "total": 18,
+        "percentage": 61,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -3550,7 +3571,8 @@
           "2026-09-15",
           "2026-09-17",
           "2026-10-01",
-          "2026-10-06"
+          "2026-10-06",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -3789,7 +3811,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -3849,9 +3871,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 13,
-        "total": 17,
-        "percentage": 76,
+        "attended": 14,
+        "total": 18,
+        "percentage": 78,
         "sessions": [
           "2026-08-06",
           "2026-08-13",
@@ -3865,7 +3887,8 @@
           "2026-09-22",
           "2026-09-24",
           "2026-10-01",
-          "2026-10-06"
+          "2026-10-06",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -4104,7 +4127,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -4165,8 +4188,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 7,
-        "total": 17,
-        "percentage": 41,
+        "total": 18,
+        "percentage": 39,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
@@ -4413,7 +4436,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -4473,11 +4496,12 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 1,
-        "total": 17,
-        "percentage": 6,
+        "attended": 2,
+        "total": 18,
+        "percentage": 11,
         "sessions": [
-          "2026-08-27"
+          "2026-08-27",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -4716,7 +4740,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -4776,9 +4800,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 7,
-        "total": 17,
-        "percentage": 41,
+        "attended": 8,
+        "total": 18,
+        "percentage": 44,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -4786,7 +4810,8 @@
           "2026-08-27",
           "2026-09-03",
           "2026-09-24",
-          "2026-10-01"
+          "2026-10-01",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -5025,7 +5050,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -5085,9 +5110,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 11,
-        "total": 17,
-        "percentage": 65,
+        "attended": 12,
+        "total": 18,
+        "percentage": 67,
         "sessions": [
           "2026-08-13",
           "2026-08-16",
@@ -5099,7 +5124,8 @@
           "2026-09-17",
           "2026-09-22",
           "2026-10-01",
-          "2026-10-06"
+          "2026-10-06",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -5338,7 +5364,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -5399,8 +5425,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 4,
-        "total": 17,
-        "percentage": 24,
+        "total": 18,
+        "percentage": 22,
         "sessions": [
           "2026-08-18",
           "2026-08-27",
@@ -5644,7 +5670,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -5704,9 +5730,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 12,
-        "total": 17,
-        "percentage": 71,
+        "attended": 13,
+        "total": 18,
+        "percentage": 72,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -5719,7 +5745,8 @@
           "2026-09-22",
           "2026-09-24",
           "2026-10-01",
-          "2026-10-06"
+          "2026-10-06",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -5958,7 +5985,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -6019,8 +6046,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 10,
-        "total": 17,
-        "percentage": 59,
+        "total": 18,
+        "percentage": 56,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -6270,7 +6297,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -6331,7 +6358,7 @@
       "training": {
         "rankingEligible": false,
         "attended": 1,
-        "total": 17,
+        "total": 18,
         "percentage": 6,
         "sessions": [
           "2026-08-27"
@@ -6573,7 +6600,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -6634,8 +6661,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 11,
-        "total": 17,
-        "percentage": 65,
+        "total": 18,
+        "percentage": 61,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -6886,7 +6913,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -6947,8 +6974,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 7,
-        "total": 17,
-        "percentage": 41,
+        "total": 18,
+        "percentage": 39,
         "sessions": [
           "2026-08-27",
           "2026-09-01",
@@ -7195,7 +7222,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -7256,8 +7283,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 7,
-        "total": 17,
-        "percentage": 41,
+        "total": 18,
+        "percentage": 39,
         "sessions": [
           "2026-08-06",
           "2026-08-25",
@@ -7504,7 +7531,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -7564,9 +7591,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 8,
-        "total": 17,
-        "percentage": 47,
+        "attended": 9,
+        "total": 18,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -7575,7 +7602,8 @@
           "2026-09-03",
           "2026-09-17",
           "2026-09-24",
-          "2026-10-01"
+          "2026-10-01",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -7814,7 +7842,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -7875,8 +7903,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 10,
-        "total": 17,
-        "percentage": 59,
+        "total": 18,
+        "percentage": 56,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -8126,7 +8154,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -8187,8 +8215,8 @@
       "training": {
         "rankingEligible": false,
         "attended": 2,
-        "total": 17,
-        "percentage": 12,
+        "total": 18,
+        "percentage": 11,
         "sessions": [
           "2026-08-09",
           "2026-08-27"
@@ -8430,7 +8458,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -8491,7 +8519,7 @@
       "training": {
         "rankingEligible": false,
         "attended": 1,
-        "total": 17,
+        "total": 18,
         "percentage": 6,
         "sessions": [
           "2026-08-18"
@@ -8733,7 +8761,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -8793,13 +8821,14 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 3,
-        "total": 17,
-        "percentage": 18,
+        "attended": 4,
+        "total": 18,
+        "percentage": 22,
         "sessions": [
           "2026-09-15",
           "2026-09-22",
-          "2026-10-01"
+          "2026-10-01",
+          "2026-10-08"
         ]
       },
       "matchAttendance": {
@@ -9118,7 +9147,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -9322,7 +9351,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -9526,7 +9555,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -9730,7 +9759,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -9934,7 +9963,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
@@ -10138,7 +10167,7 @@
         {
           "id": "O000000001",
           "date": "2026-08-20",
-          "time": "20:14",
+          "time": "20:00",
           "home": "SV Twello 2",
           "away": "DAVO 2",
           "result": "3-2",
