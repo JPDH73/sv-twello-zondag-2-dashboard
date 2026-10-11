@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-10T10:56:09.709Z",
+  "generatedAt": "2026-10-11T12:59:52.735Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 18,
     "matchesScheduled": 27,
-    "matchesPlayed": 7,
-    "goals": 13,
-    "assists": 10
+    "matchesPlayed": 8,
+    "goals": 18,
+    "assists": 14
   },
   "matches": [
     {
@@ -217,10 +217,36 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "WSV 4",
-      "result": "",
+      "result": "5-1",
       "competition": "Competitie",
       "manOfTheMatch": "",
-      "goalEvents": []
+      "goalEvents": [
+        {
+          "minute": 1,
+          "score": "1-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 5,
+          "score": "2-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 42,
+          "score": "3-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 75,
+          "score": "4-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 90,
+          "score": "5-0",
+          "team": "SV Twello 2"
+        }
+      ]
     },
     {
       "id": "B2026101801",
@@ -789,12 +815,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 6,
-        "percentage": 50
+        "present": 4,
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -803,15 +829,64 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
-        "polo": 0,
-        "kept": 3,
+        "polo": 1,
+        "kept": 4,
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
         "partial": 0,
-        "full": 3
+        "full": 4
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": true,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -1098,12 +1173,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 6,
-        "percentage": 83
+        "present": 6,
+        "total": 7,
+        "percentage": 86
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1117,10 +1192,59 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -1400,7 +1524,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 6,
+        "total": 7,
         "percentage": 0
       },
       "totals": {
@@ -1416,12 +1540,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -1717,8 +1890,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 6,
-        "percentage": 100
+        "total": 7,
+        "percentage": 86
       },
       "totals": {
         "matches": 6,
@@ -1733,12 +1906,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 1,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 5,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -2027,13 +2249,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 6,
-        "percentage": 50
+        "present": 4,
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
-        "matches": 3,
-        "goals": 1,
+        "matches": 4,
+        "goals": 2,
         "assists": 1,
         "yellow": 0,
         "red": 0,
@@ -2046,10 +2268,59 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -2332,12 +2603,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 6,
-        "percentage": 50
+        "present": 4,
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -2345,16 +2616,65 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 0,
+        "flagged": 1,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -2643,12 +2963,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 6,
-        "percentage": 67
+        "present": 5,
+        "total": 7,
+        "percentage": 71
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -2662,10 +2982,59 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -2949,8 +3318,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 6,
-        "percentage": 17
+        "total": 7,
+        "percentage": 14
       },
       "totals": {
         "matches": 1,
@@ -2965,12 +3334,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -3263,14 +3681,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 6,
+        "present": 7,
+        "total": 7,
         "percentage": 100
       },
       "totals": {
-        "matches": 6,
-        "goals": 2,
-        "assists": 1,
+        "matches": 7,
+        "goals": 4,
+        "assists": 2,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -3279,13 +3697,62 @@
         "flagged": 0,
         "polo": 0,
         "kept": 0,
-        "captain": 0,
+        "captain": 1,
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 4
+        "full": 5
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 2,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -3577,8 +4044,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 6,
-        "percentage": 67
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
         "matches": 4,
@@ -3593,12 +4060,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 2,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -3893,7 +4409,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 6,
+        "total": 7,
         "percentage": 0
       },
       "totals": {
@@ -3909,12 +4425,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -4201,12 +4766,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 6,
-        "percentage": 50
+        "present": 4,
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -4220,10 +4785,59 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -4505,12 +5119,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 6,
-        "percentage": 33
+        "present": 3,
+        "total": 7,
+        "percentage": 43
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 2,
         "yellow": 0,
@@ -4521,13 +5135,62 @@
         "flagged": 0,
         "polo": 1,
         "kept": 0,
-        "captain": 2,
+        "captain": 3,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -4815,13 +5478,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 6,
+        "present": 7,
+        "total": 7,
         "percentage": 100
       },
       "totals": {
-        "matches": 6,
-        "goals": 1,
+        "matches": 7,
+        "goals": 2,
         "assists": 1,
         "yellow": 0,
         "red": 0,
@@ -4834,10 +5497,59 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -5129,14 +5841,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 6,
+        "present": 7,
+        "total": 7,
         "percentage": 100
       },
       "totals": {
-        "matches": 6,
-        "goals": 2,
-        "assists": 1,
+        "matches": 7,
+        "goals": 3,
+        "assists": 3,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -5149,9 +5861,58 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 5,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 2,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -5436,8 +6197,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 6,
-        "percentage": 50
+        "total": 7,
+        "percentage": 43
       },
       "totals": {
         "matches": 3,
@@ -5452,12 +6213,61 @@
         "polo": 2,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -5751,8 +6561,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 6,
-        "percentage": 100
+        "total": 7,
+        "percentage": 86
       },
       "totals": {
         "matches": 6,
@@ -5767,12 +6577,61 @@
         "polo": 1,
         "kept": 0,
         "captain": 2,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 1,
         "full": 5
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -6062,12 +6921,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 6,
-        "percentage": 83
+        "present": 6,
+        "total": 7,
+        "percentage": 86
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 1,
         "assists": 0,
         "yellow": 0,
@@ -6082,9 +6941,58 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 3,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -6366,7 +7274,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 6,
+        "total": 7,
         "percentage": 0
       },
       "totals": {
@@ -6382,12 +7290,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -6678,12 +7635,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 6,
+        "present": 7,
+        "total": 7,
         "percentage": 100
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -6697,10 +7654,59 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 6,
+        "partial": 7,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -6988,7 +7994,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 6,
+        "total": 7,
         "percentage": 0
       },
       "totals": {
@@ -7004,12 +8010,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -7297,8 +8352,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 6,
-        "percentage": 33
+        "total": 7,
+        "percentage": 29
       },
       "totals": {
         "matches": 1,
@@ -7313,12 +8368,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 4,
+        "absent": 5,
         "notPlayed": 1,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -7607,14 +8711,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 6,
+        "present": 7,
+        "total": 7,
         "percentage": 100
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 3,
-        "assists": 0,
+        "assists": 1,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -7626,10 +8730,59 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 5
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -7920,8 +9073,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 6,
-        "percentage": 67
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
         "matches": 4,
@@ -7936,12 +9089,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -8223,12 +9425,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 6,
-        "percentage": 50
+        "present": 4,
+        "total": 7,
+        "percentage": 57
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 1,
@@ -8236,16 +9438,65 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 1,
+        "flagged": 2,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -8526,12 +9777,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 6,
-        "percentage": 67
+        "present": 5,
+        "total": 7,
+        "percentage": 71
       },
       "totals": {
-        "matches": 2,
+        "matches": 3,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -8545,10 +9796,59 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 2,
-        "partial": 2,
+        "partial": 3,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -8832,12 +10132,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 3,
+        "present": 4,
+        "total": 4,
         "percentage": 100
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -8852,9 +10152,58 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -8985,11 +10334,49 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 6,
+        "present": 7,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -9190,10 +10577,48 @@
       "role": "Technisch staflid",
       "totals": {
         "present": 3,
-        "partial": 0,
+        "partial": 1,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels aanwezig"
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -9393,11 +10818,49 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 5,
+        "present": 6,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -9597,11 +11060,49 @@
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
       "totals": {
-        "present": 3,
+        "present": 4,
         "partial": 0,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -9801,11 +11302,49 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 6,
+        "present": 7,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
@@ -10005,11 +11544,49 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 5,
+        "present": 6,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "M225330184",
+          "date": "2026-10-11",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "WSV 4",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 5,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 42,
+              "score": "3-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 90,
+              "score": "5-0",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1206364897",
           "date": "2026-10-04",
