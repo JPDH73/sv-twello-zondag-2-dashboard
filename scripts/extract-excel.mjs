@@ -87,7 +87,12 @@ const staffInputRows = records("wedstrijdinvoer_staf");
 const trainingRows = matrix("trainingsinvoer");
 const matchTimelineSheet = workbook.SheetNames.find((name) => name.toLocaleLowerCase("nl").replace(/[^a-z0-9]/g, "") === "wedstrijdverloop");
 const matchTimelineRows = matchTimelineSheet ? records(matchTimelineSheet) : [];
-const today = new Date().toISOString().slice(0, 10);
+const today = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Europe/Amsterdam",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date());
 const goalEventsByMatch = new Map([
   ["M1850179434", [
     { minute: 25, score: "1-0", team: "SV Twello 2" },
