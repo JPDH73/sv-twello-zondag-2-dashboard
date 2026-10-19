@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-16T06:03:07.256Z",
+  "generatedAt": "2026-10-19T19:37:28.241Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 20,
     "matchesScheduled": 27,
-    "matchesPlayed": 8,
-    "goals": 18,
-    "assists": 14
+    "matchesPlayed": 9,
+    "goals": 21,
+    "assists": 15
   },
   "matches": [
     {
@@ -254,10 +254,31 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "Wijhe '92 4",
-      "result": "",
+      "result": "3-1",
       "competition": "Beker",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "manOfTheMatch": "Jorn Oosting",
+      "goalEvents": [
+        {
+          "minute": 35,
+          "score": "0-1",
+          "team": "Wijhe '92 4"
+        },
+        {
+          "minute": 70,
+          "score": "1-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 75,
+          "score": "2-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 89,
+          "score": "3-1",
+          "team": "SV Twello 2"
+        }
+      ]
     },
     {
       "id": "M1088968169",
@@ -849,8 +870,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 7,
-        "percentage": 57
+        "total": 8,
+        "percentage": 50
       },
       "totals": {
         "matches": 4,
@@ -865,12 +886,56 @@
         "polo": 1,
         "kept": 4,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 0,
         "full": 4
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -1207,12 +1272,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 7,
-        "percentage": 86
+        "present": 7,
+        "total": 8,
+        "percentage": 88
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1220,16 +1285,60 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 0,
+        "flagged": 1,
         "polo": 1,
         "kept": 0,
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 6,
+        "partial": 7,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -1558,7 +1667,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 7,
+        "total": 8,
         "percentage": 0
       },
       "totals": {
@@ -1574,12 +1683,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 7,
+        "absent": 8,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -1949,6 +2102,50 @@
       },
       "matches": [
         {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volledig gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
+        {
           "id": "M225330184",
           "date": "2026-10-11",
           "time": "10:30",
@@ -2287,12 +2484,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 7,
-        "percentage": 57
+        "present": 5,
+        "total": 8,
+        "percentage": 63
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 2,
         "assists": 1,
         "yellow": 0,
@@ -2306,10 +2503,54 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -2642,12 +2883,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 7,
-        "percentage": 57
+        "present": 5,
+        "total": 8,
+        "percentage": 63
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -2661,10 +2902,54 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 1
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -3004,8 +3289,8 @@
       },
       "matchAttendance": {
         "present": 5,
-        "total": 7,
-        "percentage": 71
+        "total": 8,
+        "percentage": 63
       },
       "totals": {
         "matches": 5,
@@ -3020,12 +3305,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 0,
         "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -3360,8 +3689,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 7,
-        "percentage": 14
+        "total": 8,
+        "percentage": 13
       },
       "totals": {
         "matches": 1,
@@ -3376,12 +3705,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -3738,7 +4111,7 @@
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 0,
-        "polo": 0,
+        "polo": 1,
         "kept": 0,
         "captain": 1,
         "absent": 0,
@@ -3747,6 +4120,50 @@
         "full": 5
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volledig gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": true,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -4089,8 +4506,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 7,
-        "percentage": 57
+        "total": 8,
+        "percentage": 50
       },
       "totals": {
         "matches": 4,
@@ -4105,12 +4522,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 2,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -4455,7 +4916,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 7,
+        "total": 8,
         "percentage": 0
       },
       "totals": {
@@ -4471,12 +4932,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 7,
+        "absent": 8,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -4812,12 +5317,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 7,
-        "percentage": 57
+        "present": 5,
+        "total": 8,
+        "percentage": 63
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -4825,16 +5330,60 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 0,
+        "flagged": 1,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -5190,6 +5739,50 @@
       },
       "matches": [
         {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volledig gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
+        {
           "id": "M225330184",
           "date": "2026-10-11",
           "time": "10:30",
@@ -5526,12 +6119,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 7,
+        "present": 8,
+        "total": 8,
         "percentage": 100
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 2,
         "assists": 1,
         "yellow": 0,
@@ -5545,10 +6138,54 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 6,
+        "partial": 7,
         "full": 1
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -5890,8 +6527,8 @@
       },
       "matchAttendance": {
         "present": 7,
-        "total": 7,
-        "percentage": 100
+        "total": 8,
+        "percentage": 88
       },
       "totals": {
         "matches": 7,
@@ -5906,12 +6543,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 5,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -6244,12 +6925,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 7,
-        "percentage": 43
+        "present": 4,
+        "total": 8,
+        "percentage": 50
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -6263,10 +6944,54 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -6615,11 +7340,11 @@
       },
       "totals": {
         "matches": 6,
-        "goals": 0,
+        "goals": 3,
         "assists": 0,
         "yellow": 3,
         "red": 0,
-        "penaltiesScored": 0,
+        "penaltiesScored": 1,
         "penaltiesMissed": 0,
         "late": 0,
         "flagged": 1,
@@ -6632,6 +7357,50 @@
         "full": 5
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volledig gespeeld",
+          "goals": 3,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 1,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -6971,8 +7740,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 7,
-        "percentage": 86
+        "total": 8,
+        "percentage": 75
       },
       "totals": {
         "matches": 6,
@@ -6987,12 +7756,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 1,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 3,
         "full": 3
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -7324,7 +8137,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 7,
+        "total": 8,
         "percentage": 0
       },
       "totals": {
@@ -7340,12 +8153,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 7,
+        "absent": 8,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -7687,12 +8544,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 7,
+        "present": 8,
+        "total": 8,
         "percentage": 100
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -7706,10 +8563,54 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 7,
+        "partial": 8,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -8046,7 +8947,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 7,
+        "total": 8,
         "percentage": 0
       },
       "totals": {
@@ -8062,12 +8963,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 7,
+        "absent": 8,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -8405,8 +9350,8 @@
       },
       "matchAttendance": {
         "present": 2,
-        "total": 7,
-        "percentage": 29
+        "total": 8,
+        "percentage": 25
       },
       "totals": {
         "matches": 1,
@@ -8421,12 +9366,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 1,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -8789,6 +9778,50 @@
       },
       "matches": [
         {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volledig gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
+        {
           "id": "M225330184",
           "date": "2026-10-11",
           "time": "10:30",
@@ -9128,8 +10161,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 7,
-        "percentage": 57
+        "total": 8,
+        "percentage": 50
       },
       "totals": {
         "matches": 4,
@@ -9144,12 +10177,56 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -9480,14 +10557,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 7,
-        "percentage": 57
+        "present": 5,
+        "total": 8,
+        "percentage": 63
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow": 1,
         "red": 0,
         "penaltiesScored": 0,
@@ -9499,10 +10576,54 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -9832,12 +10953,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 7,
-        "percentage": 71
+        "present": 6,
+        "total": 8,
+        "percentage": 75
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -9851,10 +10972,54 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 2,
-        "partial": 3,
+        "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -10212,6 +11377,50 @@
       },
       "matches": [
         {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Volledig gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
+        {
           "id": "M225330184",
           "date": "2026-10-11",
           "time": "10:30",
@@ -10390,11 +11599,44 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 7,
+        "present": 8,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -10632,11 +11874,44 @@
       "name": "Christian Göttgens",
       "role": "Technisch staflid",
       "totals": {
-        "present": 3,
+        "present": 4,
         "partial": 1,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -10874,11 +12149,44 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 6,
+        "present": 7,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -11116,11 +12424,44 @@
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
       "totals": {
-        "present": 4,
+        "present": 5,
         "partial": 0,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -11358,11 +12699,44 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 7,
+        "present": 8,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",
@@ -11600,11 +12974,44 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 6,
+        "present": 7,
         "partial": 0,
         "absent": 1
       },
       "matches": [
+        {
+          "id": "B2026101801",
+          "date": "2026-10-18",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Wijhe '92 4",
+          "result": "3-1",
+          "competition": "Beker",
+          "manOfTheMatch": "Jorn Oosting",
+          "goalEvents": [
+            {
+              "minute": 35,
+              "score": "0-1",
+              "team": "Wijhe '92 4"
+            },
+            {
+              "minute": 70,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 75,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 89,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M225330184",
           "date": "2026-10-11",

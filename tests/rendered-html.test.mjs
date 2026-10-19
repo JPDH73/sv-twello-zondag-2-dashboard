@@ -40,8 +40,15 @@ test("GitHub Pages-build bevat gegevens en sociale kaart", async () => {
   assert.equal(data.matches.find((match) => match.id === "O000000001")?.goalEvents.length, 5);
   const wijhe = data.matches.find((match) => match.id === "B2026101801");
   assert.deepEqual(wijhe && { date: wijhe.date, time: wijhe.time, home: wijhe.home, away: wijhe.away, result: wijhe.result, competition: wijhe.competition }, {
-    date: "2026-10-18", time: "10:30", home: "SV Twello 2", away: "Wijhe '92 4", result: "", competition: "Beker",
+    date: "2026-10-18", time: "10:30", home: "SV Twello 2", away: "Wijhe '92 4", result: "3-1", competition: "Beker",
   });
+  assert.equal(wijhe.manOfTheMatch, "Jorn Oosting");
+  assert.deepEqual(wijhe.goalEvents, [
+    { minute: 35, score: "0-1", team: "Wijhe '92 4" },
+    { minute: 70, score: "1-1", team: "SV Twello 2" },
+    { minute: 75, score: "2-1", team: "SV Twello 2" },
+    { minute: 89, score: "3-1", team: "SV Twello 2" },
+  ]);
   const loenermark = data.matches.find((match) => match.id === "M2063443898");
   assert.deepEqual(loenermark && {
     result: loenermark.result,

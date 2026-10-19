@@ -150,6 +150,7 @@ test("spelerskaart gebruikt de afgesproken volgorde en vat grote gedeelde loser-
   assert.match(source, /players\.length > maxNames \? <p>\{players\.length\} spelers delen de eerste plaats\.<\/p>/);
   assert.match(source, /contributors\.goals/);
   assert.match(source, /contributors\.assists/);
+  assert.match(source, /showHattrick && entry\.count === 3 \? " - 🎩🎩🎩"/);
   assert.match(source, /\.sort\(\(a, b\) => a\.name\.localeCompare\(b\.name, "nl", \{ sensitivity: "base" \}\)\)/);
   assert.match(source, /function dashboardPlayerName/);
   assert.match(source, /sameFirstName\.length > 1/);
