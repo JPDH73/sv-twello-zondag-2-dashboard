@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-19T19:37:28.241Z",
+  "generatedAt": "2026-10-20T12:07:27.081Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -11,7 +11,7 @@
     "matchesScheduled": 27,
     "matchesPlayed": 9,
     "goals": 21,
-    "assists": 15
+    "assists": 16
   },
   "matches": [
     {
@@ -2491,7 +2491,7 @@
       "totals": {
         "matches": 5,
         "goals": 2,
-        "assists": 1,
+        "assists": 2,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -2540,7 +2540,7 @@
           ],
           "status": "Deels gespeeld",
           "goals": 0,
-          "assists": 0,
+          "assists": 1,
           "yellow": 0,
           "red": 0,
           "penaltiesScored": 0,
