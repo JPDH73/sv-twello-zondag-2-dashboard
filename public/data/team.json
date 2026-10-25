@@ -1,14 +1,14 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-10-23T08:50:45.951Z",
+  "generatedAt": "2026-10-25T13:25:48.988Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
     "guests": 3,
     "staff": 6,
     "trainings": 22,
-    "matchesScheduled": 27,
+    "matchesScheduled": 28,
     "matchesPlayed": 9,
     "goals": 21,
     "assists": 16
@@ -286,7 +286,7 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "Sallandia 2",
-      "result": "",
+      "result": "Afgelast · nieuwe datum onbekend",
       "competition": "Competitie",
       "manOfTheMatch": "",
       "goalEvents": []
@@ -310,6 +310,17 @@
       "away": "Heeten 5",
       "result": "",
       "competition": "Competitie",
+      "manOfTheMatch": "",
+      "goalEvents": []
+    },
+    {
+      "id": "B2026111501",
+      "date": "2026-11-15",
+      "time": "10:30",
+      "home": "SV Twello 2",
+      "away": "SV Wisch 4",
+      "result": "",
+      "competition": "Beker",
       "manOfTheMatch": "",
       "goalEvents": []
     },
