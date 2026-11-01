@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-11-01T08:57:16.054Z",
+  "generatedAt": "2026-11-01T13:24:11.778Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 23,
     "matchesScheduled": 28,
-    "matchesPlayed": 9,
-    "goals": 21,
-    "assists": 16
+    "matchesPlayed": 10,
+    "goals": 22,
+    "assists": 17
   },
   "matches": [
     {
@@ -286,10 +286,41 @@
       "time": "11:30",
       "home": "TKA 2",
       "away": "SV Twello 2",
-      "result": "",
+      "result": "5-1",
       "competition": "Competitie",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "manOfTheMatch": "Bram Dolman",
+      "goalEvents": [
+        {
+          "minute": 3,
+          "score": "1-0",
+          "team": "TKA 2"
+        },
+        {
+          "minute": 10,
+          "score": "2-0",
+          "team": "TKA 2"
+        },
+        {
+          "minute": 25,
+          "score": "2-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 60,
+          "score": "3-1",
+          "team": "TKA 2"
+        },
+        {
+          "minute": 75,
+          "score": "4-1",
+          "team": "TKA 2"
+        },
+        {
+          "minute": 80,
+          "score": "5-1",
+          "team": "TKA 2"
+        }
+      ]
     },
     {
       "id": "M472456096",
@@ -930,12 +961,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 8,
-        "percentage": 50
+        "present": 5,
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -945,14 +976,68 @@
         "late": 0,
         "flagged": 0,
         "polo": 1,
-        "kept": 4,
+        "kept": 5,
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
         "partial": 0,
-        "full": 4
+        "full": 5
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -1335,12 +1420,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 8,
-        "percentage": 88
+        "present": 8,
+        "total": 9,
+        "percentage": 89
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1354,10 +1439,64 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 7,
+        "partial": 8,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -1730,7 +1869,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 8,
+        "total": 9,
         "percentage": 0
       },
       "totals": {
@@ -1746,12 +1885,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 8,
+        "absent": 9,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -2144,12 +2337,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 7,
-        "percentage": 86
+        "present": 7,
+        "total": 8,
+        "percentage": 88
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 1,
         "assists": 0,
         "yellow": 1,
@@ -2164,9 +2357,63 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 5,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -2554,8 +2801,8 @@
       },
       "matchAttendance": {
         "present": 5,
-        "total": 8,
-        "percentage": 63
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
         "matches": 5,
@@ -2570,12 +2817,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -2952,12 +3253,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 8,
-        "percentage": 63
+        "present": 6,
+        "total": 9,
+        "percentage": 67
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -2971,10 +3272,64 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 1
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -3358,9 +3713,9 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 8,
-        "percentage": 63
+        "present": 6,
+        "total": 9,
+        "percentage": 67
       },
       "totals": {
         "matches": 5,
@@ -3370,17 +3725,71 @@
         "red": 0,
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
-        "late": 1,
+        "late": 2,
         "flagged": 0,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 3,
-        "notPlayed": 0,
+        "notPlayed": 1,
         "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Niet gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": true,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -3762,8 +4171,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 8,
-        "percentage": 13
+        "total": 9,
+        "percentage": 11
       },
       "totals": {
         "matches": 1,
@@ -3778,12 +4187,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 7,
+        "absent": 8,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -4173,13 +4636,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 7,
+        "present": 8,
+        "total": 8,
         "percentage": 100
       },
       "totals": {
-        "matches": 7,
-        "goals": 4,
+        "matches": 8,
+        "goals": 5,
         "assists": 2,
         "yellow": 0,
         "red": 0,
@@ -4193,9 +4656,63 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 2,
-        "full": 5
+        "full": 6
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -4584,12 +5101,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 8,
-        "percentage": 50
+        "present": 5,
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 2,
         "assists": 0,
         "yellow": 0,
@@ -4603,10 +5120,64 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -4997,7 +5568,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 8,
+        "total": 9,
         "percentage": 0
       },
       "totals": {
@@ -5013,12 +5584,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 8,
+        "absent": 9,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -5400,8 +6025,8 @@
       },
       "matchAttendance": {
         "present": 5,
-        "total": 8,
-        "percentage": 63
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
         "matches": 5,
@@ -5416,12 +6041,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -5799,14 +6478,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 3,
-        "total": 7,
-        "percentage": 43
+        "present": 4,
+        "total": 8,
+        "percentage": 50
       },
       "totals": {
-        "matches": 3,
+        "matches": 4,
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -5815,13 +6494,67 @@
         "flagged": 0,
         "polo": 1,
         "kept": 0,
-        "captain": 3,
+        "captain": 4,
         "absent": 4,
         "notPlayed": 0,
         "partial": 1,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -6204,12 +6937,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 8,
+        "present": 9,
+        "total": 9,
         "percentage": 100
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 2,
         "assists": 1,
         "yellow": 0,
@@ -6224,9 +6957,63 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 7,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -6612,8 +7399,8 @@
       },
       "matchAttendance": {
         "present": 7,
-        "total": 8,
-        "percentage": 88
+        "total": 9,
+        "percentage": 78
       },
       "totals": {
         "matches": 7,
@@ -6628,12 +7415,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 5,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -7011,8 +7852,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 8,
-        "percentage": 50
+        "total": 9,
+        "percentage": 44
       },
       "totals": {
         "matches": 4,
@@ -7027,12 +7868,66 @@
         "polo": 2,
         "kept": 0,
         "captain": 0,
-        "absent": 4,
+        "absent": 5,
         "notPlayed": 0,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -7421,12 +8316,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 7,
-        "percentage": 86
+        "present": 7,
+        "total": 8,
+        "percentage": 88
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 3,
         "assists": 0,
         "yellow": 3,
@@ -7441,9 +8336,63 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 5
+        "full": 6
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -7827,12 +8776,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 8,
-        "percentage": 75
+        "present": 7,
+        "total": 9,
+        "percentage": 78
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 1,
         "assists": 0,
         "yellow": 0,
@@ -7847,9 +8796,63 @@
         "absent": 2,
         "notPlayed": 0,
         "partial": 3,
-        "full": 3
+        "full": 4
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -8225,7 +9228,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 8,
+        "total": 9,
         "percentage": 0
       },
       "totals": {
@@ -8241,12 +9244,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 8,
+        "absent": 9,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -8633,12 +9690,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 8,
+        "present": 9,
+        "total": 9,
         "percentage": 100
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -8652,10 +9709,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 8,
+        "partial": 9,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -9036,7 +10147,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 8,
+        "total": 9,
         "percentage": 0
       },
       "totals": {
@@ -9052,12 +10163,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 8,
+        "absent": 9,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -9439,9 +10604,9 @@
         ]
       },
       "matchAttendance": {
-        "present": 2,
-        "total": 8,
-        "percentage": 25
+        "present": 3,
+        "total": 9,
+        "percentage": 33
       },
       "totals": {
         "matches": 1,
@@ -9452,16 +10617,70 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 1,
+        "flagged": 2,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 6,
-        "notPlayed": 1,
+        "notPlayed": 2,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Niet gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -9845,12 +11064,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 7,
+        "present": 8,
+        "total": 8,
         "percentage": 100
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 3,
         "assists": 1,
         "yellow": 0,
@@ -9864,10 +11083,64 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 5
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -10254,12 +11527,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 8,
-        "percentage": 50
+        "present": 5,
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -10273,10 +11546,64 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 4,
+        "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -10652,8 +11979,8 @@
       },
       "matchAttendance": {
         "present": 5,
-        "total": 8,
-        "percentage": 63
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
         "matches": 5,
@@ -10668,12 +11995,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -11048,8 +12429,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 8,
-        "percentage": 75
+        "total": 9,
+        "percentage": 67
       },
       "totals": {
         "matches": 4,
@@ -11064,12 +12445,66 @@
         "polo": 1,
         "kept": 0,
         "captain": 0,
-        "absent": 2,
+        "absent": 3,
         "notPlayed": 2,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -11448,8 +12883,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 4,
-        "percentage": 100
+        "total": 5,
+        "percentage": 80
       },
       "totals": {
         "matches": 4,
@@ -11464,12 +12899,66 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 2,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -11693,11 +13182,54 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 8,
+        "present": 9,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -11969,10 +13501,53 @@
       "role": "Technisch staflid",
       "totals": {
         "present": 4,
-        "partial": 1,
+        "partial": 2,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Deels aanwezig"
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -12245,9 +13820,52 @@
       "totals": {
         "present": 7,
         "partial": 0,
-        "absent": 1
+        "absent": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -12518,11 +14136,54 @@
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
       "totals": {
-        "present": 5,
+        "present": 6,
         "partial": 0,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -12793,11 +14454,54 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 8,
+        "present": 9,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
@@ -13070,9 +14774,52 @@
       "totals": {
         "present": 7,
         "partial": 0,
-        "absent": 1
+        "absent": 2
       },
       "matches": [
+        {
+          "id": "M1528424591",
+          "date": "2026-11-01",
+          "time": "11:30",
+          "home": "TKA 2",
+          "away": "SV Twello 2",
+          "result": "5-1",
+          "competition": "Competitie",
+          "manOfTheMatch": "Bram Dolman",
+          "goalEvents": [
+            {
+              "minute": 3,
+              "score": "1-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 25,
+              "score": "2-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 75,
+              "score": "4-1",
+              "team": "TKA 2"
+            },
+            {
+              "minute": 80,
+              "score": "5-1",
+              "team": "TKA 2"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "B2026101801",
           "date": "2026-10-18",
