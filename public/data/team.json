@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-11-07T12:37:43.632Z",
+  "generatedAt": "2026-11-08T14:25:19.355Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -9,9 +9,9 @@
     "staff": 6,
     "trainings": 24,
     "matchesScheduled": 28,
-    "matchesPlayed": 10,
-    "goals": 22,
-    "assists": 17
+    "matchesPlayed": 11,
+    "goals": 25,
+    "assists": 18
   },
   "matches": [
     {
@@ -328,10 +328,36 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "Heeten 5",
-      "result": "",
+      "result": "3-2",
       "competition": "Competitie",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "manOfTheMatch": "Dennis Schreurs",
+      "goalEvents": [
+        {
+          "minute": 6,
+          "score": "1-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 10,
+          "score": "2-0",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 44,
+          "score": "2-1",
+          "team": "Heeten 5"
+        },
+        {
+          "minute": 50,
+          "score": "3-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 60,
+          "score": "3-2",
+          "team": "Heeten 5"
+        }
+      ]
     },
     {
       "id": "B2026111501",
@@ -977,12 +1003,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 9,
-        "percentage": 56
+        "present": 6,
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -992,14 +1018,63 @@
         "late": 0,
         "flagged": 0,
         "polo": 1,
-        "kept": 5,
+        "kept": 6,
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
         "partial": 0,
-        "full": 5
+        "full": 6
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -1436,12 +1511,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 9,
-        "percentage": 89
+        "present": 9,
+        "total": 10,
+        "percentage": 90
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -1455,10 +1530,59 @@
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 8,
+        "partial": 9,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -1885,7 +2009,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 9,
+        "total": 10,
         "percentage": 0
       },
       "totals": {
@@ -1901,12 +2025,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 9,
+        "absent": 10,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -2354,12 +2527,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 8,
-        "percentage": 88
+        "present": 8,
+        "total": 9,
+        "percentage": 89
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 1,
         "assists": 0,
         "yellow": 1,
@@ -2373,10 +2546,59 @@
         "captain": 1,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -2818,12 +3040,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 9,
-        "percentage": 56
+        "present": 6,
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 2,
         "assists": 2,
         "yellow": 0,
@@ -2838,9 +3060,58 @@
         "absent": 4,
         "notPlayed": 0,
         "partial": 3,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -3272,13 +3543,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 9,
-        "percentage": 67
+        "present": 7,
+        "total": 10,
+        "percentage": 70
       },
       "totals": {
-        "matches": 6,
-        "goals": 0,
+        "matches": 7,
+        "goals": 1,
         "assists": 1,
         "yellow": 0,
         "red": 0,
@@ -3292,9 +3563,58 @@
         "absent": 3,
         "notPlayed": 0,
         "partial": 5,
-        "full": 1
+        "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -3732,12 +4052,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 9,
-        "percentage": 67
+        "present": 7,
+        "total": 10,
+        "percentage": 70
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -3745,16 +4065,65 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 2,
-        "flagged": 0,
+        "flagged": 1,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 3,
         "notPlayed": 1,
-        "partial": 3,
+        "partial": 4,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -4190,8 +4559,8 @@
       },
       "matchAttendance": {
         "present": 1,
-        "total": 9,
-        "percentage": 11
+        "total": 10,
+        "percentage": 10
       },
       "totals": {
         "matches": 1,
@@ -4206,12 +4575,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 8,
+        "absent": 9,
         "notPlayed": 0,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -4656,8 +5074,8 @@
       },
       "matchAttendance": {
         "present": 8,
-        "total": 8,
-        "percentage": 100
+        "total": 9,
+        "percentage": 89
       },
       "totals": {
         "matches": 8,
@@ -4672,12 +5090,61 @@
         "polo": 1,
         "kept": 0,
         "captain": 1,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 2,
         "full": 6
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -5121,12 +5588,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 9,
-        "percentage": 56
+        "present": 6,
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 2,
         "assists": 0,
         "yellow": 0,
@@ -5140,10 +5607,59 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -5589,7 +6105,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 9,
+        "total": 10,
         "percentage": 0
       },
       "totals": {
@@ -5605,12 +6121,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 9,
+        "absent": 10,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -6046,8 +6611,8 @@
       },
       "matchAttendance": {
         "present": 5,
-        "total": 9,
-        "percentage": 56
+        "total": 10,
+        "percentage": 50
       },
       "totals": {
         "matches": 5,
@@ -6062,12 +6627,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 4,
+        "absent": 5,
         "notPlayed": 0,
         "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -6500,13 +7114,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 8,
-        "percentage": 50
+        "present": 5,
+        "total": 9,
+        "percentage": 56
       },
       "totals": {
-        "matches": 4,
-        "goals": 0,
+        "matches": 5,
+        "goals": 1,
         "assists": 3,
         "yellow": 0,
         "red": 0,
@@ -6516,13 +7130,62 @@
         "flagged": 0,
         "polo": 1,
         "kept": 0,
-        "captain": 4,
+        "captain": 5,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 3
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -6960,8 +7623,8 @@
       },
       "matchAttendance": {
         "present": 9,
-        "total": 9,
-        "percentage": 100
+        "total": 10,
+        "percentage": 90
       },
       "totals": {
         "matches": 9,
@@ -6976,12 +7639,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 0,
+        "absent": 1,
         "notPlayed": 0,
         "partial": 7,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -7420,12 +8132,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 9,
-        "percentage": 78
+        "present": 8,
+        "total": 10,
+        "percentage": 80
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 3,
         "assists": 3,
         "yellow": 0,
@@ -7439,10 +8151,59 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -7874,8 +8635,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 9,
-        "percentage": 44
+        "total": 10,
+        "percentage": 40
       },
       "totals": {
         "matches": 4,
@@ -7890,12 +8651,61 @@
         "polo": 2,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -8339,12 +9149,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 8,
-        "percentage": 88
+        "present": 8,
+        "total": 9,
+        "percentage": 89
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 3,
         "assists": 0,
         "yellow": 3,
@@ -8355,13 +9165,62 @@
         "flagged": 1,
         "polo": 1,
         "kept": 0,
-        "captain": 2,
+        "captain": 3,
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 6
+        "full": 7
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -8800,12 +9659,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 9,
-        "percentage": 78
+        "present": 8,
+        "total": 10,
+        "percentage": 80
       },
       "totals": {
-        "matches": 7,
+        "matches": 8,
         "goals": 1,
         "assists": 0,
         "yellow": 0,
@@ -8820,9 +9679,58 @@
         "absent": 2,
         "notPlayed": 0,
         "partial": 3,
-        "full": 4
+        "full": 5
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -9252,7 +10160,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 9,
+        "total": 10,
         "percentage": 0
       },
       "totals": {
@@ -9268,12 +10176,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 9,
+        "absent": 10,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -9714,12 +10671,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 9,
-        "total": 9,
+        "present": 10,
+        "total": 10,
         "percentage": 100
       },
       "totals": {
-        "matches": 9,
+        "matches": 10,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -9733,10 +10690,59 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 9,
+        "partial": 10,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -10171,7 +11177,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 9,
+        "total": 10,
         "percentage": 0
       },
       "totals": {
@@ -10187,12 +11193,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 9,
+        "absent": 10,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -10629,8 +11684,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 9,
-        "percentage": 33
+        "total": 10,
+        "percentage": 30
       },
       "totals": {
         "matches": 1,
@@ -10645,12 +11700,61 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 2,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -11089,14 +12193,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 8,
+        "present": 9,
+        "total": 9,
         "percentage": 100
       },
       "totals": {
-        "matches": 8,
-        "goals": 3,
-        "assists": 1,
+        "matches": 9,
+        "goals": 4,
+        "assists": 2,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -11108,10 +12212,59 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 3,
+        "partial": 4,
         "full": 5
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 1,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -11552,12 +12705,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 9,
-        "percentage": 56
+        "present": 6,
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -11571,10 +12724,59 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -12003,12 +13205,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 9,
-        "percentage": 56
+        "present": 6,
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 1,
         "yellow": 1,
@@ -12022,10 +13224,59 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 5,
+        "partial": 6,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -12454,8 +13705,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 9,
-        "percentage": 67
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
         "matches": 4,
@@ -12470,12 +13721,61 @@
         "polo": 1,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 2,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -12907,12 +14207,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 4,
-        "total": 5,
-        "percentage": 80
+        "present": 5,
+        "total": 6,
+        "percentage": 83
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -12920,16 +14220,65 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 0,
+        "flagged": 1,
         "polo": 0,
         "kept": 0,
         "captain": 0,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -13207,11 +14556,49 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 9,
+        "present": 10,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -13527,9 +14914,47 @@
       "totals": {
         "present": 4,
         "partial": 2,
-        "absent": 3
+        "absent": 4
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -13843,11 +15268,49 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 7,
+        "present": 8,
         "partial": 0,
         "absent": 2
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -14161,11 +15624,49 @@
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
       "totals": {
-        "present": 6,
+        "present": 7,
         "partial": 0,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -14479,11 +15980,49 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 9,
+        "present": 10,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
@@ -14799,9 +16338,47 @@
       "totals": {
         "present": 7,
         "partial": 0,
-        "absent": 2
+        "absent": 3
       },
       "matches": [
+        {
+          "id": "M472456096",
+          "date": "2026-11-08",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "Heeten 5",
+          "result": "3-2",
+          "competition": "Competitie",
+          "manOfTheMatch": "Dennis Schreurs",
+          "goalEvents": [
+            {
+              "minute": 6,
+              "score": "1-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 10,
+              "score": "2-0",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 44,
+              "score": "2-1",
+              "team": "Heeten 5"
+            },
+            {
+              "minute": 50,
+              "score": "3-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 60,
+              "score": "3-2",
+              "team": "Heeten 5"
+            }
+          ],
+          "status": "Afwezig"
+        },
         {
           "id": "M1528424591",
           "date": "2026-11-01",
