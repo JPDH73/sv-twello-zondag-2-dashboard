@@ -1,13 +1,13 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-11-12T10:10:37.675Z",
+  "generatedAt": "2026-11-14T10:26:08.585Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
     "guests": 3,
     "staff": 6,
-    "trainings": 25,
+    "trainings": 26,
     "matchesScheduled": 28,
     "matchesPlayed": 11,
     "goals": 25,
@@ -549,6 +549,24 @@
   ],
   "trainings": [
     {
+      "date": "2026-11-12",
+      "attendees": [
+        "Dennis Schreurs",
+        "Dennis Witteveen",
+        "Marc Albers",
+        "Delano de Vogel",
+        "Niels Gijsberts",
+        "Jasper Nijdeken",
+        "Robbert Teelen",
+        "Jervin Leisink Meijer",
+        "Jorn Oosting",
+        "Berry van der Scheer",
+        "Samwel Yuda Mkai",
+        "Nicky Eekhuis",
+        "Marijn Ruijl"
+      ]
+    },
+    {
       "date": "2026-11-10",
       "attendees": [
         "Dennis Witteveen",
@@ -1000,9 +1018,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 10,
-        "total": 25,
-        "percentage": 40,
+        "attended": 11,
+        "total": 26,
+        "percentage": 42,
         "sessions": [
           "2026-08-06",
           "2026-08-16",
@@ -1013,7 +1031,8 @@
           "2026-10-01",
           "2026-10-08",
           "2026-10-22",
-          "2026-11-05"
+          "2026-11-05",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -1508,9 +1527,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 11,
-        "total": 25,
-        "percentage": 44,
+        "attended": 12,
+        "total": 26,
+        "percentage": 46,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -1522,7 +1541,8 @@
           "2026-10-15",
           "2026-10-22",
           "2026-10-29",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -2018,7 +2038,7 @@
       "training": {
         "rankingEligible": true,
         "attended": 0,
-        "total": 25,
+        "total": 26,
         "percentage": 0,
         "sessions": []
       },
@@ -2514,8 +2534,8 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 22,
-        "total": 25,
+        "attended": 23,
+        "total": 26,
         "percentage": 88,
         "sessions": [
           "2026-08-16",
@@ -2539,7 +2559,8 @@
           "2026-10-22",
           "2026-10-29",
           "2026-11-05",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -3035,8 +3056,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 16,
-        "total": 25,
-        "percentage": 64,
+        "total": 26,
+        "percentage": 62,
         "sessions": [
           "2026-08-06",
           "2026-08-13",
@@ -3548,15 +3569,16 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 5,
-        "total": 25,
-        "percentage": 20,
+        "attended": 6,
+        "total": 26,
+        "percentage": 23,
         "sessions": [
           "2026-08-27",
           "2026-10-01",
           "2026-10-08",
           "2026-10-13",
-          "2026-11-05"
+          "2026-11-05",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -4052,8 +4074,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 12,
-        "total": 25,
-        "percentage": 48,
+        "total": 26,
+        "percentage": 46,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
@@ -4562,8 +4584,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 9,
-        "total": 25,
-        "percentage": 36,
+        "total": 26,
+        "percentage": 35,
         "sessions": [
           "2026-09-22",
           "2026-10-01",
@@ -5069,8 +5091,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 17,
-        "total": 25,
-        "percentage": 68,
+        "total": 26,
+        "percentage": 65,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
@@ -5583,9 +5605,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 18,
-        "total": 25,
-        "percentage": 72,
+        "attended": 19,
+        "total": 26,
+        "percentage": 73,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -5604,7 +5626,8 @@
           "2026-10-22",
           "2026-10-29",
           "2026-11-05",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -6099,9 +6122,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 19,
-        "total": 25,
-        "percentage": 76,
+        "attended": 20,
+        "total": 26,
+        "percentage": 77,
         "sessions": [
           "2026-08-06",
           "2026-08-13",
@@ -6121,7 +6144,8 @@
           "2026-10-22",
           "2026-10-29",
           "2026-11-05",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -6617,8 +6641,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 8,
-        "total": 25,
-        "percentage": 32,
+        "total": 26,
+        "percentage": 31,
         "sessions": [
           "2026-08-09",
           "2026-08-13",
@@ -7122,16 +7146,17 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 6,
-        "total": 25,
-        "percentage": 24,
+        "attended": 7,
+        "total": 26,
+        "percentage": 27,
         "sessions": [
           "2026-08-27",
           "2026-10-08",
           "2026-10-15",
           "2026-10-22",
           "2026-10-29",
-          "2026-11-05"
+          "2026-11-05",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -7627,8 +7652,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 10,
-        "total": 25,
-        "percentage": 40,
+        "total": 26,
+        "percentage": 38,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -8134,9 +8159,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 12,
-        "total": 25,
-        "percentage": 48,
+        "attended": 13,
+        "total": 26,
+        "percentage": 50,
         "sessions": [
           "2026-08-13",
           "2026-08-16",
@@ -8149,7 +8174,8 @@
           "2026-09-22",
           "2026-10-01",
           "2026-10-06",
-          "2026-10-08"
+          "2026-10-08",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -8645,8 +8671,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 4,
-        "total": 25,
-        "percentage": 16,
+        "total": 26,
+        "percentage": 15,
         "sessions": [
           "2026-08-18",
           "2026-08-27",
@@ -9146,9 +9172,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 18,
-        "total": 25,
-        "percentage": 72,
+        "attended": 19,
+        "total": 26,
+        "percentage": 73,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -9167,7 +9193,8 @@
           "2026-10-20",
           "2026-10-29",
           "2026-11-05",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -9662,9 +9689,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 12,
-        "total": 25,
-        "percentage": 48,
+        "attended": 13,
+        "total": 26,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -9677,7 +9704,8 @@
           "2026-09-24",
           "2026-10-01",
           "2026-10-29",
-          "2026-11-05"
+          "2026-11-05",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -10173,7 +10201,7 @@
       "training": {
         "rankingEligible": false,
         "attended": 2,
-        "total": 25,
+        "total": 26,
         "percentage": 8,
         "sessions": [
           "2026-08-27",
@@ -10672,9 +10700,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 15,
-        "total": 25,
-        "percentage": 60,
+        "attended": 16,
+        "total": 26,
+        "percentage": 62,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -10690,7 +10718,8 @@
           "2026-10-13",
           "2026-10-15",
           "2026-10-29",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -11186,8 +11215,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 7,
-        "total": 25,
-        "percentage": 28,
+        "total": 26,
+        "percentage": 27,
         "sessions": [
           "2026-08-27",
           "2026-09-01",
@@ -11691,8 +11720,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 9,
-        "total": 25,
-        "percentage": 36,
+        "total": 26,
+        "percentage": 35,
         "sessions": [
           "2026-08-06",
           "2026-08-25",
@@ -12197,9 +12226,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 12,
-        "total": 25,
-        "percentage": 48,
+        "attended": 13,
+        "total": 26,
+        "percentage": 50,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -12212,7 +12241,8 @@
           "2026-10-08",
           "2026-10-15",
           "2026-10-29",
-          "2026-11-05"
+          "2026-11-05",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
@@ -12708,8 +12738,8 @@
       "training": {
         "rankingEligible": true,
         "attended": 14,
-        "total": 25,
-        "percentage": 56,
+        "total": 26,
+        "percentage": 54,
         "sessions": [
           "2026-08-06",
           "2026-08-09",
@@ -13220,7 +13250,7 @@
       "training": {
         "rankingEligible": false,
         "attended": 2,
-        "total": 25,
+        "total": 26,
         "percentage": 8,
         "sessions": [
           "2026-08-09",
@@ -13720,7 +13750,7 @@
       "training": {
         "rankingEligible": false,
         "attended": 1,
-        "total": 25,
+        "total": 26,
         "percentage": 4,
         "sessions": [
           "2026-08-18"
@@ -14218,15 +14248,16 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 5,
-        "total": 25,
-        "percentage": 20,
+        "attended": 6,
+        "total": 26,
+        "percentage": 23,
         "sessions": [
           "2026-09-15",
           "2026-09-22",
           "2026-10-01",
           "2026-10-08",
-          "2026-10-13"
+          "2026-10-13",
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
