@@ -382,6 +382,12 @@ button { color: inherit; }
 .bno-explanation span { color: var(--muted); line-height: 1.5; }
 .session-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .session-list span { padding: 8px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--ice); color: var(--navy-soft); font-size: 12px; font-weight: 700; }
+.absence-overview { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+.absence-overview h4 { margin: 0 0 11px; color: var(--navy); font-size: 14px; }
+.absence-list { display: grid; gap: 8px; }
+.absence-row { display: grid; grid-template-columns: minmax(120px,.7fr) minmax(0,1.3fr); gap: 14px; align-items: center; padding: 11px 13px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.absence-row time { color: var(--muted); font-size: 12px; }
+.absence-row strong { color: var(--navy); font-size: 13px; }
 .staff-match-list { display: grid; gap: 10px; }
 .staff-match-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 15px; border: 1px solid var(--line); border-radius: 15px; background: white; }
 .staff-match-row div strong, .staff-match-row div span { display: block; }
