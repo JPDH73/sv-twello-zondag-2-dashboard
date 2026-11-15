@@ -166,7 +166,7 @@ test("spelerskaart gebruikt de afgesproken volgorde en vat grote gedeelde loser-
   assert.match(source, /<h3>Gespeelde wedstrijden<\/h3>/);
   assert.match(source, /<h4>Niet aanwezig bij wedstrijden<\/h4>/);
   assert.match(source, /ownGoalsFor: number/);
-  assert.match(source, /Eigen doelpunt tegenstander/);
+  assert.match(source, /name: "e\.d\."/);
   assert.match(source, /latestResult\.ownGoalsFor/);
   assert.match(source, /player\.totals\.penaltiesScored > 0 && <Detail label="Penalty gescoord"/);
   assert.match(source, /match\.penaltiesScored > 0 && `Penalty gescoord:/);
