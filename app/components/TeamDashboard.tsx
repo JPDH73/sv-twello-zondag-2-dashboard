@@ -171,7 +171,7 @@ function matchContributors(players: Player[], matchId: string, ownGoalsFor = 0):
     return count > 0 ? [{ name: dashboardPlayerName(player.name, players), count }] : [];
   }).sort((a, b) => a.name.localeCompare(b.name, "nl", { sensitivity: "base" }));
   const goals = contributions("goals");
-  if (ownGoalsFor > 0) goals.push({ name: "Eigen doelpunt tegenstander", count: ownGoalsFor });
+  if (ownGoalsFor > 0) goals.push({ name: "e.d.", count: ownGoalsFor });
   return { goals, assists: contributions("assists") };
 }
 function leaders(players: Player[], field: "goals" | "assists" | "training") {
