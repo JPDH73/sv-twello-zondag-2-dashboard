@@ -1,17 +1,17 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-11-14T10:26:08.585Z",
+  "generatedAt": "2026-11-15T14:54:21.268Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
-    "guests": 3,
+    "guests": 5,
     "staff": 6,
     "trainings": 26,
     "matchesScheduled": 28,
-    "matchesPlayed": 11,
-    "goals": 25,
-    "assists": 18
+    "matchesPlayed": 12,
+    "goals": 26,
+    "assists": 19
   },
   "matches": [
     {
@@ -22,6 +22,7 @@
       "away": "DAVO 2",
       "result": "3-2",
       "competition": "Vriendschappelijk",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Bram Dolman",
       "goalEvents": [
         {
@@ -59,6 +60,7 @@
       "away": "SV Twello 2",
       "result": "2-4",
       "competition": "Beker",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Robbert Teelen",
       "goalEvents": [
         {
@@ -101,6 +103,7 @@
       "away": "Columbia 3",
       "result": "3-0 · BNO",
       "competition": "Beker",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -112,6 +115,7 @@
       "away": "TKA 3",
       "result": "2-0",
       "competition": "Beker",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Tygo Vijge",
       "goalEvents": [
         {
@@ -134,6 +138,7 @@
       "away": "SV Twello 2",
       "result": "0-0",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Bram Dolman",
       "goalEvents": []
     },
@@ -145,6 +150,7 @@
       "away": "Loenermark 3",
       "result": "3-3",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Nicky Eekhuis",
       "goalEvents": [
         {
@@ -187,6 +193,7 @@
       "away": "SV Twello 2",
       "result": "3-1",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Onbeslist",
       "goalEvents": [
         {
@@ -219,6 +226,7 @@
       "away": "WSV 4",
       "result": "5-0",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Rodi Gerritsen",
       "goalEvents": [
         {
@@ -256,6 +264,7 @@
       "away": "Wijhe '92 4",
       "result": "3-1",
       "competition": "Beker",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Jorn Oosting",
       "goalEvents": [
         {
@@ -288,6 +297,7 @@
       "away": "SV Twello 2",
       "result": "5-1",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Bram Dolman",
       "goalEvents": [
         {
@@ -330,6 +340,7 @@
       "away": "Heeten 5",
       "result": "3-2",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "Dennis Schreurs",
       "goalEvents": [
         {
@@ -365,10 +376,37 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "SV Wisch 4",
-      "result": "",
+      "result": "2-3",
       "competition": "Beker",
-      "manOfTheMatch": "",
-      "goalEvents": []
+      "ownGoalsFor": 1,
+      "manOfTheMatch": "Jeffrey Karrenbeld",
+      "goalEvents": [
+        {
+          "minute": 1,
+          "score": "0-1",
+          "team": "SV Wisch 4"
+        },
+        {
+          "minute": 45,
+          "score": "1-1",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 48,
+          "score": "1-2",
+          "team": "SV Wisch 4"
+        },
+        {
+          "minute": 70,
+          "score": "2-2",
+          "team": "SV Twello 2"
+        },
+        {
+          "minute": 85,
+          "score": "2-3",
+          "team": "SV Wisch 4"
+        }
+      ]
     },
     {
       "id": "M1403218689",
@@ -378,6 +416,7 @@
       "away": "Voorwaarts T 5",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -389,6 +428,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -400,6 +440,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -411,6 +452,7 @@
       "away": "Sallandia 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -422,6 +464,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -433,6 +476,7 @@
       "away": "Epse 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -444,6 +488,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -455,6 +500,7 @@
       "away": "SC Klarenbeek 3",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -466,6 +512,7 @@
       "away": "TKA 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -477,6 +524,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -488,6 +536,7 @@
       "away": "Sportclub Deventer 3",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -499,6 +548,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -510,6 +560,7 @@
       "away": "Terwolde 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -521,6 +572,7 @@
       "away": "SV Schalkhaar 5",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -532,6 +584,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     },
@@ -543,6 +596,7 @@
       "away": "SV Twello 2",
       "result": "",
       "competition": "Competitie",
+      "ownGoalsFor": 0,
       "manOfTheMatch": "",
       "goalEvents": []
     }
@@ -1037,8 +1091,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 10,
-        "percentage": 60
+        "total": 11,
+        "percentage": 55
       },
       "totals": {
         "matches": 6,
@@ -1053,12 +1107,62 @@
         "polo": 1,
         "kept": 6,
         "captain": 0,
-        "absent": 4,
+        "absent": 5,
         "notPlayed": 0,
         "partial": 0,
         "full": 6
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -1067,6 +1171,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -1116,6 +1221,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -1170,6 +1276,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -1214,6 +1321,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -1263,6 +1371,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -1307,6 +1416,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -1361,6 +1471,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -1384,6 +1495,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -1418,6 +1530,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -1472,6 +1585,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -1547,8 +1661,8 @@
       },
       "matchAttendance": {
         "present": 9,
-        "total": 10,
-        "percentage": 90
+        "total": 11,
+        "percentage": 82
       },
       "totals": {
         "matches": 9,
@@ -1563,12 +1677,62 @@
         "polo": 1,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 9,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -1577,6 +1741,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -1626,6 +1791,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -1680,6 +1846,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -1724,6 +1891,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -1773,6 +1941,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -1817,6 +1986,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -1871,6 +2041,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -1894,6 +2065,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -1928,6 +2100,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -1982,6 +2155,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -2044,7 +2218,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 10,
+        "total": 11,
         "percentage": 0
       },
       "totals": {
@@ -2060,12 +2234,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 10,
+        "absent": 11,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -2074,6 +2298,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -2123,6 +2348,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -2177,6 +2403,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -2221,6 +2448,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -2270,6 +2498,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -2314,6 +2543,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -2368,6 +2598,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -2391,6 +2622,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -2425,6 +2657,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -2479,6 +2712,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -2564,12 +2798,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 9,
-        "percentage": 89
+        "present": 9,
+        "total": 10,
+        "percentage": 90
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 1,
         "assists": 0,
         "yellow": 1,
@@ -2583,10 +2817,60 @@
         "captain": 1,
         "absent": 1,
         "notPlayed": 0,
-        "partial": 6,
+        "partial": 7,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -2595,6 +2879,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -2644,6 +2929,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -2698,6 +2984,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -2742,6 +3029,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -2791,6 +3079,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -2835,6 +3124,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -2889,6 +3179,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -2912,6 +3203,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -2946,6 +3238,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -3000,6 +3293,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -3079,8 +3373,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 10,
-        "percentage": 60
+        "total": 11,
+        "percentage": 55
       },
       "totals": {
         "matches": 6,
@@ -3095,12 +3389,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 4,
+        "absent": 5,
         "notPlayed": 0,
         "partial": 3,
         "full": 3
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -3109,6 +3453,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -3158,6 +3503,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -3212,6 +3558,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -3256,6 +3603,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -3305,6 +3653,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -3349,6 +3698,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -3403,6 +3753,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Volgespeeld",
@@ -3426,6 +3777,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -3460,6 +3812,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -3514,6 +3867,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -3583,8 +3937,8 @@
       },
       "matchAttendance": {
         "present": 7,
-        "total": 10,
-        "percentage": 70
+        "total": 11,
+        "percentage": 64
       },
       "totals": {
         "matches": 7,
@@ -3599,12 +3953,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 3,
+        "absent": 4,
         "notPlayed": 0,
         "partial": 5,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -3613,6 +4017,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -3662,6 +4067,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -3716,6 +4122,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -3760,6 +4167,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -3809,6 +4217,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -3853,6 +4262,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -3907,6 +4317,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -3930,6 +4341,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -3964,6 +4376,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -4018,6 +4431,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -4092,12 +4506,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 7,
-        "total": 10,
-        "percentage": 70
+        "present": 8,
+        "total": 11,
+        "percentage": 73
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 0,
         "assists": 1,
         "yellow": 0,
@@ -4111,10 +4525,60 @@
         "captain": 0,
         "absent": 3,
         "notPlayed": 1,
-        "partial": 4,
+        "partial": 5,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -4123,6 +4587,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -4172,6 +4637,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -4226,6 +4692,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -4270,6 +4737,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -4319,6 +4787,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -4363,6 +4832,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -4417,6 +4887,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Volgespeeld",
@@ -4440,6 +4911,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -4474,6 +4946,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -4528,6 +5001,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -4599,12 +5073,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 1,
-        "total": 10,
-        "percentage": 10
+        "present": 2,
+        "total": 11,
+        "percentage": 18
       },
       "totals": {
-        "matches": 1,
+        "matches": 2,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -4618,10 +5092,60 @@
         "captain": 0,
         "absent": 9,
         "notPlayed": 0,
-        "partial": 1,
+        "partial": 2,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -4630,6 +5154,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -4679,6 +5204,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -4733,6 +5259,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -4777,6 +5304,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -4826,6 +5354,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -4870,6 +5399,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -4924,6 +5454,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -4947,6 +5478,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -4981,6 +5513,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -5035,6 +5568,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -5115,8 +5649,8 @@
       },
       "matchAttendance": {
         "present": 8,
-        "total": 9,
-        "percentage": 89
+        "total": 10,
+        "percentage": 80
       },
       "totals": {
         "matches": 8,
@@ -5131,12 +5665,62 @@
         "polo": 1,
         "kept": 0,
         "captain": 1,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 2,
         "full": 6
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -5145,6 +5729,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -5194,6 +5779,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -5248,6 +5834,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -5292,6 +5879,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -5341,6 +5929,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -5385,6 +5974,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -5439,6 +6029,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Volgespeeld",
@@ -5462,6 +6053,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -5496,6 +6088,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -5550,6 +6143,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -5631,12 +6225,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 10,
-        "percentage": 60
+        "present": 7,
+        "total": 11,
+        "percentage": 64
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 2,
         "assists": 0,
         "yellow": 0,
@@ -5651,9 +6245,59 @@
         "absent": 4,
         "notPlayed": 0,
         "partial": 4,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -5662,6 +6306,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -5711,6 +6356,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -5765,6 +6411,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -5809,6 +6456,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -5858,6 +6506,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -5902,6 +6551,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -5956,6 +6606,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -5979,6 +6630,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -6013,6 +6665,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -6067,6 +6720,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -6149,12 +6803,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 0,
-        "total": 10,
-        "percentage": 0
+        "present": 1,
+        "total": 11,
+        "percentage": 9
       },
       "totals": {
-        "matches": 0,
+        "matches": 1,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -6168,10 +6822,60 @@
         "captain": 0,
         "absent": 10,
         "notPlayed": 0,
-        "partial": 0,
+        "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -6180,6 +6884,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -6229,6 +6934,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -6283,6 +6989,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -6327,6 +7034,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -6376,6 +7084,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -6420,6 +7129,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -6474,6 +7184,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -6497,6 +7208,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -6531,6 +7243,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -6585,6 +7298,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -6656,8 +7370,8 @@
       },
       "matchAttendance": {
         "present": 5,
-        "total": 10,
-        "percentage": 50
+        "total": 11,
+        "percentage": 45
       },
       "totals": {
         "matches": 5,
@@ -6668,16 +7382,66 @@
         "penaltiesScored": 0,
         "penaltiesMissed": 0,
         "late": 0,
-        "flagged": 1,
+        "flagged": 2,
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 5,
+        "absent": 6,
         "notPlayed": 0,
         "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": true,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -6686,6 +7450,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -6735,6 +7500,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -6789,6 +7555,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -6833,6 +7600,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -6882,6 +7650,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -6926,6 +7695,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -6980,6 +7750,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -7003,6 +7774,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -7037,6 +7809,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -7091,6 +7864,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -7160,12 +7934,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 9,
-        "percentage": 56
+        "present": 6,
+        "total": 10,
+        "percentage": 60
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 1,
         "assists": 3,
         "yellow": 0,
@@ -7176,13 +7950,63 @@
         "flagged": 0,
         "polo": 1,
         "kept": 0,
-        "captain": 5,
+        "captain": 6,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 2,
+        "partial": 3,
         "full": 3
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -7191,6 +8015,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -7240,6 +8065,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -7294,6 +8120,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -7338,6 +8165,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -7387,6 +8215,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -7431,6 +8260,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -7485,6 +8315,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -7508,6 +8339,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -7542,6 +8374,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -7596,6 +8429,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -7669,8 +8503,8 @@
       },
       "matchAttendance": {
         "present": 9,
-        "total": 10,
-        "percentage": 90
+        "total": 11,
+        "percentage": 82
       },
       "totals": {
         "matches": 9,
@@ -7685,12 +8519,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 1,
+        "absent": 2,
         "notPlayed": 0,
         "partial": 7,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -7699,6 +8583,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -7748,6 +8633,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -7802,6 +8688,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -7846,6 +8733,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -7895,6 +8783,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -7939,6 +8828,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -7993,6 +8883,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -8016,6 +8907,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -8050,6 +8942,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -8104,6 +8997,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -8179,14 +9073,14 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 10,
-        "percentage": 80
+        "present": 9,
+        "total": 11,
+        "percentage": 82
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 3,
-        "assists": 3,
+        "assists": 4,
         "yellow": 0,
         "red": 0,
         "penaltiesScored": 0,
@@ -8198,10 +9092,60 @@
         "captain": 0,
         "absent": 2,
         "notPlayed": 0,
-        "partial": 6,
+        "partial": 7,
         "full": 2
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 1,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -8210,6 +9154,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -8259,6 +9204,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -8313,6 +9259,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -8357,6 +9304,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -8406,6 +9354,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -8450,6 +9399,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -8504,6 +9454,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -8527,6 +9478,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -8561,6 +9513,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -8615,6 +9568,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -8682,8 +9636,8 @@
       },
       "matchAttendance": {
         "present": 4,
-        "total": 10,
-        "percentage": 40
+        "total": 11,
+        "percentage": 36
       },
       "totals": {
         "matches": 4,
@@ -8698,12 +9652,62 @@
         "polo": 2,
         "kept": 0,
         "captain": 0,
-        "absent": 6,
+        "absent": 7,
         "notPlayed": 0,
         "partial": 4,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -8712,6 +9716,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -8761,6 +9766,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -8815,6 +9821,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -8859,6 +9866,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -8908,6 +9916,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -8952,6 +9961,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -9006,6 +10016,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -9029,6 +10040,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -9063,6 +10075,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -9117,6 +10130,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -9198,12 +10212,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 9,
-        "percentage": 89
+        "present": 9,
+        "total": 10,
+        "percentage": 90
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 3,
         "assists": 0,
         "yellow": 3,
@@ -9214,13 +10228,63 @@
         "flagged": 1,
         "polo": 1,
         "kept": 0,
-        "captain": 3,
+        "captain": 4,
         "absent": 1,
         "notPlayed": 0,
         "partial": 1,
-        "full": 7
+        "full": 8
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": true
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -9229,6 +10293,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -9278,6 +10343,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -9332,6 +10398,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -9376,6 +10443,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -9425,6 +10493,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -9469,6 +10538,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -9523,6 +10593,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Volgespeeld",
@@ -9546,6 +10617,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -9580,6 +10652,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -9634,6 +10707,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -9709,12 +10783,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 8,
-        "total": 10,
-        "percentage": 80
+        "present": 9,
+        "total": 11,
+        "percentage": 82
       },
       "totals": {
-        "matches": 8,
+        "matches": 9,
         "goals": 1,
         "assists": 0,
         "yellow": 0,
@@ -9729,9 +10803,59 @@
         "absent": 2,
         "notPlayed": 0,
         "partial": 3,
-        "full": 5
+        "full": 6
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -9740,6 +10864,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -9789,6 +10914,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -9843,6 +10969,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -9887,6 +11014,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -9936,6 +11064,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -9980,6 +11109,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -10034,6 +11164,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Volgespeeld",
@@ -10057,6 +11188,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -10091,6 +11223,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -10145,6 +11278,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -10210,7 +11344,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 10,
+        "total": 11,
         "percentage": 0
       },
       "totals": {
@@ -10226,12 +11360,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 10,
+        "absent": 11,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -10240,6 +11424,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -10289,6 +11474,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -10343,6 +11529,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -10387,6 +11574,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -10436,6 +11624,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -10480,6 +11669,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -10534,6 +11724,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -10557,6 +11748,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -10591,6 +11783,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -10645,6 +11838,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -10723,12 +11917,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 10,
-        "total": 10,
+        "present": 11,
+        "total": 11,
         "percentage": 100
       },
       "totals": {
-        "matches": 10,
+        "matches": 11,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -10742,10 +11936,60 @@
         "captain": 0,
         "absent": 0,
         "notPlayed": 0,
-        "partial": 10,
+        "partial": 11,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -10754,6 +11998,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -10803,6 +12048,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -10857,6 +12103,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -10901,6 +12148,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -10950,6 +12198,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -10994,6 +12243,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -11048,6 +12298,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -11071,6 +12322,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -11105,6 +12357,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -11159,6 +12412,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -11229,7 +12483,7 @@
       },
       "matchAttendance": {
         "present": 0,
-        "total": 10,
+        "total": 11,
         "percentage": 0
       },
       "totals": {
@@ -11245,12 +12499,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 10,
+        "absent": 11,
         "notPlayed": 0,
         "partial": 0,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -11259,6 +12563,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -11308,6 +12613,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -11362,6 +12668,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -11406,6 +12713,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -11455,6 +12763,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -11499,6 +12808,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -11553,6 +12863,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig",
@@ -11576,6 +12887,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -11610,6 +12922,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -11664,6 +12977,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -11736,8 +13050,8 @@
       },
       "matchAttendance": {
         "present": 3,
-        "total": 10,
-        "percentage": 30
+        "total": 11,
+        "percentage": 27
       },
       "totals": {
         "matches": 1,
@@ -11752,12 +13066,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 7,
+        "absent": 8,
         "notPlayed": 2,
         "partial": 1,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -11766,6 +13130,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -11815,6 +13180,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -11869,6 +13235,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -11913,6 +13280,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -11962,6 +13330,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -12006,6 +13375,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -12060,6 +13430,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Niet gespeeld",
@@ -12083,6 +13454,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -12117,6 +13489,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -12171,6 +13544,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -12246,13 +13620,13 @@
         ]
       },
       "matchAttendance": {
-        "present": 9,
-        "total": 9,
+        "present": 10,
+        "total": 10,
         "percentage": 100
       },
       "totals": {
-        "matches": 9,
-        "goals": 4,
+        "matches": 10,
+        "goals": 5,
         "assists": 2,
         "yellow": 0,
         "red": 0,
@@ -12266,9 +13640,59 @@
         "absent": 0,
         "notPlayed": 0,
         "partial": 4,
-        "full": 5
+        "full": 6
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 1,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -12277,6 +13701,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -12326,6 +13751,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -12380,6 +13806,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -12424,6 +13851,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -12473,6 +13901,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -12517,6 +13946,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -12571,6 +14001,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Volgespeeld",
@@ -12594,6 +14025,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -12628,6 +14060,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -12682,6 +14115,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -12759,8 +14193,8 @@
       },
       "matchAttendance": {
         "present": 6,
-        "total": 10,
-        "percentage": 60
+        "total": 11,
+        "percentage": 55
       },
       "totals": {
         "matches": 6,
@@ -12775,12 +14209,62 @@
         "polo": 0,
         "kept": 0,
         "captain": 0,
-        "absent": 4,
+        "absent": 5,
         "notPlayed": 0,
         "partial": 6,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Afwezig",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -12789,6 +14273,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -12838,6 +14323,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -12892,6 +14378,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -12936,6 +14423,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -12985,6 +14473,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -13029,6 +14518,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -13083,6 +14573,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -13106,6 +14597,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -13140,6 +14632,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -13194,6 +14687,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -13258,12 +14752,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 10,
-        "percentage": 60
+        "present": 7,
+        "total": 11,
+        "percentage": 64
       },
       "totals": {
-        "matches": 6,
+        "matches": 7,
         "goals": 0,
         "assists": 1,
         "yellow": 1,
@@ -13277,10 +14771,60 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 0,
-        "partial": 6,
+        "partial": 7,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -13289,6 +14833,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -13338,6 +14883,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -13392,6 +14938,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -13436,6 +14983,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -13485,6 +15033,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -13529,6 +15078,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -13583,6 +15133,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Deels gespeeld",
@@ -13606,6 +15157,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -13640,6 +15192,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -13694,6 +15247,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -13757,12 +15311,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 6,
-        "total": 10,
-        "percentage": 60
+        "present": 7,
+        "total": 11,
+        "percentage": 64
       },
       "totals": {
-        "matches": 4,
+        "matches": 5,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -13776,10 +15330,60 @@
         "captain": 0,
         "absent": 4,
         "notPlayed": 2,
-        "partial": 4,
+        "partial": 5,
         "full": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -13788,6 +15392,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -13837,6 +15442,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -13891,6 +15497,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -13935,6 +15542,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -13984,6 +15592,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -14028,6 +15637,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -14082,6 +15692,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Niet gespeeld",
@@ -14105,6 +15716,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -14139,6 +15751,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -14193,6 +15806,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -14261,12 +15875,12 @@
         ]
       },
       "matchAttendance": {
-        "present": 5,
-        "total": 6,
-        "percentage": 83
+        "present": 6,
+        "total": 7,
+        "percentage": 86
       },
       "totals": {
-        "matches": 5,
+        "matches": 6,
         "goals": 0,
         "assists": 0,
         "yellow": 0,
@@ -14281,9 +15895,59 @@
         "absent": 1,
         "notPlayed": 0,
         "partial": 3,
-        "full": 2
+        "full": 3
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -14292,6 +15956,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -14341,6 +16006,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -14395,6 +16061,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -14439,6 +16106,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -14488,6 +16156,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -14532,6 +16201,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -14586,8 +16256,195 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
+          "status": "Deels gespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": false,
+          "captain": false
+        }
+      ]
+    },
+    {
+      "id": "sp29",
+      "number": "",
+      "name": "Jeffrey Karrenbeld",
+      "position": "Keeper",
+      "foot": "",
+      "guest": true,
+      "captain": false,
+      "invisibleManEligible": false,
+      "lateRankingEligible": true,
+      "training": {
+        "rankingEligible": false,
+        "attended": 0,
+        "total": 26,
+        "percentage": 0,
+        "sessions": []
+      },
+      "matchAttendance": {
+        "present": 1,
+        "total": 1,
+        "percentage": 100
+      },
+      "totals": {
+        "matches": 1,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "late": 0,
+        "flagged": 0,
+        "polo": 0,
+        "kept": 1,
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 0,
+        "full": 1
+      },
+      "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Volgespeeld",
+          "goals": 0,
+          "assists": 0,
+          "yellow": 0,
+          "red": 0,
+          "penaltiesScored": 0,
+          "penaltiesMissed": 0,
+          "late": false,
+          "flagged": false,
+          "polo": false,
+          "kept": true,
+          "captain": false
+        }
+      ]
+    },
+    {
+      "id": "sp30",
+      "number": "",
+      "name": "Bono Gerritsen",
+      "position": "Gastspeler",
+      "foot": "",
+      "guest": true,
+      "captain": false,
+      "invisibleManEligible": false,
+      "lateRankingEligible": true,
+      "training": {
+        "rankingEligible": false,
+        "attended": 0,
+        "total": 26,
+        "percentage": 0,
+        "sessions": []
+      },
+      "matchAttendance": {
+        "present": 1,
+        "total": 1,
+        "percentage": 100
+      },
+      "totals": {
+        "matches": 1,
+        "goals": 0,
+        "assists": 0,
+        "yellow": 0,
+        "red": 0,
+        "penaltiesScored": 0,
+        "penaltiesMissed": 0,
+        "late": 0,
+        "flagged": 0,
+        "polo": 0,
+        "kept": 0,
+        "captain": 0,
+        "absent": 0,
+        "notPlayed": 0,
+        "partial": 1,
+        "full": 0
+      },
+      "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
           "status": "Deels gespeeld",
           "goals": 0,
           "assists": 0,
@@ -14610,11 +16467,50 @@
       "name": "Andrew Hietbrink",
       "role": "Coach",
       "totals": {
-        "present": 10,
+        "present": 11,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -14623,6 +16519,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -14661,6 +16558,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -14704,6 +16602,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -14737,6 +16636,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -14775,6 +16675,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -14808,6 +16709,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -14851,6 +16753,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Aanwezig"
@@ -14863,6 +16766,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -14886,6 +16790,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -14929,6 +16834,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -14966,11 +16872,50 @@
       "name": "Christian Göttgens",
       "role": "Technisch staflid",
       "totals": {
-        "present": 4,
+        "present": 5,
         "partial": 2,
         "absent": 4
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -14979,6 +16924,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -15017,6 +16963,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -15060,6 +17007,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -15093,6 +17041,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -15131,6 +17080,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -15164,6 +17114,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -15207,6 +17158,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig"
@@ -15219,6 +17171,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -15242,6 +17195,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -15285,6 +17239,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -15322,11 +17277,50 @@
       "name": "Jan Berkenbosch",
       "role": "Technisch staflid",
       "totals": {
-        "present": 8,
+        "present": 9,
         "partial": 0,
         "absent": 2
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -15335,6 +17329,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -15373,6 +17368,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -15416,6 +17412,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -15449,6 +17446,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -15487,6 +17485,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -15520,6 +17519,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -15563,6 +17563,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Aanwezig"
@@ -15575,6 +17576,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -15598,6 +17600,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -15641,6 +17644,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -15678,11 +17682,50 @@
       "name": "Jean-Paul de Haas",
       "role": "Organisatorisch staflid",
       "totals": {
-        "present": 7,
+        "present": 8,
         "partial": 0,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -15691,6 +17734,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -15729,6 +17773,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -15772,6 +17817,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -15805,6 +17851,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -15843,6 +17890,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -15876,6 +17924,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -15919,6 +17968,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Afwezig"
@@ -15931,6 +17981,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -15954,6 +18005,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -15997,6 +18049,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -16034,11 +18087,50 @@
       "name": "Jeffrey Karrenbeld",
       "role": "Trainer / assistent-coach",
       "totals": {
-        "present": 10,
+        "present": 11,
         "partial": 0,
         "absent": 0
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -16047,6 +18139,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -16085,6 +18178,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -16128,6 +18222,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -16161,6 +18256,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -16199,6 +18295,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -16232,6 +18329,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -16275,6 +18373,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Aanwezig"
@@ -16287,6 +18386,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -16310,6 +18410,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -16353,6 +18454,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -16390,11 +18492,50 @@
       "name": "Sander Bouwmeester",
       "role": "Ondersteunend staflid",
       "totals": {
-        "present": 7,
+        "present": 8,
         "partial": 0,
         "absent": 3
       },
       "matches": [
+        {
+          "id": "B2026111501",
+          "date": "2026-11-15",
+          "time": "10:30",
+          "home": "SV Twello 2",
+          "away": "SV Wisch 4",
+          "result": "2-3",
+          "competition": "Beker",
+          "ownGoalsFor": 1,
+          "manOfTheMatch": "Jeffrey Karrenbeld",
+          "goalEvents": [
+            {
+              "minute": 1,
+              "score": "0-1",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 45,
+              "score": "1-1",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 48,
+              "score": "1-2",
+              "team": "SV Wisch 4"
+            },
+            {
+              "minute": 70,
+              "score": "2-2",
+              "team": "SV Twello 2"
+            },
+            {
+              "minute": 85,
+              "score": "2-3",
+              "team": "SV Wisch 4"
+            }
+          ],
+          "status": "Aanwezig"
+        },
         {
           "id": "M472456096",
           "date": "2026-11-08",
@@ -16403,6 +18544,7 @@
           "away": "Heeten 5",
           "result": "3-2",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Dennis Schreurs",
           "goalEvents": [
             {
@@ -16441,6 +18583,7 @@
           "away": "SV Twello 2",
           "result": "5-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
@@ -16484,6 +18627,7 @@
           "away": "Wijhe '92 4",
           "result": "3-1",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Jorn Oosting",
           "goalEvents": [
             {
@@ -16517,6 +18661,7 @@
           "away": "WSV 4",
           "result": "5-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Rodi Gerritsen",
           "goalEvents": [
             {
@@ -16555,6 +18700,7 @@
           "away": "SV Twello 2",
           "result": "3-1",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Onbeslist",
           "goalEvents": [
             {
@@ -16588,6 +18734,7 @@
           "away": "Loenermark 3",
           "result": "3-3",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Nicky Eekhuis",
           "goalEvents": [
             {
@@ -16631,6 +18778,7 @@
           "away": "SV Twello 2",
           "result": "0-0",
           "competition": "Competitie",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [],
           "status": "Aanwezig"
@@ -16643,6 +18791,7 @@
           "away": "TKA 3",
           "result": "2-0",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Tygo Vijge",
           "goalEvents": [
             {
@@ -16666,6 +18815,7 @@
           "away": "SV Twello 2",
           "result": "2-4",
           "competition": "Beker",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Robbert Teelen",
           "goalEvents": [
             {
@@ -16709,6 +18859,7 @@
           "away": "DAVO 2",
           "result": "3-2",
           "competition": "Vriendschappelijk",
+          "ownGoalsFor": 0,
           "manOfTheMatch": "Bram Dolman",
           "goalEvents": [
             {
