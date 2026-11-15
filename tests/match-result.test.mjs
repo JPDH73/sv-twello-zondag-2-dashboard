@@ -161,6 +161,16 @@ test("spelerskaart gebruikt de afgesproken volgorde en vat grote gedeelde loser-
   assert.match(source, /Statistieken per staf/);
   assert.match(source, /staffEntries/);
   assert.match(source, /training\.attendees\.map\(shortName\)/);
+  assert.match(source, /const playedMatches = player\.matches\.filter\(\(match\) => isPlayedStatus\(match\.status\)\)/);
+  assert.match(source, /const absentMatches = player\.matches\.filter\(\(match\) => match\.status\.trim\(\)\.toLocaleLowerCase\("nl"\) === "afwezig"\)/);
+  assert.match(source, /<h3>Gespeelde wedstrijden<\/h3>/);
+  assert.match(source, /<h4>Niet aanwezig bij wedstrijden<\/h4>/);
+  assert.match(source, /ownGoalsFor: number/);
+  assert.match(source, /Eigen doelpunt tegenstander/);
+  assert.match(source, /latestResult\.ownGoalsFor/);
+  assert.match(source, /player\.totals\.penaltiesScored > 0 && <Detail label="Penalty gescoord"/);
+  assert.match(source, /match\.penaltiesScored > 0 && `Penalty gescoord:/);
+  assert.doesNotMatch(source, /`Penalty \$\{match\.penaltiesScored\}\/\$\{match\.penaltiesMissed\}`/);
   assert.match(source, /function GoalTimeline/);
   assert.match(source, /Bekijk team/);
   assert.match(source, /Bekijk trainingen/);
