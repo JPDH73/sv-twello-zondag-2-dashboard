@@ -138,6 +138,7 @@ for (const row of matchRows) {
     away: clean(row.uit),
     result: clean(row.uitslag),
     competition: clean(row.competitie),
+    ownGoalsFor: number(field(row, ["eigen doelpunt tegenstander", "eigen doelpunten tegenstander", "eigen doelpunt voor", "eigen doelpunten voor"])),
     manOfTheMatch: clean(field(row, ["man van de wedstrijd", "man_of_the_match", "man of the match", "motm", "mvp"])),
     goalEvents: goalEventsByMatch.get(id) ?? [],
   });
@@ -154,6 +155,7 @@ for (const row of [...playerInputRows, ...staffInputRows]) {
     away: clean(row.uit),
     result: "",
     competition: id.startsWith("O") ? "Oefenwedstrijd" : "Wedstrijd",
+    ownGoalsFor: 0,
     manOfTheMatch: "",
     goalEvents: goalEventsByMatch.get(id) ?? [],
   });
