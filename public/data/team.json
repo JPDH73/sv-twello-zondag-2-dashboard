@@ -1,7 +1,7 @@
 {
   "team": "SV Twello Zondag 2",
   "season": "2026-2027",
-  "generatedAt": "2026-11-19T21:39:21.075Z",
+  "generatedAt": "2026-11-19T21:45:44.839Z",
   "sourceFile": "2026-2027_zondag2.xlsx",
   "totals": {
     "players": 24,
@@ -414,7 +414,7 @@
       "time": "10:30",
       "home": "SV Twello 2",
       "away": "Voorwaarts T 5",
-      "result": "",
+      "result": "Afgelast · nieuwe datum onbekend",
       "competition": "Competitie",
       "ownGoalsFor": 0,
       "manOfTheMatch": "",
@@ -606,7 +606,6 @@
       "date": "2026-11-19",
       "attendees": [
         "Dennis Schreurs",
-        "Dennis Witteveen",
         "Marc Albers",
         "Jesse van Brink",
         "Delano de Vogel",
@@ -1665,9 +1664,9 @@
       "lateRankingEligible": true,
       "training": {
         "rankingEligible": true,
-        "attended": 13,
+        "attended": 12,
         "total": 27,
-        "percentage": 48,
+        "percentage": 44,
         "sessions": [
           "2026-08-18",
           "2026-08-23",
@@ -1680,8 +1679,7 @@
           "2026-10-22",
           "2026-10-29",
           "2026-11-10",
-          "2026-11-12",
-          "2026-11-19"
+          "2026-11-12"
         ]
       },
       "matchAttendance": {
