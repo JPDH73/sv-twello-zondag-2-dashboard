@@ -331,7 +331,7 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
     <div className="dashboard-links">
-      <a className="standings-link" href={voetbalNlStandingsUrl} target="_blank" rel="noreferrer" onClick={openVoetbalNlStandings}><span><small>Competitiestand</small><strong>Open SV Twello 2 in Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
+      <a className="standings-link voetbal-link" href={voetbalNlStandingsUrl} target="_blank" rel="noreferrer" onClick={openVoetbalNlStandings}><img src="./voetbal-nl-logo.png" alt="" aria-hidden="true"/><span><small>Competitiestand</small><strong>Open SV Twello 2 in Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
       <a className="standings-link instagram-link" href={instagramUrl} target="_blank" rel="noreferrer"><span className="instagram-mark" aria-hidden="true"><i/><b/></span><span><small>Instagram</small><strong>Volg SV Twello op Instagram</strong></span><b aria-hidden="true">↗</b></a>
     </div>
     {selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={data.players} staff={data.staff} onClose={() => setSelectedMatch(null)}/>} 
