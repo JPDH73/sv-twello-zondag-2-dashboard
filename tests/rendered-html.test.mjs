@@ -123,6 +123,16 @@ test("wedstrijden kunnen op type worden gefilterd en dashboard linkt naar de sta
   assert.match(css, /\.standings-link/);
 });
 
+test("dashboard linkt onderaan naar Instagram", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  assert.match(source, /https:\/\/www\.instagram\.com\/svtwellozondag2\/\?utm_source=ig_web_button_share_sheet/);
+  assert.match(source, /Volg SV Twello op Instagram/);
+  assert.match(source, /className="standings-link instagram-link"/);
+  assert.match(css, /\.instagram-link/);
+  assert.match(css, /\.instagram-mark/);
+});
+
 test("bardienst heeft een eigen menu, grote afbeelding en compleet rooster", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
