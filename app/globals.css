@@ -140,12 +140,22 @@ button { color: inherit; }
 .training-card p { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 
 .leader-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
-.standings-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 16px; padding: 18px 22px; border: 1px solid rgba(0,142,207,.24); border-radius: 18px; color: var(--navy); background: linear-gradient(135deg,#fff,#eef8fc); box-shadow: 0 12px 30px rgba(27,50,91,.07); text-decoration: none; transition: transform .16s ease,border-color .16s ease,box-shadow .16s ease; }
+.dashboard-links { display: grid; gap: 12px; margin-top: 16px; }
+.standings-link { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 22px; border: 1px solid rgba(0,142,207,.24); border-radius: 18px; color: var(--navy); background: linear-gradient(135deg,#fff,#eef8fc); box-shadow: 0 12px 30px rgba(27,50,91,.07); text-decoration: none; transition: transform .16s ease,border-color .16s ease,box-shadow .16s ease; }
 .standings-link:hover, .standings-link:focus-visible { transform: translateY(-2px); border-color: rgba(0,142,207,.58); outline: none; box-shadow: 0 16px 36px rgba(27,50,91,.12); }
 .standings-link span { display: grid; gap: 4px; }
 .standings-link small { color: var(--blue); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
 .standings-link strong { font-size: 15px; }
 .standings-link > b { color: var(--blue); font-size: 24px; line-height: 1; }
+.instagram-link { justify-content: flex-start; border-color: rgba(194,38,124,.2); background: linear-gradient(135deg,#fff 0%,#fff5fb 54%,#f5f0ff 100%); }
+.instagram-link:hover, .instagram-link:focus-visible { border-color: rgba(194,38,124,.55); box-shadow: 0 16px 36px rgba(112,30,115,.14); }
+.instagram-link > span:nth-child(2) { flex: 1; }
+.instagram-link small { color: #b52b83; }
+.instagram-link > b { color: #b52b83; }
+.instagram-mark { position: relative; display: block; flex: 0 0 38px; width: 38px; height: 38px; border: 3px solid #fff; border-radius: 12px; background: radial-gradient(circle at 66% 70%,#ffd36a 0 12%,#f04f55 32%,#c52c91 58%,#6335a8 82%); box-shadow: 0 7px 16px rgba(133,42,122,.2); }
+.instagram-mark::before { content: ""; position: absolute; inset: 8px; border: 2px solid #fff; border-radius: 50%; }
+.instagram-mark i { position: absolute; top: 7px; right: 7px; width: 5px; height: 5px; border-radius: 50%; background: #fff; }
+.instagram-mark b { display: none; }
 .leader-card, .loser-card { --award-glow: rgba(0,142,207,.52); position: relative; overflow: hidden; min-height: 226px; padding: 22px; border: 1px solid rgba(255,209,92,.58); border-radius: 24px; color: white; background: radial-gradient(circle at 14% 8%,var(--award-glow),transparent 42%),linear-gradient(145deg,#06162d 0%,#102e56 54%,#074f80 100%); box-shadow: 0 22px 48px rgba(4,20,44,.24),inset 0 1px 0 rgba(255,255,255,.14),inset 0 0 34px rgba(0,142,207,.12); transition: transform .22s ease,border-color .22s ease,box-shadow .22s ease; }
 .leader-card:nth-child(2), .loser-card:nth-child(2) { --award-glow: rgba(0,184,255,.64); }
 .leader-card:nth-child(3), .loser-card:nth-child(3) { --award-glow: rgba(27,78,150,.78); }
