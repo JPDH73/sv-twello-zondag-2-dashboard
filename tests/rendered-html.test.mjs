@@ -49,6 +49,21 @@ test("GitHub Pages-build bevat gegevens en sociale kaart", async () => {
     { minute: 75, score: "2-1", team: "SV Twello 2" },
     { minute: 89, score: "3-1", team: "SV Twello 2" },
   ]);
+  const voorwaarts = data.matches.find((match) => match.id === "M1403218689");
+  assert.deepEqual(voorwaarts && {
+    date: voorwaarts.date,
+    home: voorwaarts.home,
+    away: voorwaarts.away,
+    result: voorwaarts.result,
+  }, {
+    date: "2026-11-22",
+    home: "SV Twello 2",
+    away: "Voorwaarts T 5",
+    result: "Afgelast · nieuwe datum onbekend",
+  });
+  const training19November = data.trainings.find((training) => training.date === "2026-11-19");
+  assert.ok(training19November);
+  assert.equal(training19November.attendees.includes("Dennis Witteveen"), false);
   const loenermark = data.matches.find((match) => match.id === "M2063443898");
   assert.deepEqual(loenermark && {
     result: loenermark.result,
