@@ -147,6 +147,9 @@ button { color: inherit; }
 .standings-link small { color: var(--blue); font-size: 9px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
 .standings-link strong { font-size: 15px; }
 .standings-link > b { color: var(--blue); font-size: 24px; line-height: 1; }
+.voetbal-link { justify-content: flex-start; }
+.voetbal-link > span { flex: 1; }
+.voetbal-link img { display: block; flex: 0 0 38px; width: 38px; height: 38px; border-radius: 12px; object-fit: cover; box-shadow: 0 7px 16px rgba(0,87,43,.18); }
 .instagram-link { justify-content: flex-start; border-color: rgba(194,38,124,.2); background: linear-gradient(135deg,#fff 0%,#fff5fb 54%,#f5f0ff 100%); }
 .instagram-link:hover, .instagram-link:focus-visible { border-color: rgba(194,38,124,.55); box-shadow: 0 16px 36px rgba(112,30,115,.14); }
 .instagram-link > span:nth-child(2) { flex: 1; }
