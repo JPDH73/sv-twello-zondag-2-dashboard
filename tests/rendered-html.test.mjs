@@ -114,13 +114,17 @@ test("wedstrijdkaarten koppelen clublogo's en hebben een mobiele maat", async ()
 test("wedstrijden kunnen op type worden gefilterd en dashboard linkt naar de stand", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  await access(new URL("../public/voetbal-nl-logo.png", import.meta.url));
   for (const type of ["Alle wedstrijden", "Competitie", "Beker", "Oefenwedstrijd"]) assert.match(source, new RegExp(type));
   assert.match(source, /matches\.filter\(\(match\) => matchType\(match\.competition\) === typeFilter\)/);
   assert.match(source, /https:\/\/www\.voetbal\.nl\/team\/T1719192193\/stand/);
   assert.match(source, /https:\/\/apps\.sportlink\.com\/voetbalnl\/team_details\/T1719192193/);
   assert.match(source, /onClick=\{openVoetbalNlStandings\}/);
   assert.match(source, /Open SV Twello 2 in Voetbal\.nl/);
+  assert.match(source, /className="standings-link voetbal-link"/);
+  assert.match(source, /src="\.\/voetbal-nl-logo\.png"/);
   assert.match(css, /\.standings-link/);
+  assert.match(css, /\.voetbal-link img/);
 });
 
 test("dashboard linkt onderaan naar Instagram", async () => {
