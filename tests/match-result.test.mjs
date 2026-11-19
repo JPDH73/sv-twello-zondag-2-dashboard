@@ -124,6 +124,7 @@ test("toont een individuele training zonder de teller voor teamtrainingen te ver
     ["speler_id", "naam", "24-09-2026", "29-09-2026"],
     ["sp1", "Samwel Yuda Mkai", 1, 1],
     ["sp2", "Jan Jansen", 1, null],
+    ["training1", "Hidde", 1, null],
   ]), "trainingsinvoer");
   XLSX.writeFile(workbook, workbookPath);
 
@@ -132,9 +133,13 @@ test("toont een individuele training zonder de teller voor teamtrainingen te ver
   const samwel = data.players.find((player) => player.name === "Samwel Yuda Mkai");
 
   assert.equal(data.totals.trainings, 1);
+  assert.equal(data.totals.players, 2);
+  assert.equal(data.totals.guests, 0);
+  assert.equal(data.players.some((player) => player.name === "Hidde"), false);
   assert.equal(samwel.training.attended, 2);
   assert.equal(samwel.training.total, 1);
   assert.deepEqual(samwel.training.sessions, ["2026-09-24", "2026-09-29"]);
+  assert.deepEqual(data.trainings.find((training) => training.date === "2026-09-24").attendees, ["Samwel Yuda Mkai", "Jan Jansen", "Hidde"]);
   assert.deepEqual(data.trainings.find((training) => training.date === "2026-09-29").attendees, ["Samwel Yuda Mkai"]);
 });
 
