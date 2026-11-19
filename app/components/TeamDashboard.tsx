@@ -49,6 +49,7 @@ const staffOrder = [
 
 const voetbalNlStandingsUrl = "https://www.voetbal.nl/team/T1719192193/stand";
 const voetbalNlAppTeamUrl = "https://apps.sportlink.com/voetbalnl/team_details/T1719192193";
+const instagramUrl = "https://www.instagram.com/svtwellozondag2/?utm_source=ig_web_button_share_sheet";
 
 function openVoetbalNlStandings(event: MouseEvent<HTMLAnchorElement>) {
   const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)
@@ -329,7 +330,10 @@ function DashboardView({ data, program, onNavigate }: { data: TeamData; program:
       <Loser label="Meest afwezig op wedstrijddag" awardTitle="Onzichtbare man" players={mostAbsent} score={(player) => player.totals.absent} displayName={displayName} maxNames={5} showScore={false} inlineNames cardScore={mostAbsent.length ? mostAbsent[0].totals.absent : undefined}/>
       <Loser label="Meest te laat op wedstrijddag" awardTitle="Uitslaper" players={mostLate} score={(player) => player.totals.late} displayName={displayName} showScore={false} inlineNames cardScore={mostLate.length ? mostLate[0].totals.late : undefined}/>
     </div>
-    <a className="standings-link" href={voetbalNlStandingsUrl} target="_blank" rel="noreferrer" onClick={openVoetbalNlStandings}><span><small>Competitiestand</small><strong>Open SV Twello 2 in Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
+    <div className="dashboard-links">
+      <a className="standings-link" href={voetbalNlStandingsUrl} target="_blank" rel="noreferrer" onClick={openVoetbalNlStandings}><span><small>Competitiestand</small><strong>Open SV Twello 2 in Voetbal.nl</strong></span><b aria-hidden="true">↗</b></a>
+      <a className="standings-link instagram-link" href={instagramUrl} target="_blank" rel="noreferrer"><span className="instagram-mark" aria-hidden="true"><i/><b/></span><span><small>Instagram</small><strong>Volg SV Twello op Instagram</strong></span><b aria-hidden="true">↗</b></a>
+    </div>
     {selectedMatch && <MatchDetailsDrawer match={selectedMatch} players={data.players} staff={data.staff} onClose={() => setSelectedMatch(null)}/>} 
   </>;
 }
