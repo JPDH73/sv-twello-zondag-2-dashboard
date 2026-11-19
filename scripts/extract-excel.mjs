@@ -331,7 +331,9 @@ const matches = [...matchesById.values()].sort((a, b) => {
 });
 const trainings = trainingColumns.map(({ col, date }) => ({
   date,
-  attendees: players.filter((player) => yes(trainingRowFor(player.id, player.name)[col])).map((player) => player.name),
+  attendees: trainingRows.slice(1)
+    .filter((row) => yes(row[col]) && clean(row[1]))
+    .map((row) => clean(row[1])),
 })).sort((a, b) => b.date.localeCompare(a.date));
 const playerOfYear = playerOfYearRows
   .map((row) => ({ year: number(row.jaar), name: clean(row.naam), playerId: clean(row.speler_id), motivation: clean(row.motivatie) }))
