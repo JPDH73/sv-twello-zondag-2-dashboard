@@ -94,6 +94,35 @@ test("wedstrijdverloop schaalt door tot blessuretijd en spreidt scoreballen", as
   assert.match(css, /\.goal-flow-event\.below \{ top: 55px; \}/);
 });
 
+test("wedstrijdstatistieken tonen alleen spelers die speelden en vatten afwezigen apart samen", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+  const matchDrawer = source.slice(source.indexOf("function MatchDetailsDrawer"), source.indexOf("function ClubBadge"));
+  const playerRows = matchDrawer.slice(matchDrawer.indexOf("playedEntries.map"), matchDrawer.indexOf("match-staff-section"));
+  assert.match(matchDrawer, /const playedEntries = entries\.filter\(\(\{ stats \}\) => isPlayedStatus\(stats\.status\)\)/);
+  assert.match(matchDrawer, /!player\.guest && stats\.status\.trim\(\)\.toLocaleLowerCase\("nl"\) === "afwezig"/);
+  assert.match(matchDrawer, /Afwezig \(\{absentPlayers\.length\}\)/);
+  assert.match(matchDrawer, /absentPlayers\.join\(" · "\)/);
+  assert.match(matchDrawer, /className="match-highlights"/);
+  assert.match(matchDrawer, /Man van de wedstrijd/);
+  assert.match(matchDrawer, /Gevlagd door/);
+  assert.doesNotMatch(playerRows, /stats\.polo|isManOfTheMatch/);
+  assert.match(css, /\.match-highlights/);
+  assert.match(css, /\.match-absence-summary/);
+});
+
+test("spelerskaart telt en benoemt verkiezingen tot man van de wedstrijd", async () => {
+  const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
+  const playerDrawer = source.slice(source.indexOf("function PlayerDrawer"), source.indexOf("function Detail"));
+  assert.match(playerDrawer, /const manOfTheMatchMatches = playedMatches\.filter/);
+  assert.match(playerDrawer, /<Detail label="Man van de wedstrijd" value=\{manOfTheMatchMatches\.length\}\/>/);
+  assert.match(playerDrawer, /<h3>Man van de wedstrijd<\/h3>/);
+  assert.match(playerDrawer, /manOfTheMatchMatches\.map\(\(match\) =>/);
+  assert.match(playerDrawer, /className="mvp-history-row"/);
+  assert.match(source, /match\.penaltiesScored > 0 && `Penalty gescoord:/);
+  assert.match(source, /match\.penaltiesMissed > 0 && `Penalty gemist:/);
+});
+
 test("wedstrijdkaarten koppelen clublogo's en hebben een mobiele maat", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
