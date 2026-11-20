@@ -110,7 +110,7 @@ test("wedstrijdstatistieken tonen alleen spelers die speelden en vatten afwezige
   assert.match(matchDrawer, /const keepers = entries\.filter\(\(\{ stats \}\) => stats\.kept\)/);
   assert.match(matchDrawer, /Ⓒ Aanvoerder/);
   assert.match(matchDrawer, /🧤 Keeper/);
-  assert.doesNotMatch(playerRows, /stats\.polo|stats\.captain|stats\.kept|isManOfTheMatch/);
+  assert.doesNotMatch(playerRows, /stats\.polo|stats\.captain|stats\.kept|stats\.flagged|stats\.late|isManOfTheMatch/);
   assert.match(css, /\.match-highlights/);
   assert.match(css, /\.match-absence-summary/);
 });
