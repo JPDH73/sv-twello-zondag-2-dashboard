@@ -120,7 +120,7 @@ test("wedstrijden kunnen op type worden gefilterd en dashboard linkt naar de sta
   assert.match(source, /https:\/\/www\.voetbal\.nl\/team\/T1719192193\/stand/);
   assert.match(source, /https:\/\/apps\.sportlink\.com\/voetbalnl\/team_details\/T1719192193/);
   assert.match(source, /onClick=\{openVoetbalNlStandings\}/);
-  assert.match(source, /Open SV Twello 2 in Voetbal\.nl/);
+  assert.match(source, /Open SV Twello zondag 2 in Voetbal\.nl/);
   assert.match(source, /className="standings-link voetbal-link"/);
   assert.match(source, /src="\.\/voetbal-nl-logo\.png"/);
   assert.match(css, /\.standings-link/);
@@ -131,7 +131,7 @@ test("dashboard linkt onderaan naar Instagram", async () => {
   const source = await readFile(new URL("../app/components/TeamDashboard.tsx", import.meta.url), "utf8");
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
   assert.match(source, /https:\/\/www\.instagram\.com\/svtwellozondag2\/\?utm_source=ig_web_button_share_sheet/);
-  assert.match(source, /Volg SV Twello op Instagram/);
+  assert.match(source, /Volg SV Twello zondag 2 op Instagram/);
   assert.match(source, /className="standings-link instagram-link"/);
   assert.match(css, /\.instagram-link/);
   assert.match(css, /\.instagram-mark/);
